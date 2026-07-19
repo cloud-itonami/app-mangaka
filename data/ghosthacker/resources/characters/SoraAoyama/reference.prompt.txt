@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1girl, 17 year old, 17-year-old Japanese female, delicate features, intelligent but anxious eyes., Long straight black hair, often tied in a simple ponytail., Dark brown, filled with determination but also hidden fear., Petite, always in neat but modest clothes., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

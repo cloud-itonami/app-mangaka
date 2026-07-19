@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:hV4weJL67XBV2Bmhn7Zk-",
+  "gh:appearance": {
+    "gh:build": "Slim build, wearing a school uniform with a trendy accessory.",
+    "gh:eyes": "Confident dark eyes, sharp catchlights, slightly arrogant look.",
+    "gh:face": "14-year-old Japanese male student, confident and smug expression, stylish features.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, a 14-year-old Japanese middle school boy, stylishly messy black hair, confident smug expression, dark eyes with sharp catchlights, wearing a navy blazer school uniform with trendy sneakers.",
+    "gh:hair": "Stylishly messy black hair.",
+    "gh:style": "Photorealistic, cinematic lighting, 8k, high-end webtoon aesthetic."
+  },
+  "gh:slug": "Akira",
+  "schema:age": 14,
+  "schema:name": "黒川 亮 (Akira Kurokawa)",
+  "schema:role": "Student / Trendsetter",
+  "gh:personality": {
+    "gh:traits": ["ファッション好き", "見栄っ張り", "実は寂しがり", "承認欲求強め"],
+    "gh:description": "お金持ちの家庭で、いつも最新のスニーカーやガジェットを持っている。見せびらかすのが好きだが、それは注目を浴びたいから。Yutoの「フリースマホ」企画に最初は興味を示した（後で後悔）。"
+  },
+  "gh:arc01Role": {
+    "gh:function": "Yutoの羨望の対象。彼の「限定スニーカー」がYutoの物欲を刺激し、詐欺への導線となる",
+    "gh:keyDialogue": "見てこれ！限定モデル、やっとゲットしたわ",
+    "gh:emotionalArc": "得意げ → Sakiの悪口で傷つく → 距離を置く",
+    "gh:thematicRole": "物質主義と見栄の象徴。Sakiから裏で「調子乗りすぎ」と言われていた"
+  },
+  "gh:relationships": [
+    {"character": "character:Yuto", "type": "クラスメイト", "note": "Yutoにとって羨望の対象"},
+    {"character": "character:Saki", "type": "クラスメイト", "note": "Sakiから密かに批判されていた"},
+    {"character": "character:Mei", "type": "クラスメイト"}
+  ],
+  "gh:familyBackground": {
+    "gh:parents": "父は会社経営、母は元モデル",
+    "gh:economic": "裕福",
+    "gh:issue": "両親は忙しく、物で愛情を示す傾向"
+  }
+}

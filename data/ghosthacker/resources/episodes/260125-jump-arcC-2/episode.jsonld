@@ -1,0 +1,2759 @@
+{
+  "@context": {
+    "arc": "gh:arc/",
+    "character": "gh:character/",
+    "characters": "gh:characters",
+    "dct": "http://purl.org/dc/terms/",
+    "dialogue": "gh:dialogue",
+    "env": "gh:environment/",
+    "environment": "gh:environment",
+    "environments": "gh:environments",
+    "episodeId": "gh:episodeId",
+    "episodeIndex": "gh:episodeIndex",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "panel": "gh:panelIndex",
+    "prompt": "gh:runwayPrompt",
+    "properties": "gh:shotProperties",
+    "prov": "http://www.w3.org/ns/prov#",
+    "purpose": "gh:narrativePurpose",
+    "schema": "http://schema.org/",
+    "shot": "gh:shotType",
+    "speaker": "gh:speaker",
+    "text": "gh:text",
+    "visual": "gh:visual"
+  },
+  "dct:title": "Arc C-2: 「消えた資産の足跡」",
+  "gh:arc": "Arc C",
+  "gh:credentials": [
+    "CISA",
+    "情報処理安全確保支援士"
+  ],
+  "gh:episode": 11,
+  "gh:episodeId": "episode:260125-jump-arcC-2",
+  "gh:episodeIndex": 11,
+  "gh:incidentDescription": "『金融庁ガイドラインの項目を満たしているから大丈夫』という『傲慢』が資産を盗ませた。ログインだけの対策で満足し、重要操作（受取口座の追加/変更・出金）への強制MFA、異常検知によるステップアップ、変更の冷却期間、ログの一元収集と24/7監視、委託先も含む統制テストが甘かった。国内規制の“最低ライン”しか見ず、国際的な統制要求（例: AML/CFT系の不正取引監視・統制要求）まで含めた運用・監査設計が追いついていなかった。KanameはCISAの監査眼でその欺瞞を暴き、支援士の設計力で『新・絶対ルール（ゼロトラスト）』を敷く。",
+  "gh:industry": "Finance (金融)",
+  "gh:mainCharacter": "character:Kaname",
+  "gh:nistFocus": [
+    "PR.AA-01 (Identity/Access)",
+    "ID.RA-01 (Risk Assessment)"
+  ],
+  "gh:pages": [
+    {
+      "gh:pageNumber": 1,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname",
+            "character:ShiraishiYuko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShiraishiYuko",
+              "text": "黒田専務に『傲慢』と言ったそうですね。"
+            },
+            {
+              "speaker": "Kaname",
+              "text": "事実を言っただけです。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 東海証券の小会議室。白石部長とKanameが向かい合う。窓から差し込む光。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 東海証券の小会議室。白石部長とKanameが向かい合う。窓から差し込む光。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "東海証券の小会議室。白石部長とKanameが向かい合う。窓から差し込む光。",
+          "gh:sdxlTags": [
+            "2characters",
+            "Shiraishi Yuko",
+            "Kaname",
+            "sitting at conference table",
+            "neutral expression",
+            "finance office",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, Shiraishi Yuko, Kaname, sitting at conference table, neutral expression, finance office, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:ShiraishiYuko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShiraishiYuko",
+              "text": "…ありがとう。誰かが言う必要があった。私には言えなかった。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 白石が初めて本音を見せる。元金融庁の目に、安堵が見える。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 白石が初めて本音を見せる。元金融庁の目に、安堵が見える。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "白石が初めて本音を見せる。元金融庁の目に、安堵が見える。",
+          "gh:sdxlTags": [
+            "1girl",
+            "young woman",
+            "business attire",
+            "showing honest feelings",
+            "relieved expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, young woman, business attire, showing honest feelings, relieved expression, finance headquarters, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "言うだけじゃ足りない。対策を作る。手伝っていただけますか。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Close-up, ARIA-style. Kanameの目。協力を求める目。でも命令ではなく、要請。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Kanameの目。協力を求める目。でも命令ではなく、要請。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Kanameの目。協力を求める目。でも命令ではなく、要請。",
+          "gh:sdxlTags": [
+            "1boy",
+            "young boy",
+            "business attire",
+            "looking with pleading eyes",
+            "determined expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm prime",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, young boy, business attire, looking with pleading eyes, determined expression, finance headquarters, day, soft diffused daylight, close-up, frontal, 85mm prime, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 2,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:ShiraishiYuko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShiraishiYuko",
+              "text": "もちろん。これが流出したログです。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. ノートPCの画面。資産流出の時系列ログが表示されている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. ノートPCの画面。資産流出の時系列ログが表示されている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "ノートPCの画面。資産流出の時系列ログが表示されている。",
+          "gh:sdxlTags": [
+            "1computer",
+            "asset log",
+            "over-shoulder insert",
+            "soft diffused daylight",
+            "insert shot",
+            "high angle",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1computer, asset log, over-shoulder insert, soft diffused daylight, insert shot, high angle, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "パターンが見える。受取口座の変更は全てログイン後4時間以内。MFAは突破されていない…初期認証後に操作されている。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Renが空中にデータを投影。分析結果。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Renが空中にデータを投影。分析結果。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Renが空中にデータを投影。分析結果。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Ren",
+            "business attire",
+            "projecting data",
+            "analytical expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, Ren, business attire, projecting data, analytical expression, finance headquarters, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "重要操作に追加MFAがない。ログインだけで全ての操作が可能。…設計ミスですね。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Close-up, ARIA-style. Kanameの目。問題の核心を見抜く目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Kanameの目。問題の核心を見抜く目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Kanameの目。問題の核心を見抜く目。",
+          "gh:sdxlTags": [
+            "1girl",
+            "Kaname",
+            "close-up expression",
+            "determined expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, Kaname, close-up expression, determined expression, finance headquarters, day, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 3,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:ShiraishiYuko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShiraishiYuko",
+              "text": "金融庁ガイドラインは『ログイン時のMFA』しか義務付けていません。重要操作への追加認証は『推奨』止まり。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 白石がガイドラインの資料を広げる。元金融庁の知識。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 白石がガイドラインの資料を広げる。元金融庁の知識。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "白石がガイドラインの資料を広げる。元金融庁の知識。",
+          "gh:sdxlTags": [
+            "1girl",
+            "young woman",
+            "business attire",
+            "spreading documents",
+            "neutral expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, young woman, business attire, spreading documents, neutral expression, finance headquarters, daytime, soft diffused daylight, wide shot, eye level, 35mm lens, luminous mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "金融庁ガイドライン vs 国際標準 (NIST/ISO)"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. 比較表。国内ガイドラインは最低限、国際標準はより厳格。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. 比較表。国内ガイドラインは最低限、国際標準はより厳格。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "比較表。国内ガイドラインは最低限、国際標準はより厳格。",
+          "gh:sdxlTags": [
+            "finance_hq",
+            "insert_shot",
+            "over-shoulder_insert",
+            "50mm_lens",
+            "soft_diffused_daylight",
+            "luminous_atmosphere",
+            "anime_style",
+            "manga_panel",
+            "cinematic",
+            "detailed_background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "finance_hq, insert_shot, over-shoulder_insert, 50mm_lens, soft_diffused_daylight, luminous_atmosphere, anime_style, manga_panel, cinematic, detailed_background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "黒田専務は『最低限』で満足した。それ以上を考えなかった。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Kanameが問題の本質を指摘する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Kanameが問題の本質を指摘する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Medium Shot",
+          "visual": "Kanameが問題の本質を指摘する。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Kaname",
+            "formal attire",
+            "pointing",
+            "serious expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, Kaname, formal attire, pointing, serious expression, finance headquarters, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 4,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname",
+            "character:ShiraishiYuko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "対策を設計します。『ゼロトラスト』で。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. Kanameが立ち上がり、ホワイトボードに向かう。白石が見守る。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. Kanameが立ち上がり、ホワイトボードに向かう。白石が見守る。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "Kanameが立ち上がり、ホワイトボードに向かう。白石が見守る。",
+          "gh:sdxlTags": [
+            "2characters",
+            "man",
+            "woman",
+            "standing",
+            "approaching whiteboard",
+            "neutral expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, man, woman, standing, approaching whiteboard, neutral expression, finance headquarters, daytime, soft diffused daylight, wide shot, eye level, 35mm lens, luminous mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "ZERO TRUST ARCHITECTURE"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. ホワイトボードに描かれるゼロトラストの概念図。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. ホワイトボードに描かれるゼロトラストの概念図。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "ホワイトボードに描かれるゼロトラストの概念図。",
+          "gh:sdxlTags": [
+            "1board",
+            "zero trust concept",
+            "finance headquarters",
+            "over-shoulder insert",
+            "soft diffused daylight",
+            "insert shot",
+            "high angle",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1board, zero trust concept, finance headquarters, over-shoulder insert, soft diffused daylight, insert shot, high angle, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:ShiraishiYuko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShiraishiYuko",
+              "text": "『信頼しない、常に検証する』…理想的ですが、黒田専務は納得しないでしょう。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 白石が懸念を示す。現実的な視点。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 白石が懸念を示す。現実的な視点。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Medium Shot",
+          "visual": "白石が懸念を示す。現実的な視点。",
+          "gh:sdxlTags": [
+            "1girl",
+            "young woman",
+            "business attire",
+            "showing concern",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, young woman, business attire, showing concern, finance headquarters, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 5,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "対策は3つ。1つ目：重要操作への追加MFA。口座変更、出金、設定変更にはステップアップ認証を必須にする。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Kanameがホワイトボードに書きながら説明する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Kanameがホワイトボードに書きながら説明する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "Kanameがホワイトボードに書きながら説明する。",
+          "gh:sdxlTags": [
+            "1girl",
+            "kaname",
+            "professional attire",
+            "writing on whiteboard",
+            "explaining",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, kaname, professional attire, writing on whiteboard, explaining, finance headquarters, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "① Step-up MFA for Critical Operations"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. ホワイトボードに書かれた対策1。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. ホワイトボードに書かれた対策1。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "ホワイトボードに書かれた対策1。",
+          "gh:sdxlTags": [
+            "1whiteboard",
+            "finance headquarters",
+            "insert shot",
+            "top-down insert",
+            "soft expression",
+            "day",
+            "soft diffused daylight",
+            "insert",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1whiteboard, finance headquarters, insert shot, top-down insert, soft expression, day, soft diffused daylight, insert, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:ShiraishiYuko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShiraishiYuko",
+              "text": "これは技術的には可能です。既存の認証基盤を拡張すれば。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Close-up, ARIA-style. 白石がメモを取りながら頷く。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. 白石がメモを取りながら頷く。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "白石がメモを取りながら頷く。",
+          "gh:sdxlTags": [
+            "1girl",
+            "Shiraishi Yuko",
+            "taking notes",
+            "nodding",
+            "focused expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, Shiraishi Yuko, taking notes, nodding, focused expression, finance headquarters, day, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 6,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "2つ目：変更の冷却期間。受取口座を変更しても、24時間は出金できないようにする。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Kanameが2つ目の対策を説明する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Kanameが2つ目の対策を説明する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "Kanameが2つ目の対策を説明する。",
+          "gh:sdxlTags": [
+            "1girl",
+            "Kaname",
+            "formal attire",
+            "explaining strategy",
+            "neutral expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, Kaname, formal attire, explaining strategy, neutral expression, finance headquarters, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "② 24h Cooling Period for Account Changes"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. ホワイトボードに書かれた対策2。タイムラインの図。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. ホワイトボードに書かれた対策2。タイムラインの図。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "ホワイトボードに書かれた対策2。タイムラインの図。",
+          "gh:sdxlTags": [
+            "1whiteboard",
+            "finance-hq",
+            "written strategies",
+            "insert shot",
+            "over-shoulder",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1whiteboard, finance-hq, written strategies, insert shot, over-shoulder, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "これで攻撃者が口座を変更しても、顧客が気づく時間ができる。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Close-up, ARIA-style. Renが分析結果を補足する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Renが分析結果を補足する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Renが分析結果を補足する。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "suit",
+            "analyzing results",
+            "neutral expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, suit, analyzing results, neutral expression, finance headquarters, daytime, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 7,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "3つ目：24時間365日の監視体制。異常検知と即時対応。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. Kanameが最後の対策を説明。3つの対策が並ぶホワイトボード。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. Kanameが最後の対策を説明。3つの対策が並ぶホワイトボード。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "Kanameが最後の対策を説明。3つの対策が並ぶホワイトボード。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Kaname",
+            "business attire",
+            "explaining",
+            "serious expression",
+            "finance office",
+            "daytime",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, Kaname, business attire, explaining, serious expression, finance office, daytime, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:ShiraishiYuko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShiraishiYuko",
+              "text": "それには人員とコストが…黒田専務は『ガイドラインに書いていない』と言うでしょう。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 白石が現実的な懸念を示す。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 白石が現実的な懸念を示す。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "白石が現実的な懸念を示す。",
+          "gh:sdxlTags": [
+            "1girl",
+            "female character",
+            "business attire",
+            "showing concern",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, female character, business attire, showing concern, finance headquarters, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "だから、被害額で説得します。23億円の被害 vs 対策コスト。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Close-up, ARIA-style. Kanameの目。冷静な計算。感情ではなく数字で。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Kanameの目。冷静な計算。感情ではなく数字で。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Kanameの目。冷静な計算。感情ではなく数字で。",
+          "gh:sdxlTags": [
+            "1girl",
+            "kaname",
+            "business attire",
+            "close-up expression",
+            "calm expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, kaname, business attire, close-up expression, calm expression, finance headquarters, daytime, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 8,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname",
+            "character:KurodaMasahiko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "黒田専務。対策案をお持ちしました。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 黒田の執務室。再び対峙する二人。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 黒田の執務室。再び対峙する二人。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "黒田の執務室。再び対峙する二人。",
+          "gh:sdxlTags": [
+            "2characters",
+            "Kaname",
+            "KurodaMasahiko",
+            "standing in office",
+            "neutral expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, Kaname, KurodaMasahiko, standing in office, neutral expression, finance headquarters, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:KurodaMasahiko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "KurodaMasahiko",
+              "text": "…また来たのか。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 黒田がまだ硬い表情。でも前回よりも動揺が見える。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 黒田がまだ硬い表情。でも前回よりも動揺が見える。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "黒田がまだ硬い表情。でも前回よりも動揺が見える。",
+          "gh:sdxlTags": [
+            "1boy",
+            "middle-aged man",
+            "business suit",
+            "neutral expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, middle-aged man, business suit, neutral expression, finance headquarters, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "約束しましたから。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Close-up, ARIA-style. Kanameが資料を差し出す。静かな確信。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Kanameが資料を差し出す。静かな確信。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "visual": "Kanameが資料を差し出す。静かな確信。",
+          "panel": 3,
+          "shot": "Close-up",
+          "gh:sdxlTags": [
+            "1character",
+            "kaname",
+            "formal attire",
+            "offering documents",
+            "calm confidence",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1character, kaname, formal attire, offering documents, calm confidence, finance headquarters, daytime, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 9,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:KurodaMasahiko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "KurodaMasahiko",
+              "text": "…（資料を見る）"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "POV Shot, ARIA-style. 黒田の視点。対策案の資料。コスト試算も含まれている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "POV Shot, ARIA-style. 黒田の視点。対策案の資料。コスト試算も含まれている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "first-person POV",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "POV",
+            "gh:focus": "subject focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "POV Shot",
+          "visual": "黒田の視点。対策案の資料。コスト試算も含まれている。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "business attire",
+            "looking at documents",
+            "neutral expression",
+            "finance HQ",
+            "daytime",
+            "soft diffused daylight",
+            "POV shot",
+            "first-person POV",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, business attire, looking at documents, neutral expression, finance HQ, daytime, soft diffused daylight, POV shot, first-person POV, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:KurodaMasahiko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "KurodaMasahiko",
+              "text": "…これは、ガイドラインに書いていない。なぜ我々がやる必要がある。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 黒田がまだ抵抗。でも以前ほど強くない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 黒田がまだ抵抗。でも以前ほど強くない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Wide Shot",
+          "visual": "黒田がまだ抵抗。でも以前ほど強くない。",
+          "gh:sdxlTags": [
+            "1man",
+            "KurodaMasahiko",
+            "business suit",
+            "resisting",
+            "determined expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1man, KurodaMasahiko, business suit, resisting, determined expression, finance headquarters, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "¥2.3B Loss vs ¥50M Implementation Cost"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. 資料の数字。23億円の被害 vs 5000万円の対策コスト。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. 資料の数字。23億円の被害 vs 5000万円の対策コスト。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "資料の数字。23億円の被害 vs 5000万円の対策コスト。",
+          "gh:sdxlTags": [
+            "insert shot",
+            "top-down insert",
+            "finance document",
+            "23 billion yen loss",
+            "50 million yen cost",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "insert shot, top-down insert, finance document, 23 billion yen loss, 50 million yen cost, finance headquarters, daytime, soft diffused daylight, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 10,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "顧客を守るためです。規程を守るためではない。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "POV Shot, ARIA-style. Kanameの視点。黒田の顔を見据える。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "POV Shot, ARIA-style. Kanameの視点。黒田の顔を見据える。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "first-person POV",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "POV",
+            "gh:focus": "subject focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "POV Shot",
+          "visual": "Kanameの視点。黒田の顔を見据える。",
+          "gh:sdxlTags": [
+            "1boy",
+            "young man",
+            "business attire",
+            "looking at someone",
+            "serious expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "POV shot",
+            "first-person angle",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, young man, business attire, looking at someone, serious expression, finance headquarters, daytime, soft diffused daylight, POV shot, first-person angle, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:KurodaMasahiko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "KurodaMasahiko",
+              "text": "…（黙る）"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 黒田が初めて言葉を失う。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 黒田が初めて言葉を失う。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Wide Shot",
+          "visual": "黒田が初めて言葉を失う。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "suit",
+            "standing",
+            "speechless expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, suit, standing, speechless expression, finance headquarters, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:GhostCastle"
+          ],
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "ゴゴゴ…（城壁が揺れる音）"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. Ghost「規程の城」が揺らぐ。黒田の傲慢に亀裂が入り始める。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. Ghost「規程の城」が揺らぐ。黒田の傲慢に亀裂が入り始める。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "Ghost「規程の城」が揺らぐ。黒田の傲慢に亀裂が入り始める。",
+          "gh:sdxlTags": [
+            "1ghost",
+            "ghost castle",
+            "no clothing",
+            "shaking castle",
+            "no expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "insert shot",
+            "over shoulder",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1ghost, ghost castle, no clothing, shaking castle, no expression, finance headquarters, day, soft diffused daylight, insert shot, over shoulder, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 11,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:KurodaMasahiko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "KurodaMasahiko",
+              "text": "…だが、これを実行するには取締役会の承認が必要だ。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 黒田が初めて前向きな反応。でも組織の壁がある。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 黒田が初めて前向きな反応。でも組織の壁がある。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "黒田が初めて前向きな反応。でも組織の壁がある。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "business attire",
+            "standing in finance office",
+            "thoughtful expression",
+            "finance headquarters",
+            "day",
+            "soft daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, business attire, standing in finance office, thoughtful expression, finance headquarters, day, soft daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "では、取締役会で説明させてください。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Kanameが次のステップを提案。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Kanameが次のステップを提案。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Kanameが次のステップを提案。",
+          "gh:sdxlTags": [
+            "1girl",
+            "Kaname",
+            "business attire",
+            "proposing next step",
+            "neutral expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, Kaname, business attire, proposing next step, neutral expression, finance headquarters, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:KurodaMasahiko"
+          ],
+          "dialogue": [
+            {
+              "speaker": "KurodaMasahiko",
+              "text": "…私が推薦する。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Close-up, ARIA-style. 黒田の目。初めての譲歩。でもまだ完全には認めていない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. 黒田の目。初めての譲歩。でもまだ完全には認めていない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "黒田の目。初めての譲歩。でもまだ完全には認めていない。",
+          "gh:sdxlTags": [
+            "1boy",
+            "man",
+            "formal attire",
+            "close-up on eye",
+            "uncertain expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, man, formal attire, close-up on eye, uncertain expression, finance headquarters, daytime, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 12,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname",
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "進展したね。でも取締役会は一筋縄ではいかない。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 東海証券を出るKanameとRen。外の光。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 東海証券を出るKanameとRen。外の光。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "東海証券を出るKanameとRen。外の光。",
+          "gh:sdxlTags": [
+            "2boys",
+            "Kaname",
+            "Ren",
+            "walking_outside",
+            "neutral expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2boys, Kaname, Ren, walking_outside, neutral expression, finance headquarters, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "取締役会で認めさせる。数字と論理で。"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Kanameが歩きながら話す。次の戦いを見据えている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Kanameが歩きながら話す。次の戦いを見据えている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Kanameが歩きながら話す。次の戦いを見据えている。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Kaname",
+            "business attire",
+            "walking and talking",
+            "determined expression",
+            "finance headquarters",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, Kaname, business attire, walking and talking, determined expression, finance headquarters, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:GhostCastle"
+          ],
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "ゴォォ…（遠くで城壁が再建される音）"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Close-up, ARIA-style. 東海証券ビルの影。Ghost「規程の城」がまだ健在。取締役会という新たな城壁を築いている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. 東海証券ビルの影。Ghost「規程の城」がまだ健在。取締役会という新たな城壁を築いている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "東海証券ビルの影。Ghost「規程の城」がまだ健在。取締役会という新たな城壁を築いている。",
+          "gh:sdxlTags": [
+            "1ghost",
+            "ghost castle",
+            "no attire",
+            "frontal close-up",
+            "neutral expression",
+            "finance headquarters",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1ghost, ghost castle, no attire, frontal close-up, neutral expression, finance headquarters, day, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 13,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:MizukiShinji",
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "MizukiShinji",
+              "text": "順調か。"
+            },
+            {
+              "speaker": "Kaname",
+              "text": "取締役会で勝負になります。父さん。"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Action Shot, ARIA-style. 水木家の書斎。慎司とKanameが向かい合う。父子の静かな対話。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Action Shot, ARIA-style. 水木家の書斎。慎司とKanameが向かい合う。父子の静かな対話。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "dynamic tracking",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject tracking focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows",
+            "gh:movement": "handheld or tracking shot, subtle motion blur"
+          },
+          "panel": 1,
+          "shot": "Action Shot",
+          "visual": "水木家の書斎。慎司とKanameが向かい合う。父子の静かな対話。",
+          "gh:sdxlTags": [
+            "2boy",
+            "Mizuki Shinji",
+            "Kaname",
+            "sitting at desk",
+            "quiet conversation",
+            "Mizuki estate",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "dynamic tracking",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2boy, Mizuki Shinji, Kaname, sitting at desk, quiet conversation, Mizuki estate, day, soft diffused daylight, medium shot, dynamic tracking, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:MizukiShinji"
+          ],
+          "dialogue": [
+            {
+              "speaker": "MizukiShinji",
+              "text": "傲慢を崩すには、相手に自分の傲慢を認めさせること。難しいぞ。"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Full Page Splash, ARIA-style. 慎司がグラスを傾ける。フィクサーとしての経験から来る言葉。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Full Page Splash, ARIA-style. 慎司がグラスを傾ける。フィクサーとしての経験から来る言葉。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "dynamic angle",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "impact composition, clear silhouette and motion lines",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus with emphasized subject",
+            "gh:lens": "28mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Full Page Splash",
+          "visual": "慎司がグラスを傾ける。フィクサーとしての経験から来る言葉。",
+          "gh:sdxlTags": [
+            "1boy",
+            "young man",
+            "casual attire",
+            "holding a glass",
+            "thoughtful expression",
+            "mizuki estate",
+            "day",
+            "soft diffused daylight",
+            "full page splash",
+            "dynamic angle",
+            "28mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, young man, casual attire, holding a glass, thoughtful expression, mizuki estate, day, soft diffused daylight, full page splash, dynamic angle, 28mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 14,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "傲慢を認めるのは、傲慢な人には無理です。だから、別の感情を使います。"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Action Shot, ARIA-style. Kanameの目。冷静な策略。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Action Shot, ARIA-style. Kanameの目。冷静な策略。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "dynamic tracking",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject tracking focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows",
+            "gh:movement": "handheld or tracking shot, subtle motion blur"
+          },
+          "panel": 1,
+          "shot": "Action Shot",
+          "visual": "Kanameの目。冷静な策略。",
+          "gh:sdxlTags": [
+            "1girl",
+            "kaname",
+            "focused expression",
+            "eyes",
+            "medium shot",
+            "dynamic tracking",
+            "35mm lens",
+            "soft diffused daylight",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, kaname, focused expression, eyes, medium shot, dynamic tracking, 35mm lens, soft diffused daylight, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:MizukiShinji"
+          ],
+          "dialogue": [
+            {
+              "speaker": "MizukiShinji",
+              "text": "何を使う。"
+            },
+            {
+              "speaker": "Kaname",
+              "text": "恐怖。…そして、名誉。"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Full Page Splash, ARIA-style. Kanameが静かに答える。傲慢な人は、失敗を恐れ、名誉を欲する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Full Page Splash, ARIA-style. Kanameが静かに答える。傲慢な人は、失敗を恐れ、名誉を欲する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "dynamic angle",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "impact composition, clear silhouette and motion lines",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus with emphasized subject",
+            "gh:lens": "28mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Full Page Splash",
+          "visual": "Kanameが静かに答える。傲慢な人は、失敗を恐れ、名誉を欲する。",
+          "gh:sdxlTags": [
+            "1boy",
+            "medium build boy",
+            "suit",
+            "standing confidently",
+            "calm expression",
+            "mizuki estate",
+            "day",
+            "soft daylight",
+            "wide shot",
+            "dynamic angle",
+            "28mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, medium build boy, suit, standing confidently, calm expression, mizuki estate, day, soft daylight, wide shot, dynamic angle, 28mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 15,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "『対策を導入した責任者』として名誉を与える。そして『導入しなかった場合の損害』という恐怖を示す。"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. Kanameが立ち上がり、窓の外を見る。戦略を説明する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. Kanameが立ち上がり、窓の外を見る。戦略を説明する。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "Kanameが立ち上がり、窓の外を見る。戦略を説明する。",
+          "gh:sdxlTags": [
+            "1boy",
+            "narrator",
+            "formal attire",
+            "standing by window",
+            "explaining strategy",
+            "mizuki estate",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, narrator, formal attire, standing by window, explaining strategy, mizuki estate, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:MizukiShinji"
+          ],
+          "dialogue": [
+            {
+              "speaker": "MizukiShinji",
+              "text": "…お前らしい。冷静で、計算高くて、でも正しい。"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. 慎司が微かに笑う。息子の成長を認める目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. 慎司が微かに笑う。息子の成長を認める目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "慎司が微かに笑う。息子の成長を認める目。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "suit",
+            "slightly smiling",
+            "acknowledging expression",
+            "Mizuki estate",
+            "daytime",
+            "soft diffused daylight",
+            "insert shot",
+            "over shoulder",
+            "50mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, suit, slightly smiling, acknowledging expression, Mizuki estate, daytime, soft diffused daylight, insert shot, over shoulder, 50mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname",
+              "text": "取締役会は明後日。…戦いの準備をします。"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Close-up, ARIA-style. Kanameの目。黒曜石のような瞳に、決戦への覚悟。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. . luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Kanameの目。黒曜石のような瞳に、決戦への覚悟。",
+          "gh:sdxlTags": [
+            "1girl",
+            "kaname",
+            "determined expression",
+            "close-up",
+            "frontal",
+            "soft diffused daylight",
+            "mizuki estate",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, kaname, determined expression, close-up, frontal, soft diffused daylight, mizuki estate, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 16,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:GhostCastle"
+          ],
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "ゴゴゴ…（巨大な城が月に照らされる）"
+            }
+          ],
+          "environment": "env:finance-hq",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 夜の東海証券ビル。Ghost「規程の城」が巨大化している。取締役会という最後の砦。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 夜の東海証券ビル。Ghost「規程の城」が巨大化している。取締役会という最後の砦。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "夜の東海証券ビル。Ghost「規程の城」が巨大化している。取締役会という最後の砦。",
+          "gh:sdxlTags": [
+            "1ghost",
+            "ghost castle",
+            "gigantic building",
+            "illuminated by moonlight",
+            "neutral expression",
+            "finance headquarters",
+            "night",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1ghost, ghost castle, gigantic building, illuminated by moonlight, neutral expression, finance headquarters, night, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Kaname (Monologue)",
+              "text": "（傲慢を崩すのは難しい。でも、崩さないと顧客は守れない。）"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Kanameが窓から夜景を見る。東海証券ビルが遠くに見える。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Kanameが窓から夜景を見る。東海証券ビルが遠くに見える。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Kanameが窓から夜景を見る。東海証券ビルが遠くに見える。",
+          "gh:sdxlTags": [
+            "1girl",
+            "kaname",
+            "dress",
+            "looking out window",
+            "thoughtful expression",
+            "mizuki estate",
+            "night",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, kaname, dress, looking out window, thoughtful expression, mizuki estate, night, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        },
+        {
+          "characters": [
+            "character:Kaname"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "Arc C-2：消えた資産の足跡 — 完"
+            }
+          ],
+          "environment": "env:mizuki-estate",
+          "gh:imagePrompt": "Close-up, ARIA-style. Kanameの目。決戦を前に、静かな炎。次は取締役会。Ghost Battle。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Kanameの目。決戦を前に、静かな炎。次は取締役会。Ghost Battle。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Kanameの目。決戦を前に、静かな炎。次は取締役会。Ghost Battle。",
+          "gh:sdxlTags": [
+            "1girl",
+            "kaname",
+            "quiet fire in eyes",
+            "close-up",
+            "determined expression",
+            "mizuki estate",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, kaname, quiet fire in eyes, close-up, determined expression, mizuki estate, day, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025416
+        }
+      ]
+    }
+  ],
+  "gh:presentationTagline": "Arc C | Audit Attack",
+  "gh:realCase": "SBI Securities Account Fraud (2020)",
+  "gh:sinContrast": "Passive Pride (Rule Blindness) vs. Active Pride (Rule Definition)"
+}

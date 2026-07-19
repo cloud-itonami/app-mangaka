@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:7KjlW57YY77g4Pwd3cz8G",
+  "gh:appearance": {
+    "gh:build": "Slim build, slightly slouched posture.",
+    "gh:eyes": "Focused eyes, catchlights reflecting monitor glow.",
+    "gh:face": "14-year-old Japanese male student, slightly pale skin, focused expression.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, 14-year-old Japanese middle school boy, messy black hair with bangs covering eyes, focused expression, navy blazer school uniform, slouched posture.",
+    "gh:hair": "Messy black hair with long bangs covering one eye.",
+    "gh:style": "Photorealistic, 8k, high-end webtoon aesthetic."
+  },
+  "gh:slug": "Tsubasa",
+  "schema:age": 14,
+  "schema:name": "鈴木 翼 (Tsubasa Suzuki)",
+  "schema:role": "Student / Gamer",
+  "gh:personality": {
+    "gh:traits": ["ゲーマー", "テック好き", "マイペース", "ネットリテラシー高め"],
+    "gh:description": "ゲームとPC が得意で、クラスの中ではネットに詳しい方。普段はマイペースだが、今回の事件では自分のアカウントまで被害を受けて動揺。実はフィッシングに気づくべきだったと自分を責めている。"
+  },
+  "gh:arc01Role": {
+    "gh:function": "被害の連鎖の深刻さを示す。ネットに詳しいはずの彼ですら引っかかった",
+    "gh:keyDialogue": "俺のアカウントもなんかおかしくなった…",
+    "gh:emotionalArc": "油断 → 被害 → 自己嫌悪"
+  },
+  "gh:relationships": [
+    {"character": "character:Yuto", "type": "ゲーム仲間", "note": "オンラインで一緒に遊んでいた"},
+    {"character": "character:Shota", "type": "ゲーム仲間"}
+  ],
+  "gh:techProfile": {
+    "gh:skills": ["ゲーム", "PC操作", "動画編集"],
+    "gh:irony": "ネットに詳しいはずなのに、友達からのDMだったので疑わずにリンクを踏んでしまった"
+  }
+}

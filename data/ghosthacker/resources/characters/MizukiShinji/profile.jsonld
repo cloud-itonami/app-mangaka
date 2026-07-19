@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:71oPhbAr4TKWDXzmzOmCr",
+  "@type": "gh:Character",
+  "gh:appearance": {
+    "gh:build": "Slim, average height, forgettable presence. Wears plain gray suits that blend in.",
+    "gh:eyes": "Behind round glasses, dark intelligent eyes with subtle sharp catchlights. Eyes that see through deception.",
+    "gh:face": "52-year-old Japanese male, seemingly timid and unassuming expression, round glasses, slightly hunched posture. Behind the mild exterior, sharp intelligent eyes that notice everything.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 52-year-old Japanese male, seemingly timid expression, round glasses, thinning gray-streaked hair, plain gray suit, hunched posture but sharp intelligent eyes behind glasses, natural office lighting.",
+    "gh:hair": "Thinning black hair with gray streaks, neatly combed but unremarkable.",
+    "gh:style": "Photorealistic, understated elegance, bureaucratic aesthetic, 8k."
+  },
+  "gh:arc": "Arc C",
+  "gh:background": {
+    "gh:career": [
+      "元財務省主計局",
+      "元金融庁総務企画局",
+      "現在は複数の金融機関の社外取締役"
+    ],
+    "gh:education": "東京大学法学部卒",
+    "gh:expertise": [
+      "金融規制",
+      "コーポレートガバナンス",
+      "不正調査",
+      "法律・会計・IT・組織論"
+    ]
+  },
+  "gh:personality": {
+    "gh:intellect": "法律、会計、IT、組織論のすべてに精通。表に出ない参謀タイプ。",
+    "gh:private": "金融業界の不正、業界の闇、組織構造の問題を熟知。一族のポジションを高めるため、戦略的にKanameを活用。だがKanameへの愛情は本物。",
+    "gh:public": "気弱そうな中年男性。丸眼鏡、やや猫背、地味なグレーのスーツ。誰もが侮る風貌。",
+    "gh:speech": "「いやぁ、僕なんかが口出しすることじゃないんですが…」と謙遜しながら、核心を突く。"
+  },
+  "gh:relationships": {
+    "gh:kaname": {
+      "gh:dynamic": "才能を見出し、金融業界の案件を紹介。戦略的だが愛情も本物。",
+      "gh:role": "後見人的立場",
+      "gh:type": "甥（兄の息子）"
+    }
+  },
+  "gh:slug": "MizukiShinji",
+  "gh:storyFunction": {
+    "gh:dialoguePartner": "Kanameと知的な会話を交わし、金融業界の構造的問題を解説する役割。",
+    "gh:futurePlot": "一族の野望と、Kanameの正義感の間で、将来的に葛藤が生まれる伏線。",
+    "gh:role": "Kanameを企業に紹介するフィクサー。表向きは『親戚の紹介』だが、実際は一族の戦略の一環。"
+  },
+  "schema:age": 52,
+  "schema:name": "水城 慎司 (Shinji Mizuki)",
+  "schema:role": "Kaname's Uncle / Shadow Strategist"
+}

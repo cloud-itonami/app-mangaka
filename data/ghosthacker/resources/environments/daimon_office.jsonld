@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "gh:environment:UaLkdgubnyoLJU3dhIvR-",
+  "@type": "gh:EnvironmentPrompt",
+  "gh:description": "A chaotic, outdated Japanese construction office in Kamata. Reflects the 'Sloth' as negligence—environmental neglect hidden under a 'family-like' atmosphere.",
+  "gh:elements": [
+    "1980s-style gray steel office desks (heavy industrial units)",
+    "Vintage gray steel office chairs with thin cushions",
+    "Old bulky FAX machines and corded telephones",
+    "Stacks of paper blueprints and binders",
+    "Whiteboard with handwritten schedules and safety slogans",
+    "Tangled power strips and LAN cables on the floor"
+  ],
+  "gh:lighting": "Harsh, flickering fluorescent ceiling lights, high contrast shadows",
+  "gh:prompt": "Professional monochrome manga art. Chaotic interior of an old Japanese construction office in Kamata. Heavy 1980s-style gray steel office desks and matching vintage chairs. Old bulky FAX machines, tangled telephone cords and LAN cables on the floor. Stacks of paper blueprints. Safety slogans on the wall. Harsh flickering fluorescent lighting, deep shadows, high-contrast ink drawing, dense screentone for depth, halftone dot textures on office equipment.",
+  "gh:slug": "daimon-office",
+  "schema:name": "Daimon Construction Office (大門建設オフィス)"
+}

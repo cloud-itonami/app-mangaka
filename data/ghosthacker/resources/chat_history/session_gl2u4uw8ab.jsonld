@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "chat:E7fmpJIDGhQs3uptEYopG",
+  "@type": "gh:ChatSession",
+  "dct:title": "New Conversation",
+  "gh:messages": null,
+  "gh:slug": "gl2u4uw8ab",
+  "schema:dateCreated": 1769342448773
+}

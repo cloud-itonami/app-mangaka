@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "arc": "gh:arc/",
+    "character": "gh:character/",
+    "characters": "gh:characters",
+    "dct": "http://purl.org/dc/terms/",
+    "dialogue": "gh:dialogue",
+    "env": "gh:environment/",
+    "environment": "gh:environment",
+    "environments": "gh:environments",
+    "episodeId": "gh:episodeId",
+    "episodeIndex": "gh:episodeIndex",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "org": "gh:organization/",
+    "panel": "gh:panelIndex",
+    "prompt": "gh:runwayPrompt",
+    "properties": "gh:shotProperties",
+    "prov": "http://www.w3.org/ns/prov#",
+    "purpose": "gh:narrativePurpose",
+    "schema": "http://schema.org/",
+    "shot": "gh:shotType",
+    "speaker": "gh:speaker",
+    "text": "gh:text",
+    "visual": "gh:visual"
+  },
+  "@id": "env:CDA-HyperLoop-Qw7XnMkRv2",
+  "@type": ["gh:Environment", "gh:TransitEnvironment"],
+  "dct:title": "Hyper Loop - サイバー防衛庁アクセストンネル",
+  "dct:description": "サイバー防衛庁仮想本庁舎へアクセスするための超高速仮想トンネル。黒い空間に青白い光の線が走り、データストリームが壁面を流れる。移動中はデータノードを通過するエフェクト。",
+  "gh:slug": "cda-hyperloop",
+  "gh:organization": {
+    "@id": "org:CDA-Jx9KmQwRt4VnBc7Hs2"
+  },
+  "gh:locationType": "virtual-transit",
+  "gh:accessSequence": [
+    {
+      "gh:step": 1,
+      "gh:name": "エントリーポイント",
+      "gh:description": "現実世界のアクセスポイント（詳細非公開）から仮想空間へ接続。デバイス認証開始。"
+    },
+    {
+      "gh:step": 2,
+      "gh:name": "生体認証",
+      "gh:description": "網膜スキャン、声紋認証の仮想表現。青いグリッドラインが顔を走査。"
+    },
+    {
+      "gh:step": 3,
+      "gh:name": "量子暗号認証",
+      "gh:description": "二要素認証の完了。光のパーティクルが集束し、認証完了のサインが表示。"
+    },
+    {
+      "gh:step": 4,
+      "gh:name": "トンネル突入",
+      "gh:description": "光のゲートをくぐり、Hyper Loopトンネルへ。一瞬の加速感。"
+    },
+    {
+      "gh:step": 5,
+      "gh:name": "高速移動",
+      "gh:description": "トンネル内を高速移動。壁面にデータストリームが流れ、データノードを通過するたびに光が瞬く。"
+    },
+    {
+      "gh:step": 6,
+      "gh:name": "到着",
+      "gh:description": "減速し、光のゲートが出現。最終セキュリティチェック後、アトリウムに到着。"
+    }
+  ],
+  "gh:visualElements": {
+    "gh:tunnelWalls": "黒い無限空間に浮かぶ六角形のフレーム構造。青白い光のラインが流れる。",
+    "gh:dataStream": "壁面を走るデータストリーム。0と1、日本語文字、記号が高速で流れる。",
+    "gh:nodes": "通過するデータノード。球状の光の集合体。通過時に光が弾ける。",
+    "gh:lighting": "青白い冷たい光。所々にシアンやパープルのアクセント。",
+    "gh:motionBlur": "高速移動を表現するブラー効果。光の線が後方に流れる。"
+  },
+  "gh:soundscape": {
+    "gh:ambient": "低い電子的なハム音",
+    "gh:movement": "風を切るような音、データノード通過時の電子音",
+    "gh:authentication": "認証完了時のチャイム音"
+  },
+  "gh:narrativeUse": [
+    "サイバー防衛庁への移動シーン（没入感の演出）",
+    "認証プロセスでキャラクターの緊張感を表現",
+    "案件の重要性を移動の儀式性で強調",
+    "仮想世界と現実の境界を示すトランジション"
+  ],
+  "gh:runwayPrompt": "Futuristic virtual hyperloop tunnel, black void space with blue-white light lines, hexagonal frame structure, flowing data streams on walls, glowing data nodes, high speed motion blur, cyberpunk aesthetic, neon blue and cyan accents, sci-fi transport tunnel, digital particles, authentication lasers, photorealistic, cinematic"
+}

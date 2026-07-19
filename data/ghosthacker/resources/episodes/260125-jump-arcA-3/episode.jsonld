@@ -1,0 +1,2784 @@
+{
+  "@context": {
+    "arc": "gh:arc/",
+    "character": "gh:character/",
+    "characters": "gh:characters",
+    "dct": "http://purl.org/dc/terms/",
+    "dialogue": "gh:dialogue",
+    "env": "gh:environment/",
+    "environment": "gh:environment",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "panel": "gh:panelIndex",
+    "schema": "http://schema.org/",
+    "shot": "gh:shotType",
+    "speaker": "gh:speaker",
+    "text": "gh:text",
+    "visual": "gh:visual"
+  },
+  "dct:title": "Arc A-3: 「仕組みで守れ」",
+  "gh:arc": "Arc A",
+  "gh:episode": 4,
+  "gh:episodeId": "episode:260125-jump-arcA-3",
+  "gh:episodeIndex": 4,
+  "gh:industry": "Construction (建設)",
+  "gh:mainCharacter": "character:Shouta",
+  "gh:pages": [
+    {
+      "gh:pageNumber": 1,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Ren",
+            "character:Nei"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "――RenとNeiが去った後。"
+            }
+          ],
+          "environment": "env:kamata-street-evening",
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "夕暮れの蒲田。RenとNeiの後ろ姿が遠ざかる。",
+          "gh:sdxlTags": [
+            "2 characters",
+            "Ren",
+            "Nei",
+            "walking away",
+            "evening",
+            "kamata street",
+            "dusk",
+            "wide shot",
+            "eye level",
+            "50mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2 characters, Ren, Nei, walking away, evening, kamata street, dusk, wide shot, eye level, 50mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Nei",
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "今回は大変でしたね。Ghost二体は久しぶりでした。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "うん。でも、根っこは同じだった。"
+            }
+          ],
+          "environment": "env:kamata-street-evening",
+          "panel": 2,
+          "shot": "Two Shot",
+          "visual": "二人で歩きながら話す。",
+          "gh:sdxlTags": [
+            "2boys",
+            "two boys",
+            "casual clothing",
+            "walking and talking",
+            "neutral expression",
+            "kamata street",
+            "evening",
+            "soft lighting",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "relaxed mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2boys, two boys, casual clothing, walking and talking, neutral expression, kamata street, evening, soft lighting, two shot, eye level, 35mm lens, relaxed mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "『見てもらえなかった』『認めてもらえなかった』…"
+            },
+            {
+              "speaker": "Ren",
+              "text": "安本さんも松田さんも、同じ苦しみだった。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "でも、選んだ道が違った。それだけだ。"
+            }
+          ],
+          "environment": "env:kamata-street-evening",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Renの横顔。夕日に照らされる。",
+          "gh:sdxlTags": [
+            "1boy",
+            "ren",
+            "close-up",
+            "profile view",
+            "serious expression",
+            "kamata street",
+            "evening",
+            "warm sunset light",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "reflective mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, ren, close-up, profile view, serious expression, kamata street, evening, warm sunset light, close-up, eye level, 50mm lens, reflective mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 2,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Nei",
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "安本さんは温情で済みましたけど…松田さんは逮捕。"
+            },
+            {
+              "speaker": "Nei",
+              "text": "同じ原因なのに、この差は…なんか、複雑ですね。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "…そうだな。"
+            }
+          ],
+          "environment": "env:kamata-street-evening",
+          "panel": 1,
+          "shot": "Two Shot",
+          "visual": "Neiが少し沈んだ表情。",
+          "gh:sdxlTags": [
+            "2characters",
+            "girl",
+            "boy",
+            "casual clothing",
+            "slightly sad expression",
+            "kamata street",
+            "evening",
+            "soft lighting",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "thoughtful mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, girl, boy, casual clothing, slightly sad expression, kamata street, evening, soft lighting, two shot, eye level, 35mm lens, thoughtful mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "でも、盗んだ金は戻らない。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "被害者がいる以上、責任は取らなきゃいけない。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "…それが、社会ってやつだ。"
+            }
+          ],
+          "environment": "env:kamata-street-evening",
+          "panel": 2,
+          "shot": "Close-up",
+          "visual": "Renの真剣な表情。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "serious expression",
+            "close-up",
+            "kamata street",
+            "evening",
+            "dim lighting",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "thoughtful mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, serious expression, close-up, kamata street, evening, dim lighting, close-up, eye level, 50mm lens, thoughtful mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "俺たちにできるのは、Ghostを斬ること。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "その後のことは、人間が決める。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "…だりー。帰って寝よ。"
+            }
+          ],
+          "environment": "env:kamata-street-evening",
+          "panel": 3,
+          "shot": "Medium Shot",
+          "visual": "Renがあくびをしながら歩く。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Ren",
+            "casual attire",
+            "walking while yawning",
+            "bored expression",
+            "Kamata street",
+            "evening",
+            "soft streetlight",
+            "medium shot",
+            "eye level",
+            "35mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, Ren, casual attire, walking while yawning, bored expression, Kamata street, evening, soft streetlight, medium shot, eye level, 35mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 3,
+      "gh:panels": [
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "――同時刻。大門建設。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "夕暮れのオフィス。まだ数人が残っている。",
+          "gh:sdxlTags": [
+            "office",
+            "evening",
+            "few people",
+            "wide shot",
+            "normal angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "office, evening, few people, wide shot, normal angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "…………"
+            },
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（俺は、何をすべきなんだ…）"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Close-up",
+          "visual": "翔太が机に向かっている。真剣な表情。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "sitting at desk",
+            "serious expression",
+            "kamata-daimon-office",
+            "day",
+            "natural light",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, sitting at desk, serious expression, kamata-daimon-office, day, natural light, close-up, eye level, 50mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（Renさんは言った。『仕組みを作れ』と）"
+            },
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（気持ちだけじゃダメ。仕組みで守らなきゃいけない）"
+            },
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（…具体的に、何をすればいい？）"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "翔太がパソコンに向かう。",
+          "gh:sdxlTags": [
+            "1boy",
+            "young adult boy",
+            "casual clothing",
+            "looking at computer",
+            "thoughtful expression",
+            "kamata daimon office",
+            "day",
+            "bright lighting",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, young adult boy, casual clothing, looking at computer, thoughtful expression, kamata daimon office, day, bright lighting, close-up, eye level, 50mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 4,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "…よし。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "まずは、現状の整理からだ。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "翔太がホワイトボードに向かう。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "whiteboard",
+            "standing",
+            "determined expression",
+            "kamata daimons office",
+            "day",
+            "bright lighting",
+            "medium shot",
+            "eye level",
+            "35mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, whiteboard, standing, determined expression, kamata daimons office, day, bright lighting, medium shot, eye level, 35mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "問題点。一つ、アクセス権限が管理されてない。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "二つ、システム担当が安本さん一人だった。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "三つ、バックアップ体制がなかった。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "四つ、経理のチェック体制がなかった。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "ホワイトボードに書き出された問題点。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "office worker",
+            "standing in front of whiteboard",
+            "focused expression",
+            "kamata daimon office",
+            "day",
+            "bright lighting",
+            "insert shot",
+            "eye level",
+            "35mm lens",
+            "informative mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, office worker, standing in front of whiteboard, focused expression, kamata daimon office, day, bright lighting, insert shot, eye level, 35mm lens, informative mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "…これを全部、『仕組み』で防ぐ。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "規定を作る。マニュアルを作る。チェック体制を作る。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "誰が何をするか、明確にする。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "翔太の決意に満ちた目。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "determined expression",
+            "kamata-daimon-office",
+            "close-up",
+            "straight angle",
+            "50mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, determined expression, kamata-daimon-office, close-up, straight angle, 50mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 5,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:President",
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "翔太。まだ残ってたのか。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "親父。…ちょっと、考えることがあって。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Two Shot",
+          "visual": "社長が戻ってくる。翔太を見つける。",
+          "gh:sdxlTags": [
+            "2characters",
+            "president",
+            "shouta",
+            "standing",
+            "neutral expression",
+            "kamata daimon office",
+            "day",
+            "bright lighting",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, president, shouta, standing, neutral expression, kamata daimon office, day, bright lighting, two shot, eye level, 35mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:President"
+          ],
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "…そうか。"
+            },
+            {
+              "speaker": "President",
+              "text": "俺も、考えてた。今日のこと。"
+            },
+            {
+              "speaker": "President",
+              "text": "あのガキ…Renって子に言われたこと。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Close-up",
+          "visual": "社長が遠くを見る目。",
+          "gh:sdxlTags": [
+            "1character",
+            "president",
+            "formal suit",
+            "looking into the distance",
+            "thoughtful expression",
+            "kamata daimon office",
+            "daytime",
+            "bright light",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1character, president, formal suit, looking into the distance, thoughtful expression, kamata daimon office, daytime, bright light, close-up, eye level, 50mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:President"
+          ],
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "『怠惰』か。確かにその通りだった。"
+            },
+            {
+              "speaker": "President",
+              "text": "俺は、考えることを避けてきた。"
+            },
+            {
+              "speaker": "President",
+              "text": "『動いてるから大丈夫』で、全部逃げてた。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "社長の自省の表情。",
+          "gh:sdxlTags": [
+            "1man",
+            "middle-aged man",
+            "business suit",
+            "self-reflective expression",
+            "kamata daimon office",
+            "day",
+            "bright lights",
+            "close-up",
+            "eye-level",
+            "50mm lens",
+            "thoughtful mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1man, middle-aged man, business suit, self-reflective expression, kamata daimon office, day, bright lights, close-up, eye-level, 50mm lens, thoughtful mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 6,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Shouta",
+            "character:President"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "親父。俺、規定を作ろうと思う。"
+            },
+            {
+              "speaker": "President",
+              "text": "規定？"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "うん。情報セキュリティ規定、経理規定、職務分掌規定…"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "『誰が何をするか』を、全部文書にする。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Two Shot",
+          "visual": "翔太がホワイトボードを指しながら説明。",
+          "gh:sdxlTags": [
+            "2characters",
+            "shouta",
+            "president",
+            "pointing at whiteboard",
+            "neutral expression",
+            "kamata daimon office",
+            "day",
+            "bright lighting",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "informative mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, shouta, president, pointing at whiteboard, neutral expression, kamata daimon office, day, bright lighting, two shot, eye level, 35mm lens, informative mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:President"
+          ],
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "…大変な作業だな。うちみたいな中小企業で、そこまで…"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "だからこそ必要なんだ、親父。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Close-up",
+          "visual": "社長が難色を示す。",
+          "gh:sdxlTags": [
+            "1man",
+            "middle_aged_man",
+            "suit",
+            "close-up",
+            "serious_expression",
+            "office",
+            "day",
+            "bright_lighting",
+            "close-up",
+            "eye_level",
+            "50mm_lens",
+            "tense_mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1man, middle_aged_man, suit, close-up, serious_expression, office, day, bright_lighting, close-up, eye_level, 50mm_lens, tense_mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "大企業は人数が多いから、自然とチェックが働く。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "でもうちは50人だ。一人に任せきりになりやすい。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "だから『仕組み』で補わないと、また同じことが起きる。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "翔太の真剣な表情。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "serious expression",
+            "kamata-daimon-office",
+            "close-up",
+            "normal angle",
+            "50mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, serious expression, kamata-daimon-office, close-up, normal angle, 50mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 7,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:President"
+          ],
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "…………"
+            },
+            {
+              "speaker": "President",
+              "text": "…わかった。やれ、翔太。"
+            },
+            {
+              "speaker": "President",
+              "text": "俺も協力する。今度こそ、逃げない。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Close-up",
+          "visual": "社長が頷く。決意の表情。",
+          "gh:sdxlTags": [
+            "1man",
+            "older man",
+            "suit",
+            "close-up",
+            "determined expression",
+            "kamata daimon office",
+            "day",
+            "bright lighting",
+            "close-up",
+            "eye level",
+            "35mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1man, older man, suit, close-up, determined expression, kamata daimon office, day, bright lighting, close-up, eye level, 35mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "…ありがとう、親父。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "一緒に、この会社を作り直そう。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Two Shot",
+          "visual": "父と子が向き合う。",
+          "gh:sdxlTags": [
+            "2boys",
+            "father",
+            "son",
+            "facing each other",
+            "determined expression",
+            "kamata daimon office",
+            "day",
+            "natural light",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "hopeful mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2boys, father, son, facing each other, determined expression, kamata daimon office, day, natural light, two shot, eye level, 35mm lens, hopeful mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Yasumoto"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Yasumoto",
+              "text": "…俺も、手伝わせてください。"
+            },
+            {
+              "speaker": "Yasumoto",
+              "text": "30年、システムやってきた経験、役立てたい。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Medium Shot",
+          "visual": "安本がオフィスの隅から声をかける。",
+          "gh:sdxlTags": [
+            "1male",
+            "office worker",
+            "business attire",
+            "calling from corner",
+            "determined expression",
+            "kamata daimon office",
+            "daytime",
+            "bright light",
+            "medium shot",
+            "eye level",
+            "35mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1male, office worker, business attire, calling from corner, determined expression, kamata daimon office, daytime, bright light, medium shot, eye level, 35mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 8,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Shouta",
+            "character:Yasumoto"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "安本さん…！"
+            },
+            {
+              "speaker": "Yasumoto",
+              "text": "俺が一番、この会社のシステムの弱点を知ってる。"
+            },
+            {
+              "speaker": "Yasumoto",
+              "text": "…だから、俺が直す。今度こそ、ちゃんとやる。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Two Shot",
+          "visual": "安本が翔太に歩み寄る。",
+          "gh:sdxlTags": [
+            "2boys",
+            "shouta",
+            "yasumoto",
+            "walking towards each other",
+            "determined expression",
+            "office",
+            "day",
+            "bright lighting",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2boys, shouta, yasumoto, walking towards each other, determined expression, office, day, bright lighting, two shot, eye level, 35mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:President",
+            "character:Yasumoto"
+          ],
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "安本…すまなかった。お前の力、借りたい。"
+            },
+            {
+              "speaker": "Yasumoto",
+              "text": "社長…俺こそ、すみませんでした。"
+            },
+            {
+              "speaker": "Yasumoto",
+              "text": "今度は…ちゃんと話します。困ったら、相談します。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Two Shot",
+          "visual": "社長と安本が握手。",
+          "gh:sdxlTags": [
+            "2men",
+            "president",
+            "yasumoto",
+            "shaking hands",
+            "serious expression",
+            "kamata daimon office",
+            "day",
+            "natural light",
+            "two shot",
+            "eye level",
+            "50mm lens",
+            "formal mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2men, president, yasumoto, shaking hands, serious expression, kamata daimon office, day, natural light, two shot, eye level, 50mm lens, formal mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "よし。じゃあ、始めよう。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "大門建設の、新しい『仕組み』作りを。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "翔太が笑顔で宣言。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "smiling",
+            "office environment",
+            "kamata-daemon-office",
+            "close-up",
+            "front view",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, smiling, office environment, kamata-daemon-office, close-up, front view, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 9,
+      "gh:panels": [
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "――2週間後。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "大門建設オフィス。以前より整理されている。",
+          "gh:sdxlTags": [
+            "1office",
+            "organized office",
+            "wide shot",
+            "normal angle",
+            "interior",
+            "bright lighting",
+            "kamata daimon office",
+            "day",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1office, organized office, wide shot, normal angle, interior, bright lighting, kamata daimon office, day, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "ふぅ…やっと形になってきた…"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "翔太が机に向かっている。目の下にクマ。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "glasses",
+            "sitting at desk",
+            "tired expression",
+            "office",
+            "day",
+            "natural light",
+            "medium shot",
+            "eye level",
+            "35mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, glasses, sitting at desk, tired expression, office, day, natural light, medium shot, eye level, 35mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [],
+          "dialogue": [],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Wide Shot",
+          "visual": "翔太の机の上には大量のファイルが積まれている。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "desk",
+            "piles of files",
+            "focused expression",
+            "office",
+            "day",
+            "bright light",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "busy atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, desk, piles of files, focused expression, office, day, bright light, wide shot, eye level, 35mm lens, busy atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 10,
+      "gh:panels": [
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "『情報セキュリティ基本規定』"
+            },
+            {
+              "speaker": "Narration",
+              "text": "『アクセス権限管理規定』"
+            },
+            {
+              "speaker": "Narration",
+              "text": "『バックアップ運用規定』"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "ファイルの背表紙が映る。きちんとラベリングされている。",
+          "gh:sdxlTags": [
+            "file spine",
+            "labeled documents",
+            "insert shot",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "file spine, labeled documents, insert shot, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "『経理業務規定』"
+            },
+            {
+              "speaker": "Narration",
+              "text": "『内部統制規定』"
+            },
+            {
+              "speaker": "Narration",
+              "text": "『職務分掌規定』"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "さらに積まれたファイル。",
+          "gh:sdxlTags": [
+            "files",
+            "stacked_files",
+            "office_documents",
+            "insert_shot",
+            "neutral_expression",
+            "kamata_daimon_office",
+            "day",
+            "bright_lighting",
+            "close-up",
+            "eye_level",
+            "50mm_lens",
+            "calm_mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "files, stacked_files, office_documents, insert_shot, neutral_expression, kamata_daimon_office, day, bright_lighting, close-up, eye_level, 50mm_lens, calm_mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "『インシデント対応マニュアル』"
+            },
+            {
+              "speaker": "Narration",
+              "text": "『システム運用手順書』"
+            },
+            {
+              "speaker": "Narration",
+              "text": "『人事評価制度規定』"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "机の上に山のように積まれた規定類。",
+          "gh:sdxlTags": [
+            "1desk",
+            "stack_of_documents",
+            "incident_response_manual",
+            "system_operation_procedure",
+            "personnel_evaluation_system_regulations",
+            "kamata_daimon_office",
+            "bright",
+            "insert_shot",
+            "eye_level",
+            "35mm_lens",
+            "neutral mood",
+            "anime style",
+            "manga_panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1desk, stack_of_documents, incident_response_manual, system_operation_procedure, personnel_evaluation_system_regulations, kamata_daimon_office, bright, insert_shot, eye_level, 35mm_lens, neutral mood, anime style, manga_panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 11,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Sato",
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Sato",
+              "text": "翔太さん…これ、全部作ったんすか…？"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "まあ…安本さんにも手伝ってもらったけど。"
+            },
+            {
+              "speaker": "Sato",
+              "text": "すげえ…何冊あるんすか…"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Two Shot",
+          "visual": "佐藤が驚愕の表情で規定類を見つめる。",
+          "gh:sdxlTags": [
+            "2boys",
+            "Sato",
+            "Shouta",
+            "looking surprised",
+            "office",
+            "day",
+            "bright light",
+            "two shot",
+            "eye level",
+            "50mm lens",
+            "amazed mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2boys, Sato, Shouta, looking surprised, office, day, bright light, two shot, eye level, 50mm lens, amazed mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "12冊。でも、これで終わりじゃない。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "運用して、問題があれば直す。継続的に改善していく。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "『仕組み』は作って終わりじゃない。育てていくものだ。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Close-up",
+          "visual": "翔太の疲れているが充実した表情。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "Shouta",
+            "exhausted yet fulfilled expression",
+            "office",
+            "day",
+            "bright lighting",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "motivated mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, Shouta, exhausted yet fulfilled expression, office, day, bright lighting, close-up, eye level, 50mm lens, motivated mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Yasumoto",
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Yasumoto",
+              "text": "翔太くん。アクセス権限の設定、終わったぞ。"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "ありがとうございます、安本さん。"
+            },
+            {
+              "speaker": "Yasumoto",
+              "text": "これで、経理データは経理しか触れない。俺も触れなくなった。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Two Shot",
+          "visual": "安本がノートパソコンを持ってくる。",
+          "gh:sdxlTags": [
+            "2characters",
+            "Yasumoto",
+            "Shouta",
+            "holding laptop",
+            "informative expression",
+            "office",
+            "day",
+            "natural light",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, Yasumoto, Shouta, holding laptop, informative expression, office, day, natural light, two shot, eye level, 35mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 12,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Shouta",
+            "character:Yasumoto"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "『最小権限の原則』ですね。"
+            },
+            {
+              "speaker": "Yasumoto",
+              "text": "ああ。必要な人に、必要な権限だけ。"
+            },
+            {
+              "speaker": "Yasumoto",
+              "text": "これなら、俺一人で全部やらなくていい。楽になった。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Two Shot",
+          "visual": "翔太と安本が笑顔で話す。",
+          "gh:sdxlTags": [
+            "2boys",
+            "smiling",
+            "talking",
+            "kamata-daimon-office",
+            "day",
+            "bright light",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "lighthearted mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2boys, smiling, talking, kamata-daimon-office, day, bright light, two shot, eye level, 35mm lens, lighthearted mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:President"
+          ],
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "翔太、安本。ご苦労だな。"
+            },
+            {
+              "speaker": "President",
+              "text": "…見てたぞ。お前たちの頑張り。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "社長がコーヒーを持って入ってくる。",
+          "gh:sdxlTags": [
+            "1person",
+            "male character",
+            "suit",
+            "holding coffee",
+            "entering room",
+            "neutral expression",
+            "office",
+            "day",
+            "bright lighting",
+            "medium shot",
+            "eye level",
+            "35mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1person, male character, suit, holding coffee, entering room, neutral expression, office, day, bright lighting, medium shot, eye level, 35mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:President"
+          ],
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "俺も、変わらなきゃな。"
+            },
+            {
+              "speaker": "President",
+              "text": "『動いてるから大丈夫』は、もう言わない。"
+            },
+            {
+              "speaker": "President",
+              "text": "毎月、ちゃんと報告会やろう。俺も出る。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "社長の真剣な表情。",
+          "gh:sdxlTags": [
+            "1man",
+            "middle-aged man",
+            "business suit",
+            "close-up",
+            "serious expression",
+            "kamata daimon office",
+            "day",
+            "bright lighting",
+            "close-up",
+            "eye level",
+            "35mm lens",
+            "determined mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1man, middle-aged man, business suit, close-up, serious expression, kamata daimon office, day, bright lighting, close-up, eye level, 35mm lens, determined mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 13,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "…ありがとう、親父。"
+            },
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（Renさんが言ってたこと、少しわかった気がする）"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Close-up",
+          "visual": "翔太の穏やかな表情。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "casual attire",
+            "close-up",
+            "calm expression",
+            "kamata daimon office",
+            "day",
+            "bright light",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, casual attire, close-up, calm expression, kamata daimon office, day, bright light, close-up, eye level, 50mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（『仕組み』は、人を縛るものじゃない）"
+            },
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（人を守るものだ）"
+            },
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（安本さんみたいに追い詰められる人を、作らないために）"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Close-up",
+          "visual": "翔太が規定類を見つめる。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "glasses",
+            "looking at documents",
+            "serious expression",
+            "kamata daimon office",
+            "day",
+            "bright light",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "reflective mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, glasses, looking at documents, serious expression, kamata daimon office, day, bright light, close-up, eye level, 50mm lens, reflective mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（松田さんみたいに犯罪に走る人を、作らないために）"
+            },
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（『仕組み』で、人を守る）"
+            },
+            {
+              "speaker": "Shouta (Monologue)",
+              "text": "（…これが、俺のやるべきことだ）"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "翔太の決意に満ちた目。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "determined eyes",
+            "close-up",
+            "kamata daimon office",
+            "day",
+            "natural lighting",
+            "close-up",
+            "high angle",
+            "50mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, determined eyes, close-up, kamata daimon office, day, natural lighting, close-up, high angle, 50mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 14,
+      "gh:panels": [
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "――同時刻。東京・世田谷区。"
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "Renの拠点。モニターの光だけが灯っている。",
+          "gh:sdxlTags": [
+            "1office",
+            "monitor light",
+            "wide shot",
+            "normal angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1office, monitor light, wide shot, normal angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "zzz...zzz..."
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Renがソファで爆睡している。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "sitting on sofa",
+            "sleeping",
+            "peaceful expression",
+            "office",
+            "day",
+            "soft lighting",
+            "medium shot",
+            "eye level",
+            "35mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, sitting on sofa, sleeping, peaceful expression, office, day, soft lighting, medium shot, eye level, 35mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Nei",
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "レン。大門建設から連絡が来てます。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "んー…なに…"
+            },
+            {
+              "speaker": "Nei",
+              "text": "『規定類が完成した。礼を言いたい』と。"
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 3,
+          "shot": "Two Shot",
+          "visual": "Neiがタブレットを見せる。Renが薄目を開ける。",
+          "gh:sdxlTags": [
+            "2characters",
+            "girl",
+            "boy",
+            "tablet",
+            "looking at each other",
+            "neutral expression",
+            "office",
+            "day",
+            "bright light",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "conversational mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, girl, boy, tablet, looking at each other, neutral expression, office, day, bright light, two shot, eye level, 35mm lens, conversational mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 15,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "…ふーん。ちゃんとやったんだ、あの人。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "…えらいじゃん。"
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 1,
+          "shot": "Close-up",
+          "visual": "Renが小さく笑う。珍しく温かい表情。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "Ren",
+            "small smile",
+            "warm expression",
+            "office",
+            "day",
+            "soft light",
+            "close-up",
+            "front angle",
+            "50mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, Ren, small smile, warm expression, office, day, soft light, close-up, front angle, 50mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Nei",
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "返信はどうしますか？"
+            },
+            {
+              "speaker": "Ren",
+              "text": "いらない。"
+            },
+            {
+              "speaker": "Nei",
+              "text": "え？"
+            },
+            {
+              "speaker": "Ren",
+              "text": "俺の仕事は終わった。あとは向こうの問題。"
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 2,
+          "shot": "Two Shot",
+          "visual": "Renがまた目を閉じる。",
+          "gh:sdxlTags": [
+            "2characters",
+            "Nei",
+            "Ren",
+            "eyes_closed",
+            "office",
+            "day",
+            "soft lighting",
+            "two shot",
+            "eye level",
+            "35mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, Nei, Ren, eyes_closed, office, day, soft lighting, two shot, eye level, 35mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "…まあ、よかったんじゃない。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "あの会社、もうGhostは生まれないだろ。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "『仕組み』ができたから。"
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Renの穏やかな表情。",
+          "gh:sdxlTags": [
+            "1boy",
+            "young man",
+            "business attire",
+            "calm expression",
+            "office",
+            "day",
+            "bright light",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, young man, business attire, calm expression, office, day, bright light, close-up, eye level, 50mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 16,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Nei"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "…レン。また新しい依頼が来てますよ。"
+            },
+            {
+              "speaker": "Nei",
+              "text": "今度は物流会社です。"
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "Neiがタブレットを操作。",
+          "gh:sdxlTags": [
+            "1girl",
+            "female character",
+            "tablet",
+            "operating tablet",
+            "neutral expression",
+            "office environment",
+            "day",
+            "bright lighting",
+            "medium shot",
+            "eye level",
+            "35mm lens",
+            "informative mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, female character, tablet, operating tablet, neutral expression, office environment, day, bright lighting, medium shot, eye level, 35mm lens, informative mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "…………"
+            },
+            {
+              "speaker": "Ren",
+              "text": "…明日でいい？"
+            },
+            {
+              "speaker": "Nei",
+              "text": "緊急だそうです。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "…だりー。"
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 2,
+          "shot": "Two Shot",
+          "visual": "Renが渋々起き上がる。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "casual clothes",
+            "reluctantly getting up",
+            "neutral expression",
+            "office",
+            "daytime",
+            "natural light",
+            "two shot",
+            "eye level",
+            "standard lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, casual clothes, reluctantly getting up, neutral expression, office, daytime, natural light, two shot, eye level, standard lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Ren"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "…世の中、バグだらけだな。"
+            },
+            {
+              "speaker": "Ren",
+              "text": "まあいいか。行くか。"
+            }
+          ],
+          "environment": "env:ren-office",
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Renがフードを被る。目が鋭く光る。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "hooded cloak",
+            "close-up pose",
+            "determined expression",
+            "office",
+            "day",
+            "bright light",
+            "close-up",
+            "eye level",
+            "50mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, hooded cloak, close-up pose, determined expression, office, day, bright light, close-up, eye level, 50mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 17,
+      "gh:panels": [
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "一つのGhostが消えても、また新しいGhostが生まれる。"
+            }
+          ],
+          "environment": "env:tokyo-skyline-night",
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "夜の東京。ビルの明かり。",
+          "gh:sdxlTags": [
+            "night",
+            "tokyo",
+            "city skyline",
+            "wide shot",
+            "night",
+            "city lights",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "night, tokyo, city skyline, wide shot, night, city lights, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "人の心がある限り、歪みは消えない。"
+            }
+          ],
+          "environment": "env:tokyo-skyline-night",
+          "panel": 2,
+          "shot": "Wide Shot",
+          "visual": "街のどこかで、黒い靄がうごめいている。",
+          "gh:sdxlTags": [
+            "black_fog",
+            "wide shot",
+            "tokyo_skyline",
+            "night",
+            "dim lighting",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "black_fog, wide shot, tokyo_skyline, night, dim lighting, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "だから、Ghost Hackerは今日も行く。"
+            }
+          ],
+          "environment": "env:tokyo-skyline-night",
+          "panel": 3,
+          "shot": "Wide Shot",
+          "visual": "夜空を飛ぶ飛行機のライト。",
+          "gh:sdxlTags": [
+            "1airplane",
+            "night sky",
+            "airplane lights",
+            "flying over city",
+            "no characters",
+            "tokyo skyline",
+            "night",
+            "bright lights",
+            "wide shot",
+            "aerial view",
+            "35mm lens",
+            "serene mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1airplane, night sky, airplane lights, flying over city, no characters, tokyo skyline, night, bright lights, wide shot, aerial view, 35mm lens, serene mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 18,
+      "gh:panels": [
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "大門建設は、生まれ変わった。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "翌朝の大門建設。社員たちが元気に出社。",
+          "gh:sdxlTags": [
+            "multiple employees",
+            "office workers",
+            "business attire",
+            "walking into office",
+            "happy expression",
+            "kamata daimon office",
+            "morning",
+            "bright sunlight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "cheerful mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "multiple employees, office workers, business attire, walking into office, happy expression, kamata daimon office, morning, bright sunlight, wide shot, eye level, 35mm lens, cheerful mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [
+            "character:Shouta",
+            "character:President",
+            "character:Yasumoto"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "『仕組み』を作り、人を守る会社へと。"
+            }
+          ],
+          "environment": "env:kamata-daimon-office",
+          "panel": 2,
+          "shot": "Wide Shot",
+          "visual": "翔太、社長、安本が並んで立っている。後ろに規定類のファイルが並ぶ棚。",
+          "gh:sdxlTags": [
+            "3characters",
+            "Shouta",
+            "President",
+            "Yasumoto",
+            "standing",
+            "serious expression",
+            "kamata-daimon-office",
+            "day",
+            "bright lighting",
+            "wide shot",
+            "eye-level",
+            "35mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "3characters, Shouta, President, Yasumoto, standing, serious expression, kamata-daimon-office, day, bright lighting, wide shot, eye-level, 35mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "Arc A「怠惰」編――完"
+            },
+            {
+              "speaker": "Narration",
+              "text": "Next Arc: 「嫉妬」編"
+            }
+          ],
+          "environment": "env:intertitle-black",
+          "panel": 3,
+          "shot": "Full Page Splash",
+          "visual": "黒背景に大きくタイトル。Arc A完結。",
+          "gh:sdxlTags": [
+            "title",
+            "arc a",
+            "full page splash",
+            "black background",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "title, arc a, full page splash, black background, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025357
+        }
+      ]
+    }
+  ],
+  "gh:presentationTagline": "Arc A | Building Systems to Protect People",
+  "gh:sinContrast": "Systems don't restrict people - they protect them"
+}

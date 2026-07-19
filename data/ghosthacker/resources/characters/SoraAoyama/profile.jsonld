@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:AXruDPGkc1uCMpC6_b_UZ",
+  "gh:appearance": {
+    "gh:build": "Petite, always in neat but modest clothes.",
+    "gh:eyes": "Dark brown, filled with determination but also hidden fear.",
+    "gh:face": "17-year-old Japanese female, delicate features, intelligent but anxious eyes.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, soft natural lighting, raw photo, 17-year-old Japanese female, delicate features, long black hair in ponytail, anxious intelligent dark brown eyes, neat school uniform, modest appearance.",
+    "gh:hair": "Long straight black hair, often tied in a simple ponytail.",
+    "gh:style": "Photorealistic, understated elegance, 8k."
+  },
+  "gh:arc": "Arc 0-3",
+  "gh:background": {
+    "gh:dream": "医学部に進学して、母のような研究者になりたい。",
+    "gh:family": "母子家庭。母は大手製薬会社の研究員。経済的に余裕はない。",
+    "gh:pressure": "周囲の裕福な生徒との格差。『自分も稼げる』ことを証明したい。",
+    "gh:school": "星蘭学院高等部 2年。学業特待生として入学。成績はトップクラス。"
+  },
+  "gh:incident": {
+    "gh:escalation": [
+      "最初は企業のアンケート回答（時給3000円）",
+      "次は商品のレビュー投稿（報酬1万円）",
+      "次第に「もっと稼げる仕事がある」と誘われる",
+      "母のPCにある研究資料の写真を要求される",
+      "断ろうとすると、これまでの活動記録で脅される",
+      "「もう後戻りできない」と追い詰められる"
+    ],
+    "gh:motivation": "塾代を自分で稼ぎたい。母に負担をかけたくない。",
+    "gh:psychologicalImpact": "不眠、食欲不振。授業に集中できない。誰にも相談できない孤独。",
+    "gh:trigger": "SNSで『高時給の簡単な情報収集バイト』の広告を見つける"
+  },
+  "gh:personality": {
+    "gh:hidden": "強いコンプレックス。『お金がない』ことを恥じている。",
+    "gh:strength": "努力家。一度決めたことはやり遂げる。",
+    "gh:surface": "真面目で控えめ。周囲に溶け込もうとする。",
+    "gh:weakness": "プライドが高く、助けを求められない。『大丈夫』と言い続けてしまう。"
+  },
+  "gh:slug": "SoraAoyama",
+  "gh:storyFunction": {
+    "gh:growth": "Kanameの助けを借りて、『恥ずかしい』より『危険』を優先することを学ぶ。",
+    "gh:message": "どんな立場の人も被害者になりうる。早期の相談が最善の防御。",
+    "gh:role": "被害者 / 読者の感情移入先"
+  },
+  "schema:age": 17,
+  "schema:name": "青山 ソラ (Sora Aoyama)",
+  "schema:role": "Victim / Scholarship Student"
+}

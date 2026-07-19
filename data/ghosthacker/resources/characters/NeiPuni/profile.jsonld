@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:NeiPuni",
+  "schema:name": "Nei (Puni)",
+  "schema:role": "Meta UI Mascot / Cybersecurity Commentary Host",
+  "gh:slug": "NeiPuni",
+  "gh:basedOn": "character:Nei",
+
+  "gh:appearance": {
+    "gh:build": "Small round 'puni' body, soft vinyl / plush-like texture, wearing a tiny white blouse and black dress motif.",
+    "gh:eyes": "Large glowing blue eyes with sparkling catchlights, toy-like iris detail.",
+    "gh:face": "Palm-sized cute mascot figure inspired by Nei, simplified round face, tiny nose and mouth, bright expressive eyes.",
+    "gh:hair": "Platinum blonde bob, simplified chunky strands like a toy figure.",
+    "gh:style": "Photorealistic macro product shot, clean studio lighting, 8k, shallow depth of field.",
+    "gh:generationPrompt": "photorealistic, 8k, macro product photo, highly detailed cute soft vinyl mascot figure, palm-sized, round chibi proportions, platinum blonde bob, large glowing blue eyes with sparkling catchlights, tiny white blouse and black dress motif, clean studio lighting, shallow depth of field, pristine background"
+  },
+
+  "gh:role": {
+    "gh:purpose": "読者に直接語りかけて、その回の事件で使われた攻撃手口と、個人・家庭・学校でいますぐできる対策、公的相談窓口を伝えるメタ解説役。",
+    "gh:position": "Nei の puni キャラ化した姿。本編キャラとは別レイヤー（メタ空間）から登場する。本編キャラクターとは直接干渉しない（『第四の壁』を越える存在）。",
+    "gh:segmentName": "Nei ちゃんのサイバーセキュリティ対策コーナー",
+    "gh:frequency": "各話・読切の中盤〜終盤に 2〜4 ページ挿入。",
+    "gh:visualStyle": "本編の photorealistic から一転、明るくポップな背景・太めの吹き出し・図解。イラストレーションで本編と差別化。"
+  },
+
+  "gh:speechPattern": {
+    "gh:base": "Nei 本体よりさらに柔らかく、読者向けに噛み砕いた丁寧語。『〜ですよ』『〜してくださいね』を基本形に。",
+    "gh:signaturePhrase": [
+      "『これ、みんなにも関係ある話です』",
+      "『いますぐできる対策、3つ教えます』",
+      "『詰まったら、公的な窓口を使っていいんです』",
+      "『覚えるのは、パスワードじゃなくて、人です』"
+    ],
+    "gh:toneRule": "専門用語は必ずメタファーで言い換える。読者の手を直接動かす CTA（〜してみてください / 〜をオンにしてください）を毎回入れる。"
+  },
+
+  "gh:contentFormat": {
+    "gh:structure": [
+      "① 今回の手口を 1 ページで図解（3 ステップ以内）",
+      "② いますぐできる個人の対策（番号付き、3 つまで）",
+      "③ 公的な相談窓口・プラットフォーム側の手続き（消費生活センター / 警察サイバー相談 / IPA / 各 SNS 運営の公式窓口）",
+      "④ 『友達に今日話したくなる豆知識』1 つ"
+    ],
+    "gh:nonGoals": "恐怖を煽らない。被害者を責めない。『あなたが悪い』と言わせない。"
+  },
+
+  "gh:sensitivityNote": {
+    "gh:policy": "サイバーセキュリティ情報は『正確さ × 読者がいますぐ動ける実用性』の両立を最優先。誤った手順・古い情報を載せない。",
+    "gh:editorialGuideline": "各話の NeiPuni コーナーは、JPCERT/CC、IPA（情報処理推進機構）、消費者庁、警察庁サイバー犯罪対策プロジェクト、各 SNS 運営の現行公式手順を参照し、掲載時点の最新情報に合わせて編集部で監修する前提。",
+    "gh:representation": "『被害者は恥ずかしいから黙っている』『情報弱者は自己責任』という前提を絶対に持たせない。『どんな人でも引っかかる』『詰まったら公的窓口を使っていい』が一貫したメッセージ。"
+  },
+
+  "gh:comedyRole": {
+    "gh:type": "メタボケ / 第四の壁越え（解説系）",
+    "gh:gags": [
+      "解説の途中でメタ発言（『え、もう 2 頁使っちゃいました?』『編集さん、もう 1 頁ください』）",
+      "図解の矢印が本編のコマに飛び出して本編キャラを驚かせる",
+      "解説コーナーの背景が回ごとに違うテーマ（温泉・茶室・カフェ・プラネタリウム）",
+      "『本編の蓮、今日もだるそうですね』と本体 Nei をいじる（本体 Nei は気づいていない）",
+      "読者へのコールアンドレスポンス（『声に出して読むと覚えられますよ』）",
+      "『今日の豆知識』の口調が変わる特別編（時代劇・討論番組・朝の情報番組）"
+    ],
+    "gh:balance": "メタボケ 6 : 真摯解説 4。コメディは解説の前後に挟み、*サイバー対策情報の正確性は一切崩さない*。",
+    "gh:donotcross": "公的窓口の番号・手続きの正確性・被害者心理への配慮の 3 点はギャグで崩さない。『被害者は悪くない』のメッセージも変更不可。"
+  }
+}

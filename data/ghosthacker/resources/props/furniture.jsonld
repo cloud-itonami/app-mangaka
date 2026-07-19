@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "gh:props:aFtAQj-ZRchH79rpWPMz6",
+  "@type": "gh:PropCollection",
+  "dct:title": "Manga Props: Furniture \u0026 Major Items",
+  "gh:items": [
+    {
+      "@id": "gh:prop/okamura-cruise-atlas",
+      "gh:category": "Chair/Workstation",
+      "gh:description": "Ren's primary workstation. A futuristic, ergonomic 'low-slouch' setup where the chair and desk are integrated at a low angle.",
+      "gh:prompt": "Okamura Cruise and Atlas ergonomic workstation, low-slouch reclining ergonomic chair, integrated low-profile desk, futuristic industrial design, metallic and mesh textures.",
+      "schema:name": "Okamura Cruise \u0026 Atlas"
+    },
+    {
+      "@id": "gh:prop/usm-haller",
+      "gh:category": "Storage/Meeting Set",
+      "gh:description": "Modular chrome-framed furniture used for Ren's reception and storage area. Clean lines, minimalist aesthetic.",
+      "gh:prompt": "USM Haller modular furniture, chrome ball-and-tube frame, sleek colored metal panels, minimalist grid structure, high-end designer office aesthetic.",
+      "schema:name": "USM Haller"
+    },
+    {
+      "@id": "gh:prop/gray-steel-desk-1980s",
+      "gh:category": "Desk",
+      "gh:description": "Standard Japanese office desk from the 1980s. Heavy, gray-painted steel with green mat tops.",
+      "gh:prompt": "Vintage 1980s Japanese gray steel office desk, green vinyl mat top, heavy industrial drawer units, worn metallic texture.",
+      "schema:name": "1980s Gray Steel Desk"
+    },
+    {
+      "@id": "gh:prop/fax-machine-vintage",
+      "gh:category": "Appliance",
+      "gh:description": "Bulky, old-fashioned FAX machine used in Daimon Construction.",
+      "gh:prompt": "Old bulky Japanese FAX machine, physical buttons, thermal paper roll, 1990s tech aesthetic.",
+      "schema:name": "Vintage FAX Machine"
+    }
+  ],
+  "gh:slug": "furniture"
+}

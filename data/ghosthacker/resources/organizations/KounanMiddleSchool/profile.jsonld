@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "org": "gh:organization/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "org:mO2xsygzx4PMcjgkptdxN",
+  "gh:atmosphere": "普通の公立中学校。制服は紺のブレザー。屋上は立ち入り禁止だが、Renはよくサボって昼寝している。",
+  "gh:foundingYear": "1965",
+  "gh:industry": "Education (教育)",
+  "gh:keyCharacters": [
+    {
+      "@id": "character:Ren",
+      "gh:ageAtTime": 14,
+      "gh:description": "天才的なプログラミング能力を持つが、授業はほぼ寝ている。友人はいない。屋上で一人でいることが多い。",
+      "gh:roleAtOrg": "生徒（2年B組）"
+    },
+    {
+      "@id": "character:Nei",
+      "gh:ageAtTime": 14,
+      "gh:description": "謎の転校生として現れた。転校の理由を誰にも話さない。静かで観察力が鋭い。",
+      "gh:roleAtOrg": "転校生（2年B組）"
+    },
+    {
+      "@id": "character:HiroshiTanaka",
+      "gh:description": "明るいムードメーカー。ゲーム好き。個人情報流出事件の被害者になる。",
+      "gh:roleAtOrg": "クラスメイト（2年B組）"
+    },
+    {
+      "@id": "character:MisakiAoyama",
+      "gh:description": "優等生タイプ。Neiの世話係を任される。",
+      "gh:roleAtOrg": "クラスメイト（2年B組）"
+    }
+  ],
+  "gh:location": "東京都港区",
+  "gh:organizationType": "Public Middle School",
+  "gh:relevantIncident": "3年前（Ren 14歳）、クラスメイトの個人情報流出事件が発生。Renが独自に調査を始め、Neiと出会う。",
+  "gh:slug": "KounanMiddleSchool",
+  "gh:studentCount": 450,
+  "gh:visualStyle": {
+    "gh:buildingExterior": "典型的な4階建ての公立中学校。グラウンドと体育館がある。",
+    "gh:era": "3年前（2023年）",
+    "gh:season": "春（桜の季節）",
+    "gh:uniform": "紺のブレザー、白シャツ、グレーのチェック柄スカート/スラックス"
+  },
+  "schema:alternateName": "Kounan 1st JHS",
+  "schema:description": "東京都港区にある公立中学校。Ren（沼野蓮）が14歳の時に通っていた学校。ある日、謎の転校生「Nei」が現れ、二人の運命が交わる。",
+  "schema:name": "港南第一中学校 (Kounan Daiichi Junior High School)"
+}

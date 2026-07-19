@@ -1,0 +1,93 @@
+{
+  "renders": [
+    {
+      "blobKey": "pending-gh-panel-arc01-p1n1-i0-a0",
+      "depthBlobKey": null,
+      "outlineBlobKey": null,
+      "score": 0.76125,
+      "angle": "Closeup",
+      "critique": {
+        "axes": {
+          "composition": 0.78,
+          "silhouette": 0.82,
+          "characterRecognizability": 0.71,
+          "framing": 0.74,
+          "mangaShotGrammar": 0.86,
+          "lightingDrama": 0.8,
+          "actionClarity": 0.83,
+          "emotionAlignment": 0.55
+        },
+        "notes": null,
+        "score": 0.76125,
+        "humeEvidence": null
+      }
+    },
+    {
+      "blobKey": "pending-gh-panel-arc01-p1n1-i0-a1",
+      "depthBlobKey": null,
+      "outlineBlobKey": null,
+      "score": 0.74625,
+      "angle": "Closeup",
+      "critique": {
+        "axes": {
+          "composition": 0.72,
+          "silhouette": 0.7699999999999999,
+          "characterRecognizability": 0.74,
+          "framing": 0.74,
+          "mangaShotGrammar": 0.86,
+          "lightingDrama": 0.8,
+          "actionClarity": 0.7899999999999999,
+          "emotionAlignment": 0.55
+        },
+        "notes": null,
+        "score": 0.74625,
+        "humeEvidence": null
+      }
+    },
+    {
+      "blobKey": "pending-gh-panel-arc01-p1n1-i0-a2",
+      "depthBlobKey": null,
+      "outlineBlobKey": null,
+      "score": 0.73125,
+      "angle": "Closeup",
+      "critique": {
+        "axes": {
+          "composition": 0.66,
+          "silhouette": 0.72,
+          "characterRecognizability": 0.77,
+          "framing": 0.74,
+          "mangaShotGrammar": 0.86,
+          "lightingDrama": 0.8,
+          "actionClarity": 0.75,
+          "emotionAlignment": 0.55
+        },
+        "notes": null,
+        "score": 0.73125,
+        "humeEvidence": null
+      }
+    }
+  ],
+  "selected": {
+    "blobKey": "pending-gh-panel-arc01-p1n1-i0-a0",
+    "depthBlobKey": null,
+    "outlineBlobKey": null,
+    "score": 0.76125,
+    "angle": "Closeup",
+    "critique": {
+      "axes": {
+        "composition": 0.78,
+        "silhouette": 0.82,
+        "characterRecognizability": 0.71,
+        "framing": 0.74,
+        "mangaShotGrammar": 0.86,
+        "lightingDrama": 0.8,
+        "actionClarity": 0.83,
+        "emotionAlignment": 0.55
+      },
+      "notes": null,
+      "score": 0.76125,
+      "humeEvidence": null
+    }
+  },
+  "score": 0.76125
+}

@@ -1,0 +1,120 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "company": "gh:company/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "incident": "gh:incident/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "company:YeAcqTBOBCj-7yWuPYCE0",
+  "@type": "gh:CompanyProfile",
+  "gh:arc": "Arc C",
+  "gh:atmosphere": "金融庁ガイドライン遵守を誇る。だが『遵守した』ことが免罪符になり、実効性の検証が甘い。大理石のロビー、ガラス会議室、形式主義が支配。",
+  "gh:businessType": "総合証券（リテール・機関投資家向け）",
+  "gh:incidentReport": {
+    "@id": "incident:260125-jump-AccountFraud",
+    "dct:date": "2026-11-28",
+    "dct:title": "顧客口座不正出金事件",
+    "gh:ghost": {
+      "gh:form": "ガイドライン文書で築かれた砂の城。見た目は堅牢だが、一点を突くと崩れる。",
+      "gh:name": "規程の城",
+      "gh:origin": "形式主義への過信が物理化"
+    },
+    "gh:impact": "顧客資産流出。金融庁への報告義務。レピュテーションリスク。",
+    "gh:rootCause": "『金融庁ガイドライン遵守』という傲慢。最低ラインを満たしただけで安心し、重要操作MFA・異常検知・冷却期間・24/7監視・委託先統制が不十分だった。",
+    "gh:symptoms": [
+      "複数顧客の受取口座が無断変更",
+      "変更直後の大口出金",
+      "ログインMFAは突破されていない（セッションハイジャック）",
+      "重要操作へのMFA未適用が露呈",
+      "ログは存在したが相関分析されておらず検知遅延"
+    ]
+  },
+  "gh:keyCharacters": [
+    {
+      "@id": "character:KurodaMasahiko",
+      "gh:role": "専務取締役 / 主要対話相手",
+      "gh:sourceFile": "characters/KurodaMasahiko/profile.jsonld"
+    },
+    {
+      "@id": "character:ShiraishiYuko",
+      "gh:role": "コンプライアンス部長 / 内部協力者",
+      "gh:sourceFile": "characters/ShiraishiYuko/profile.jsonld"
+    },
+    {
+      "@id": "character:NakamuraShunsuke",
+      "gh:role": "情報セキュリティ部長 / 技術対話相手",
+      "gh:sourceFile": "characters/NakamuraShunsuke/profile.jsonld"
+    },
+    {
+      "@id": "character:AokiReina",
+      "gh:role": "内部監査課長 / 若手協力者",
+      "gh:sourceFile": "characters/AokiReina/profile.jsonld"
+    }
+  ],
+  "gh:organizationChart": {
+    "gh:description": "伝統的な金融機関の縦割り組織。規程は完璧だが運用が形骸化。",
+    "gh:levels": [
+      {
+        "gh:level": 1,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:TokaiShotaro",
+            "gh:name": "東海 正太郎 (Shotaro Tokai)",
+            "gh:title": "代表取締役社長"
+          },
+          {
+            "gh:characterId": "character:KurodaMasahiko",
+            "gh:title": "専務取締役（リスク管理統括）"
+          }
+        ],
+        "gh:title": "経営層"
+      },
+      {
+        "gh:level": 2,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:ShiraishiYuko",
+            "gh:title": "コンプライアンス部長"
+          },
+          {
+            "gh:characterId": "character:NakamuraShunsuke",
+            "gh:title": "情報セキュリティ部長"
+          },
+          {
+            "gh:characterId": "character:HashimotoDaisuke",
+            "gh:name": "橋本 大輔 (Daisuke Hashimoto)",
+            "gh:title": "システム統括部長"
+          }
+        ],
+        "gh:title": "部長クラス"
+      },
+      {
+        "gh:level": 3,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:AokiReina",
+            "gh:title": "内部監査課長"
+          },
+          {
+            "gh:characterId": "character:KimuraSho",
+            "gh:name": "木村 翔 (Sho Kimura)",
+            "gh:title": "SOCアナリスト"
+          }
+        ],
+        "gh:title": "実務担当"
+      }
+    ]
+  },
+  "gh:slug": "TokaiSecurities",
+  "schema:employeeCount": 2800,
+  "schema:foundingDate": "1952",
+  "schema:location": {
+    "@type": "schema:Place",
+    "schema:address": "東京都千代田区丸の内 (Tokyo, Chiyoda-ku, Marunouchi)",
+    "schema:description": "丸の内のガラス張り高層ビル。老舗証券会社の本社。表は洗練されているが、内部は旧態依然。"
+  },
+  "schema:name": "東海証券株式会社 (Tokai Securities Co., Ltd.)"
+}

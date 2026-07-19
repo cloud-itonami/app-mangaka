@@ -1,0 +1,65 @@
+# lg-mangaka Studio backend (studio.etzhayyim.com) — SLIM variant.
+#
+# Runs `langgraph dev` for the cine pipeline (worldModel → encode) + auth_mint_api_key.
+# Skips heavy ML deps (torch, nvidia-cuda-*, sentence-transformers, transformers,
+# datasets) that kotodama pulls — Studio's job is graph invocation + per-stage
+# preview, not training. Image stays ~400 MB instead of 8+ GB.
+#
+# Build (remote BuildKit, per 50-infra/CLAUDE.md):
+#   cd 60-apps/etzhayyim-project-mangaka/lg
+#   docker buildx build --builder etzhayyim-vke --platform linux/amd64 \
+#     -t ghcr.io/etzhayyimcojp/lg-mangaka-studio:0.1.0-amd64 \
+#     -f Dockerfile.studio --push .
+#
+# Build (local Mac fallback — bootstrap exception only, see CLAUDE.md no-local rule):
+#   docker buildx build --platform linux/amd64 \
+#     -t ghcr.io/etzhayyimcojp/lg-mangaka-studio:0.1.0-amd64 \
+#     -f Dockerfile.studio --push .
+
+FROM python:3.11-slim-bookworm
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ca-certificates curl \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt/lg
+
+# Direct runtime deps only — no kotodama, no lg-mangaka editable install.
+# langgraph-cli[inmem] gives us `langgraph dev` with the in-memory checkpointer.
+# Everything lg_mangaka/*.py imports (psycopg, httpx, langgraph, langchain-core)
+# is pulled by langgraph-cli or pinned here directly.
+RUN pip install --no-cache-dir \
+        'langgraph-cli[inmem]>=0.1.55' \
+        'langgraph>=0.2.50' \
+        'langgraph-checkpoint>=2.0.0' \
+        'langgraph-checkpoint-postgres>=2.0.0' \
+        'langchain-core>=0.3.0' \
+        'psycopg[binary,pool]>=3.2.0' \
+        'httpx>=0.27.0' \
+        'pydantic>=2.7.0'
+
+# Copy only the runtime artifacts. The dev config is what `langgraph dev` reads;
+# graphs/ + helper modules sit next to it.
+COPY lg_mangaka/ /opt/lg/lg_mangaka/
+COPY langgraph.dev.json /opt/lg/langgraph.json
+
+# Studio variant patches the config: no kotodama dependency, no postgres
+# checkpointer (in-memory only, ephemeral run history is fine for inspection).
+RUN python3 -c "import json; \
+  c = json.load(open('/opt/lg/langgraph.json')); \
+  c['dependencies'] = ['./lg_mangaka']; \
+  json.dump(c, open('/opt/lg/langgraph.json','w'), indent=2)"
+
+EXPOSE 2024
+ENV PYTHONPATH=/opt/lg
+
+CMD ["langgraph", "dev", \
+     "--config", "langgraph.json", \
+     "--host", "0.0.0.0", \
+     "--port", "2024", \
+     "--no-browser"]

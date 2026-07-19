@@ -1,0 +1,268 @@
+# Phase B target — data-driven topology for `compose_character_vrm`.
+#
+# P16 of ADR-2605141200 — character VRM authoring Pregel. Takes a ghost-
+# hacker `vertex_mangaka kind='character'` row + its reference image
+# blob, runs the open-source image-to-VRM stack, and ends by calling
+# `attachCharacterVrm` (P13) so `tool_resolve_assets` (Pregel step 2 of
+# compose_scene_3d) sees the new `vrmBlobKey` on the next render.
+#
+# Stack rationale: see `data/ghosthacker/VRM_AUTHORING_STACK.md`. tl;dr —
+# CharacterGen for anime multi-view, Hunyuan3D-2 for mesh+texture,
+# Blender Rigify template-fit (+ in-house RigNet distill fallback) for
+# the rig, Blender headless + saturday06/VRM_Addon for the VRM bind,
+# MediaPipe Face Landmarker for ARKit blendshapes.
+#
+# CRITICAL — self-hosted runtime invariant: NO external commercial APIs
+# (Mixamo, OpenAI, Anthropic, …) on the production rendering path. They
+# are permitted ONLY offline as teacher signals when authoring
+# distillation training data for our open-weight checkpoints. See
+# `data/ghosthacker/TRAINING_PIPELINE.md` for the distill workflow.
+#
+# Pod placement: every mcp_tool node runs on the VKE render pool
+# (`pod_pool: vke-render-pool`) — these are minutes-scale GPU jobs and
+# don't belong on the CF Worker edge or the LangGraph default pod.
+#
+# Schema reference: kotodama.langgraph_loader._compile_topology.
+
+assistant_id: com.etzhayyim.mangaka.composeCharacterVrm
+version: 1
+kind: topology
+description: |
+  Single-character image-to-VRM authoring Pregel. Consumes a vertex_mangaka
+  character row's reference image, runs the open-source image-to-VRM
+  stack on the VKE render pool, and ends by calling the P13
+  attachCharacterVrm tool so compose_scene_3d picks up the new blobKey.
+  Per-character runtime ~3-5 GPU min on a 24 GB card; 57 characters
+  ~3 GPU hours total.
+checkpointer_mode: postgres
+authored_by: did:web:mangaka.etzhayyim.com
+
+state_keys:
+  - character_rkey
+  - profile           # gh:appearance / gh:background JSON from vertex_mangaka.props
+  - reference_image_b64  # base64 PNG of the character reference, loaded from B2
+  - prompt_pack       # {pose_prompt, style_prompt, negative_prompt} from build_prompt
+  - multiview_images  # list[base64 PNG] — 4-6 view A-pose images from CharacterGen
+  - mesh_glb_b64      # base64 binary glTF — Hunyuan3D-2 output (mesh + texture)
+  - rigged_glb_b64    # base64 binary glTF post-rigging
+  - blendshape_pack   # {arkitBlendshapes: {...}, mediapipeLandmarks: {...}}
+  - vrm_b64           # final VRM 1.0 binary, base64
+  - blob_key          # B2 key after attachCharacterVrm uploads it
+  - vertex_id         # AT URI of the patched character vertex
+  - status            # "authored" | "skipped" | "error"
+  - error
+
+entry: load_character_profile
+
+# 7 super-steps + 1 LLM prompt assembler.
+nodes:
+  - id: load_character_profile
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.loadCharacterProfile
+    config: {}
+    # Reads vertex_mangaka kind='character' rkey=<character_rkey> →
+    # profile JSON + reference_image blob_key → fetches the PNG from B2,
+    # base64-encodes, writes state.{profile, reference_image_b64}.
+
+  - id: build_prompt
+    kind: llm
+    ref: structured
+    # Compose CharacterGen-friendly prompts from gh:appearance fields.
+    # `pose_prompt` directs A-pose / neutral expression for the
+    # multi-view stage; `style_prompt` carries anime style cues; the
+    # negative prompt avoids text + props that confuse mesh recon.
+    config:
+      input_keys: [profile]
+      result_key: prompt_pack
+      args:
+        max_tokens: 512
+        temperature: 0.4
+        system: |
+          You are a 3D character technical director. Given a ghost-
+          hacker character profile (gh:appearance + gh:background),
+          emit a JSON object with three prompt strings ready for an
+          anime-tuned image-to-3D pipeline. Schema:
+            pose_prompt    — "A-pose, neutral expression, full body, plain background,
+                              <face/hair/build descriptors from profile>"
+            style_prompt   — "anime, cel-shaded, clean line art, <gh:appearance.gh:style>"
+            negative_prompt — "blurry, multiple poses, extra limbs, text, watermark,
+                              background props, photo-realistic skin, deformed face"
+          Return ONLY the JSON object — no commentary.
+        user_template: |
+          Character profile:
+          {profile}
+
+  - id: generate_multiview
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.generateMultiviewAnime
+    # CharacterGen (PKU, SIGGRAPH 2024, MIT). Anime-tuned 4-view
+    # consistent diffusion that outputs A-pose front/back/left/right.
+    # The pod entrypoint runs the official Gradio app's Python API.
+    config:
+      input_paths:
+        referenceImageB64: $.reference_image_b64
+        prompts:           $.prompt_pack
+      result_key: __scatter__   # {multiviewImages: [b64 × 4..6]}
+      gpu_required: true
+      pod_pool: vke-render-pool
+      pod_image: ghcr.io/etzhayyim/character-gen:0.1
+
+  - id: reconstruct_mesh
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.reconstructMesh
+    # Hunyuan3D-2 (Tencent, OSS). Multi-view → textured glb mesh.
+    # Higher quality than InstantMesh for anime; TripoSR is the
+    # fallback when GPU memory is tight.
+    config:
+      input_paths:
+        multiviewImages: $.multiview_images
+      result_key: __scatter__   # {meshGlbB64: "..."}
+      gpu_required: true
+      pod_pool: vke-render-pool
+      pod_image: ghcr.io/etzhayyim/hunyuan3d-2:0.2
+
+  - id: extract_blendshapes
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.extractFacialBlendshapes
+    # MediaPipe Face Landmarker (Apache-2.0). Takes the reference image
+    # → 52 ARKit-compatible blendshape weights + 478 face landmarks.
+    # The result is folded into the VRM bind step as the "neutral
+    # expression delta" so the character has working facial animation
+    # out of the gate.
+    config:
+      input_paths:
+        referenceImageB64: $.reference_image_b64
+      result_key: __scatter__   # {blendshapePack: {arkitBlendshapes: {...}, mediapipeLandmarks: {...}}}
+      gpu_required: false
+      pod_pool: vke-cpu-pool
+      pod_image: ghcr.io/etzhayyim/mediapipe-face:1
+
+  - id: auto_rig
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.autoRigHumanoid
+    # Self-hosted rigging ONLY — no external APIs in the production
+    # runtime path. Two tracks inside the same pod image:
+    #   • Primary: Rigify template-fit via Blender CLI. GPL tool, MIT-
+    #     compatible output. Loads our anime-tuned meta-rig template,
+    #     auto-scales to the mesh bounding box + head landmark from
+    #     `extract_blendshapes`, generates the full Rigify rig,
+    #     auto-weight-paints, renames bones to VRM humanoid convention
+    #     via saturday06/VRM_Addon.
+    #   • Fallback: in-house RigNet distill checkpoint (MIT base
+    #     architecture, our weights). Fires when Rigify produces a
+    #     broken bind (shoulder collapse > 30°, no head bone, etc.).
+    #
+    # External services (Adobe Mixamo etc.) are NEVER called from this
+    # production path. They are used only offline to author training
+    # data for the in-house RigNet distill, stored at
+    # `b2://etzhayyim-models/rignet-anime-v0.<n>/`. See
+    # `data/ghosthacker/TRAINING_PIPELINE.md` for the distill workflow.
+    config:
+      input_paths:
+        meshGlbB64:      $.mesh_glb_b64
+        blendshapePack:  $.blendshape_pack    # head landmark → meta-rig fit
+      result_key: __scatter__   # {riggedGlbB64: "...", rigSource: "rigify"|"rignet"}
+      gpu_required: false
+      pod_pool: vke-cpu-pool
+      pod_image: ghcr.io/etzhayyim/blender-rigify-rignet:0.1
+
+  - id: bind_vrm
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.bindVrm
+    # Blender headless (--background --python) running the saturday06
+    # VRM Add-on. Takes the rigged glb + blendshape pack + spring-bone
+    # hints derived from `profile.gh:hair`, emits a VRM 1.0 binary.
+    # ARKit blendshape names are mapped onto VRM Expression presets.
+    config:
+      input_paths:
+        riggedGlbB64:    $.rigged_glb_b64
+        blendshapePack:  $.blendshape_pack
+        profile:         $.profile
+      result_key: __scatter__   # {vrmB64: "..."}
+      gpu_required: false
+      pod_pool: vke-cpu-pool
+      pod_image: ghcr.io/etzhayyim/blender-vrm:4.1
+
+  - id: validate_vrm
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.validateVrm
+    # Parses with `kami_vrm::parse_vrm` (in-repo). Checks:
+    #   • VRM 1.0 magic + version
+    #   • humanoid bone coverage (≥18 required bones)
+    #   • ARKit blendshape minimum set (Happy/Angry/Sad/...)
+    #   • polygon budget < 50k tris
+    # Returns `{valid: bool, warnings: [...], errors: [...]}`. The
+    # conditional edge below routes failures back to bind_vrm for one
+    # retry, otherwise it ends.
+    config:
+      input_paths:
+        vrmB64: $.vrm_b64
+      result_key: __scatter__   # {valid: bool, warnings: [...], errors: [...]}
+      gpu_required: false
+      pod_pool: vke-cpu-pool
+
+  - id: attach_vrm
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.attachCharacterVrm
+    # P13 tool — already deployed. content-addressed B2 PUT + character
+    # vertex props patch. Idempotent.
+    config:
+      input_paths:
+        characterRkey:   $.character_rkey
+        vrmContentB64:   $.vrm_b64
+      result_key: __scatter__   # {blobKey, vertexId, status}
+
+edges:
+  - { from: load_character_profile, to: build_prompt }
+  - { from: build_prompt,           to: generate_multiview }
+  - { from: generate_multiview,     to: reconstruct_mesh }
+  - { from: reconstruct_mesh,       to: extract_blendshapes }
+  - { from: extract_blendshapes,    to: auto_rig }
+  - { from: auto_rig,               to: bind_vrm }
+  - { from: bind_vrm,               to: validate_vrm }
+  # validate_vrm → conditional below (retry bind_vrm OR move on to attach_vrm)
+  - { from: attach_vrm,             to: END }
+
+conditional_edges:
+  - from: validate_vrm
+    # DMN policy: retry bind once if `valid=false` and `iteration<2`,
+    # otherwise fail to END with state.status='error'. Decision lives in
+    # `00-contracts/dmn/com/etzhayyim/policies/mangaka/vrmBindRetry.dmn`
+    # (sub-blocker — author when the loader's DMN resolver ships).
+    condition_ref: dmn:com.etzhayyim.policies.mangaka.vrmBindRetry@1.0.0
+    paths:
+      retry:  bind_vrm
+      accept: attach_vrm
+      reject: END
+
+deployments:
+  - nsid: com.etzhayyim.mangaka.composeCharacterVrm
+    status: active
+    replicas: 1
+
+# All NEW tools that must exist in vertex_mcp_tool_def before Phase C
+# activation. attachCharacterVrm is already shipped (P13). Each of the
+# 8 new tools needs a lexicon JSON under
+# `00-contracts/lexicons/com/etzhayyim/apps/mangaka/tools/`, a seed migration,
+# and an XRPC dispatcher entry in lg_mangaka/server.py — same pattern
+# as the compose_scene_3d tools (P8).
+pending_mcp_tools:
+  - com.etzhayyim.mangaka.tools.loadCharacterProfile
+  - com.etzhayyim.mangaka.tools.generateMultiviewAnime
+  - com.etzhayyim.mangaka.tools.reconstructMesh
+  - com.etzhayyim.mangaka.tools.extractFacialBlendshapes
+  - com.etzhayyim.mangaka.tools.autoRigHumanoid
+  - com.etzhayyim.mangaka.tools.bindVrm
+  - com.etzhayyim.mangaka.tools.validateVrm
+  # attachCharacterVrm already in vertex_mcp_tool_def (P13).
+
+# Driver loop — to author all 57 ghost-hacker VRMs, run this Pregel
+# under a `foreach` operator over the character roster:
+#
+#   foreach character_rkey in (SELECT rkey FROM vertex_mangaka WHERE kind='character'):
+#     POST /xrpc/com.etzhayyim.mangaka.composeCharacterVrm
+#          { character_rkey }
+#
+# Sequential by default — running in parallel would saturate the GPU
+# pool. The script `scripts/author-ghosthacker-vrms.ts` (P16 follow-up)
+# wraps this with progress + resume.

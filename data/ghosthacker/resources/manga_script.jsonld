@@ -1,0 +1,650 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dialogue": "gh:dialogue",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "page": "gh:page/",
+    "panel": "gh:panel/",
+    "script": "gh:script/",
+    "visual": "gh:visual"
+  },
+  "@id": "gh:script:DQ6LSCQSS3NC8XgWDIglw",
+  "@type": "gh:MangaScript",
+  "gh:pageCount": 17,
+  "gh:pages": [
+    {
+      "@id": "page:1",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "霊長類。人は「霊」に特質性があり、霊によって進化した存在である。"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "猿からヒトへの進化図。背景には荒々しい自然。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "古来より霊は、炎や像、儀式と共に様々な形で現れ、人と共にあった。"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "洞窟の中で火を囲む人類と壁画を描く人物、その背後に巨大な大仏やトーテムポール、シャーマンの儀式のイメージが薄く重なって見える歴史モンタージュ。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "2026年。高度情報化社会において、人知れず「霊」をHackする者たちがいた。"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "現代の都市風景（2026年の東京）。高層ビル、飛び交う電子データ、サーバーファーム、ドローン物流。"
+        }
+      ]
+    },
+    {
+      "@id": "page:2",
+      "gh:description": "スマホ縦スクロール用の単ページタイトル",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren (Monologue)",
+              "text": "世界はバグだらけだ。"
+            },
+            {
+              "speaker": "Narration",
+              "text": "Ren - Ghost Hacker。17歳。世界的な腕前を持つコンピューターハッカー。だが、彼はGhostもハックできる。"
+            }
+          ],
+          "gh:layout": "FullPage",
+          "panel:id": 1,
+          "visual": "【1ページ全体】デジタルグリッドと物理的な都市の破片（ビル、道路標識）が融合・崩壊・再構築を繰り返す混沌としたサイバー空間。その中心に、重力に逆らって浮かぶRenとNei。Renは空中に投影された半透明のキーボードを高速でタイピングし、その視線は遠くのデータ構造を見つめている。Neiは彼の隣に立ち、腕を組んで周囲を警戒するように浮遊。彼女の瞳には解析データが流れている。二人の背後、空間の歪みの向こうに『GHOST Hacker』の巨大なタイトルロゴが縦長レイアウトで浮かび上がる。"
+        }
+      ],
+      "gh:type": "gh:TitlePage"
+    },
+    {
+      "@id": "page:4",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "あー、だりーなー。"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "コンクリート打ちっぱなしの壁とウッドフローリングの清潔なオフィス。Renはモダンなデスクチェアに仰向けでダラけている。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "Neiちゃん、何してんの？"
+            },
+            {
+              "speaker": "Nei",
+              "text": "お仕事を探しておりました。当然です、マスター。"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "部屋の隅でタブレットを操作しているNei。呆れた表情。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "サーバー及びクラウド費用が非常に逼迫しております。マスターがもう少し稼働くだされば…"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "Renの椅子に近づき、呆れた顔で覗き込むNei。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "怠惰こそ美徳。効率化の母だよ。"
+            }
+          ],
+          "panel:id": 4,
+          "visual": "Ren、耳をほじりながら。"
+        }
+      ]
+    },
+    {
+      "@id": "page:5",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "ピンポーン"
+            },
+            {
+              "speaker": "Nei",
+              "text": "あ！ご予約のお客様です！ウェブサイトからご連絡のあった大門様です！"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "ドアのチャイムが鳴る。モニターに訪問者の映像（スーツ姿の若い男＝翔太）。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "げ。本当に来たの。面倒くさいなぁ…"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "Ren、嫌そうに起き上がる。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "あなたがRenさんですか？大門建設の大門翔太です。話はメールで送った通りです。"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "翔太が入ってくる。焦燥しきった表情だが、目は鋭い。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "システム全停止。警察は証拠保全で手一杯。復旧の目処なし…だっけ？"
+            }
+          ],
+          "panel:id": 4,
+          "visual": "Ren、翔太を見定める。"
+        }
+      ]
+    },
+    {
+      "@id": "page:6",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "父…社長は現場への対応で手一杯で。僕の独断で依頼しました。とにかく急いでるんです。"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "大門建設のオフィス（蒲田）。古びたビルだが中は修羅場。電話が鳴り止まない。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Matsuda",
+              "text": "ちょっと翔太くん！給与計算どうすんのよ！明日振込日なのよ！？画面真っ黒で動かないじゃない！"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "経理の松田（おばちゃん）が叫んでいる。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Sato",
+              "text": "松田さん、叩いても直りませんって！サーバーへのアクセス権限もロックされてて…"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "若手社員の佐藤がPCの裏に潜り込んでいる。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "（昭和の遺産と中途半端なDX…最悪の組み合わせだね）"
+            }
+          ],
+          "panel:id": 4,
+          "visual": "Ren、オフィスを見渡す。"
+        }
+      ]
+    },
+    {
+      "@id": "page:7",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Yasumoto",
+              "text": "翔太くん！部外者を勝手に入れるな！システムは私がなんとかする！"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "安本部長が登場。汗だくで挙動不審。翔太を睨む。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "安本さん！あんたの管理でこうなったんだろ！専門家に任せてください！"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "翔太、強い口調で言い返す。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "（…ビンゴ。システム障害の原因はマルウェアじゃない）"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "Ren、安本を凝視。AR視点で安本の背後にへばりつく「黒い影（嫉妬と恐怖のGhost）」を見る。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "Nei、ポート開放。物理レイヤーから侵入して。"
+            }
+          ],
+          "panel:id": 4,
+          "visual": "Ren、勝手に空いている席に座り、自分のノートPCを開く。"
+        }
+      ]
+    },
+    {
+      "@id": "page:8",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Sato",
+              "text": "す、すごい…暗号化されたシェルをリアルタイムで解読してる…？"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "これが、Ghost Hacker…"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "Renの超高速タイピング。翔太と佐藤が後ろで驚く。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "「情報は物理量である」。ランダウアーの原理。この攻撃はただのデータ改竄じゃない。質量を持った悪意だ。"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "Ren、画面を見ずに話す。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Yasumoto",
+              "text": "な、何をわけのわからんことを…！やめろ！接続を切るぞ！"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "安本、顔色を変えて後ずさりする。"
+        }
+      ]
+    },
+    {
+      "@id": "page:9",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "特定いたしました、マスター。アクセス元は…社内。総務部長の端末からです。"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "Neiが画面に大きく表示される。「FOUND!!」"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "あんただね。翔太さんが導入しようとした新システムを妨害しようとして、闇サイトで拾ったウィルスを自爆させた。"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "Ren、振り返って安本を指差す。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Matsuda",
+              "text": "えっ…安本さん、どういうこと？"
+            },
+            {
+              "speaker": "Shouta",
+              "text": "安本さん…まさか、自分の地位を守るために？"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "社員一同、安本を見る。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "ついでに横領とカジノの履歴も全部出てるよ。その穴埋めのための犯行だろ。"
+            }
+          ],
+          "panel:id": 4,
+          "visual": "安本、震える。"
+        }
+      ]
+    },
+    {
+      "@id": "page:10",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Yasumoto",
+              "text": "うるさいうるさいうるさい！！若造が何を知っている！俺はこの会社に30年尽くしてきたんだ！！"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "安本、絶叫。背後の影が膨張し、オフィスを覆い尽くす。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ghost",
+              "text": "俺ノ居場所ヲ…奪ウナァァァ！！"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "安本の体からGhostが分離し、巨大な怪物（古びた書類とケーブルの塊のような姿）になる。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "なんだよこれ…VRか…？"
+            },
+            {
+              "speaker": "Ren",
+              "text": "現実だよ。あんたらの歪んだ情報が実体化した姿だ。"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "松田と佐藤、腰を抜かす。翔太は呆然と立ち尽くす。"
+        }
+      ]
+    },
+    {
+      "@id": "page:11",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "Nei、SIP起動。こいつを物理レイヤーに固定する。"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "Ren、スマホを操作。「SIP Device: ON」"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "承知いたしました。SIPシークエンスを開始します。"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "空間がデジタルノイズに包まれ、Ghostの質量が増す。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ghost",
+              "text": "消エロオォォ！！"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "Ghostが暴れ、棚をなぎ倒す。物理的な破壊力があることを示す。"
+        }
+      ]
+    },
+    {
+      "@id": "page:12",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "くそっ！松田さん、下がって！"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "翔太、とっさに松田を庇う。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "その「自分が一番」っていうエゴ。ノイズが多すぎるんだよ。"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "Renの手元にデータの光が集まり、斧（Digital Axe）を形成する。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "デリートしてやる。"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "Ren、踏み込む。"
+        }
+      ]
+    },
+    {
+      "@id": "page:13",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "マスター、右30度！パケットロス率、上昇！"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "Ghostの触手（LANケーブル）攻撃をRenがかわす。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "/\u003e /dev/null chop --force"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "Ren、空中で斧を構える。コマンドエフェクト。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "ZBAAAAAN!!"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "大ゴマ。一閃。Ghostの核（安本のコンプレックスの象徴）を両断する。"
+        }
+      ]
+    },
+    {
+      "@id": "page:14",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Ghost",
+              "text": "俺ハ…タダ…認メテ…欲シカッ……"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "Ghostが霧散し、安本が崩れ落ちる。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Sato",
+              "text": "あ…！画面が戻った！サーバーも認識してます！"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "オフィスに静寂が戻る。モニターのロック画面が消え、デスクトップが表示される。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Yasumoto",
+              "text": "うう…すまん…すまん…"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "安本、床に座り込んで泣く。"
+        }
+      ]
+    },
+    {
+      "@id": "page:15",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "何があったんだ！？すごい音がしたが…"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "社長（大門五郎）が戻ってくる。作業着姿。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "…親父。安本さんが、システムを直そうとして…怪我を。"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "翔太、父と安本を見る。一瞬沈黙するが、決意した顔で。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "（横領の件は後でケジメつけさせます。でも今は…）"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "安本、驚いて翔太を見る。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "President",
+              "text": "そうか…安本、無理させたな。"
+            }
+          ],
+          "panel:id": 4,
+          "visual": "社長、状況を察しつつも受け入れる。"
+        }
+      ]
+    },
+    {
+      "@id": "page:16",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "データは戻ったし、ついでに安本さんが溶かした金も、隠し口座ハックして戻しといたよ。手数料は引いといたけど。"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "Ren、USBを抜いて立ち去ろうとする。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Matsuda",
+              "text": "あらやだ！給料払えるどころか、ちょっと増えてるじゃない！"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "松田、通帳（ネットバンク画面）を見て歓喜。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Shouta",
+              "text": "Renさん！…ありがとう。あんたのおかげで、俺も目が覚めました。"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "翔太、Renを呼び止める。"
+        }
+      ]
+    },
+    {
+      "@id": "page:17",
+      "gh:panels": [
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "いいよ。Ghostを溜め込むなよ、次期社長。"
+            }
+          ],
+          "panel:id": 1,
+          "visual": "Ren、背中で手を振る。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "マスター、お見事でした。しかし、手数料をいただきすぎではありませんか？"
+            }
+          ],
+          "panel:id": 2,
+          "visual": "夕暮れの蒲田の雑踏。RenとNei。"
+        },
+        {
+          "dialogue": [
+            {
+              "speaker": "Ren",
+              "text": "技術料だよ。これでしばらくは、平和に寝て暮らせる…"
+            }
+          ],
+          "panel:id": 3,
+          "visual": "Ren、スマホで残高を見てニヤリ。"
+        },
+        {
+          "dialogue": [],
+          "panel:id": 4,
+          "visual": "『Ghost Hacker - Episode 1 End』"
+        }
+      ]
+    }
+  ],
+  "gh:slug": "episode01-v3",
+  "gh:title": "Ghost Hacker: Episode 1 (v3)"
+}

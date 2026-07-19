@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "gh": "https://ghosthacker.etzhayyim.com/ns/"
+  },
+  "@id": "gh:vectors/prompts",
+  "gh:meta": {
+    "gh:name": "prompts",
+    "gh:sourceFile": "prompts.json",
+    "gh:count": 0,
+    "gh:dimensions": 1536,
+    "gh:model": "text-embedding-3-small",
+    "gh:updatedAt": "2026-01-25T00:00:00Z"
+  },
+  "gh:vectors": []
+}

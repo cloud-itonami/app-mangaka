@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1girl, 14 year old, 14-year-old Japanese female, intelligent and curious sharp eyes with striking blue irises. Doll-like beauty., Platinum blonde layered bob hair, slightly longer than current style., Striking blue irises, bright crystalline catchlights, observant and somewhat distant gaze., Slender and petite, wearing navy blazer school uniform neatly., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

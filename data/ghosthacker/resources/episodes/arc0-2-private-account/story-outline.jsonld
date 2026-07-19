@@ -1,0 +1,312 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "story:arc0-2-private-account-v2",
+  "dct:title": "Arc 0-2: 「鍵垢は鍵じゃない」",
+  "dct:description": "Read-once Cschool side episode (v2 alignment with arc0-1 design). 55-page Saki POV: arc0-1 で愚痴を晒された側だったSakiが、今度は自分の鍵垢を直接フィッシングで奪われる。Ren/Neiが2件目のVector Alignment Proofの種を蒔く。MeiとSakiの関係再構築の続編。",
+  "gh:arc": "Arc 0",
+  "gh:episode": 2,
+  "gh:episodeIndex": 2,
+  "gh:episodeId": "episode:arc0-2-private-account",
+  "gh:slug": "arc-0-2-private-account",
+  "gh:subtitle": "Saki's Story — Locked Account Phishing & Two-Factor Hardening",
+  "gh:tagline": "鍵垢は、鍵じゃない。鍵は、お前の頭の中にしか作れない。",
+  "gh:theme": "鍵垢の幻想と、二要素認証＋連携アプリ整理の必要性",
+  "gh:theses": {
+    "gh:practical": "鍵垢は鍵じゃない。2FAは認証アプリで。連携アプリは年に1度棚卸し",
+    "gh:psychological": "裏の顔は、罪じゃない。見せ方の問題だ",
+    "gh:philosophical": "情報は、物理だ — 一度書いた本音は、形を持って残り続ける"
+  },
+  "gh:protagonistArc": {
+    "gh:from": "arc0-1 で Mei に晒された愚痴を許した側 — それでも『裏の顔を持つ自分』への罪悪感を抱えていたSaki",
+    "gh:to": "鍵垢を奪われたことで、自分自身の『裏』と『表』を統合する。MeiとSakiの関係は arc0-1 の表面的和解から、本当の友情に深化",
+    "gh:decisivePage": 51,
+    "gh:decisiveChoice": "鍵垢を畳むのではなく、運用を変えると決める瞬間（『隠す』から『最初から書かない』へ）"
+  },
+  "gh:complianceNote": {
+    "gh:rule": "Renはネットワーク監視をしない。Sakiの相談はNei経由でRenに繋がる。被害者本人の同意の元での端末ログ共有のみ",
+    "gh:redLine": "プラットフォーム側のサーバを覗かない。フィッシング元サイトのテイクダウンは公的窓口（JPCERT/CC, IPA）経由"
+  },
+  "gh:crossEpisodeLinks": {
+    "gh:arc01Continuity": "arc0-1 の Yuto事件 から数週間後の同じ C中学校3年B組。Saki/Mei/Akira/Yutoは全員クラスメイトとして残っている",
+    "gh:antagonistLink": "本話のフィッシング元サイトは、arc0-1 と同じ black0awd 末端アクターが運営。バンコクの拠点は arc0-1 ページ41 と同じ部屋。前回1件減ったアクティブセッションが、別ターゲット（Saki）への切替で運用継続中だった",
+    "gh:vapBeat": "Sakiの鍵垢を取り戻し、SakiとMeiが『悪いのは攻撃者』に再度ベクトル整列。同じクラスでの2回目のVector Alignment Proof成立。SIPデバイスは Lock Difficulty 2^240 → 2^232 に低下、Module 2（Daemon Pattern Library）が部分復号"
+  },
+  "gh:propMotifs": [
+    {
+      "gh:id": "prop:saki-rabbit-charm",
+      "gh:name": "Sakiのウサギのお守り",
+      "gh:role": "Sakiが鍵垢で愚痴を吐き出す代わりに、感情を物理化していた小さなぬいぐるみ。本話で初めて画面に出る。Mei が arc0-1 で踏みにじったが、本話で本当に向き合うものになる"
+    },
+    {
+      "gh:id": "prop:hhkb",
+      "gh:name": "父のHHKB",
+      "gh:role": "Renの部屋（夜パート）で再登場。本話では Module 2 の部分復号画面を見る場面で『カチャ』が1回鳴る"
+    },
+    {
+      "gh:id": "prop:authenticator-app",
+      "gh:name": "認証アプリのアイコン（架空名: AuthHive）",
+      "gh:role": "本話の Step 2（二要素認証）の中心小道具。SMSベースのOTPからの移行を視覚的に示す"
+    },
+    {
+      "gh:id": "prop:connected-apps-list",
+      "gh:name": "連携アプリ一覧",
+      "gh:role": "Step 3 の主役。Sakiが過去2年で承認した47個の連携アプリのリスト。半分以上は名前も覚えていない"
+    }
+  ],
+  "gh:castOfCharacters": [
+    {
+      "@id": "character:Saki",
+      "gh:displayName": "佐々木 咲 / Saki Sasaki",
+      "gh:age": 15,
+      "gh:grade": "C中学校3年B組",
+      "gh:role": "主人公 / 被害者",
+      "gh:description": "arc0-1 では Mei の愚痴を晒された側。本話では自分自身の鍵垢を直接奪われる。アバター=ウサギ（Mei と同種別個体）"
+    },
+    {
+      "@id": "character:Mei",
+      "gh:displayName": "加藤 美依 / Mei Kato",
+      "gh:age": 15,
+      "gh:role": "Sakiの親友 / 副主役",
+      "gh:description": "arc0-1 で愚痴を晒した側。本話では Sakiを支える側に回る。償いではなく、対等な関係への移行"
+    },
+    {
+      "@id": "character:Yuto",
+      "gh:displayName": "藤崎 悠斗 / Yuto Fujisaki",
+      "gh:age": 15,
+      "gh:role": "クラスメイト / arc0-1 の主依頼人",
+      "gh:description": "arc0-1 の経験を元に、Sakiに対して『俺もやられた』と最初に声をかける役。Renへの橋渡しを買って出る"
+    },
+    {
+      "@id": "character:Akira",
+      "gh:displayName": "林 彰 / Akira Hayashi",
+      "gh:age": 15,
+      "gh:role": "クラスメイト",
+      "gh:description": "Holonium Vision熱はそのまま。本話では Saki と同じ連携アプリ承認癖が露呈し、自分も棚卸しする"
+    },
+    {
+      "@id": "character:Ren",
+      "gh:displayName": "沼野 蓮 / Ren Numano",
+      "gh:age": 15,
+      "gh:role": "解決者",
+      "gh:description": "本話では『2人目で、2回目のVector Alignment Proofか』と父の理論の検証モードに入る。介入はNei経由"
+    },
+    {
+      "@id": "character:Nei",
+      "gh:displayName": "白瀬 寧 / Nei Shirase",
+      "gh:age": 15,
+      "gh:role": "ヒロイン / 観察者 / 案内役",
+      "gh:description": "arc0-1 と同じく、Sakiの観察→Renへの橋渡し。本話では『連携アプリ整理』というメンドウな手続きの実演を全面的に担当"
+    },
+    {
+      "@id": "character:NeiPuni",
+      "gh:displayName": "ぷにねい / NeiPuni",
+      "gh:role": "メタ解説ホスト",
+      "gh:description": "本話では『鍵垢の本当の強度』『2FAの種類別強度（SMS < アプリ < ハード）』『連携アプリの権限レベル』などの解説を担当"
+    },
+    {
+      "@id": "character:black0awdOperator",
+      "gh:displayName": "black0awd末端オペレータ",
+      "gh:role": "アクター（背景）",
+      "gh:description": "arc0-1 と同じバンコクの男。本話のラストで2件目の active_accounts 減少を観測する"
+    }
+  ],
+  "gh:actStructure": [
+    {
+      "@id": "act:0-pretitle",
+      "gh:actNumber": 0,
+      "gh:actTitle": "プレタイトル — 秘密の吐露",
+      "gh:emotionalArc": "解放感 → 罪悪感",
+      "gh:keyBeat": "hook",
+      "gh:narrativePurpose": "深夜、Sakiが鍵垢に愚痴を投稿している瞬間。スマホの光が顔を青く照らす",
+      "gh:pageRange": [0, 0]
+    },
+    {
+      "@id": "act:1-daily-friendship",
+      "gh:actNumber": 1,
+      "gh:actTitle": "偽りの日常",
+      "gh:actTitleEn": "False Normalcy",
+      "gh:emotionalArc": "幸せ → 羨望 → 苛立ち → 我慢",
+      "gh:keyBeat": "setup",
+      "gh:narrativePurpose": "MeiとSakiの友情を描きつつ、Sakiの内面の葛藤を見せる。arc0-1の和解後の数週間後",
+      "gh:pageRange": [1, 8]
+    },
+    {
+      "@id": "act:2-temptation",
+      "gh:actNumber": 2,
+      "gh:actTitle": "誘惑の罠",
+      "gh:actTitleEn": "The Trap",
+      "gh:emotionalArc": "好奇心 → 軽率 → 後悔",
+      "gh:keyBeat": "inciting",
+      "gh:narrativePurpose": "推し活の限定公開ストーリーを装ったフィッシングリンク → 鍵垢のセッション奪取",
+      "gh:pageRange": [9, 14]
+    },
+    {
+      "@id": "act:3-exposure",
+      "gh:actNumber": 3,
+      "gh:actTitle": "暴露",
+      "gh:actTitleEn": "Exposure",
+      "gh:emotionalArc": "困惑 → ショック → パニック",
+      "gh:keyBeat": "midpoint",
+      "gh:narrativePurpose": "鍵垢の投稿（Saki自身の本音）が、フォロワー全員＋全クラスに拡散される",
+      "gh:pageRange": [15, 21]
+    },
+    {
+      "@id": "act:4-collapse",
+      "gh:actNumber": 4,
+      "gh:actTitle": "友情崩壊（の予兆）",
+      "gh:actTitleEn": "Friendship Collapse Echo",
+      "gh:emotionalArc": "裏切り → 怒り → 孤立 → 絶望",
+      "gh:keyBeat": "crisis",
+      "gh:narrativePurpose": "Meiの悲しみとSakiの孤立。だが arc0-1 と違い、Mei は自分が最初に踏んだ道を理解しているので、加担しない。クラスは分断する",
+      "gh:pageRange": [22, 27]
+    },
+    {
+      "@id": "act:5-rescue",
+      "gh:actNumber": 5,
+      "gh:actTitle": "救いの手",
+      "gh:actTitleEn": "Helping Hand",
+      "gh:emotionalArc": "孤立 → 接触 → 希望",
+      "gh:keyBeat": "turn",
+      "gh:narrativePurpose": "Yuto が最初に Saki に声をかける（arc0-1 の経験の継承）。Yuto が Nei に繋ぎ、Nei が Ren に繋ぐ",
+      "gh:pageRange": [28, 31]
+    },
+    {
+      "@id": "act:6-countermeasures",
+      "gh:actNumber": 6,
+      "gh:actTitle": "対策",
+      "gh:actTitleEn": "Countermeasures",
+      "gh:countermeasures": [
+        {"gh:step": 1, "gh:title": "アカウント設定の確認", "gh:titleEn": "Account Settings Audit", "gh:pages": [32, 33], "gh:description": "公開範囲・タグ付け許可・DM受信範囲・位置情報。鍵垢の各サービスの『鍵』の実体を確認"},
+        {"gh:step": 2, "gh:title": "二要素認証の設定", "gh:titleEn": "Two-Factor Hardening", "gh:pages": [34, 35], "gh:description": "SMS OTP < 認証アプリ < ハードウェアキー の強度比較。AuthHiveアプリで全サービス2FA移行"},
+        {"gh:step": 3, "gh:title": "連携アプリの整理", "gh:titleEn": "Connected Apps Cleanup", "gh:pages": [36, 37], "gh:description": "47個の連携アプリの棚卸し。権限レベル別仕分け。読み取り専用 vs 投稿権限"},
+        {"gh:step": 4, "gh:title": "デジタル足跡の理解", "gh:titleEn": "Digital Footprint", "gh:pages": [38, 39], "gh:description": "鍵垢の投稿はサーバ側に永遠に残る。書く前に止まる習慣"}
+      ],
+      "gh:emotionalArc": "混乱 → 理解 → 達成感",
+      "gh:keyBeat": "education",
+      "gh:narrativePurpose": "具体的なセキュリティ対策を読者に伝える",
+      "gh:pageRange": [32, 39]
+    },
+    {
+      "@id": "act:7-ghost-battle",
+      "gh:actNumber": 7,
+      "gh:actTitle": "Ghostバトル — 裏の顔",
+      "gh:actTitleEn": "Ghost Battle - Hidden Face",
+      "gh:emotionalArc": "対峙 → 驚愕 → 戦闘",
+      "gh:keyBeat": "revelation",
+      "gh:narrativePurpose": "Holonium Vision再起動。Sakiの背中の Ghost は『裏の顔』をした Saki の分身。Ren が情報の二面性を解説",
+      "gh:pageRange": [40, 45]
+    },
+    {
+      "@id": "act:8-daemon-battle",
+      "gh:actNumber": 8,
+      "gh:actTitle": "Daemonバトル — 嫉妬の影",
+      "gh:actTitleEn": "Daemon Battle - Shadow of Envy",
+      "gh:emotionalArc": "葛藤 → 告白 → 断絶 → 和解の芽生え",
+      "gh:keyBeat": "climax",
+      "gh:narrativePurpose": "Sakiの『裏の顔』Daemonと対峙。Renは『裏は罪じゃない、見せ方の問題』とハック。NULL AXEで『鍵垢=安全』という誤った常識を断つ",
+      "gh:pageRange": [46, 51]
+    },
+    {
+      "@id": "act:9-resolution",
+      "gh:actNumber": 9,
+      "gh:actTitle": "終幕：新しい始まり",
+      "gh:actTitleEn": "Resolution: New Beginning",
+      "gh:emotionalArc": "和解 → 反省 → 再出発 → 縦糸の脈動",
+      "gh:keyScenes": [
+        "MeiとSakiが、対等な友達として並んで歩く（arc0-1の和解の続編）",
+        "Saki: 『鍵垢、畳む。隠すんじゃなくて、最初から書かないことにする』",
+        "Mei: 『私も、書く前に5秒、止まる』",
+        "Yutoが2人を見送る（成長したリーダー枠）",
+        "（読者だけが見る）Renの部屋。SIPデバイスの Lock Difficulty 2^240 → 2^232（さらに 8bit 低下）。Vector Alignment Proof は 1 → 1.5（『1.5』は本作独自表記、第2回が成立しかかっている状態）。Module 2: Daemon Pattern Library が部分復号",
+        "（読者だけが見る）バンコクの一室で、男が active_accounts の2件目の減少にようやく気づく。が、まだ全体の規模は把握していない"
+      ],
+      "gh:keyBeat": "resolution",
+      "gh:narrativePurpose": "MeiとSakiの関係再構築。Ren側の縦糸を強化",
+      "gh:pageRange": [52, 55]
+    }
+  ],
+  "gh:neiPuniColumns": {
+    "gh:placementRule": "本編コマ外・柱・章間見開きに配置",
+    "gh:perPageColumns": [
+      {"gh:page": 0, "gh:text": "鍵垢は『私だけが見る場所』ではなく『プラットフォームと運営とハッカーが見ている場所』です"},
+      {"gh:page": 9, "gh:text": "推し活・限定公開・先行配信 — どれも『今すぐ』を煽る言葉。これがフィッシングの第一級シグナルです"},
+      {"gh:page": 32, "gh:text": "鍵垢の『鍵』は、運営に預けた紙の鍵です。あなたが管理しているのは『見せる相手のリスト』だけ"},
+      {"gh:page": 34, "gh:text": "2FAの強度: SMS OTP < 認証アプリ < ハードウェアキー。SMSは『他人に教えなくても抜き取られる』ことがあります"},
+      {"gh:page": 36, "gh:text": "連携アプリは年に1回、棚卸し。覚えていないアプリは即削除。権限は『読み取り』だけで十分なケースが多い"},
+      {"gh:page": 52, "gh:text": "本音は、書かないが一番強い。書く前の5秒の沈黙が、人生を守ります"}
+    ],
+    "gh:interludeColumns": [
+      {
+        "gh:placement": "Act 6 → Act 7 の境界",
+        "gh:title": "鍵垢を強くする5手順",
+        "gh:items": [
+          "1. 鍵垢の公開範囲・タグ付け・DM・位置情報を全部閉じる",
+          "2. SMS OTPから認証アプリへ移行",
+          "3. 連携アプリを年に1回棚卸し",
+          "4. 推し活・限定公開URLは『公式アプリ内ブラウザ』からしか踏まない",
+          "5. 書く前に5秒、止まる"
+        ]
+      },
+      {
+        "gh:placement": "Act 8 → Act 9 の境界",
+        "gh:title": "もし、奪われてしまったら",
+        "gh:items": [
+          "1. 別端末から全端末ログアウト",
+          "2. パスワード変更（パスワードマネージャで生成）",
+          "3. 2FA再設定（認証アプリ）",
+          "4. 連携アプリ全削除→再構築",
+          "5. プラットフォームの違反通報窓口に提出（魚拓も忘れずに）"
+        ]
+      }
+    ]
+  },
+  "gh:designNotes": {
+    "gh:complianceFix": [
+      "Renはネットワーク監視しない。介入はNei経由",
+      "Yutoが先にSakiに声をかける（arc0-1の被害者経験の継承を可視化）",
+      "プラットフォーム側の調査は公的窓口（JPCERT/CC, IPA）経由"
+    ],
+    "gh:vapMetricBeat": "本話で SIPデバイスの数値を Lock Difficulty 2^240 → 2^232（▼ 8bit）、Vector Alignment Proof を 1 → 1.5、Module 2 部分復号 として記録。Arc 0-3 → Arc 1 で第2回が完全成立する設計",
+    "gh:jumpThreePrinciples": {
+      "gh:effort": "Sakiの全47連携アプリ棚卸し / Yutoの『俺が先に動く』 / Neiの夜中のスクリーンショット集",
+      "gh:friendship": "MeiがSakiに、対等な距離で寄り添う / クラスメイトの分断と再統合 / Yuto-Nei-Renの3点支援",
+      "gh:victory": "鍵垢復旧 / 2FAハードニング / Mei-Saki関係の本物化 / Module 2 部分復号"
+    },
+    "gh:continuityFromArc01": "arc0-1 の和解は『表面的』だった。本話で、SakiとMeiは『対等』に戻る。Yuto は arc0-1 の被害者経験を経て『誰かに先に手を差し出す』側にシフト",
+    "gh:antagonistBeat": "本話のフィッシング元は arc0-1 と同じblack0awd末端。バンコクの男は arc0-1 ラストで1件減を観測したが、別ターゲット（Saki）に切り替えていた。本話末で2件目の減少にようやく気づく。Renとnueの追跡が、向こう側の運用にじわじわ効き始めている描写"
+  },
+  "gh:educationalContent": {
+    "gh:keyTakeaways": [
+      "鍵垢は『鍵』じゃない。見せる相手のリストにすぎない",
+      "2FAは認証アプリで（SMSは弱い）",
+      "連携アプリは年に1回棚卸し",
+      "鍵垢の投稿はサーバに永遠に残る",
+      "本音は、書く前に止まるのが一番安全"
+    ],
+    "gh:resources": [
+      "JPCERT/CC（フィッシング報告）",
+      "IPA（情報処理推進機構）",
+      "警察相談 #9110",
+      "消費者ホットライン 188",
+      "各SNSの違反通報窓口"
+    ]
+  },
+  "gh:incidentSummary": {
+    "gh:type": "鍵垢のフィッシング・セッション奪取・本音の暴露",
+    "gh:victim": "character:Saki",
+    "gh:nistFocus": [
+      "PR.AA (Identity Management)",
+      "PR.DS (Data Security)",
+      "PR.PT (Protective Technology)",
+      "DE.CM (Security Continuous Monitoring)"
+    ],
+    "gh:description": "Sakiの鍵垢（プライベートアカウント）がフィッシングによってハッキングされ、友人への本音が全てクラスに暴露される。RenとNeiがSIP Project Mapを使って『裏の顔』のGhostを可視化し、真の敵が誰かを暴く"
+  },
+  "gh:mainCharacter": "character:Saki",
+  "gh:mainLocation": "org:KounanMiddleSchool"
+}

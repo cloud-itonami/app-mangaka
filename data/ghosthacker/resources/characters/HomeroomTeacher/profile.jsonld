@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:ae9p4sSheUXcDY3_dYiNZ",
+  "gh:appearance": {
+    "gh:build": "Average build, wearing a white shirt and a gray tie.",
+    "gh:eyes": "Kind tired eyes, realistic iris patterns, soft catchlights.",
+    "gh:face": "35-year-old Japanese male teacher, kind but tired expression, professional look.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, a 35-year-old Japanese male teacher, neatly combed short black hair, kind but slightly tired expression, wearing a white shirt and gray tie, classroom background.",
+    "gh:hair": "Neatly combed short black hair.",
+    "gh:style": "Photorealistic, cinematic lighting, 8k, high-end webtoon aesthetic."
+  },
+  "gh:slug": "HomeroomTeacher",
+  "schema:age": 35,
+  "schema:name": "高橋 先生 (Mr. Takahashi)",
+  "schema:role": "Teacher / Homeroom"
+}

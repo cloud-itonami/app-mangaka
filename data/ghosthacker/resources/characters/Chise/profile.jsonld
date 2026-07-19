@@ -1,0 +1,173 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:Chise",
+  "schema:name": "赤羽 千世 (Chise Akabane)",
+  "schema:role": "Street Hacker / Rival",
+  "schema:age": 19,
+  "gh:slug": "Chise",
+  "gh:arc": "Arc 0-2 (Main) / Arc B (Rival)",
+
+  "gh:appearance": {
+    "gh:face": "19-year-old Japanese female, sharp and intense features, piercing amber eyes with a hint of defiance.",
+    "gh:hair": "Long black hair with subtle red highlights, usually tied in a messy low ponytail or let loose.",
+    "gh:build": "Slim but athletic, wearing high-end techwear/streetwear. Moves with an unconscious grace from shrine upbringing.",
+    "gh:eyes": "Piercing amber irises, sharp and observant. Can shift from fierce to surprisingly gentle.",
+    "gh:style": "Photorealistic, street aesthetic with subtle traditional undertones, high contrast, 8k.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 19-year-old Japanese female, sharp intense features, piercing amber eyes, long black hair with red highlights in messy ponytail, techwear streetwear, confident defiant pose, subtle grace in posture."
+  },
+
+  "gh:background": {
+    "gh:family": {
+      "gh:structure": "両親健在。祖父母の家（神社）で育った。",
+      "gh:grandfather": "赤羽八幡神社の現役宮司。穏やかで寡黙。千世を見守っている。",
+      "gh:grandmother": "千世を名付けた人。元巫女。「千の世を生きてほしい」という願いを込めた。数年前に他界。",
+      "gh:father": "宮司を継ぐ予定だったが会社員の道へ。神社の手伝いはする。",
+      "gh:mother": "会社員。神社の行事を手伝う。"
+    },
+    "gh:shrineUpbringing": "赤羽八幡神社の境内で育った。参拝客、夜の常連、スケーター、地元のおっちゃん、様々な人と交流。ストリートカルチャーはここで自然に身についた。",
+    "gh:hackerOrigin": "ある日、境内のベンチでノートPCを叩いていた男に「何してるの？」と声をかけた。『世界を覗いてる』と答えた男からプログラミングとハッキングの基礎を教わった。",
+    "gh:school": "B 都立工科高校 3年。元eスポーツ部エース。中 2 の『美月失踪事件』のトラウマと ASD の感覚過敏から時折休学・復学を繰り返しているが、学校の自由校風と実学重視のカリキュラムを本人は気に入っている。神社の神事との両立を学校側も理解し、出席に柔軟性がある。News Hacker の所属は学校には一切公開していない。",
+    "gh:currentState": "フリーランスのセキュリティコンサルタントとして活動。HN: aka_chise1（赤羽＋千世＋1）"
+  },
+
+  "gh:hiddenBackground": {
+    "gh:religion": "神道（八幡信仰）",
+    "gh:connection": "赤羽八幡神社の宮司の孫娘として育った。幼い頃から神事を手伝い、祝詞も覚えている。",
+    "gh:nameOrigin": "『千世（Chise）』は祖母が「千の世を生きてほしい」と願いを込めて名付けた。神道的な永遠の祈り。",
+    "gh:influence": "神道の『穢れを祓う』『守る』という精神が無意識に行動原理になっている。弱者を守るのは氏子を守る神社の役割の延長。",
+    "gh:symbol": "八幡＝武神・守護神。Chiseが『報復』ではなく『守護』を選ぶ精神の源。",
+    "gh:storyUse": "表立っては出てこないが、Chiseの『守る』姿勢、正月の巫女姿、祖父への敬意は神道的な世界観に根ざしている。",
+    "gh:contrast": "神道（守護・浄化）のChise vs 仏教（諦観・受容）のRen vs キリスト教（正義・裁き）のKaname という三者三様。"
+  },
+
+  "gh:personality": {
+    "gh:surface": "口が悪く、喧嘩っ早い。「めんどくせぇ」が口癖。ストリート系の振る舞い。",
+    "gh:hidden": "弱い者いじめが大嫌い。神社仕込みの「守る」精神が根底にある。おばあちゃんの教え『困っている人を見捨てるな』を胸に刻んでいる。",
+    "gh:motivation": "『やられたらやり返す』ではなく『やらせない』。証拠と手続きで潰すのが流儀。",
+    "gh:weakness": "感情的になりやすい。おばあちゃんの話になると弱い。違法スレスレの手段に手を出しそうになることも。",
+    "gh:gap": "正月は巫女装束で神社の手伝いをする。普段とのギャップに周囲は驚く。"
+  },
+
+  "gh:traumaIncident": {
+    "gh:type": "学校裏サイトによる集団誹謗中傷 / 個人情報晒し",
+    "gh:name": "『美月失踪事件』（Chise家内での呼称）",
+    "gh:year": "Chise 14歳（中2）の冬",
+    "gh:summary": "Chise が最も信頼していた親友・美月（みづき）が、学校裏サイトで身体的特徴・家庭事情・本人を特定する写真と個人情報を集団で晒される。匿名アカウント群による半年にわたる持続的加害で不登校・転校、その後連絡が途絶え現在まで消息不明。Chise は当時、裏サイトのURLを教えられながら『見ないほうがいい』と直感的に判断して見なかった。後から知った時にはすべてが手遅れだった。",
+    "gh:selfBlame": "『気づけたはずなのに、見なかった自分が殺したも同じ』という自責の念。以降、Chise は『情報を見ないふりをする』ことを自分に禁じた。",
+    "gh:meaning": "Chise の『守る』姿勢の直接の原点。神道の『氏子を守る』感覚とこの事件が合流して、『ストリート・ハッカー』としての行動原理になっている。毎年、美月の誕生日に境内の絵馬に祈願する（内容は自分以外見ない）。",
+    "gh:knownBy": ["祖父（宮司）", "Ren（断片的に）"]
+  },
+
+  "gh:neurodiversity": {
+    "gh:diagnosis": "ASD（自閉スペクトラム症 / 感覚過敏優勢型 + 狭く深い特別興味）。Nei とは別型の ASD。中学時代に診断済み。",
+    "gh:traits": {
+      "gh:sensoryHypersensitivity": "光・音・匂いへの感覚過敏。夜の境内・静かな空間・神社の檜の香りが落ち着く理由。昼の学校・繁華街・大人数のチャットは疲弊する。",
+      "gh:specialInterest": "祝詞・神道儀礼・ストリートカルチャー・ネットワーク解析。この4領域の知識は専門家レベル。外側から見ると無関係な組み合わせだが、Chise の中では『守護』という一本の軸で繋がっている。",
+      "gh:routineRitual": "毎朝の境内掃除・毎朝の祝詞奏上・毎晩のログ解析。ルーチンを崩すと情緒が乱れる。",
+      "gh:directness": "歯に衣着せぬ物言い。『めんどくせぇ』は嫌味ではなく、そう感じたから素直に言っているだけ。",
+      "gh:stimulusOverload": "感覚過負荷時はシャットダウン（無言・動かない）する。周囲はこれを『不機嫌』と誤解するが、実はオーバーロード状態。"
+    },
+    "gh:strengthFraming": "感覚過敏＝現場での異常検知の鋭さ。狭く深い興味＝単一領域での圧倒的な専門性。ルーチン性＝長時間追跡の耐性。",
+    "gh:weaknessFraming": "大人数・繁華街での疲弊。婉曲コミュニケーションの不得手。『口が悪い』表層の下に感覚過負荷への防衛反応がある。",
+    "gh:speechPattern": "ASD の直接性 + 神社育ちの丁寧語 + ストリートの荒っぽさが混ざった独特の口調。年長者には『うっす』、若年には『めんどくせぇ』、同世代には『おい』。内容は常にストレート。",
+    "gh:comparisonWithNei": "Nei はアスペルガー寄り（言語優位・聴覚過敏・論理的解説役）。Chise は感覚過敏＋ルーチン優位。2人の ASD 描写は別人格として描き分ける。"
+  },
+
+  "gh:sensitivityNote": {
+    "gh:policy": "ASD は『障害』ではなく『特性・強み』として描写。同時に感覚過敏・社交困難の『しんどさ』も並行して描く。Nei との対比で『ASD にも多様性がある』ことを示す。",
+    "gh:editorialGuideline": "商業化時は ASD 当事者団体および児童青年精神医学会所属医師の監修を前提。",
+    "gh:representation": "『ぶっきらぼうな女子高生』の表層だけで消費せず、感覚過負荷時のシャットダウン・特別興味の深さなど、当事者的リアリティを描く。"
+  },
+
+  "gh:comedyRole": {
+    "gh:type": "強力ツッコミ / ストリート短気（メイン・3 美徳三人衆の中核ツッコミ）",
+    "gh:gags": [
+      "『めんどくせぇ奴らだな!』の速射砲ツッコミ（Ren の怠惰・Nei の数値化・Kaname のボタンに対して）",
+      "正月だけ巫女装束ギャップ（『千世ちゃん今年もよろしく〜』『……うっす』）",
+      "スニーカーへの異常なこだわり（特別興味）をさらっと披露",
+      "感覚過敏で学食が無理 → 屋上常連 → いつも Ren と Nei とかち合うメタ笑い",
+      "祝詞を即興で詠む → 地元の不良に異様に効く",
+      "ストリート言葉と神社言葉が入り乱れる（『おい、穢れ祓うぞ! 退け! うっす!』）"
+    ],
+    "gh:balance": "ツッコミ 6 : クールシリアス 4。Ren/Nei/Kaname の 3 ボケに 1 人で対応する中核。感覚過負荷時のシャットダウンはシリアス扱い。",
+    "gh:donotcross": "美月失踪事件の回想・祖母への墓参り・感覚過負荷でシャットダウンしている瞬間はコメディ封印。"
+  },
+
+  "gh:skills": {
+    "gh:hackerName": "aka_chise1",
+    "gh:nameOrigin": "aka（赤＝赤羽神社）+ chise（千世＝本名）+ 1（一番、唯一）",
+    "gh:reputation": "アンダーグラウンドでは『赤羽の巫女』『報復の千世』として知られる",
+    "gh:technical": [
+      "OSINT（公開情報調査）",
+      "ネットワーク解析",
+      "デジタルフォレンジック",
+      "ソーシャルエンジニアリング（対人ハック）"
+    ],
+    "gh:uniqueStrength": "神社育ちで培った人脈。地元の顔役から夜の住人まで、情報網が広い。"
+  },
+
+  "gh:relationships": {
+    "gh:ren": {
+      "gh:type": "ライバル / 同志",
+      "gh:history": "オンラインで何度か対峙。互いの実力を認めている。",
+      "gh:dynamic": "手法は違えど、目指す場所は同じ。Renの「だるい」にイラっとすることも。"
+    },
+    "gh:nei": {
+      "gh:type": "知人",
+      "gh:dynamic": "Neiの冷静さに時々イラっとするが、分析力は認めている。"
+    },
+    "gh:kaname": {
+      "gh:type": "対極の存在",
+      "gh:dynamic": "Kanameの『エリート』なやり方を鼻につくと思っている。でも根っこは似ている。"
+    },
+    "gh:grandfather": {
+      "gh:type": "祖父 / 精神的支柱",
+      "gh:dynamic": "多くを語らないが、千世の行動を黙って見守っている。"
+    }
+  },
+
+  "gh:arc02Role": {
+    "gh:position": "主人公",
+    "gh:incident": "後輩の配信者・黒田涼がドクシング被害に遭い、相談を受ける。",
+    "gh:growth": "感情的な報復ではなく、証拠と法的手続きで戦う方法を選ぶ。",
+    "gh:theme": "『恥じゃない。残すのが一番強い』"
+  },
+
+  "gh:iconicScenes": [
+    {
+      "gh:scene": "正月の巫女姿",
+      "gh:description": "「千世ちゃん、今年もよろしくね〜」「……うっす」",
+      "gh:impact": "普段のストリート姿とのギャップ"
+    },
+    {
+      "gh:scene": "境内での情報収集",
+      "gh:description": "夜の神社で地元の情報屋と密談。「神様は見てるぞ」「見てねーよ」",
+      "gh:impact": "神社と裏社会の接点"
+    },
+    {
+      "gh:scene": "おばあちゃんの墓参り",
+      "gh:description": "ストリートの格好で手を合わせる。「ばあちゃん、また厄介ごと拾っちまった」",
+      "gh:impact": "家族への想い"
+    }
+  ],
+
+  "gh:onlinePresence": {
+    "gh:avatar": {
+      "gh:type": "verylonganimals",
+      "gh:animal": "キツネ (Fox)",
+      "gh:description": "verylonganimalsのながーいキツネ。賢くてずる賢い印象だが、実は守護神的な存在。Chiseのストリートスマートと神社の守護精神を象徴。",
+      "gh:color": "赤茶色 / 琥珀色の目",
+      "gh:usage": "アンダーグラウンドでの活動時に使用",
+      "gh:reason": "キツネ＝お稲荷さん＝神社と関連。知恵と守護の象徴。赤羽八幡神社の巫女としてのルーツも反映。"
+    },
+    "gh:handleVariations": ["aka_chise1", "Red_Fox", "ながきつね"]
+  }
+}

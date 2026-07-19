@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>mangaka scene 3D preview</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      html, body { margin: 0; padding: 0; height: 100%; background: #0c0e14; color: #d8dde8; font-family: system-ui, -apple-system, sans-serif; }
+      #wrap { display: grid; grid-template-columns: 1fr 320px; height: 100vh; }
+      #canvas-col { position: relative; }
+      canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+      #hud { position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.55); padding: 6px 8px; border-radius: 4px; font: 11px/1.4 ui-monospace, monospace; color: #b8c4d8; pointer-events: none; }
+      #side { padding: 12px; background: #151823; border-left: 1px solid #232739; overflow-y: auto; }
+      #side h1 { font-size: 13px; font-weight: 600; margin: 0 0 10px; color: #e8edf7; letter-spacing: 0.04em; text-transform: uppercase; }
+      #side label { display: block; font-size: 11px; color: #8a94a8; margin: 12px 0 4px; }
+      textarea { width: 100%; min-height: 240px; background: #0c0e14; color: #d8dde8; border: 1px solid #232739; border-radius: 4px; padding: 6px; font: 11px/1.4 ui-monospace, monospace; box-sizing: border-box; resize: vertical; }
+      button { background: #2a3349; color: #e8edf7; border: 1px solid #3a4663; padding: 6px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; margin-top: 8px; margin-right: 6px; }
+      button:hover { background: #344163; }
+      #status { margin-top: 8px; font-size: 11px; color: #6b7589; }
+      #status.err { color: #ff7f7f; }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="canvas-col">
+        <canvas id="scene-canvas"></canvas>
+        <div id="hud">mangaka.scene3d · drag = orbit · scroll = zoom</div>
+      </div>
+      <div id="side">
+        <h1>scene jsonld</h1>
+        <label for="scene-json">paste output of <code>MangakaScene::to_jsonld()</code></label>
+        <textarea id="scene-json" spellcheck="false">{
+  "@context": "https://kami.etzhayyim.com/mangaka-scene/v1",
+  "characters": [],
+  "props": [],
+  "camera": null,
+  "lights": [],
+  "environment": {
+    "biome": "Plains",
+    "weather": "overcast",
+    "seed": 42,
+    "ground_size_m": 64.0,
+    "layout_anchors": []
+  }
+}</textarea>
+        <button id="apply-scene">apply scene</button>
+        <button id="copy-scene">copy current state</button>
+        <div id="status">initialising…</div>
+      </div>
+    </div>
+
+    <script type="module">
+      import init, { ScenePreview } from './scene-3d/kami_mangaka_scene.js';
+
+      const canvas = document.getElementById('scene-canvas');
+      const textarea = document.getElementById('scene-json');
+      const apply = document.getElementById('apply-scene');
+      const copy = document.getElementById('copy-scene');
+      const status = document.getElementById('status');
+
+      function setStatus(msg, err = false) {
+        status.textContent = msg;
+        status.classList.toggle('err', err);
+      }
+
+      let preview = null;
+      let yaw = 0.0;
+      let pitch = -0.05;
+      let distance = 3.8;
+
+      function applyCamera() {
+        if (!preview) return;
+        preview.set_orbit_camera(yaw, pitch, distance);
+      }
+
+      // Mouse-drag orbit.
+      let dragging = false;
+      let lastX = 0, lastY = 0;
+      canvas.addEventListener('pointerdown', (e) => {
+        dragging = true; lastX = e.clientX; lastY = e.clientY; canvas.setPointerCapture(e.pointerId);
+      });
+      canvas.addEventListener('pointerup', (e) => { dragging = false; canvas.releasePointerCapture(e.pointerId); });
+      canvas.addEventListener('pointercancel', () => { dragging = false; });
+      canvas.addEventListener('pointermove', (e) => {
+        if (!dragging) return;
+        yaw   += (e.clientX - lastX) * 0.008;
+        pitch += (e.clientY - lastY) * 0.005;
+        pitch = Math.max(-1.4, Math.min(1.4, pitch));
+        lastX = e.clientX; lastY = e.clientY;
+        applyCamera();
+      });
+      canvas.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        distance = Math.max(0.6, Math.min(20.0, distance * (1.0 + Math.sign(e.deltaY) * 0.07)));
+        applyCamera();
+      }, { passive: false });
+
+      // ResizeObserver → wasm.resize.
+      const ro = new ResizeObserver(() => {
+        if (!preview) return;
+        const dpr = Math.max(1.0, window.devicePixelRatio);
+        preview.resize(canvas.clientWidth, canvas.clientHeight, dpr);
+      });
+      ro.observe(canvas);
+
+      apply.addEventListener('click', () => {
+        if (!preview) return;
+        try {
+          preview.load_scene_jsonld(textarea.value);
+          applyCamera();
+          setStatus('scene applied · ' + new Date().toLocaleTimeString());
+        } catch (e) {
+          setStatus('scene jsonld error: ' + e, true);
+        }
+      });
+
+      copy.addEventListener('click', () => {
+        if (!preview) return;
+        try {
+          textarea.value = preview.to_scene_jsonld();
+          setStatus('scene state copied to textarea');
+        } catch (e) {
+          setStatus('to_scene_jsonld error: ' + e, true);
+        }
+      });
+
+      (async () => {
+        try {
+          setStatus('loading wasm…');
+          await init();
+          setStatus('initialising GPU…');
+          preview = await ScenePreview.create('scene-canvas');
+          // Seed an initial scene + camera.
+          try { preview.load_scene_jsonld(textarea.value); } catch (_) {}
+          applyCamera();
+          setStatus('ready · drag to orbit');
+
+          let lastT = performance.now();
+          let fpsEma = 60;
+          function frame(now) {
+            const dt = (now - lastT) || 16;
+            lastT = now;
+            fpsEma = fpsEma * 0.92 + (1000 / dt) * 0.08;
+            try {
+              preview.render_frame();
+            } catch (e) {
+              setStatus('render error: ' + e, true);
+              return;
+            }
+            requestAnimationFrame(frame);
+          }
+          requestAnimationFrame(frame);
+        } catch (e) {
+          setStatus('init failed: ' + e, true);
+          console.error(e);
+        }
+      })();
+    </script>
+  </body>
+</html>

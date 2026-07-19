@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:pD19FOB9_NAee3MGLLjL3",
+  "gh:appearance": {
+    "gh:build": "Petite, always carrying a laptop bag.",
+    "gh:eyes": "Dark, analytical eyes behind rectangular glasses.",
+    "gh:face": "18-year-old Japanese female, sharp intelligent features, often expressionless.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, soft lighting, raw photo, 18-year-old Japanese female, sharp features, straight black bob hair, rectangular glasses, dark analytical eyes, laptop bag, school uniform slightly disheveled.",
+    "gh:hair": "Straight black hair in a practical bob cut.",
+    "gh:style": "Photorealistic, tech minimalist aesthetic, 8k."
+  },
+  "gh:arc": "Arc 0-2",
+  "gh:background": {
+    "gh:family": "両親はIT企業勤務。一人っ子。",
+    "gh:school": "都立工科高等学校 3年（情報科）首席。",
+    "gh:skills": "プログラミング、ネットワーク構築、データ分析。"
+  },
+  "gh:personality": {
+    "gh:hidden": "正義感は強いが、表に出さない。Chiseの無茶を内心ヒヤヒヤしながら見ている。",
+    "gh:quirk": "コーヒーが好き。缶コーヒーを常に持っている。",
+    "gh:surface": "無口でクール。必要なこと以外喋らない。"
+  },
+  "gh:slug": "YuiTanaka",
+  "gh:storyFunction": {
+    "gh:contribution": "証拠の保全方法、スクリーンショットの撮り方、ログの解析をサポート。",
+    "gh:dialogue": "「...それ、違法。」「...やるなら、ちゃんとやって。」",
+    "gh:role": "技術サポート / ツッコミ役"
+  },
+  "schema:age": 18,
+  "schema:name": "田中 結衣 (Yui Tanaka)",
+  "schema:role": "Technical Support / Classmate"
+}

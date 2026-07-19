@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:rqbsK-PoU9FA3sVHEU-qu",
+  "@type": "gh:Character",
+  "gh:appearance": {
+    "gh:build": "Slim, office worker physique. Wears button-down shirt, no tie.",
+    "gh:eyes": "Soft brown eyes behind glasses, apologetic catchlights, technically competent but politically weak.",
+    "gh:face": "42-year-old Japanese male, gentle face, slight worry lines, glasses, non-confrontational expression.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 42-year-old Japanese male, gentle worried expression, glasses, neat black hair, button-down shirt, server room background with monitor glow.",
+    "gh:hair": "Neat black hair, standard business cut.",
+    "gh:style": "Photorealistic, office lighting, IT professional aesthetic, 8k."
+  },
+  "gh:arc": "Arc B",
+  "gh:organization": "company:KojimaLogistics",
+  "gh:personality": {
+    "gh:core": "温厚だが優柔不断。技術はわかるが政治に弱い。",
+    "gh:flaw": "現場の『急げ』に押されてVPN接続を許可してしまった。",
+    "gh:function": "技術的な説明役。Takeruの専門用語を現場向けに翻訳。"
+  },
+  "gh:relationships": {
+    "gh:takeru": {
+      "gh:dynamic": "Takeruの技術を尊敬。内部から情報提供する。",
+      "gh:role": "内部協力者"
+    }
+  },
+  "gh:slug": "TamuraSeiichi",
+  "schema:age": 42,
+  "schema:name": "田村 誠一 (Seiichi Tamura)",
+  "schema:role": "IT Director / Arc B Ally"
+}

@@ -1,0 +1,325 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "story:cschool-defamation-v2",
+  "dct:title": "Arc 0-2: 「恥じゃない。残すのが一番強い」",
+  "dct:description": "Read-once Chise origin (v2 alignment with arc0-1 design): aka_chise1 (Hacker Nues #14 poster) discovers her own world-of-doxing in the city, helps a streamer Ryo recover. Connects to arc0-1 via the Hacker Nues thread Ren observed; surfaces Chise's offline identity for the first time, ending with a Vector Alignment Proof event observed by Ren on the SIP device.",
+  "gh:arc": "Arc 0",
+  "gh:episode": 2,
+  "gh:episodeIndex": 2,
+  "gh:episodeId": "episode:cschool-defamation",
+  "gh:slug": "arc-0-2-chise",
+  "gh:subtitle": "Chise's Story — Doxing & Online Defamation",
+  "gh:tagline": "消すな。残せ。それが一番強い武器になる。",
+  "gh:theme": "ネット上の誹謗中傷・ドクシングに対する正しい対処法",
+  "gh:theses": {
+    "gh:practical": "消すな、残せ。証拠保全が一番強い武器になる",
+    "gh:psychological": "悪いのは、被害者じゃない。攻撃者だ",
+    "gh:philosophical": "情報は、物理だ — 残された痕跡は、必ず重さを持つ"
+  },
+  "gh:protagonistArc": {
+    "gh:from": "都立工科高校3年・休学中。eスポーツ部のエースだったが、ある事件で部を去り神社に閉じこもっていたChise",
+    "gh:to": "Ryoの事件を解決することで、自分も「外」へ動き出す。Hacker Nuesに事件を投稿（投稿#14）し、Ren側のレーダーに匿名同業者として捕捉される",
+    "gh:decisivePage": 41,
+    "gh:decisiveChoice": "「やられたらやり返すんじゃない。正しく終わらせるんだ」と決める瞬間"
+  },
+  "gh:complianceNote": {
+    "gh:rule": "Chiseの調査は本人・被害者の同意の元、合法的な範囲（公開情報OSINT、被害者本人のログ・スクショ、プラットフォーム通報・発信者情報開示請求）でのみ行う",
+    "gh:redLine": "他人の通信を勝手に覗かない。匿名掲示板の発信者特定は、法的手続きを経由する"
+  },
+  "gh:crossEpisodeLinks": {
+    "gh:hackerNuesThread": "arc0-1 ページ7のスレッド『black0awd actor family: renewed activity in APAC』に、Chiseは投稿#14として『Tokyo。今週、DM詐欺の被害者、3人。手口、完全にblack0awd系。腹、立つ。』を投稿（=本話の事件群が観測対象）",
+    "gh:renObservation": "Renは投稿#14のhandle『aka_chise1』を『見たことのない仲間』としてタグ付けして保存（arc0-1 ページ7）。本話の終盤でChiseの足取りはRen側のSIPデバイスのVector Alignment Proofメトリクスに反映される（数値の上昇は本人には見えない、読者だけが知る）",
+    "gh:vapBeat": "Chiseが『悪いのは攻撃者』ベクトルにRyoとShotaを揃えた瞬間、Renの部屋のSIPデバイスが微かに脈打つ（コマ1枚・無セリフ）"
+  },
+  "gh:propMotifs": [
+    {
+      "gh:id": "prop:akabane-shrine-hokora",
+      "gh:name": "赤羽八幡神社の祠（ほこら）",
+      "gh:role": "Chiseの作業拠点。神社の社務所裏の小さな祠の中に、ノートPC・3画面・親機サーバ。神道の鎮魂思想が彼女の『記録は祓いではない、奉納だ』という信念に結びつく"
+    },
+    {
+      "gh:id": "prop:archive-talisman",
+      "gh:name": "魚拓御札",
+      "gh:role": "Chiseが被害者に渡す、印刷した魚拓スクショに神社の朱印を押した一種の『お守り』。法的には魚拓そのものが本体、お守りは心理的支援"
+    }
+  ],
+  "gh:castOfCharacters": [
+    {
+      "@id": "character:Chise",
+      "gh:displayName": "赤羽 千世 / Chise Akabane",
+      "gh:age": 18,
+      "gh:grade": "都立工科高校3年（休学中）",
+      "gh:role": "主人公 / 問題解決者",
+      "gh:description": "元eスポーツ部エース。赤羽八幡神社の宮司の孫娘。HN: aka_chise1。神道(八幡信仰)の鎮魂思想を、デジタル証拠保全に適用する独特の方法論を持つ",
+      "gh:hackerHandle": "aka_chise1",
+      "gh:religionContext": "神道 / 八幡信仰 — 『記録は祓いではない、奉納だ』",
+      "gh:visualTell": "髪に赤い紐、首に勾玉のチョーカー、神社のお守りを常に持ち歩く"
+    },
+    {
+      "@id": "character:RyoKuroda",
+      "gh:displayName": "黒田 涼 / Ryo Kuroda",
+      "gh:age": 17,
+      "gh:grade": "都立工科高校2年",
+      "gh:role": "依頼人 / 被害者",
+      "gh:description": "登録者5万人の人気ゲーム配信者。明るく人懐っこいが繊細。配信中の背景から自宅住所が特定される"
+    },
+    {
+      "@id": "character:ShotaHayashi",
+      "gh:displayName": "林 翔太 / Shota Hayashi",
+      "gh:age": 18,
+      "gh:role": "Chiseの親友 / 橋渡し役",
+      "gh:description": "都立工科高校3年。実家はラーメン屋。RyoをChiseに紹介する数少ない『部外者の信頼を持つ友人』"
+    },
+    {
+      "@id": "character:YuiTanaka",
+      "gh:displayName": "田中 結衣 / Yui Tanaka",
+      "gh:age": 18,
+      "gh:role": "技術サポート",
+      "gh:description": "都立工科高校3年情報科首席。ログ解析・タイムライン構築のテクニカル担当"
+    },
+    {
+      "@id": "character:DaichiMori",
+      "gh:displayName": "森 大地 / Daichi Mori",
+      "gh:role": "情報提供者（グレー）",
+      "gh:description": "Chiseの元友人。裏社会・闇掲示板の事情に詳しい。Chiseは彼から情報を取るたびに自分の手を汚す葛藤を抱える"
+    },
+    {
+      "@id": "character:NeiPuni",
+      "gh:displayName": "ぷにねい / NeiPuni",
+      "gh:role": "メタ解説ホスト",
+      "gh:description": "本編コマ外・章間・柱に分散配置。本話では『証拠保全』『発信者情報開示請求』などの法的手続きの解説を担当"
+    },
+    {
+      "@id": "character:nue",
+      "gh:displayName": "nue（鵺）",
+      "gh:role": "Hacker Nues管理人 / 国外連携 / 本話では未登場（オフスクリーン）",
+      "gh:description": "Bostonからスレッド統括。Chiseの投稿#14を見ているが本話では直接接触なし"
+    }
+  ],
+  "gh:actStructure": [
+    {
+      "@id": "act:0-pretitle",
+      "gh:actNumber": 0,
+      "gh:actTitle": "プレタイトル",
+      "gh:actTitleEn": "Pre-title Hook",
+      "gh:emotionalArc": "日常 → 異物の侵入",
+      "gh:keyBeat": "hook",
+      "gh:narrativePurpose": "Ryoが配信している横で、コメント欄に住所らしき断片が書き込まれた瞬間を見せる",
+      "gh:pageRange": [0, 0]
+    },
+    {
+      "@id": "act:1-daily-life",
+      "gh:actNumber": 1,
+      "gh:actTitle": "日常と異変",
+      "gh:actTitleEn": "Daily Life & Signs of Trouble",
+      "gh:emotionalArc": "楽しい配信生活 → 不穏なコメント → 恐怖の始まり",
+      "gh:keyScenes": [
+        "Ryoの配信シーン（視聴者との交流・登録5万人）",
+        "匿名掲示板に住所らしき情報の断片",
+        "SNSに誹謗中傷が溢れ始める",
+        "Chiseは赤羽八幡神社で1人、PC作業中（背景の祠に3画面）"
+      ],
+      "gh:narrativePurpose": "Ryoの配信者としての日常と、突然の攻撃開始を描く。Chiseはまだ巻き込まれていない",
+      "gh:pageRange": [1, 6]
+    },
+    {
+      "@id": "act:2-escalation",
+      "gh:actNumber": 2,
+      "gh:actTitle": "エスカレーション",
+      "gh:actTitleEn": "Escalation",
+      "gh:emotionalArc": "不安 → 恐怖 → 絶望",
+      "gh:keyScenes": [
+        "自宅に大量のピザ注文（ピザ以外も同時多発：宅配寿司・引越し見積・プロパンガス点検）",
+        "学校に『犯罪予告』装い通報、警察の事情聴取",
+        "Ryoは登校できなくなる",
+        "Shotaが異変に気づく"
+      ],
+      "gh:narrativePurpose": "ドクシング→ハラスメント→威力業務妨害の典型的エスカレーションを描く",
+      "gh:pageRange": [7, 12]
+    },
+    {
+      "@id": "act:3-encounter",
+      "gh:actNumber": 3,
+      "gh:actTitle": "出会い",
+      "gh:actTitleEn": "Encounter",
+      "gh:emotionalArc": "孤立 → 接触 → 微かな希望",
+      "gh:keyScenes": [
+        "ShotaがRyoを赤羽八幡神社に連れて行く",
+        "Chiseが社務所裏でPC作業中（祠の3画面）",
+        "「消すな。残せ。それが一番強い武器になる」",
+        "Chiseは魚拓御札（朱印付き）を渡す"
+      ],
+      "gh:narrativePurpose": "Chiseのキャラ（神道+ハッカー）と方法論を導入",
+      "gh:pageRange": [13, 18]
+    },
+    {
+      "@id": "act:4-countermeasures",
+      "gh:actNumber": 4,
+      "gh:actTitle": "対策実行",
+      "gh:actTitleEn": "Countermeasures",
+      "gh:countermeasures": [
+        {
+          "gh:step": 1,
+          "gh:title": "証拠の保全",
+          "gh:titleEn": "Evidence Preservation",
+          "gh:description": "スクショ、URL、日時、ハッシュ値を時系列で記録。魚拓サービス（archive.todayなど）の活用。",
+          "gh:pages": [19, 21]
+        },
+        {
+          "gh:step": 2,
+          "gh:title": "プラットフォームへの報告",
+          "gh:titleEn": "Platform Report",
+          "gh:description": "各SNS・掲示板の通報機能、削除依頼、運営の窓口リストを共有",
+          "gh:pages": [22, 23]
+        },
+        {
+          "gh:step": 3,
+          "gh:title": "相談窓口への連絡",
+          "gh:titleEn": "Help Lines",
+          "gh:description": "サイバー犯罪相談窓口 #9110、法務局『インターネット人権侵害』、弁護士会の法律相談",
+          "gh:pages": [24, 25]
+        },
+        {
+          "gh:step": 4,
+          "gh:title": "発信者情報開示請求",
+          "gh:titleEn": "Sender Disclosure Request",
+          "gh:description": "改正プロバイダ責任制限法 + 開示命令の流れ。時間と費用の目安。",
+          "gh:pages": [26, 28]
+        }
+      ],
+      "gh:emotionalArc": "混乱 → 理解 → 行動 → 達成感",
+      "gh:keyBeat": "education",
+      "gh:narrativePurpose": "具体的な対処法を読者に伝える教育パート（4対策×2-3ページ）",
+      "gh:pageRange": [19, 28]
+    },
+    {
+      "@id": "act:5-investigation",
+      "gh:actNumber": 5,
+      "gh:actTitle": "追跡",
+      "gh:actTitleEn": "Investigation",
+      "gh:emotionalArc": "調査開始 → 糸口発見 → 葛藤 → 真相",
+      "gh:keyScenes": [
+        "Yuiとログ解析（合法範囲：被害者本人のSNS送信履歴・通報リスト）",
+        "Daichiから裏情報（Chiseの葛藤『これも奉納の範囲か』）",
+        "犯人グループの足跡（元配信仲間の嫉妬が動機）",
+        "Chise、Hacker Nuesに匿名で投稿#14『Tokyo。今週、DM詐欺の被害者、3人。手口、完全にblack0awd系。腹、立つ。』"
+      ],
+      "gh:narrativePurpose": "Chiseのスキルを見せながら、犯人特定への道筋。Hacker Nuesへの投稿で arc0-1 と接続",
+      "gh:pageRange": [29, 35]
+    },
+    {
+      "@id": "act:6-confrontation",
+      "gh:actNumber": 6,
+      "gh:actTitle": "対決",
+      "gh:actTitleEn": "Confrontation",
+      "gh:emotionalArc": "緊張 → 暴露 → 法的決着",
+      "gh:keyScenes": [
+        "証拠を揃えて警察へ（弁護士同行）",
+        "発信者情報開示が通り、犯人が特定される",
+        "Chiseの言葉「やられたらやり返すんじゃない。正しく終わらせるんだ」",
+        "ぷにねい解説：開示請求が通る条件・時間"
+      ],
+      "gh:narrativePurpose": "犯人との対峙と、法的解決への道",
+      "gh:pageRange": [36, 40]
+    },
+    {
+      "@id": "act:7-resolution",
+      "gh:actNumber": 7,
+      "gh:actTitle": "再起",
+      "gh:actTitleEn": "Resolution",
+      "gh:emotionalArc": "和解 → 再出発 → ゴーストハッカー兆候 → 次への布石",
+      "gh:keyScenes": [
+        "Ryoが配信を再開（『恥じゃない。声を上げることが一番強い』）",
+        "視聴者からの応援メッセージの嵐",
+        "Chiseが祠で1人、Hacker Nuesのスレッドを眺める。Ren（Ghost_Owl）の投稿#44を見て、初めて『他にも同じことをやってる奴がいる』と気づく",
+        "（読者だけが見る）Renの部屋のSIPデバイス、画面の隅で1px脈打つ ——『Vector Alignment Proof』の数値が、本人にも見えない速度で再起動を始める"
+      ],
+      "gh:narrativePurpose": "被害からの回復と、Chiseの『1人ではない』気づき。Ren側のメトリクス変化で連載の縦糸を見せる",
+      "gh:pageRange": [41, 45]
+    }
+  ],
+  "gh:neiPuniColumns": {
+    "gh:placementRule": "本編コマ外・柱・章間見開きに配置。本編には基本的に入れない",
+    "gh:perPageColumns": [
+      {"gh:page": 0, "gh:text": "ドクシングは、被害が始まる前から進んでいます。あなたの日常の写真の背景に、住所が書いてあるかもしれない"},
+      {"gh:page": 7, "gh:text": "嫌がらせの大量配達は、威力業務妨害罪。配達業者にも『心当たりがない』と言えば対応してもらえます"},
+      {"gh:page": 19, "gh:text": "『消すな、残せ』。スクショ・URL・日時・ハッシュ。これがあれば、後で動けます"},
+      {"gh:page": 26, "gh:text": "発信者情報開示請求は、2022年の法改正で『開示命令』が新設され、以前より早く・安くなりました"},
+      {"gh:page": 41, "gh:text": "声を上げることは恥ずかしくない。あなたが残した記録が、次の被害者を救います"}
+    ],
+    "gh:interludeColumns": [
+      {
+        "gh:placement": "Act 4 → Act 5 の境界",
+        "gh:title": "証拠の残し方・残さない方",
+        "gh:items": [
+          "スクショは『画面全体』+ 時計・URLが見える形で",
+          "魚拓サービスは複数（archive.today / Wayback Machine）",
+          "ハッシュ値（SHA-256）を取って改ざんされていないことを示す",
+          "クラウドに自動バックアップを忘れない",
+          "削除しても消えない。プラットフォームのログは残る"
+        ]
+      },
+      {
+        "gh:placement": "Act 6 → Act 7 の境界",
+        "gh:title": "発信者情報開示請求 — 流れと費用",
+        "gh:items": [
+          "STEP 1: コンテンツプロバイダ（SNS）にIPアドレス開示の仮処分",
+          "STEP 2: アクセスプロバイダに発信者情報の開示請求",
+          "STEP 3: 民事訴訟または刑事告訴",
+          "費用目安: 弁護士着手金10〜20万円、成功報酬20〜30万円",
+          "2022年法改正後は『開示命令』で1ステップに簡素化されつつある"
+        ]
+      }
+    ]
+  },
+  "gh:designNotes": {
+    "gh:complianceFix": [
+      "Chiseは合法的な範囲のみで動く（OSINT・被害者本人のログ・プラットフォーム通報・法的開示請求）",
+      "Daichiから情報を取る時、Chiseは『これは合法か』を毎回問う（葛藤として描く）",
+      "Hacker Nuesへの投稿は、特定可能な個人情報を含まない範囲のみ"
+    ],
+    "gh:religionContext": "神道 / 八幡信仰 — 『記録は祓いではない、奉納だ』。Chiseは祠で作業し、被害者に魚拓御札（朱印付き）を渡す。Renの仏教（天台宗）、Kanameのキリスト教（聖公会）と対比",
+    "gh:hackerNuesConnection": "Act 5 で Chiseは Hacker Nues に匿名（aka_chise1）で投稿#14 を書き込む。これは arc0-1 ページ7 でRenが読んでいた投稿。本話のラストでは、ChiseがRen（Ghost_Owl）の投稿を見て『同業者がいる』と気づく",
+    "gh:vapBeat": "本話のラスト（Act 7）で、Renの部屋のSIPデバイスが1px脈打つコマを挿入。読者だけが連載の縦糸を見える形にする。本人同士はまだ繋がらない",
+    "gh:jumpThreePrinciples": {
+      "gh:effort": "Chiseの神社籠もりからの再起 / Ryoが配信を再開する勇気 / Yuiの徹夜のログ解析",
+      "gh:friendship": "ShotaがRyoを連れてくる / ChiseとYuiの長年の信頼 / Daichiとの危うい関係",
+      "gh:victory": "発信者情報開示の成立 / Ryoの配信再開 / Chiseが『1人ではない』と気づく"
+    }
+  },
+  "gh:educationalContent": {
+    "gh:keyTakeaways": [
+      "削除する前にスクショ・URLを保存する",
+      "日時・ハッシュ値とともに時系列で記録する",
+      "サイバー犯罪相談窓口（#9110）に連絡",
+      "発信者情報開示請求という法的手段がある（2022年改正で開示命令）",
+      "被害者は悪くない。声を上げることは恥ずかしいことじゃない"
+    ],
+    "gh:mainMessage": "ネット上の誹謗中傷は犯罪。一人で抱え込まず、証拠を残して専門家に相談することが大切",
+    "gh:resources": [
+      "警察庁サイバー犯罪相談窓口 #9110",
+      "法務局『インターネット上の人権侵害』相談",
+      "一般社団法人セーファーインターネット協会",
+      "弁護士会の法律相談",
+      "プロバイダ責任制限法 開示命令制度（2022年改正）"
+    ]
+  },
+  "gh:incidentSummary": {
+    "gh:type": "オンライン誹謗中傷・ドクシング（個人情報特定・公開）",
+    "gh:victim": "character:RyoKuroda",
+    "gh:nistFocus": [
+      "PR.AA (Identity Management)",
+      "DE.CM (Continuous Monitoring)",
+      "RS.CO (Response Communications)"
+    ],
+    "gh:description": "人気ゲーム配信者の黒田涼（2年生）が、配信中の背景から住所を特定され、匿名掲示板で個人情報を晒される。誹謗中傷が拡散し、学校や自宅に嫌がらせが届くようになる"
+  },
+  "gh:mainCharacter": "character:Chise",
+  "gh:mainLocation": "org:TokyoTechHighSchool",
+  "gh:secondaryLocation": "org:AkabaneHachimanShrine"
+}

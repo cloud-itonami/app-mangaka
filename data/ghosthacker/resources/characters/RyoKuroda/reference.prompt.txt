@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1boy, 17 year old, 17-year-old Japanese male, soft features, naturally friendly expression, slightly nervous eyes., Dark brown, slightly wavy, medium length., Warm brown irises, slightly anxious expression., Average height, slim. Wears gaming merch hoodies., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

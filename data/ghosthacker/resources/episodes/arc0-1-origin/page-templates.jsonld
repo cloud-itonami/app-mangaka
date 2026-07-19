@@ -1,0 +1,140 @@
+{
+  "@context": {
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "tpl": "gh:template/"
+  },
+  "@id": "gh:page-templates/jump-v1",
+  "gh:format": "weekly-shounen-jump-A4",
+  "gh:units": "mm",
+  "gh:canvas": {
+    "gh:trim":   {"width": 210, "height": 297},
+    "gh:bleed":  3,
+    "gh:innerFrame": {"x": 15, "y": 15, "width": 180, "height": 270},
+    "gh:gutter": {"horizontalMm": 3, "verticalMm": 3},
+    "gh:pageNumberArea": {"corner": "outer-bottom", "xMm": 175, "yMm": 277}
+  },
+  "gh:readingDirection": "right-to-left, top-to-bottom",
+  "gh:templates": [
+    {"@id": "tpl:impact-spread-1", "gh:name": "Impact Spread (1 panel = 1 page)", "gh:panelCount": 1, "gh:emotionalProfile": ["impact","punchline"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":180,"hMm":270},"emphasis":"impact","readingOrder":1}
+    ]},
+    {"@id": "tpl:standard-grid-4", "gh:name": "Standard 4-panel grid (2x2)", "gh:panelCount": 4, "gh:emotionalProfile": ["establish","beat","beat","punchline"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":88,"hMm":132},"emphasis":"establish","readingOrder":1},
+      {"slot":2,"shape":"rect","bounds":{"xMm":92,"yMm":0,"wMm":88,"hMm":132},"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"rect","bounds":{"xMm":0,"yMm":138,"wMm":88,"hMm":132},"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"rect","bounds":{"xMm":92,"yMm":138,"wMm":88,"hMm":132},"emphasis":"punchline","readingOrder":4}
+    ]},
+    {"@id": "tpl:jump-build-release-5", "gh:name": "Jump 5-panel build-and-release", "gh:panelCount": 5, "gh:emotionalProfile":["establish","beat","beat","transition","punchline"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":88,"hMm":70},"emphasis":"establish","readingOrder":1},
+      {"slot":2,"shape":"rect","bounds":{"xMm":92,"yMm":0,"wMm":88,"hMm":70},"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"rect","bounds":{"xMm":0,"yMm":76,"wMm":60,"hMm":80},"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"rect","bounds":{"xMm":64,"yMm":76,"wMm":116,"hMm":80},"emphasis":"transition","readingOrder":4},
+      {"slot":5,"shape":"rect","bounds":{"xMm":0,"yMm":162,"wMm":180,"hMm":108},"emphasis":"punchline","readingOrder":5}
+    ]},
+    {"@id": "tpl:jump-build-release-6", "gh:name": "Jump 6-panel build-and-release", "gh:panelCount": 6, "gh:emotionalProfile":["establish","beat","beat","beat","build","punchline"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":116,"hMm":70},"emphasis":"establish","readingOrder":1},
+      {"slot":2,"shape":"rect","bounds":{"xMm":120,"yMm":0,"wMm":60,"hMm":70},"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"rect","bounds":{"xMm":0,"yMm":76,"wMm":60,"hMm":60},"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"rect","bounds":{"xMm":64,"yMm":76,"wMm":116,"hMm":60},"emphasis":"beat","readingOrder":4},
+      {"slot":5,"shape":"rect","bounds":{"xMm":0,"yMm":142,"wMm":88,"hMm":56},"emphasis":"build","readingOrder":5},
+      {"slot":6,"shape":"rect","bounds":{"xMm":0,"yMm":204,"wMm":180,"hMm":66},"emphasis":"punchline","readingOrder":6}
+    ]},
+    {"@id": "tpl:jump-7-asymmetric", "gh:name": "Jump 7-panel asymmetric", "gh:panelCount": 7, "gh:emotionalProfile":["establish","beat","beat","beat","transition","beat","punchline"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":88,"hMm":60},"emphasis":"establish","readingOrder":1},
+      {"slot":2,"shape":"rect","bounds":{"xMm":92,"yMm":0,"wMm":88,"hMm":60},"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"rect","bounds":{"xMm":0,"yMm":66,"wMm":60,"hMm":60},"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"rect","bounds":{"xMm":64,"yMm":66,"wMm":116,"hMm":60},"emphasis":"beat","readingOrder":4},
+      {"slot":5,"shape":"rect","bounds":{"xMm":0,"yMm":132,"wMm":116,"hMm":60},"emphasis":"transition","readingOrder":5},
+      {"slot":6,"shape":"rect","bounds":{"xMm":120,"yMm":132,"wMm":60,"hMm":60},"emphasis":"beat","readingOrder":6},
+      {"slot":7,"shape":"rect","bounds":{"xMm":0,"yMm":198,"wMm":180,"hMm":72},"emphasis":"punchline","readingOrder":7}
+    ]},
+    {"@id": "tpl:jump-9-grid", "gh:name": "Jump 9-panel dense grid", "gh:panelCount": 9, "gh:emotionalProfile":["beat","beat","beat","beat","build","beat","beat","beat","punchline"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":58,"hMm":87},"emphasis":"beat","readingOrder":1},
+      {"slot":2,"shape":"rect","bounds":{"xMm":61,"yMm":0,"wMm":58,"hMm":87},"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"rect","bounds":{"xMm":122,"yMm":0,"wMm":58,"hMm":87},"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"rect","bounds":{"xMm":0,"yMm":93,"wMm":58,"hMm":87},"emphasis":"beat","readingOrder":4},
+      {"slot":5,"shape":"rect","bounds":{"xMm":61,"yMm":93,"wMm":58,"hMm":87},"emphasis":"build","readingOrder":5},
+      {"slot":6,"shape":"rect","bounds":{"xMm":122,"yMm":93,"wMm":58,"hMm":87},"emphasis":"beat","readingOrder":6},
+      {"slot":7,"shape":"rect","bounds":{"xMm":0,"yMm":186,"wMm":58,"hMm":84},"emphasis":"beat","readingOrder":7},
+      {"slot":8,"shape":"rect","bounds":{"xMm":61,"yMm":186,"wMm":58,"hMm":84},"emphasis":"beat","readingOrder":8},
+      {"slot":9,"shape":"rect","bounds":{"xMm":122,"yMm":186,"wMm":58,"hMm":84},"emphasis":"punchline","readingOrder":9}
+    ]},
+    {"@id": "tpl:diagonal-2-split", "gh:name": "Diagonal 2-split (time shift)", "gh:panelCount": 2, "gh:diagonalAngleDeg": 30, "gh:psychologicalEffect": "time-shift, contrast, dual viewpoint", "gh:emotionalProfile":["establish","punchline"], "gh:panels": [
+      {"slot":1,"shape":"polygon","vertices":[[0,0],[180,0],[180,90],[0,170]],"emphasis":"establish","readingOrder":1,"diagonalEdge":"bottom"},
+      {"slot":2,"shape":"polygon","vertices":[[0,170],[180,90],[180,270],[0,270]],"emphasis":"punchline","readingOrder":2,"diagonalEdge":"top"}
+    ]},
+    {"@id": "tpl:diagonal-3-cascade", "gh:name": "Diagonal 3-cascade (continuous motion)", "gh:panelCount": 3, "gh:diagonalAngleDeg": 35, "gh:psychologicalEffect": "continuous-motion, action-build", "gh:emotionalProfile":["beat","build","punchline"], "gh:panels": [
+      {"slot":1,"shape":"polygon","vertices":[[0,0],[180,0],[120,90],[0,90]],"emphasis":"beat","readingOrder":1},
+      {"slot":2,"shape":"polygon","vertices":[[60,90],[180,90],[180,180],[0,180]],"emphasis":"build","readingOrder":2,"leftEdgeSkew":-35},
+      {"slot":3,"shape":"polygon","vertices":[[0,180],[180,180],[180,270],[60,270]],"emphasis":"punchline","readingOrder":3}
+    ]},
+    {"@id": "tpl:diagonal-x-cross", "gh:name": "Crossing diagonals X (confrontation)", "gh:panelCount": 4, "gh:diagonalAngleDeg": 45, "gh:psychologicalEffect": "collision, conflict-peak, chaos", "gh:emotionalProfile":["beat","beat","beat","impact"], "gh:panels": [
+      {"slot":1,"shape":"polygon","vertices":[[0,0],[180,0],[90,135]],"emphasis":"beat","readingOrder":1},
+      {"slot":2,"shape":"polygon","vertices":[[180,0],[180,270],[90,135]],"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"polygon","vertices":[[180,270],[0,270],[90,135]],"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"polygon","vertices":[[0,270],[0,0],[90,135]],"emphasis":"impact","readingOrder":4}
+    ]},
+    {"@id": "tpl:vortex-impact-7", "gh:name": "Vortex impact (central big + 6 fragments)", "gh:panelCount": 7, "gh:psychologicalEffect": "shockwave, central-impact, peripheral-reactions", "gh:emotionalProfile":["impact","beat","beat","beat","beat","beat","beat"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":30,"yMm":80,"wMm":120,"hMm":110},"emphasis":"impact","readingOrder":1,"centerImpact":true},
+      {"slot":2,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":60,"hMm":70},"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"rect","bounds":{"xMm":65,"yMm":0,"wMm":50,"hMm":70},"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"rect","bounds":{"xMm":120,"yMm":0,"wMm":60,"hMm":70},"emphasis":"beat","readingOrder":4},
+      {"slot":5,"shape":"rect","bounds":{"xMm":0,"yMm":80,"wMm":25,"hMm":110},"emphasis":"beat","readingOrder":5},
+      {"slot":6,"shape":"rect","bounds":{"xMm":155,"yMm":80,"wMm":25,"hMm":110},"emphasis":"beat","readingOrder":6},
+      {"slot":7,"shape":"rect","bounds":{"xMm":0,"yMm":195,"wMm":180,"hMm":75},"emphasis":"beat","readingOrder":7}
+    ]},
+    {"@id": "tpl:shutter-pan-5", "gh:name": "Shutter pan (5 parallel diagonals)", "gh:panelCount": 5, "gh:diagonalAngleDeg": 25, "gh:psychologicalEffect": "camera-pan, time-slice, observer-movement", "gh:emotionalProfile":["beat","beat","beat","beat","punchline"], "gh:panels": [
+      {"slot":1,"shape":"parallelogram","bounds":{"xMm":0,"yMm":0,"wMm":40,"hMm":270},"skewDeg":25,"emphasis":"beat","readingOrder":1},
+      {"slot":2,"shape":"parallelogram","bounds":{"xMm":42,"yMm":0,"wMm":32,"hMm":270},"skewDeg":25,"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"parallelogram","bounds":{"xMm":76,"yMm":0,"wMm":32,"hMm":270},"skewDeg":25,"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"parallelogram","bounds":{"xMm":110,"yMm":0,"wMm":32,"hMm":270},"skewDeg":25,"emphasis":"beat","readingOrder":4},
+      {"slot":5,"shape":"parallelogram","bounds":{"xMm":144,"yMm":0,"wMm":36,"hMm":270},"skewDeg":25,"emphasis":"punchline","readingOrder":5}
+    ]},
+    {"@id": "tpl:inverse-diagonal-anxiety", "gh:name": "Inverse diagonal (anxiety/wobble)", "gh:panelCount": 3, "gh:diagonalAngleDeg": -30, "gh:psychologicalEffect": "unease, wrongness, mental-wobble", "gh:emotionalProfile":["tense","tense","ominous"], "gh:panels": [
+      {"slot":1,"shape":"polygon","vertices":[[0,0],[180,0],[180,108],[0,162]],"emphasis":"tense","readingOrder":1},
+      {"slot":2,"shape":"polygon","vertices":[[0,162],[180,108],[180,180],[0,222]],"emphasis":"tense","readingOrder":2},
+      {"slot":3,"shape":"polygon","vertices":[[0,222],[180,180],[180,270],[0,270]],"emphasis":"ominous","readingOrder":3}
+    ]},
+    {"@id": "tpl:flashback-blur-7", "gh:name": "Flashback/dream (soft-edge irregular)", "gh:panelCount": 7, "gh:psychologicalEffect": "memory, dream, hallucination, time-displacement", "gh:emotionalProfile":["contemplative","contemplative","contemplative","contemplative","emotional","emotional","punchline"], "gh:panelEdgeStyle": "soft-feather", "gh:panels": [
+      {"slot":1,"shape":"rect-soft","bounds":{"xMm":10,"yMm":5,"wMm":70,"hMm":50},"rotationDeg":-3,"emphasis":"contemplative","readingOrder":1},
+      {"slot":2,"shape":"rect-soft","bounds":{"xMm":100,"yMm":10,"wMm":60,"hMm":45},"rotationDeg":4,"emphasis":"contemplative","readingOrder":2},
+      {"slot":3,"shape":"rect-soft","bounds":{"xMm":5,"yMm":65,"wMm":80,"hMm":60},"rotationDeg":2,"emphasis":"contemplative","readingOrder":3},
+      {"slot":4,"shape":"rect-soft","bounds":{"xMm":100,"yMm":70,"wMm":75,"hMm":60},"rotationDeg":-5,"emphasis":"contemplative","readingOrder":4},
+      {"slot":5,"shape":"rect-soft","bounds":{"xMm":0,"yMm":140,"wMm":90,"hMm":60},"rotationDeg":3,"emphasis":"emotional","readingOrder":5},
+      {"slot":6,"shape":"rect-soft","bounds":{"xMm":95,"yMm":145,"wMm":80,"hMm":60},"rotationDeg":-2,"emphasis":"emotional","readingOrder":6},
+      {"slot":7,"shape":"rect-soft","bounds":{"xMm":0,"yMm":210,"wMm":180,"hMm":60},"emphasis":"punchline","readingOrder":7}
+    ]},
+    {"@id": "tpl:reveal-spread-2", "gh:name": "Reveal spread (small setup + large reveal)", "gh:panelCount": 2, "gh:emotionalProfile":["beat","impact"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":180,"hMm":50},"emphasis":"beat","readingOrder":1},
+      {"slot":2,"shape":"rect","bounds":{"xMm":0,"yMm":55,"wMm":180,"hMm":215},"emphasis":"impact","readingOrder":2,"fullBleed":true}
+    ]},
+    {"@id": "tpl:double-page-spread", "gh:name": "Double-page spread (見開き)", "gh:panelCount": 1, "gh:pageSpan": 2, "gh:emotionalProfile":["impact"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":360,"hMm":270},"emphasis":"impact","readingOrder":1,"fullBleed":true}
+    ]},
+    {"@id": "tpl:title-splash-3", "gh:name": "Title splash (hook + impact title)", "gh:panelCount": 3, "gh:emotionalProfile":["establish","beat","impact"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":88,"hMm":60},"emphasis":"establish","readingOrder":1},
+      {"slot":2,"shape":"rect","bounds":{"xMm":92,"yMm":0,"wMm":88,"hMm":60},"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"rect","bounds":{"xMm":0,"yMm":66,"wMm":180,"hMm":204},"emphasis":"impact","readingOrder":3,"containsTitle":true,"fullBleed":true}
+    ]},
+    {"@id": "tpl:dialogue-cascade-4", "gh:name": "Dialogue cascade (4 horizontal stack)", "gh:panelCount": 4, "gh:emotionalProfile":["beat","beat","beat","beat"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":0,"yMm":0,"wMm":180,"hMm":65},"emphasis":"beat","readingOrder":1},
+      {"slot":2,"shape":"rect","bounds":{"xMm":0,"yMm":70,"wMm":180,"hMm":65},"emphasis":"beat","readingOrder":2},
+      {"slot":3,"shape":"rect","bounds":{"xMm":0,"yMm":140,"wMm":180,"hMm":65},"emphasis":"beat","readingOrder":3},
+      {"slot":4,"shape":"rect","bounds":{"xMm":0,"yMm":210,"wMm":180,"hMm":60},"emphasis":"beat","readingOrder":4}
+    ]},
+    {"@id": "tpl:single-impact-with-margin", "gh:name": "Single impact with breathing margin", "gh:panelCount": 1, "gh:emotionalProfile":["impact"], "gh:panels": [
+      {"slot":1,"shape":"rect","bounds":{"xMm":20,"yMm":50,"wMm":140,"hMm":170},"emphasis":"impact","readingOrder":1,"withWhiteMargin":true}
+    ]}
+  ],
+  "gh:templateSelectionRules": {
+    "impact / climax / decisive choice": ["tpl:impact-spread-1","tpl:double-page-spread","tpl:single-impact-with-margin"],
+    "action sequence / fight": ["tpl:diagonal-3-cascade","tpl:diagonal-x-cross","tpl:vortex-impact-7"],
+    "anxiety / psychological tension": ["tpl:inverse-diagonal-anxiety"],
+    "memory / flashback / dream": ["tpl:flashback-blur-7"],
+    "education / explanation / countermeasure": ["tpl:jump-9-grid","tpl:dialogue-cascade-4"],
+    "reveal moment": ["tpl:reveal-spread-2","tpl:title-splash-3"],
+    "standard pacing": ["tpl:jump-build-release-5","tpl:jump-build-release-6","tpl:jump-7-asymmetric"],
+    "calm dialogue": ["tpl:standard-grid-4","tpl:dialogue-cascade-4"],
+    "camera pan / observation": ["tpl:shutter-pan-5"]
+  }
+}

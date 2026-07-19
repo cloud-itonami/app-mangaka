@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:XnrMBurq8abYjzuwHJDvG",
+  "gh:appearance": {
+    "gh:build": "Stocky but fit. Wears baggy jeans and band t-shirts.",
+    "gh:eyes": "Bright, energetic dark brown eyes.",
+    "gh:face": "19-year-old Japanese male, cheerful round face, always smiling.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, natural lighting, raw photo, 19-year-old Japanese male, cheerful round face, short black hair with fade, bright brown eyes, band t-shirt, casual pose.",
+    "gh:hair": "Short black hair with a slight fade on the sides.",
+    "gh:style": "Photorealistic, casual street style, 8k."
+  },
+  "gh:arc": "Arc 0-2",
+  "gh:background": {
+    "gh:family": "実家はラーメン屋。3人兄弟の末っ子。",
+    "gh:job": "放課後は実家のラーメン屋を手伝っている。",
+    "gh:school": "都立工科高等学校 3年（機械科）。Chiseの数少ない友人。"
+  },
+  "gh:personality": {
+    "gh:hidden": "Chiseのことを心配している。『あいつ、いつか線を越えるんじゃないか』と。",
+    "gh:role": "Chiseのストッパー役。暴走しそうな時に止める。",
+    "gh:surface": "お調子者。ムードメーカー。誰とでもすぐ仲良くなれる。"
+  },
+  "gh:slug": "ShotaHayashi",
+  "gh:storyFunction": {
+    "gh:contribution": "Ryoを Chiseに紹介する。二人の間を取り持つ。",
+    "gh:message": "困った時に頼れる友人の存在の大切さ。",
+    "gh:role": "橋渡し役 / コメディリリーフ"
+  },
+  "schema:age": 19,
+  "schema:name": "林 翔太 (Shota Hayashi)",
+  "schema:role": "Chise's Best Friend"
+}

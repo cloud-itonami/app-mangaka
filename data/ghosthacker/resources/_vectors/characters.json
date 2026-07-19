@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "gh": "https://ghosthacker.etzhayyim.com/ns/"
+  },
+  "@id": "gh:vectors/characters",
+  "gh:meta": {
+    "gh:name": "characters",
+    "gh:sourceFile": "characters.json",
+    "gh:count": 0,
+    "gh:dimensions": 1536,
+    "gh:model": "text-embedding-3-small",
+    "gh:updatedAt": "2026-01-25T00:00:00Z"
+  },
+  "gh:vectors": []
+}

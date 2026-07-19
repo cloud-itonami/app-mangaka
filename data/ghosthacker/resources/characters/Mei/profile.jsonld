@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:YpFgId2dWtmjAoX10xTA4",
+  "gh:appearance": {
+    "gh:build": "Average build, wearing a school uniform with a colorful cardigan.",
+    "gh:eyes": "Bright energetic eyes, sparkling catchlights, friendly iris patterns.",
+    "gh:face": "14-year-old Japanese female student, cheerful and energetic expression, bright smile.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, a 14-year-old Japanese middle school girl, shoulder-length black hair with a small hair clip, cheerful energetic expression, bright eyes with sparkling catchlights, wearing a navy blazer school uniform with a yellow cardigan.",
+    "gh:hair": "Shoulder-length black hair with a cute hair clip.",
+    "gh:style": "Photorealistic, cinematic lighting, 8k, high-end webtoon aesthetic."
+  },
+  "gh:slug": "Mei",
+  "schema:age": 14,
+  "schema:name": "桜庭 メイ (Mei Sakuraba)",
+  "schema:role": "Student / Mood Maker",
+  "gh:personality": {
+    "gh:traits": ["明るい", "ムードメーカー", "素直", "傷つきやすい"],
+    "gh:description": "クラスの太陽的存在。誰とでも仲良くなれて、場を盛り上げるのが得意。Sakiを親友だと心から信じていた。裏切りを知った時のショックは大きい。"
+  },
+  "gh:arc01Role": {
+    "gh:function": "Sakiの裏切りの被害者。親友だと思っていた相手から「うざい」「疲れた」と言われていたことを知り、深く傷つく",
+    "gh:keyDialogue": "Saki…親友だと思ってたのに…",
+    "gh:emotionalArc": "幸せ → 信頼 → ショック → 悲しみ → 不信",
+    "gh:thematicRole": "無邪気な信頼が裏切られる痛み。SNS時代の友情の脆さを体現"
+  },
+  "gh:relationships": [
+    {"character": "character:Saki", "type": "親友（だと思っていた）", "status": "裏切られて崩壊"},
+    {"character": "character:Akira", "type": "クラスメイト"},
+    {"character": "character:Yuto", "type": "クラスメイト", "note": "彼を責めることになる"}
+  ],
+  "gh:onlinePresence": {
+    "gh:avatar": {
+      "gh:type": "verylonganimals",
+      "gh:animal": "ウサギ (Rabbit)",
+      "gh:description": "verylonganimalsのながーいウサギ。元気いっぱいで愛嬌たっぷり。Meiの明るくてムードメーカーな性格にピッタリ。",
+      "gh:color": "ピンク / キラキラした目",
+      "gh:usage": "SNSやグループチャットでのコミュニケーション時に使用",
+      "gh:reason": "ウサギ＝活発さと親しみやすさの象徴。桜庭＝春＝ウサギは春のイメージとも合致。"
+    },
+    "gh:handleVariations": ["Mei_chan", "Pink_Bunny", "ながうさぎ"]
+  }
+}

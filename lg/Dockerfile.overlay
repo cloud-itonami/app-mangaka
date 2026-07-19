@@ -1,0 +1,45 @@
+# lg-mangaka overlay — adds save_document / load_document / list_documents
+# graphs (and updated server.py / langgraph.json) on top of the proven
+# 0.1.0-20260508033638-amd64 base. Avoids re-downloading kotodama's ML
+# dependency stack (~6.5 GB of CUDA libs) which the host buildkitd cannot
+# fit during a full rebuild.
+#
+# Build:
+#   cd 60-apps/etzhayyim-project-mangaka/lg
+#   docker buildx build --platform linux/amd64 \
+#     -f Dockerfile.overlay \
+#     -t ghcr.io/etzhayyimcojp/lg-mangaka:<new-tag> \
+#     --push .
+
+FROM ghcr.io/etzhayyimcojp/lg-mangaka:0.1.0-amd64@sha256:d6089680a7f6c6bf9a6c921b01cfb558bc028000838833da3a3dc64bde9b4977
+
+WORKDIR /app
+
+# facenet-pytorch (MTCNN, photo-face) + opencv (anime-face cascade).
+# Anime cascade XML is bundled into the image so detect_faces graph can use
+# it without runtime downloads. Falls back to heuristic if anything errors.
+RUN pip install --no-cache-dir facenet-pytorch==2.6.0 opencv-python-headless==4.10.0.84 \
+    || echo "face deps install partially failed; detect_faces will degrade gracefully"
+RUN mkdir -p /app/models \
+    && curl -fsSL https://raw.githubusercontent.com/nagadomi/lbpcascade_animeface/master/lbpcascade_animeface.xml \
+       -o /app/models/lbpcascade_animeface.xml \
+    || echo "anime cascade download failed; detect_faces will use mtcnn or heuristic"
+
+COPY lg_mangaka/graphs/save_document.py            /app/lg_mangaka/graphs/save_document.py
+COPY lg_mangaka/graphs/load_document.py            /app/lg_mangaka/graphs/load_document.py
+COPY lg_mangaka/graphs/list_documents.py           /app/lg_mangaka/graphs/list_documents.py
+COPY lg_mangaka/graphs/import_ghosthacker.py       /app/lg_mangaka/graphs/import_ghosthacker.py
+COPY lg_mangaka/graphs/analyze_character_graph.py  /app/lg_mangaka/graphs/analyze_character_graph.py
+COPY lg_mangaka/graphs/enrich_characters.py        /app/lg_mangaka/graphs/enrich_characters.py
+COPY lg_mangaka/graphs/enrich_organizations.py     /app/lg_mangaka/graphs/enrich_organizations.py
+COPY lg_mangaka/graphs/enrich_environments.py      /app/lg_mangaka/graphs/enrich_environments.py
+COPY lg_mangaka/graphs/derive_chapter_incidents.py /app/lg_mangaka/graphs/derive_chapter_incidents.py
+COPY lg_mangaka/graphs/import_chat_history.py      /app/lg_mangaka/graphs/import_chat_history.py
+COPY lg_mangaka/graphs/backfill_mangaka_edges.py   /app/lg_mangaka/graphs/backfill_mangaka_edges.py
+COPY lg_mangaka/graphs/record_op_log.py            /app/lg_mangaka/graphs/record_op_log.py
+COPY lg_mangaka/graphs/debug_canvas_state.py       /app/lg_mangaka/graphs/debug_canvas_state.py
+COPY lg_mangaka/graphs/detect_faces.py             /app/lg_mangaka/graphs/detect_faces.py
+COPY lg_mangaka/server.py                          /app/lg_mangaka/server.py
+COPY langgraph.json                                /app/langgraph.json
+
+# Inherit CMD from base.

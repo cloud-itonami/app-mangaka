@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1boy, 16 year old, 16-year-old Japanese male student, expressive eyes, slightly anxious but friendly expression., Neat black schoolboy hair., Bright expressive brown eyes, realistic iris patterns, sharp catchlights., Average build, wearing a standard Japanese high school uniform., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

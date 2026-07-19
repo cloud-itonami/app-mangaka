@@ -1,0 +1,148 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "gh:project/manga-ghost-hacker-260123-jump",
+  "@type": ["gh:Project", "prov:Entity"],
+  "dct:title": "Manga Ghost Hacker: Case Study Series (260123-jump)",
+  "dct:description": "A manga series designed to teach cybersecurity through case studies, using real-world terminology and frameworks (CISA, CISSP, CMMI).",
+  "gh:status": "Arc 0-1「パスワードは覚えるな」45ページ最終構成完成",
+  "gh:currentSession": {
+    "@type": "prov:Activity",
+    "prov:startedAtTime": "2026-01-26T00:00:00Z",
+    "gh:goals": [
+      "verylonganimalsアバター設定の追加"
+    ],
+    "gh:results": [
+      "Renのネット上アバターをverylonganimalsのフクロウに設定",
+      "味方キャラ全員にverylonganimalsアバターを割り当て完了",
+      "Ren: フクロウ（洞察力、夜行性）",
+      "Nei: ネコ（クール、知的、Renとペア）",
+      "Chise: キツネ（守護、ストリートスマート、神社関連）",
+      "Kaname: ペンギン（エリート、完璧主義）",
+      "Mei: ウサギ（元気、ムードメーカー）",
+      "settings/verylonganimals-avatars.jsonld 作成（マスター設定ファイル）",
+      "敵側との視覚的コントラスト設計: 味方=可愛い動物 vs 敵=無機質アイコン"
+    ]
+  },
+  "gh:previousSessions": [
+    {
+      "@type": "prov:Activity",
+      "prov:endedAtTime": "2026-01-26T00:30:00Z",
+      "gh:summary": "Arc 0-1「パスワードは覚えるな」45ページ最終構成完成（プレタイトル+8幕構成）"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:endedAtTime": "2026-01-25T23:00:00Z",
+      "gh:summary": "Cyber Defense Agency world building, religious backgrounds for three hackers (Chise/神道, Ren/仏教, Kaname/キリスト教)"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:endedAtTime": "2026-01-25T20:30:00Z",
+      "gh:summary": "Takeru → Chise transformation, Akabane Hachiman Shrine organization creation"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:endedAtTime": "2026-01-25T19:30:00Z",
+      "gh:summary": "Arc 0-2/0-3 restructuring with Takeru and Kaname as protagonists"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:endedAtTime": "2026-01-25T18:00:00Z",
+      "gh:summary": "Arc-based editing support, A2A workflow fixes, ARIA aesthetic implementation"
+    }
+  ],
+  "gh:artifacts": [
+    {
+      "@id": "gh:artifact/master-storyboard-260123-jump",
+      "@type": "gh:Artifact",
+      "schema:name": "Master Storyboard (JSON-LD)",
+      "schema:encodingFormat": "application/ld+json",
+      "schema:filePath": "resources/storyboard.jsonld"
+    },
+    {
+      "@id": "gh:artifact/character-profiles-260123-jump",
+      "@type": "gh:Artifact",
+      "schema:name": "Character Profiles",
+      "schema:filePath": "resources/characters/"
+    },
+    {
+      "@id": "gh:artifact/environments-prompts-260123-jump",
+      "@type": "gh:Artifact",
+      "schema:name": "Environment Base Prompts",
+      "schema:filePath": "resources/environments/"
+    },
+    {
+      "@id": "gh:artifact/props-definition-260123-jump",
+      "@type": "gh:Artifact",
+      "schema:name": "Prop & Furniture Definitions",
+      "schema:filePath": "resources/props/"
+    },
+    {
+      "@id": "gh:artifact/verylonganimals-avatars-260123-jump",
+      "@type": "gh:Artifact",
+      "schema:name": "verylonganimals Avatar Settings",
+      "schema:description": "味方キャラクターのオンラインアバター設定（ながーい動物シリーズ）",
+      "schema:filePath": "resources/settings/verylonganimals-avatars.jsonld"
+    }
+  ],
+  "gh:milestones": [
+    {
+      "gh:name": "Concept Design",
+      "gh:status": "Completed"
+    },
+    {
+      "gh:name": "Character & Credentials Definition",
+      "gh:status": "Completed"
+    },
+    {
+      "gh:name": "12-Episode Structure",
+      "gh:status": "Completed"
+    },
+    {
+      "gh:name": "Master Storyboard (Monochrome Edition)",
+      "gh:status": "Completed"
+    },
+    {
+      "gh:name": "3D Scene Assembler Integration into Graph",
+      "gh:status": "Completed"
+    },
+    {
+      "gh:name": "Arc-based Editing Support",
+      "gh:status": "Completed"
+    },
+    {
+      "gh:name": "Arc 0-2/0-3 Character-Centric Restructuring",
+      "gh:status": "Completed",
+      "gh:description": "Chise (Arc 0-2) and Kaname (Arc 0-3) as main protagonists with dedicated schools, classmates, and incidents"
+    },
+    {
+      "gh:name": "Takeru → Chise Gender/Character Transformation",
+      "gh:status": "Completed",
+      "gh:description": "赤羽千世 (Chise Akabane): Female street hacker raised at Akabane Hachiman Shrine. HN: aka_chise1 connects to real name."
+    },
+    {
+      "gh:name": "Cyber Defense Agency World Building",
+      "gh:status": "Completed",
+      "gh:description": "サイバー防衛庁 (CDA): 内閣府直轄の独立機関。内閣サイバーセキュリティ戦略本部の実働部門として認知。Virtual HQ accessed via Hyper Loop. Staff recruits Ren/Kakeru/Kaname for cases."
+    },
+    {
+      "gh:name": "Religious Hidden Backgrounds",
+      "gh:status": "Completed",
+      "gh:description": "三者三様の宗教的背景: Chise(神道/八幡信仰), Ren(仏教/天台宗), Kaname(キリスト教/聖公会)"
+    },
+    {
+      "gh:name": "Arc 0-1 Final Structure",
+      "gh:status": "Completed",
+      "gh:description": "「パスワードは覚えるな」45ページ最終構成。プレタイトル+8幕構成。対策パート4つ×2ページ。Ghost/Daemonバトル。"
+    },
+    {
+      "gh:name": "verylonganimals Avatar System",
+      "gh:status": "Completed",
+      "gh:description": "味方キャラクターのオンラインアバターをverylonganimals（ながーい動物）で統一。Ren=フクロウ, Nei=ネコ, Chise=キツネ, Kaname=ペンギン, Mei=ウサギ。敵側の無機質アイコンとの視覚的コントラストで『人間性』を表現。"
+    }
+  ]
+}

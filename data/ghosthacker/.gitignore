@@ -1,0 +1,32 @@
+# Imported from ~/github/ghosthacker/260123-jump on 2026-05-12.
+# Source JSON-LD (episodes, characters, storyboard, drafts, docs) IS tracked.
+# Large derived/generated assets are symlinks to the original repo and ignored here.
+
+# Generated panel images (5.8 GB) — symlink → ~/github/ghosthacker/.../resources/images
+resources/images
+
+# Per-character reference variants — heavy binary artefacts (355 MB across 57 chars).
+# JSON-LD profiles (`profile.jsonld`) are kept; PNG/JPG references stay on disk
+# only for local lg-image-gen runs.
+resources/characters/**/*.png
+resources/characters/**/*.jpg
+resources/characters/**/*.jpeg
+resources/characters/**/photos/
+resources/logo/**/*.png
+resources/logo/**/*.jpg
+
+# Per-episode rendered output (PDF + PNG) — symlinks
+resources/episodes/*/rendered-pages
+resources/episodes/*/rendered-pages-png
+
+# Compiled deliverable PDFs — symlinks
+arc0-1-origin.pdf
+arc0-1-origin-preview.pdf
+
+# Local / OS noise
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+*.local

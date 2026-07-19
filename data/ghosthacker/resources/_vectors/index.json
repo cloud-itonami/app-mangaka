@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "gh": "https://ghosthacker.etzhayyim.com/ns/"
+  },
+  "@id": "gh:vectorIndex",
+  "gh:collections": {
+    "dialogues": {
+      "gh:name": "dialogues",
+      "gh:sourceFile": "dialogues.json",
+      "gh:count": 0,
+      "gh:dimensions": 1536,
+      "gh:model": "text-embedding-3-small",
+      "gh:updatedAt": "2026-01-25T00:00:00Z"
+    },
+    "characters": {
+      "gh:name": "characters",
+      "gh:sourceFile": "characters.json",
+      "gh:count": 0,
+      "gh:dimensions": 1536,
+      "gh:model": "text-embedding-3-small",
+      "gh:updatedAt": "2026-01-25T00:00:00Z"
+    },
+    "prompts": {
+      "gh:name": "prompts",
+      "gh:sourceFile": "prompts.json",
+      "gh:count": 0,
+      "gh:dimensions": 1536,
+      "gh:model": "text-embedding-3-small",
+      "gh:updatedAt": "2026-01-25T00:00:00Z"
+    }
+  }
+}

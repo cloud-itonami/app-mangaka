@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:LW08K0WgZ_rUwJntWZ4q0",
+  "gh:appearance": {
+    "gh:build": "Small and slender build.",
+    "gh:eyes": "Quiet thoughtful eyes, soft catchlights.",
+    "gh:face": "14-year-old Japanese male student, quiet and thoughtful expression.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, 14-year-old Japanese middle school boy, slim build, slightly messy hair, quiet expression, navy blazer school uniform.",
+    "gh:hair": "Slightly messy black hair.",
+    "gh:style": "Photorealistic, 8k, high-end webtoon aesthetic."
+  },
+  "gh:slug": "Shota",
+  "schema:age": 14,
+  "schema:name": "山本 翔太 (Shota Yamamoto)",
+  "schema:role": "Student / Quiet Observer",
+  "gh:personality": {
+    "gh:traits": ["内向的", "慎重", "観察力がある", "言葉少な"],
+    "gh:description": "普段は目立たないが、周りをよく見ている。Yutoとは席が近く、挨拶程度の仲。乗っ取り事件ではリンクを踏んでしまい、被害者でもある。"
+  },
+  "gh:arc01Role": {
+    "gh:function": "被害の連鎖を示す役。自分もリンクを踏んで被害に遭ったことを告白",
+    "gh:keyDialogue": "俺もリンク踏んだら、変なサイトに飛ばされた…",
+    "gh:emotionalArc": "不安 → 告白 → 静かな怒り"
+  },
+  "gh:relationships": [
+    {"character": "character:Yuto", "type": "席が近いクラスメイト"},
+    {"character": "character:Tsubasa", "type": "ゲーム仲間", "note": "オンラインゲームで一緒に遊ぶ"}
+  ]
+}

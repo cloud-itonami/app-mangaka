@@ -1,0 +1,37 @@
+{
+  "name": "kotodama-stdk2024",
+  "main": "src/app.ts",
+  "compatibility_date": "2025-03-17",
+  "compatibility_flags": ["nodejs_compat", "nodejs_als"],
+  "assets": {
+    "directory": "./svelte/build",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "single-page-application"
+  },
+  "vars": {
+    "APP_ACTOR_HANDLE": "studio",
+    "APP_NANOID": "stdk2024",
+    "APP_DISPLAY_NAME": "Studio",
+    "APP_DESCRIPTION": "LangGraph Studio replacement for lg-mangaka",
+    "APP_FRAMEWORK": "ts-native",
+    "APP_PERFORMER_TYPE": "service",
+    "APP_UI_TYPE": "appview",
+    // Backend: the k8s lg-mangaka-studio pod exposed via CF Tunnel.
+    // Renamed from studio.etzhayyim.com → studio-api.etzhayyim.com when we put the
+    // Worker (this) in front. The Worker calls this with a CF Access
+    // Service Token (bypasses user SSO challenge for machine-to-machine).
+    "STUDIO_BACKEND_URL": "https://studio-api.etzhayyim.com"
+  },
+  "secrets_store_secrets": [
+    // CF Access Service Token to call studio-api.etzhayyim.com.
+    // Created in CF dashboard: Zero Trust → Access → Service Auth → Create Service Token.
+    // Add a SECOND CF Access policy on studio-api.etzhayyim.com that includes this token.
+    { "binding": "SS_CF_ACCESS_CLIENT_ID", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "studio_cf_access_client_id" },
+    { "binding": "SS_CF_ACCESS_CLIENT_SECRET", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "studio_cf_access_client_secret" }
+  ],
+  "routes": [
+    { "pattern": "stdk2024.etzhayyim.com/*", "zone_name": "etzhayyim.com" },
+    { "pattern": "studio.etzhayyim.com/*", "zone_name": "etzhayyim.com" }
+  ]
+}

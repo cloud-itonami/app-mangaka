@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1girl, 14 year old, 14-year-old Japanese female student, cheerful and energetic expression, bright smile., Shoulder-length black hair with a cute hair clip., Bright energetic eyes, sparkling catchlights, friendly iris patterns., Average build, wearing a school uniform with a colorful cardigan., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1girl, 16 year old, 16-year-old stunningly beautiful Japanese female, intelligent and mischievous sharp eyes with striking blue irises., Platinum blonde layered bob hair., Intelligent striking blue irises, bright crystalline catchlights, sharp perceptive gaze., Slender, wearing a white long-sleeve blouse and black sleeveless dress., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

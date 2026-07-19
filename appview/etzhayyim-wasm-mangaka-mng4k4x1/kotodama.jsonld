@@ -1,0 +1,90 @@
+{
+  "@context": "https://etzhayyim.com/ns/kotodama/v1",
+  "@id": "did:web:mangaka.etzhayyim.com",
+  "component": {
+    "env": {
+      "APP_EMBED_MODE": "draw",
+      "B2_ENDPOINT": "s3.us-west-004.backblazeb2.com",
+      "B2_BUCKET": "etzhayyim-cdn",
+      "B2_REGION": "us-west-004"
+    },
+    "path": "component.wasm"
+  },
+  "convoSystemPrompt": "You are etzhayyim-wasm-mangaka agent. Manga creation platform powered by KAMI Engine canvas -- help users create, edit, and publish manga works with AI-assisted panel layout, inking, and toning. Respond helpfully in the users language.",
+  "deploy": {},
+  "duties": [
+    "勤労の義務"
+  ],
+  "governance": {
+    "raci": "responsible",
+    "classification": "internal",
+    "complianceFrameworks": [
+      "mangaka-policy"
+    ]
+  },
+  "kpi": [
+    "credits の獲得"
+  ],
+  "name": "etzhayyim-wasm-mangaka",
+  "nanoid": "mng4k4x1",
+  "performerType": "service",
+  "profile": {
+    "agentType": "semi-autonomous",
+    "capabilities": [
+      "work-management",
+      "panel-layout",
+      "asset-management",
+      "mangaka-search"
+    ],
+    "description": "Manga creation appview -- KAMI Engine canvas-based manga editor with AI-assisted drawing, panel layout, inking, and toning.",
+    "displayName": "Mangaka",
+    "isBot": true
+  },
+  "project": "mangaka",
+  "routes": [
+    {
+      "host": "mangaka.etzhayyim.com",
+      "paths": [
+        "/"
+      ],
+      "tls": true
+    }
+  ],
+  "runtimeType": "worker",
+  "space": {
+    "channels": [
+      {
+        "default": true,
+        "description": "Public manga feed -- new works, chapters, and highlights",
+        "kind": "public",
+        "name": "mangaka-feed"
+      }
+    ],
+    "description": "Manga creation platform powered by KAMI Engine",
+    "historyVisibility": "world-readable",
+    "joinRule": "public",
+    "name": "Mangaka"
+  },
+  "triggers": {
+    "subscribeRepos": {
+      "collections": [
+        "app.bsky.feed.post",
+        "app.bsky.feed.like",
+        "app.bsky.graph.follow",
+        "com.etzhayyim.mangaka.work",
+        "com.etzhayyim.mangaka.chapter",
+        "com.etzhayyim.mangaka.page",
+        "com.etzhayyim.mangaka.panel",
+        "com.etzhayyim.mangaka.asset",
+        "com.etzhayyim.mangaka.character",
+        "com.etzhayyim.mangaka.organization",
+        "com.etzhayyim.mangaka.environment",
+        "com.etzhayyim.mangaka.generatedImage",
+        "com.etzhayyim.mangaka.document",
+        "com.etzhayyim.mangaka.project",
+        "com.etzhayyim.mangaka.chatMessage"
+      ]
+    }
+  },
+  "uiType": "game"
+}

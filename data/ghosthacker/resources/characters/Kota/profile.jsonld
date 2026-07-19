@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:aZirxFFDQnwc83I0rcZ0S",
+  "gh:appearance": {
+    "gh:build": "Slim build, wearing a school uniform, often carrying a tablet or gadget.",
+    "gh:eyes": "Curious eyes behind glasses, detailed iris patterns, catchlights reflecting screen glow.",
+    "gh:face": "16-year-old Japanese male student, intellectual and curious expression, wearing glasses.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, a 16-year-old Japanese high school boy, short black hair, wearing glasses, curious intellectual expression, eyes with catchlights reflecting a screen, wearing a school uniform.",
+    "gh:hair": "Short black hair, slightly unkempt.",
+    "gh:style": "Photorealistic, cinematic lighting, 8k, high-end webtoon aesthetic."
+  },
+  "gh:slug": "Kota",
+  "schema:age": 16,
+  "schema:name": "平松 コータ (Kota Hiramatsu)",
+  "schema:role": "Student / Tech Enthusiast"
+}

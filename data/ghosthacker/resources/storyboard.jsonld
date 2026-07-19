@@ -1,0 +1,416 @@
+{
+  "@context": {
+    "arc": "gh:arc/",
+    "character": "gh:character/",
+    "company": "gh:company/",
+    "dct": "http://purl.org/dc/terms/",
+    "env": "gh:environment/",
+    "family": "gh:family/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "gh:storyboard:b4gVlUSKsMw4GpHU8QRBj",
+  "@type": [
+    "gh:MasterStoryboard",
+    "prov:Entity"
+  ],
+  "dct:description": "Master storyboard file referencing all characters, organizations, environments, and episodes via sourceFile paths.",
+  "dct:title": "Ghost Hacker Season 1: Master Storyboard",
+  "gh:arcs": {
+    "gh:sourceFile": "incidents.jsonld"
+  },
+  "gh:characters": [
+    {
+      "@id": "character:Ren",
+      "gh:role": "Ghost Hacker / Protagonist",
+      "gh:sourceFile": "characters/Ren/profile.jsonld"
+    },
+    {
+      "@id": "character:Nei",
+      "gh:role": "AI Partner / Android",
+      "gh:sourceFile": "characters/Nei/profile.jsonld"
+    },
+    {
+      "@id": "character:NeiPuni",
+      "gh:role": "Meta UI Mascot",
+      "gh:sourceFile": "characters/NeiPuni/profile.jsonld"
+    },
+    {
+      "@id": "character:Takeru",
+      "gh:role": "Rival Hacker / Arc B Protagonist",
+      "gh:sourceFile": "characters/Takeru/profile.jsonld"
+    },
+    {
+      "@id": "character:Kaname",
+      "gh:role": "Rival Hacker / Arc C Protagonist",
+      "gh:sourceFile": "characters/Kaname/profile.jsonld"
+    },
+    {
+      "@id": "character:HERO",
+      "gh:role": "Arc D Antagonist",
+      "gh:sourceFile": "characters/HERO/profile.jsonld"
+    },
+    {
+      "@id": "character:Shouta",
+      "gh:role": "Arc A Client",
+      "gh:sourceFile": "characters/Shouta/profile.jsonld"
+    },
+    {
+      "@id": "character:President",
+      "gh:role": "Arc A - Daimon Construction President",
+      "gh:sourceFile": "characters/President/profile.jsonld"
+    },
+    {
+      "@id": "character:Yasumoto",
+      "gh:role": "Arc A Antagonist",
+      "gh:sourceFile": "characters/Yasumoto/profile.jsonld"
+    },
+    {
+      "@id": "character:Matsuda",
+      "gh:role": "Arc A - Accounting Manager",
+      "gh:sourceFile": "characters/Matsuda/profile.jsonld"
+    },
+    {
+      "@id": "character:Sato",
+      "gh:role": "Arc A - IT Support",
+      "gh:sourceFile": "characters/Sato/profile.jsonld"
+    },
+    {
+      "@id": "character:MizukiShinji",
+      "gh:role": "Arc C - Kaname's Uncle / Shadow Strategist",
+      "gh:sourceFile": "characters/MizukiShinji/profile.jsonld"
+    },
+    {
+      "@id": "character:YamashitaTsuyoshi",
+      "gh:role": "Arc B - Logistics Director / Client",
+      "gh:sourceFile": "characters/YamashitaTsuyoshi/profile.jsonld"
+    },
+    {
+      "@id": "character:TamuraSeiichi",
+      "gh:role": "Arc B - IT Director / Ally",
+      "gh:sourceFile": "characters/TamuraSeiichi/profile.jsonld"
+    },
+    {
+      "@id": "character:SasakiKenta",
+      "gh:role": "Arc B - Warehouse Manager / Ally",
+      "gh:sourceFile": "characters/SasakiKenta/profile.jsonld"
+    },
+    {
+      "@id": "character:EndoRisa",
+      "gh:role": "Arc B - System Operations Chief",
+      "gh:sourceFile": "characters/EndoRisa/profile.jsonld"
+    },
+    {
+      "@id": "character:KurodaMasahiko",
+      "gh:role": "Arc C - Executive VP / Antagonist-Client",
+      "gh:sourceFile": "characters/KurodaMasahiko/profile.jsonld"
+    },
+    {
+      "@id": "character:ShiraishiYuko",
+      "gh:role": "Arc C - Compliance Director / Ally",
+      "gh:sourceFile": "characters/ShiraishiYuko/profile.jsonld"
+    },
+    {
+      "@id": "character:NakamuraShunsuke",
+      "gh:role": "Arc C - InfoSec Director / Ally",
+      "gh:sourceFile": "characters/NakamuraShunsuke/profile.jsonld"
+    },
+    {
+      "@id": "character:AokiReina",
+      "gh:role": "Arc C - Internal Audit Manager / Young Ally",
+      "gh:sourceFile": "characters/AokiReina/profile.jsonld"
+    },
+    {
+      "@id": "character:Yuto",
+      "gh:role": "Arc 0 - Student / Victim",
+      "gh:sourceFile": "characters/Yuto/profile.jsonld"
+    },
+    {
+      "@id": "character:Akira",
+      "gh:role": "Arc 0 - Student / Trendsetter",
+      "gh:sourceFile": "characters/Akira/profile.jsonld"
+    },
+    {
+      "@id": "character:Mei",
+      "gh:role": "Arc 0 - Student / Mood Maker",
+      "gh:sourceFile": "characters/Mei/profile.jsonld"
+    },
+    {
+      "@id": "character:Saki",
+      "gh:role": "Arc 0 - Student / Observer",
+      "gh:sourceFile": "characters/Saki/profile.jsonld"
+    },
+    {
+      "@id": "character:Kota",
+      "gh:role": "Arc 0 - Student / Tech Enthusiast",
+      "gh:sourceFile": "characters/Kota/profile.jsonld"
+    },
+    {
+      "@id": "character:HomeroomTeacher",
+      "gh:role": "Arc 0 - Teacher",
+      "gh:sourceFile": "characters/HomeroomTeacher/profile.jsonld"
+    },
+    {
+      "@id": "character:Ken",
+      "gh:role": "Arc 0 - Student / Athlete",
+      "gh:sourceFile": "characters/Ken/profile.jsonld"
+    },
+    {
+      "@id": "character:Shota",
+      "gh:role": "Arc 0 - Student / Quiet Observer",
+      "gh:sourceFile": "characters/Shota/profile.jsonld"
+    },
+    {
+      "@id": "character:Tsubasa",
+      "gh:role": "Arc 0 - Student / Gamer",
+      "gh:sourceFile": "characters/Tsubasa/profile.jsonld"
+    },
+    {
+      "@id": "character:Misaki",
+      "gh:role": "Arc P - Yuto's Mother / Parent Guide Protagonist",
+      "gh:sourceFile": "characters/Misaki/profile.jsonld"
+    }
+  ],
+  "gh:directingGuide": {
+    "gh:goal": "???\"?\"???????????????????????????????/??/??/????????????????????????",
+    "gh:note": "???????????????????????Runway?????????????????????????"
+  },
+  "gh:environments": [
+    {
+      "@id": "env:quiet-room",
+      "gh:sourceFile": "environments/quiet-room/profile.jsonld"
+    },
+    {
+      "@id": "env:news-hacker-board",
+      "gh:sourceFile": "environments/news-hacker-board/profile.jsonld"
+    },
+    {
+      "@id": "env:cschool-consult",
+      "gh:sourceFile": "environments/cschool-consult/profile.jsonld"
+    },
+    {
+      "@id": "env:finance-hq",
+      "gh:sourceFile": "environments/finance-hq/profile.jsonld"
+    },
+    {
+      "@id": "env:street-day",
+      "gh:sourceFile": "environments/street-day/profile.jsonld"
+    },
+    {
+      "@id": "env:logistics-warehouse",
+      "gh:sourceFile": "environments/logistics-warehouse/profile.jsonld"
+    },
+    {
+      "@id": "env:sns-timeline",
+      "gh:sourceFile": "environments/sns-timeline/profile.jsonld"
+    },
+    {
+      "@id": "env:home-desk",
+      "gh:sourceFile": "environments/home-desk/profile.jsonld"
+    },
+    {
+      "@id": "env:kamata-daimon-office",
+      "gh:sourceFile": "environments/kamata-daimon-office/profile.jsonld"
+    },
+    {
+      "@id": "env:tokyo-2026-aerial",
+      "gh:sourceFile": "environments/tokyo-2026-aerial/profile.jsonld"
+    },
+    {
+      "@id": "env:intertitle-black",
+      "gh:sourceFile": "environments/intertitle-black/profile.jsonld"
+    },
+    {
+      "@id": "env:cschool-exterior-dusk",
+      "gh:sourceFile": "environments/cschool-exterior-dusk/profile.jsonld"
+    },
+    {
+      "@id": "env:cschool-hallway",
+      "gh:sourceFile": "environments/cschool-hallway/profile.jsonld"
+    },
+    {
+      "@id": "env:elite-school-campus",
+      "gh:sourceFile": "environments/elite-school-campus/profile.jsonld"
+    },
+    {
+      "@id": "env:meeting-neutral",
+      "gh:sourceFile": "environments/meeting-neutral/profile.jsonld"
+    },
+    {
+      "@id": "env:ren-office",
+      "gh:sourceFile": "environments/ren-office/profile.jsonld"
+    },
+    {
+      "@id": "env:cschool-virtual-campus",
+      "gh:sourceFile": "environments/cschool-virtual-campus/profile.jsonld"
+    },
+    {
+      "@id": "env:cyberspace-title",
+      "gh:sourceFile": "environments/cyberspace-title/profile.jsonld"
+    },
+    {
+      "@id": "env:evolution-nature",
+      "gh:sourceFile": "environments/evolution-nature/profile.jsonld"
+    },
+    {
+      "@id": "env:kamata-street-evening",
+      "gh:sourceFile": "environments/kamata-street-evening/profile.jsonld"
+    },
+    {
+      "@id": "env:station-night-street",
+      "gh:sourceFile": "environments/station-night-street/profile.jsonld"
+    },
+    {
+      "@id": "env:smartphone-screen",
+      "gh:sourceFile": "environments/smartphone-screen/profile.jsonld"
+    },
+    {
+      "@id": "env:historical-montage",
+      "gh:sourceFile": "environments/historical-montage/profile.jsonld"
+    },
+    {
+      "@id": "env:cschool-classroom",
+      "gh:sourceFile": "environments/cschool-classroom/profile.jsonld"
+    }
+  ],
+  "gh:episodes": [
+    {
+      "gh:arc": "Arc 0",
+      "gh:episodeId": "episode:arc0-1-origin",
+      "gh:sourceFile": "episodes/arc0-1-origin/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc 0",
+      "gh:episodeId": "episode:260123-cschool-defamation",
+      "gh:sourceFile": "episodes/260123-cschool-defamation/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc 0",
+      "gh:episodeId": "episode:260123-cschool-yami-baito",
+      "gh:sourceFile": "episodes/260123-cschool-yami-baito/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc A",
+      "gh:episodeId": "episode:260125-jump-arcA-1",
+      "gh:sourceFile": "episodes/260125-jump-arcA-1/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc A",
+      "gh:episodeId": "episode:260125-jump-arcA-2",
+      "gh:sourceFile": "episodes/260125-jump-arcA-2/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc A",
+      "gh:episodeId": "episode:260125-jump-arcA-3",
+      "gh:sourceFile": "episodes/260125-jump-arcA-3/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc B",
+      "gh:episodeId": "episode:260125-jump-arcB-1",
+      "gh:sourceFile": "episodes/260125-jump-arcB-1/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc B",
+      "gh:episodeId": "episode:260125-jump-arcB-2",
+      "gh:sourceFile": "episodes/260125-jump-arcB-2/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc B",
+      "gh:episodeId": "episode:260125-jump-arcB-3",
+      "gh:sourceFile": "episodes/260125-jump-arcB-3/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc C",
+      "gh:episodeId": "episode:260125-jump-arcC-1",
+      "gh:sourceFile": "episodes/260125-jump-arcC-1/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc C",
+      "gh:episodeId": "episode:260125-jump-arcC-2",
+      "gh:sourceFile": "episodes/260125-jump-arcC-2/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc C",
+      "gh:episodeId": "episode:260125-jump-arcC-3",
+      "gh:sourceFile": "episodes/260125-jump-arcC-3/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc D",
+      "gh:episodeId": "episode:260125-jump-arcD-1",
+      "gh:sourceFile": "episodes/260125-jump-arcD-1/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc D",
+      "gh:episodeId": "episode:260125-jump-arcD-2",
+      "gh:sourceFile": "episodes/260125-jump-arcD-2/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc D",
+      "gh:episodeId": "episode:260125-jump-arcD-3",
+      "gh:sourceFile": "episodes/260125-jump-arcD-3/episode.jsonld"
+    },
+    {
+      "gh:arc": "Arc P (Parent Guide)",
+      "gh:episodeId": "episode:260125-parent-smartphone-safety",
+      "gh:sourceFile": "episodes/260125-parent-smartphone-safety/episode.jsonld"
+    }
+  ],
+  "gh:globalStyle": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air. Emphasize detailed expressive eyes with intricate iris patterns and sharp catchlights.",
+  "gh:meta": {
+    "gh:audience": "?????????????",
+    "gh:hook": "????????????????????????",
+    "gh:oneLiner": "AI????????\"????\"???????????????????????",
+    "gh:tags": [
+      "Cyber",
+      "Thriller",
+      "Shonen",
+      "AI",
+      "Corporate",
+      "Ghost",
+      "CISSP",
+      "CISA",
+      "?????????"
+    ]
+  },
+  "gh:organizations": [
+    {
+      "@id": "company:DaimonConstruction",
+      "gh:arc": "Arc A",
+      "gh:sourceFile": "organizations/DaimonConstruction/profile.jsonld"
+    },
+    {
+      "@id": "company:KojimaLogistics",
+      "gh:arc": "Arc B",
+      "gh:sourceFile": "organizations/KojimaLogistics/profile.jsonld"
+    },
+    {
+      "@id": "company:TokaiSecurities",
+      "gh:arc": "Arc C",
+      "gh:sourceFile": "organizations/TokaiSecurities/profile.jsonld"
+    },
+    {
+      "@id": "family:Mizuki",
+      "gh:arc": "Arc C",
+      "gh:sourceFile": "organizations/MizukiFamily/profile.jsonld"
+    },
+    {
+      "@id": "gh:org/Cschool",
+      "gh:arc": "Arc 0",
+      "gh:sourceFile": "organizations/Cschool/profile.jsonld"
+    }
+  ],
+  "gh:runwayConstraints": "Max 3 key entities per prompt (2 characters + 1 prop/ghost), no dialogue text, stable shot schema via gh:shotProperties.",
+  "gh:slug": "master-season1",
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "gh:presentation/ghosthacker-a3"
+    },
+    {
+      "@id": "gh:board/ghosthacker"
+    },
+    {
+      "@id": "gh:data/incident-master-plan-final"
+    }
+  ]
+}

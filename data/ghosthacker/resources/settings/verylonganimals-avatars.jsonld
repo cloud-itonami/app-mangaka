@@ -1,0 +1,142 @@
+{
+  "@context": {
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/",
+    "character": "gh:character/"
+  },
+  "@id": "gh:settings/verylonganimals-avatars",
+  "@type": "gh:AvatarSettings",
+  "schema:name": "verylonganimals アバター設定",
+  "schema:description": "Ghost Hackerシリーズにおける味方キャラクターのverylonganimalsアバター設定",
+
+  "gh:concept": {
+    "gh:source": "verylonganimals (ながーい動物シリーズ)",
+    "gh:style": "シンプルで可愛いながーい動物たち。ゆるくてシュールだが、どこか愛嬌がある。",
+    "gh:usage": "味方キャラクターがネット上で使用するアバター。匿名性を保ちながらも、視覚的に『仲間』であることを示す統一感を演出。",
+    "gh:narrative": "Ghostの敵側は無機質なアイコンや不気味なアバターを使用するのに対し、Ghost Hacker側は『ながーい動物』という親しみやすいアバターで人間性を表現。"
+  },
+
+  "gh:allyAvatars": [
+    {
+      "@id": "character:Ren",
+      "gh:animal": "フクロウ (Owl)",
+      "gh:emoji": "🦉",
+      "gh:color": "ダークグレー / 銀色の目",
+      "gh:personality": "夜行性、洞察力、静寂",
+      "gh:symbolism": "止観の象徴。眠そうに見えて全てを見通す。『だるい』けど本質を見抜くRenそのもの。",
+      "gh:catchphrase": "「……見えてるよ」"
+    },
+    {
+      "@id": "character:Nei",
+      "gh:animal": "ネコ (Cat)",
+      "gh:emoji": "🐱",
+      "gh:color": "プラチナシルバー / 青い目",
+      "gh:personality": "クール、独立心、知的",
+      "gh:symbolism": "Renのフクロウとペアで『夜の賢者コンビ』。自由気ままに見えて、実は仲間を見守っている。",
+      "gh:catchphrase": "「にゃー（データ解析完了）」"
+    },
+    {
+      "@id": "character:Chise",
+      "gh:animal": "キツネ (Fox)",
+      "gh:emoji": "🦊",
+      "gh:color": "赤茶色 / 琥珀色の目",
+      "gh:personality": "賢い、守護、ストリートスマート",
+      "gh:symbolism": "お稲荷さん＝神社の守護者。ストリートの知恵と、弱者を守る精神。",
+      "gh:catchphrase": "「お前を守ってやる」"
+    },
+    {
+      "@id": "character:Kaname",
+      "gh:animal": "ペンギン (Penguin)",
+      "gh:emoji": "🐧",
+      "gh:color": "白黒 / クールな黒い目",
+      "gh:personality": "エリート、冷静、整然",
+      "gh:symbolism": "スーツのような外見で完璧主義を表現。でも群れを守る社会性も。",
+      "gh:catchphrase": "「手続きは正しく」"
+    },
+    {
+      "@id": "character:Mei",
+      "gh:animal": "ウサギ (Rabbit)",
+      "gh:emoji": "🐰",
+      "gh:color": "ピンク / キラキラした目",
+      "gh:personality": "元気、愛嬌、親しみやすい",
+      "gh:symbolism": "春と活力の象徴。桜庭＝桜＝春のイメージとも合致。ムードメーカー。",
+      "gh:catchphrase": "「みんな頑張ろ〜！」"
+    }
+  ],
+
+  "gh:additionalAllies": {
+    "gh:description": "今後登場する味方キャラクターに割り当て可能なverylonganimals",
+    "gh:reserved": [
+      {
+        "gh:animal": "クマ (Bear)",
+        "gh:emoji": "🐻",
+        "gh:personality": "大らか、頼りになる、力強い",
+        "gh:suggestedFor": "味方の年長者、メンター的キャラクター"
+      },
+      {
+        "gh:animal": "イヌ (Dog)",
+        "gh:emoji": "🐕",
+        "gh:personality": "忠実、正直、元気",
+        "gh:suggestedFor": "熱血タイプの味方キャラクター"
+      },
+      {
+        "gh:animal": "パンダ (Panda)",
+        "gh:emoji": "🐼",
+        "gh:personality": "のんびり、意外と鋭い、癒し系",
+        "gh:suggestedFor": "一見ボーッとしているが実力者"
+      },
+      {
+        "gh:animal": "カワウソ (Otter)",
+        "gh:emoji": "🦦",
+        "gh:personality": "好奇心旺盛、遊び心、社交的",
+        "gh:suggestedFor": "新人ハッカー、情報収集係"
+      },
+      {
+        "gh:animal": "ヒツジ (Sheep)",
+        "gh:emoji": "🐑",
+        "gh:personality": "穏やか、協調性、ふわふわ",
+        "gh:suggestedFor": "サポートキャラクター、調整役"
+      }
+    ]
+  },
+
+  "gh:storyUsage": {
+    "gh:scenes": [
+      {
+        "gh:type": "オンラインチャット",
+        "gh:description": "匿名チャットでアバターとして表示。『ながーいフクロウ』『ながーいネコ』が会話している絵面はシュールだが、視覚的に味方同士であることが分かる。"
+      },
+      {
+        "gh:type": "SNS投稿",
+        "gh:description": "キャラクターがSNSで活動する際のプロフィール画像。Renの『ながふくろう』アカウントなど。"
+      },
+      {
+        "gh:type": "作戦会議",
+        "gh:description": "オンライン作戦会議で全員のアバターが並ぶ。動物園のような絵面になるが、統一感で『チーム』を表現。"
+      },
+      {
+        "gh:type": "メッセージのスタンプ",
+        "gh:description": "会話中に『ながーい動物』のスタンプを使用。「了解」「OK」「頑張れ」などの感情表現。"
+      },
+      {
+        "gh:type": "正体隠しの演出",
+        "gh:description": "現実世界ではクールなキャラも、オンラインでは『ながーいペンギン』として活動。ギャップの演出。"
+      }
+    ],
+    "gh:visualGuidelines": {
+      "gh:allyStyle": "verylonganimals - 可愛い、ゆるい、親しみやすい",
+      "gh:enemyStyle": "無機質、幾何学的、不気味、顔のないアイコン",
+      "gh:contrast": "味方＝生き物（命）vs 敵＝無機質（Ghost＝情報の亡霊）"
+    }
+  },
+
+  "gh:merchandising": {
+    "gh:note": "verylonganimalsとのコラボ可能性。Ghost Hacker × verylonganimalsのスタンプセットなど。",
+    "gh:products": [
+      "LINEスタンプ「Ghost Hacker × ながーいなかまたち」",
+      "アクリルスタンド",
+      "缶バッジセット",
+      "コラボTシャツ"
+    ]
+  }
+}

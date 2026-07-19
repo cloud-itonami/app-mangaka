@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:yPHKiH25kByNlXqNzdikq",
+  "gh:appearance": {
+    "gh:build": "Sturdy, wearing a navy blue work jacket with a high-visibility safety vest.",
+    "gh:eyes": "Kind but firm weathered eyes, subtle iris detail, soft catchlights.",
+    "gh:face": "62-year-old Japanese man, sturdy build, deep facial wrinkles, weathered skin, kind but firm eyes.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 62-year-old Japanese man, sturdy build, deep facial wrinkles, weathered skin, kind firm eyes with subtle iris detail and soft catchlights, short salt-and-pepper hair, wearing a navy blue work jacket, natural skin tone.",
+    "gh:hair": "Short salt-and-pepper hair.",
+    "gh:style": "Photorealistic, weathered texture, authentic Japanese elder, 8k."
+  },
+  "gh:slug": "President",
+  "schema:age": 62,
+  "schema:name": "大門 五郎 (Goro Daimon)",
+  "schema:role": "President / Spiritual Pillar"
+}

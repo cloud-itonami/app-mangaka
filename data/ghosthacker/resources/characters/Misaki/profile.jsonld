@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "character:Misaki",
+  "@type": "gh:Character",
+  "gh:name": "川島 美咲",
+  "gh:nameReading": "かわしま みさき",
+  "gh:nameEn": "Misaki Kawashima",
+  "gh:nickname": "美咲さん",
+  "gh:age": 42,
+  "gh:gender": "female",
+  "gh:role": "Supporting Character (Parent)",
+  "gh:occupation": "パート勤務（事務職）",
+  "gh:familyRelation": {
+    "gh:son": "character:Yuto",
+    "gh:husband": "character:TakeshiKawashima"
+  },
+  "gh:firstAppearance": "episode:260125-parent-smartphone-safety",
+  "gh:description": "Yutoの母親。息子がフィッシング詐欺の被害に遭ったことをきっかけに、子供のデジタル安全について真剣に向き合うようになった。ITやスマホには詳しくないが、子供を守りたいという強い思いを持ち、分からないことは素直に聞ける性格。",
+  "gh:personality": {
+    "gh:traits": [
+      "子供思い",
+      "心配性",
+      "素直",
+      "学ぶ姿勢がある",
+      "責任感が強い"
+    ],
+    "gh:strengths": [
+      "子供のために行動できる",
+      "分からないことを認められる",
+      "専門家に相談できる"
+    ],
+    "gh:weaknesses": [
+      "ITリテラシーが低い",
+      "つい過保護になりがち",
+      "最初は設定=監視と考えてしまう"
+    ]
+  },
+  "gh:characterArc": {
+    "gh:before": "子供のスマホは危険だと漠然と不安。でも何をすればいいか分からない。",
+    "gh:turning": "Neiから具体的な設定方法を学び、技術的対策の重要性を理解する。",
+    "gh:after": "設定は入り口に過ぎず、本当に大切なのは子供との対話だと気づく。Yutoとの関係がより良くなる。"
+  },
+  "gh:visualDescription": {
+    "gh:physicalAppearance": "42歳の日本人女性。黒髪のセミロング。穏やかで優しい雰囲気。やや疲れた表情をすることもあるが、基本的に明るい。",
+    "gh:clothing": "カジュアルな服装。カーディガンやシンプルなブラウスを好む。",
+    "gh:accessories": "結婚指輪。読書用の眼鏡（時々）。",
+    "gh:expressions": {
+      "gh:default": "優しい微笑み",
+      "gh:worried": "眉をひそめて心配そうな表情",
+      "gh:relieved": "ほっとした表情、目尻が下がる",
+      "gh:determined": "真剣な眼差し"
+    }
+  },
+  "gh:imagePrompt": "42-year-old Japanese woman, mother, warm and caring expression, semi-long black hair, wearing casual cardigan, worried but determined look, suburban home setting, soft natural lighting, cinematic portrait, shot on 85mm lens, f/2.0",
+  "gh:voiceCharacteristics": {
+    "gh:tone": "穏やかで温かみのある声",
+    "gh:speechPattern": "丁寧語を基本に、時々関西弁が混じる",
+    "gh:catchphrase": "ちょっと教えてもらえますか？"
+  },
+  "gh:relationships": [
+    {
+      "gh:character": "character:Yuto",
+      "gh:relationship": "息子",
+      "gh:dynamic": "事件後、より真剣に向き合おうとしている。以前は「スマホのことは分からない」と放任気味だったが、今は一緒に学ぶ姿勢。"
+    },
+    {
+      "gh:character": "character:Nei",
+      "gh:relationship": "相談相手",
+      "gh:dynamic": "息子を助けてくれたNeiに感謝。分からないことを素直に聞ける相手として信頼。"
+    },
+    {
+      "gh:character": "character:Ren",
+      "gh:relationship": "知り合い",
+      "gh:dynamic": "最初は怖い印象だったが、息子を助けてくれたことで好印象に変わる。"
+    }
+  ],
+  "gh:narrativePurpose": "親御さん視聴者の代弁者・共感ポイント。ITに詳しくない親でも、子供のためなら学べることを示す。設定だけでなく対話の重要性に気づく役割。",
+  "gh:thematicRole": "「分からないから放置」ではなく「分からないから学ぶ」という姿勢のモデルケース",
+  "dct:created": "2026-01-25",
+  "dct:creator": "Ghosthacker Project"
+}

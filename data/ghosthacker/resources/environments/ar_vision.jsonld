@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "gh:environment:qeiAQ_6eH4xDQdGamtJKp",
+  "@type": "gh:EnvironmentPrompt",
+  "gh:description": "The digital overlay where 'Ghosts' become visible. A surreal, glitchy dimension where data and human emotions merge into monsters.",
+  "gh:elements": [
+    "Glitch effects and digital noise",
+    "Transparent data grids",
+    "Shadowy, distorted figures emerging from machines",
+    "Ink-like smoke and floating code fragments"
+  ],
+  "gh:lighting": "Surreal, pulsating digital light, high-contrast black and white voids",
+  "gh:prompt": "Professional monochrome manga art, surreal. AR Vision digital overlay. Glitch effects, floating code fragments, transparent data grids superimposed over reality. A massive shadowy ghost figure emerging with ink-like smoke. High contrast, intense screentone patterns, digital noise texture, sharp focus on AR elements, cinematic and terrifying.",
+  "gh:slug": "ar-vision",
+  "schema:name": "AR Vision / Ghost Realm (ARビジョン/ゴースト領域)"
+}

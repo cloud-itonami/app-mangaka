@@ -1,0 +1,164 @@
+{
+  "@context": {
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/",
+    "dct": "http://purl.org/dc/terms/",
+    "incident": "gh:incident/",
+    "character": "gh:character/",
+    "company": "gh:company/",
+    "nist": "gh:nist_csf_2/"
+  },
+  "@id": "gh:data/incident-master-plan-final",
+  "@type": "gh:IncidentKnowledgeBase",
+  "gh:episodes": [
+    {
+      "gh:arc": "Arc 0",
+      "gh:episodes": [1, 6, 10],
+      "gh:episodeIds": [
+        "episode:260123-cschool-privacy",
+        "episode:260123-cschool-defamation",
+        "episode:260123-cschool-yami-baito"
+      ],
+      "gh:industry": "Student life (高校生)",
+      "gh:mainCharacter": "character:Ren",
+      "gh:supportingCharacters": ["character:Nei", "character:Takeru", "character:Kaname"],
+      "gh:description": "高校生にも身の覚えのある『個人』のトラブル（漏えい→迷惑連絡、誹謗中傷、闇バイト）を入口にして、具体的な対処法と支援導線を示す。Ren/Takeru/KanameはNews Hackerで互いのHNだけを知り、素性は知らない。"
+    },
+    {
+      "gh:arc": "Arc A",
+      "gh:episodes": [2, 3, 4],
+      "gh:episodeIds": [
+        "episode:260125-jump-arcA-1",
+        "episode:260125-jump-arcA-2",
+        "episode:260125-jump-arcA-3"
+      ],
+      "gh:industry": "Construction (建設)",
+      "gh:mainCharacter": "character:Ren",
+      "gh:credentials": ["CISSP", "CEH"],
+      "gh:realCase": "Handa Hospital Ransomware (2021) / Iseto (2024)",
+      "gh:sinContrast": "Passive Sloth (Vulnerability Neglect) vs. Active Sloth (Hyper-Efficiency)",
+      "gh:nistFocus": ["PR.IP (Backup Protection)", "GV.PO (Vulnerability Policy)"],
+      "gh:description": "『動いているからいい』とパッチ適用をサボった『怠惰』が全業務を止めた。RenはCISSPの知見で、暗号化の嵐から生き残った微細なデータを繋ぎ合わせ、一瞬でシステムを再起動する。"
+    },
+    {
+      "gh:arc": "Arc B",
+      "gh:episodes": [5, 7, 8],
+      "gh:episodeIds": [
+        "episode:260125-jump-arcB-1",
+        "episode:260125-jump-arcB-2",
+        "episode:260125-jump-arcB-3"
+      ],
+      "gh:industry": "Manufacturing (製造/物流)",
+      "gh:company": "company:KojimaLogistics",
+      "gh:mainCharacter": "character:Takeru",
+      "gh:supportingCharacters": ["character:Ren", "character:Nei"],
+      "gh:companyCharacters": [
+        "character:YamashitaTsuyoshi",
+        "character:TamuraSeiichi",
+        "character:SasakiKenta",
+        "character:EndoRisa"
+      ],
+      "gh:credentials": ["OSCP", "GXPN"],
+      "gh:realCase": "Kojima Press / Toyota Supply Chain (2022)",
+      "gh:sinContrast": "Impulsive Wrath (Calculation Failure) vs. Calculated Wrath (Optimization)",
+      "gh:nistFocus": ["PR.IR-04 (Network Segmentation)", "RS.MA-01 (Containment)"],
+      "gh:description": "リスク計算を放棄し、場当たり的にVPNを繋いだ『短気』が物流を止めた。TakeruはGXPNの精密な計算で感染パケットを仕分け、汚染区画を切り離してラインを再起動させる。",
+      "gh:storyStructure": {
+        "gh:opening": "Ren, Nei が相談を受ける（News Hacker経由で物流会社から依頼）。Renは『製造・物流は専門外』としてTakeruに振る。",
+        "gh:main": "Takeru が現場入り。山下本部長（短気）、田村IT部長（協力者）、佐々木センター長（現場）、遠藤チーフ（技術）と対話しながら解決。",
+        "gh:climax": "『始業の鐘』Ghostとの対決。短気な再起動指示 vs Takeruの手順主義。",
+        "gh:resolution": "現場の『急げ』文化に『止めて守る』概念を植え付ける。"
+      },
+      "gh:keyDialogues": [
+        {
+          "gh:characters": ["character:Takeru", "character:YamashitaTsuyoshi"],
+          "gh:theme": "スピード vs 手順",
+          "gh:conflict": "山下『始業に間に合わせろ！』vs Takeru『止めないと永遠に終わらない』"
+        },
+        {
+          "gh:characters": ["character:Takeru", "character:TamuraSeiichi"],
+          "gh:theme": "技術的正論 vs 組織政治",
+          "gh:conflict": "田村『VPN接続は上の指示で...』、Takeru『証拠が死ぬ前に止めろ』"
+        },
+        {
+          "gh:characters": ["character:Takeru", "character:SasakiKenta"],
+          "gh:theme": "現場の板挟み",
+          "gh:conflict": "佐々木『部下を守りたいが、上の命令も...』、Takeru『守るために止める』"
+        }
+      ]
+    },
+    {
+      "gh:arc": "Arc C",
+      "gh:episodes": [9, 11, 12],
+      "gh:episodeIds": [
+        "episode:260125-jump-arcC-1",
+        "episode:260125-jump-arcC-2",
+        "episode:260125-jump-arcC-3"
+      ],
+      "gh:industry": "Finance (金融)",
+      "gh:company": "company:TokaiSecurities",
+      "gh:mainCharacter": "character:Kaname",
+      "gh:supportingCharacters": ["character:Ren", "character:Nei", "character:MizukiShinji"],
+      "gh:companyCharacters": [
+        "character:KurodaMasahiko",
+        "character:ShiraishiYuko",
+        "character:NakamuraShunsuke",
+        "character:AokiReina"
+      ],
+      "gh:credentials": ["CISA", "情報処理安全確保支援士"],
+      "gh:realCase": "SBI Securities Account Fraud (2020)",
+      "gh:sinContrast": "Passive Pride (Rule Blindness) vs. Active Pride (Rule Definition)",
+      "gh:nistFocus": ["PR.AA-01 (Identity/Access)", "ID.RA-01 (Risk Assessment)"],
+      "gh:description": "『金融庁ガイドラインの項目を満たしているから大丈夫』という『傲慢』が資産を盗ませた。ログインだけの対策で満足し、重要操作（受取口座の追加/変更・出金）への強制MFA、異常検知によるステップアップ、変更の冷却期間、ログの一元収集と24/7監視、委託先も含む統制テストが甘かった。国内規制の『最低ライン』だけに依存し、国際的な統制要求（例: AML/CFT系の不正取引監視・統制要求）まで含めた運用・監査設計が追いついていなかった。KanameはCISAの監査眼でその欺瞞を暴き、支援士の設計力で『新・絶対ルール（ゼロトラスト）』を敷く。",
+      "gh:storyStructure": {
+        "gh:opening": "Ren, Nei が相談を受ける（水城慎司おじさん経由で東海証券から依頼）。Renは『金融は規制が複雑』としてKanameを推薦。慎司が甥のKanameを紹介。",
+        "gh:main": "Kaname が本社入り。黒田専務（傲慢な規程主義）、白石部長（内部協力者）、中村部長（技術協力者）、青木課長（弟子志願）と対話しながら解決。",
+        "gh:climax": "『規程の城』Ghostとの対決。ガイドライン遵守の砂の城を論理で崩す。",
+        "gh:resolution": "『最低ライン≠安全』を組織に刻み込む。青木が改革の旗手に。"
+      },
+      "gh:keyDialogues": [
+        {
+          "gh:characters": ["character:Kaname", "character:KurodaMasahiko"],
+          "gh:theme": "規程遵守 vs 実効性",
+          "gh:conflict": "黒田『金融庁ガイドラインを満たしている』vs Kaname『最低ラインは〈外〉があるという意味』"
+        },
+        {
+          "gh:characters": ["character:Kaname", "character:ShiraishiYuko"],
+          "gh:theme": "規制の本質",
+          "gh:conflict": "白石『規程を守った≠守られている』、Kaname『監視してないログは、ないのと同じ』"
+        },
+        {
+          "gh:characters": ["character:Kaname", "character:NakamuraShunsuke"],
+          "gh:theme": "技術 vs 政治",
+          "gh:conflict": "中村『MFA強化を提言したが却下された』、Kaname『今度は証拠を持って再提言する』"
+        },
+        {
+          "gh:characters": ["character:Kaname", "character:MizukiShinji"],
+          "gh:theme": "一族の戦略",
+          "gh:conflict": "慎司『いやぁ、君の活躍で水城の名が...』、Kaname『叔父さん、それが目的ですか？』"
+        }
+      ],
+      "gh:mizukiFamilyDynamic": {
+        "gh:introduction": "慎司おじさんが『親戚の優秀な若者』としてKanameを紹介。表向きは善意だが、実際は水城家の金融界での影響力拡大の一手。",
+        "gh:tension": "Kanameは叔父の知性を尊敬しつつも、その計算高さに違和感。『正義のため？一族のため？』という問いが残る。",
+        "gh:foreshadowing": "Arc Dで明かされる水城家の過去と、慎司の真の目的への伏線。"
+      }
+    },
+    {
+      "gh:arc": "Arc D",
+      "gh:episodes": [13, 14, 15],
+      "gh:episodeIds": [
+        "episode:260125-jump-arcD-1",
+        "episode:260125-jump-arcD-2",
+        "episode:260125-jump-arcD-3"
+      ],
+      "gh:industry": "Cross-Industry (複合)",
+      "gh:mainCharacter": "character:Ren",
+      "gh:supportingCharacters": ["character:Takeru", "character:Kaname"],
+      "gh:realCase": "SNS Investment Scam / Celebrity Impersonation (2024)",
+      "gh:sinContrast": "Vainglory (虚飾の正義) vs. Truth (静かなる真実)",
+      "gh:nistFocus": ["ID.RA (Risk Assessment)", "PR.AA (Identity Management)", "RS.MA (Mitigation)"],
+      "gh:description": "SNS型投資詐欺。Renの逆探知、Takeruの資金経路解析、Kanameの法的凍結が結集し、HEROの虚飾を剥ぎ取る。"
+    }
+  ]
+}

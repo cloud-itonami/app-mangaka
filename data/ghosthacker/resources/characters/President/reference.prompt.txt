@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1boy, 62 year old, 62-year-old Japanese man, sturdy build, deep facial wrinkles, weathered skin, kind but firm eyes., Short salt-and-pepper hair., Kind but firm weathered eyes, subtle iris detail, soft catchlights., Sturdy, wearing a navy blue work jacket with a high-visibility safety vest., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

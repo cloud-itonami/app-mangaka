@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:r5A3LxXDtqiMyIzW3xzn_",
+  "@type": "gh:Character",
+  "gh:appearance": {
+    "gh:build": "Tall, commanding presence. Perfectly tailored navy pinstripe suit.",
+    "gh:eyes": "Cold authoritative eyes behind glasses, pride in regulatory compliance, rigid catchlights.",
+    "gh:face": "58-year-old Japanese male, stern dignified face, silver-rimmed glasses, expression of absolute confidence in rules.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 58-year-old Japanese male, stern dignified expression, silver-gray hair, silver-rimmed glasses, navy pinstripe suit, marble boardroom background.",
+    "gh:hair": "Silver-gray hair, impeccably styled, executive cut.",
+    "gh:style": "Photorealistic, executive boardroom lighting, old money aesthetic, 8k."
+  },
+  "gh:arc": "Arc C",
+  "gh:ghost": {
+    "gh:form": "ガイドライン文書で築かれた砂の城。見た目は堅牢だが、一点を突くと崩れる。",
+    "gh:name": "規程の城"
+  },
+  "gh:organization": "company:TokaiSecurities",
+  "gh:personality": {
+    "gh:arc": "Kanameに論破されて目が覚める。根は責任感がある。",
+    "gh:core": "金融庁ガイドライン遵守を絶対視。『規程を守っている』が口癖。形式主義の権化。",
+    "gh:flaw": "傲慢。最低ラインを満たせば安全と思い込む。"
+  },
+  "gh:relationships": {
+    "gh:kaname": {
+      "gh:final": "改革を受け入れる",
+      "gh:initial": "傲慢さで対立",
+      "gh:role": "主要対話相手"
+    }
+  },
+  "gh:slug": "KurodaMasahiko",
+  "schema:age": 58,
+  "schema:name": "黒田 雅彦 (Masahiko Kuroda)",
+  "schema:role": "Executive VP / Arc C Antagonist-Client"
+}

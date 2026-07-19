@@ -1,0 +1,160 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:Nei",
+  "schema:name": "白瀬 寧 (Nei Shirase)",
+  "schema:role": "Childhood Friend / Partner / Commentator",
+  "schema:age": 16,
+  "gh:slug": "Nei",
+  "gh:arc": "Arc 0-1 (Main Heroine) / All Arcs",
+
+  "gh:appearance": {
+    "gh:face": "16-year-old stunningly beautiful Japanese female, intelligent and composed face with striking blue irises. Sharp perceptive gaze that reads details first, emotions second.",
+    "gh:hair": "Platinum blonde layered bob hair.",
+    "gh:build": "Slender, neatly dressed. On duty (reader-facing explanation mode): white long-sleeve blouse and black sleeveless dress. Off duty / at school: standard C高校 uniform.",
+    "gh:eyes": "Intelligent striking blue irises, bright crystalline catchlights, sharp perceptive gaze. Direct eye contact without blinking for long periods (ASD trait).",
+    "gh:style": "Photorealistic, cinematic soft lighting, 8k.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, beautiful 16-year-old Japanese female, platinum blonde layered bob, striking blue irises and sharp catchlights, white blouse, black dress, composed direct gaze."
+  },
+
+  "gh:background": {
+    "gh:family": {
+      "gh:structure": "父・白瀬 聡（工学系研究者、SIP デバイス実装研究者）、母・白瀬 玲子（翻訳家兼編集者）との 3 人家族。Ren の家の隣に住む。",
+      "gh:father": "白瀬 聡（さとし）。工学系研究者。国立の情報物理応用研究所・主任研究員。専門は『情報の物質化装置』の実装工学。*SIP デバイス* (Gh 情報場 → 物理世界への投射装置) の原型を 10 年前から開発している、*現役の* 研究者。Ren の父・沼野信哉（情報物理学者・理論）と *二人三脚* の共同研究者だった (信哉が *中核アルゴリズム / Ghost 検出コア* を、聡が *工学・実装・ハードウェア* を担当)。9 年前の *公立病院 SIP 防御パイロット崩壊事件* では、聡もプロジェクトの工学責任者として渦中にいたが、社会的責任は信哉に集中した。信哉の死後、聡は信哉の遺した *コア部分の代替実装* を 10 年かけて *近似的に* 復元しているが、信哉のオリジナル実装には及ばない。信哉が遺した *ロック付き SIP デバイス試作機* の存在は知っているが、パスワードは聡にもわからない。Ayumu の父・七尾伊織（MIT）とも学会仲間で、3 家族は親子代々の付き合い。",
+      "gh:mother": "白瀬 玲子（れいこ）。海外児童書翻訳家兼編集者。Nei の ASD 特性を最も早く見抜き、受容した最初の大人。Ren の母とも近所付き合いを続けている。Ren 母との関係は、実質 Ren の代理親のような役割も果たしている。",
+      "gh:atmosphere": "知的で静か。両親は Nei の特性を早い段階で受け入れ、興味分野（数学・情報・パターン解析）を全力で伸ばす教育方針。",
+      "gh:hiddenBackground": {
+        "gh:note": "※ この設定は連載中盤 (Part 1 後半 ~ Part 2 冒頭) で段階的に開示される裏設定。読切・連載序盤では *示唆* にとどめる。",
+        "gh:secretSetting": "白瀬聡 (Nei 父) は、娘 Nei に *SIP デバイスのプロトタイプ* を日常的に使わせており、*知覚データ・認知反応データ* を長期的に収集している。被験者としての Nei は本人も途中から気付いているが、父の信哉への想いと、自身の情報場への興味から、*暗黙の同意* で続けている。",
+        "gh:moralAmbiguity": "娘を研究の *被験者* にしている倫理的グレーゾーン。一方で、Nei にとっては父の研究を *一緒に続けている* という精神的な絆でもある。Nei の特性 (パターン認識・感覚過敏・聴覚過敏) が SIP デバイスの調整に *最適な被験者サンプル* となってしまっている皮肉もある。",
+        "gh:narrativeUse": "Part 1 後半 (Arc 5〜6 あたり) で明かされる予定。Ren と Nei が SIP デバイスを使って事件解決を重ねる中、Nei が父の研究データを *自分の意志で* 提供していることが判明するエピソード。Ren の父の遺した *信頼できる仲間* としての白瀬父と、*娘を被験者にする* 複雑な父親像、両方を同時に描く"
+      }
+    },
+    "gh:schoolReadkiriEra": "（読切時＝中3・15歳）市立C中学校 3年D組。数学・情報・物理は学年トップ。古典と体育は壊滅的。",
+    "gh:schoolSerializedEra": "（連載時＝17歳）通信制『C高等学校』在籍。ASD 特性上、一般高校の集団環境が過負荷になりやすいため、両親が通信制を選択した。数学・情報・物理は学年トップ、古典と体育は壊滅的。週に 1〜2 回のスクーリングと自宅学習で成立。Ren も同校に在籍。",
+    "gh:childhoodWithRen": "5歳から隣家の幼馴染。Ren父とNei父が親友で、家族ぐるみの付き合い。幼少期、まだ漢字を読めなかったNeiが『蓮』を『レン』とカタカナで書いていたのがそのまま呼称として固定。以降Neiだけは常にカタカナで『レン』と呼び捨てる。Renからは『Nei』と呼ばれる。敬称はつかない。",
+    "gh:hackerOrigin": "パターン認識と数学への執着がそのままネットワーク解析・異常検知へ。Ren父（情報倫理研究者）が寧に与えた子供向け暗号パズルが原点。",
+    "gh:currentState": "（連載時）通信制 C高等学校 2 年相当。朝は Ren の家に押しかけてパンや冷蔵庫の中身をあさりつつ、Ren を引きずり起こす。昼はスクーリングか自宅学習、合間に Ren のバイト業務の解析補佐。夜は Ren のバディとして追跡・解析。雑誌企画では読者向けの解説役（NeiPuniモード）。",
+    "gh:appetite": "食いしん坊。*コメッコン*（作品内架空ベーカリー・米粉パン専門ブランド）の熱狂的ファン。*米粉パン* と *米粉ドーナツ* が主食で、常に 3 個は持ち歩く。小麦が苦手なわけではなく、*米粉の食感と米の香り* に執着がある。Ren の家の冷蔵庫を勝手に漁る、コメッコンの新商品は発売初日に買う、Ren のおにぎりを半分（時に全部）取る、が日常。味覚も鋭く、米粉の *産地と配合* をパッケージなしで当てる。Ren は食べ物への執着が薄いので、Nei が実質 Ren 家の食事を管理している。",
+    "gh:signatureBrand": {
+      "gh:name": "コメッコン (Komekkon)",
+      "gh:type": "作品内架空ベーカリー / 米粉焼き菓子専門店",
+      "gh:products": ["米粉パン（食パン / クリーム / メロン / チョコ）", "米粉ドーナツ（プレーン / きな粉 / 抹茶 / 塩）", "米粉マフィン", "季節限定ワッフル"],
+      "gh:worldPresence": "全国のコンビニで入手可能、都市部には直営店あり。本作では Nei が毎朝 3 個入り袋を持ち歩くアイコニックなモチーフ",
+      "gh:branding": "パッケージは *米粒のシルエット* と *くすんだ黄色* を基調としたレトロかわいい系。作画段階で袋のデザインを統一して、作中ブランドとしての一貫性を持たせる",
+      "gh:narrativeUse": "連載全話で Nei のシグネチャアイテム。差し入れ・朝食・おやつ・仲直りの手渡しなど、関係性を繋ぐ小道具として頻出。後のアーク（Chise・Kaname・Ayumu 合流時）では、*コメッコンを共有したかどうか* がメンバー格のさりげない指標にもなる"
+    }
+  },
+
+  "gh:neurodiversity": {
+    "gh:diagnosis": "ASD（自閉スペクトラム症、アスペルガー特性）。幼少期に診断済み。",
+    "gh:traits": {
+      "gh:patternRecognition": "異常なパターン認識力。膨大なログ・通信記録から『揃っていないもの』を一目で抜き出す。",
+      "gh:directCommunication": "婉曲表現が苦手。本人はごく普通に話しているつもりで、結果的に歯に衣着せぬ物言いになる。",
+      "gh:literalInterpretation": "比喩や皮肉を文字通り受け取ることがある（わかっていても、先に文字通りの処理が走る）。",
+      "gh:specialInterest": "情報理論・暗号・統計的異常検知・Ren父の遺した研究ノート。『特別な興味』の領域。",
+      "gh:routine": "朝6時起床・6時15分にRenを起こしに行く・6時45分に朝食を作る、等の固定ルーチン。崩れると情緒が乱れる。",
+      "gh:sensoryProfile": "聴覚過敏傾向。雑踏・大音量が苦手。ヘッドホン常備。",
+      "gh:emotionalRegulation": "感情の波は内側では大きいが、表出がフラット。Renだけが微細な変化を読める。"
+    },
+    "gh:strengthFraming": "パターン認識＝Ghost解析の中核技術。ルーチン性＝長時間解析の耐性。直接的な物言い＝読者向け解説役としての明瞭さ。",
+    "gh:weaknessFraming": "雑踏・大人数の場での疲弊。社交的建前の欠落。昼の学校でのトラブル源。",
+    "gh:speechPattern": "他人には丁寧語基調（『〜です』『〜ます』）。Renにだけは常にタメ口・呼び捨て、カタカナで『レン』と呼ぶ（『レン、起きろ』『レン、これ違う』『レン、長くなる?』）。ASDの直球さはどちらの相手でも変わらない。"
+  },
+
+  "gh:traumaIncident": {
+    "gh:type": "SNS 個人情報流出 / 誹謗中傷",
+    "gh:name": "『母・玲子誹謗中傷事件』",
+    "gh:year": "Nei 13歳（中1）",
+    "gh:summary": "母玲子が翻訳した海外児童書の内容を『過激で不適切』と決めつける匿名アカウント群に標的化される。個人情報（自宅住所・娘であるNeiの写真を含む）を集団で晒され、精神的に追い詰められて休業。NeiはこれをRenに相談。Renが夜通しで拡散元を辿り、匿名掲示板の発信源・踏み台サーバ・運営者情報をすべて押さえ、法的手続きに耐える形で開示請求・プラットフォーム削除依頼まで一気に実行。Neiもパターン解析で加担者のネットワーク構造を可視化。母は半年後に仕事復帰。",
+    "gh:meaning": "Neiにとって『自分と母を守ったのは、Renの技術と執念』という決定的経験。これ以降、『自分も守る側に回る』と決意し、Renのパートナーとしての意志が固まる。Ren父の事件と合わせて、2人が2人で在り続ける根拠になっている。",
+    "gh:linkToRenIncident": "Ren父の死（Ren 8歳・小3冬の攻撃 → 9歳の夏に自死）から約 4 年後に発生（Nei 13歳・中1）。その間、Ren は独学で父の系譜を追い続けていた。Neiの母の件は、Ren が『他人を救うモード』に初めて本格的に切り替わった実戦。蓄積された 4 年分の技術が、身近な他者の救出に初めて向けられた日。2人の共有された原点 = 父の死の 4 年後の再結合。",
+    "gh:sharedStanceWithRen": "Nei と Ren は、*父の事件* と *母の事件* の両方で、*同じ社会的被害構造* を体験している: (1) アクター（攻撃者・加害者）が原因を作る、(2) 被害者が直接の被害を受ける、(3) 周囲が被害者を *罵る側* に回る (善意の同情 → ある日、急に攻撃に転じる流れ)、(4) 真の加害者は責任を取らない。この 3 層構造の中で、2 人とも *『悪いのはアクター。被害者でも、罵る側でもない』* という強固な信条を共有。読切では Yuto を罵るクラスメイトに対し、Ren が珍しく強い口調で『*怒りの向け先を間違えるな*』と言うが、これは Nei が後ろから *目線で同意* している場面でもある。Nei は他人には丁寧語だが、*この件に関してだけ* は感情が乗る"
+  },
+
+  "gh:role": {
+    "gh:inStory": {
+      "gh:dayMode": "Renの生活の保護者役。学校・食事・連絡・書類処理。",
+      "gh:nightMode": "技術的相棒。ログ解析・パターン検出・Ren過集中時のブレーキ係。",
+      "gh:readerMode": "サイバーセキュリティ解説役。実質的にサイバー面の主役。"
+    },
+    "gh:explanatorySegment": {
+      "gh:name": "Nei ちゃんのサイバーセキュリティ対策コーナー",
+      "gh:format": "各話の中盤〜終盤に数ページ挿入。NeiPuni（puniキャラ化した姿）で読者に直接語りかける。",
+      "gh:content": "その回の事件で使われた攻撃手口・個人ができる対策・公的な支援窓口情報を、過不足なく、かつ可愛く。",
+      "gh:tone": "丁寧語ベース。専門用語は必ずメタファーで噛み砕く。読者に手順を『いますぐできる』形で渡す。"
+    }
+  },
+
+  "gh:skills": {
+    "gh:hackerName": "Nei",
+    "gh:technical": [
+      "異常検知・統計的パターン解析",
+      "グラフ解析（通信関係性の可視化）",
+      "OSINT（公開情報統合）",
+      "法的証拠としてのログ保全",
+      "読者向けの翻訳・解説"
+    ],
+    "gh:uniqueStrength": "Renの直感を言語化・構造化して他者（読者・警察・プラットフォーム担当）に渡せる唯一の人物。"
+  },
+
+  "gh:relationships": {
+    "gh:ren": {
+      "gh:type": "幼馴染 / 事実上のパートナー",
+      "gh:history": "5歳からの隣人。Ren父の事件、Nei母の誹謗中傷事件を共有している。家族以上の近さ。",
+      "gh:dynamic": "互いに呼び捨て。Neiは常にカタカナで『レン』、Renは『Nei』と呼ぶ幼馴染。恋愛要素は本人たちに自覚がない程度に存在。現時点での関係性は『相棒』。"
+    },
+    "gh:renFather": {
+      "gh:type": "恩師 / 精神的な父",
+      "gh:dynamic": "Renの父はNeiの才能を最も早く見抜いた大人。Neiに暗号パズルや情報理論の入口を与えた人物。Neiにとっても父の死は深い喪失。"
+    },
+    "gh:neiFather": {
+      "gh:type": "父",
+      "gh:dynamic": "物理学者。Nei の特性を理解し、理論・数理で関わる育て方をした。Ren父の詐欺被害を唯一相談されていた大人でもある。"
+    }
+  },
+
+  "gh:onlinePresence": {
+    "gh:avatar": {
+      "gh:type": "verylonganimals",
+      "gh:animal": "ネコ (Cat)",
+      "gh:description": "verylonganimalsのながーいネコ。クールでミステリアス、でも実は仲間想い。Neiの知的で独立心の強い性格を反映。",
+      "gh:color": "プラチナシルバー / 青い目",
+      "gh:usage": "Renとのペアアバターとして活動時に使用",
+      "gh:reason": "ネコ＝独立心と知性の象徴。フクロウとネコ＝夜の賢者コンビ。"
+    },
+    "gh:handleVariations": ["Nei", "Silver_Cat", "ながねこ"]
+  },
+
+  "gh:sensitivityNote": {
+    "gh:policy": "ASD は『障害』ではなく『特性・強み』として描写。感覚過敏・社交困難などの『しんどさ』も並行して描く。『治る／治らない』の二項対立を避ける。",
+    "gh:editorialGuideline": "商業化時は ASD 当事者団体・児童青年精神医学会所属医師の監修を前提。",
+    "gh:representation": "『かわいい変人』として消費しない。Neiの能力と生活上の困難を対等に描く。"
+  },
+
+  "gh:comedyRole": {
+    "gh:type": "天然ボケ / 数値化天然 / 食いしん坊（メイン）",
+    "gh:gags": [
+      "極端な数値化の日常ボケ（『靴が 1.3 mm ずれた』『ドーナツの砂糖が 4.2 g 多い』『廊下の 17 歩目にムラがある』）",
+      "丁寧語のまま発する強烈な断定（『彼女ではないです。幼馴染の、事務方、です』）",
+      "比喩・皮肉を文字通り取る（『腹ペコだ』→『はい、血糖値が下がっています』）",
+      "ルーチン崩壊時の細かい混乱（朝 6 時 15 分に 6 時 16 分で起こされると 1 コマ硬直）",
+      "聴覚過敏ギャグ（カフェの喧騒でヘッドホンを 2 枚重ねる）",
+      "葵にだけ丁寧語→レンにだけ即タメ口の切替が同じコマに並ぶズレ",
+      "食いしん坊: Ren の家の冷蔵庫を勝手に漁る（『レン、プリン 3 個目、いきます』）",
+      "食いしん坊: 朝は *コメッコン* の米粉パンを 3 個袋で携行。1 個はレンの分、2 個は自分、と言いつつ 3 個全部食べることもある",
+      "食いしん坊: コメッコンの新商品発売日は *朝の集合時刻が 15 分早くなる*",
+      "食いしん坊: Ren のおにぎりの梅干しだけ抜いて食べる（『梅は、わたしの分です』）",
+      "食いしん坊: パッケージなしで *米粉の産地と配合比率* を当てる特殊能力（コメッコン産地は新潟／秋田／佐賀のブレンド）"
+    ],
+    "gh:balance": "天然系ギャグ 5 : 食いしん坊 2 : 解説モード 2 : シリアス 1。葵・他人には丁寧語のまま天然、Ren にはタメ口で即断定、食べ物には真顔で執着。",
+    "gh:donotcross": "母・玲子誹謗中傷事件の回想・Nei が本気でキレる稀なシーン・Ren の過集中ブレーキをかける瞬間はコメディ封印。"
+  }
+}

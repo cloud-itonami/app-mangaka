@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "gh:environment:lWWWzrCBFZ6lGk6Drwcak",
+  "@type": "gh:EnvironmentPrompt",
+  "gh:description": "Ren's base of operations. A high-tech but cluttered space that reflects his 'Sloth' virtue—designed for extreme efficiency without regard for traditional organization.",
+  "gh:elements": [
+    "Okamura Cruise \u0026 Atlas ergonomic workstation (Ren's low-slouch chair)",
+    "USM Haller modular reception set and storage",
+    "Triple monitor setup with data visualizations",
+    "Server racks with tangled but functional wiring",
+    "Messy workbench with soldering irons and hardware parts",
+    "Large window overlooking Tokyo 2026 skyline"
+  ],
+  "gh:lighting": "Low-key lighting, rim light from windows, blue screen glow",
+  "gh:prompt": "Professional monochrome manga art. A cluttered tech-heavy office interior. Features an Okamura Cruise and Atlas ergonomic workstation (low-slouch reclining chair and desk), USM Haller modular chrome-framed furniture. Multiple monitors with data grids, server racks with complex wiring, hardware parts scattered. A large window showing Tokyo 2026 skyscrapers at night. Intense rim lighting from the window, halftone screen glow, sharp line art, high contrast black and white, heavy screentone textures.",
+  "gh:slug": "rens-office",
+  "schema:name": "Ren's Office (レンのオフィス)"
+}

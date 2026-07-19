@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1boy, 14 year old, 14-year-old Japanese male, pale translucent skin, sleepy half-lidded eyes with silver-grey crystalline irises. Still has some childish softness., Messy raven black hair, slightly shorter than current style., Clear silver-grey crystalline iris, sharp sparkling catchlights, sleepy but observant expression., Slender and smaller, wearing navy blazer school uniform (often disheveled)., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

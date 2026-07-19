@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "env": "gh:environment/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "env:4j2yxT9C-YL_yE92bQ9Sr",
+  "gh:generationPrompt": "photorealistic, 8k, cinematic lighting, Japanese school rooftop, chain-link fence, Tokyo skyline in background, sunset golden hour, spring breeze, cherry blossoms floating, ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+  "gh:season": "Spring (桜の季節)",
+  "gh:shotGuidelines": {
+    "gh:closeUp": "風に揺れる髪、二人の横顔、夕日に照らされた瞳",
+    "gh:mediumShot": "フェンスに寄りかかるRen、隣に立つNei",
+    "gh:wideShot": "屋上全体と東京のスカイライン、フェンス越しの景色"
+  },
+  "gh:significance": "RenとNeiが初めて本音で話した場所。二人の絆が生まれた場所。",
+  "gh:slug": "middle-school-rooftop",
+  "gh:timeOfDay": "Sunset (夕暮れ)",
+  "gh:visualElements": {
+    "gh:architecture": "Flat concrete rooftop with chain-link fence, water tanks, ventilation units",
+    "gh:atmosphere": "風が吹く、開放感、秘密の隠れ家、東京のスカイライン",
+    "gh:lighting": "Open sky, sunset orange or afternoon blue",
+    "gh:props": "フェンス、給水タンク、換気口、Renが座る日陰のスポット、鍵のかかったドア"
+  },
+  "schema:description": "立ち入り禁止の屋上。Renの秘密の居場所。東京のビル群と空が見える。フェンスで囲まれている。",
+  "schema:name": "港南第一中学校 屋上"
+}

@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "org": "gh:organization/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "org:CDA-Jx9KmQwRt4VnBc7Hs2",
+  "@type": [
+    "gh:OrganizationProfile",
+    "schema:GovernmentOrganization"
+  ],
+  "gh:arc": "Arc A-D",
+  "gh:atmosphere": "近未来的で洗練された雰囲気。物理的な制約を超えた仮想空間に本庁を構え、最先端技術と伝統的な官僚組織の融合を体現。職員は冷静かつプロフェッショナルだが、若い才能を見出すことに熱心。",
+  "gh:keyCharacters": [
+    {
+      "@id": "character:Ren",
+      "gh:role": "外部協力者 / 技術顧問（非公式）",
+      "gh:sourceFile": "characters/Ren/profile.jsonld",
+      "gh:involvement": "特殊なハッキング技術や闇ネットワークの知識を活かした情報提供"
+    },
+    {
+      "@id": "character:Kaname",
+      "gh:role": "外部協力者 / 分析・交渉担当",
+      "gh:sourceFile": "characters/Kaname/profile.jsonld",
+      "gh:involvement": "組織犯罪の構造分析や被害者との橋渡し役"
+    },
+    {
+      "@id": "character:Kakeru",
+      "gh:role": "外部協力者 / フィールドオペレーター",
+      "gh:sourceFile": "characters/Kakeru/profile.jsonld",
+      "gh:involvement": "現場での情報収集や潜入調査のサポート"
+    }
+  ],
+  "gh:slug": "CyberDefenseAgency",
+  "gh:organizationType": "政府機関",
+  "gh:jurisdiction": "日本国内のサイバー犯罪対策・サイバー防衛全般",
+  "gh:virtualHeadquarters": {
+    "gh:description": "本庁舎は完全な仮想空間内に存在する。物理的な場所を持たないことで、攻撃対象としてのリスクを最小化し、世界中どこからでもセキュアにアクセス可能。",
+    "gh:architecture": "ラスベガス・コンベンションセンターを思わせる巨大で近未来的な建造物。ガラスと金属で構成された流線型のデザイン。内部は広大なアトリウム、複数の会議室、データセンターを模した可視化空間が広がる。",
+    "gh:accessMethod": {
+      "gh:type": "Hyper Loop",
+      "gh:description": "アクセスには専用のHyper Loop（超高速仮想トンネル）を通過する必要がある。認証は生体認証と量子暗号化された二要素認証の組み合わせ。トンネル内を高速で移動する感覚は、実際の交通手段のように演出されている。",
+      "gh:visualEffect": "トンネル内は青白い光が流れ、データストリームが壁面を走る。到着時には仮想の『出口ゲート』を通過し、セキュリティチェックポイントで認証完了。"
+    },
+    "gh:facilities": [
+      "中央オペレーションルーム（リアルタイム脅威モニタリング）",
+      "分析ラボ（マルウェア解析・フォレンジック）",
+      "ブリーフィングルーム（案件説明・作戦会議）",
+      "アーカイブ（過去のサイバー事件データベース）",
+      "訓練シミュレーター（攻防訓練用仮想環境）"
+    ]
+  },
+  "gh:operationalStyle": {
+    "gh:publicProfile": "表向きは内閣官房「内閣サイバーセキュリティ戦略本部」の実働部門として認知",
+    "gh:jurisdiction": "内閣府直轄の独立機関。省庁横断的な権限を持ち、警察・防衛・情報通信を横断する案件に対応",
+    "gh:actualRole": "実際には高度なサイバー犯罪捜査・国家レベルのサイバー防衛を担う。NISCの発展形として機能。",
+    "gh:legalBasis": "内閣府設置法に基づく特別機関（詳細は非公開）",
+    "gh:externalCollaborators": "特殊な技術や知見を持つ民間人（特に若い才能）を非公式に協力者として起用することがある",
+    "gh:recruitmentStyle": "職員が直接声をかけ、案件ベースで協力を依頼。報酬や契約は非公開。協力者の存在自体が機密扱い。"
+  },
+  "gh:securityPostureForStory": {
+    "gh:baseline": "国家最高レベルのセキュリティ体制",
+    "gh:teachingGoal": "サイバー犯罪の規模と影響、そして対抗する専門家たちの存在を示す",
+    "gh:storyRole": [
+      "主人公たちに高度な案件を持ち込む役割",
+      "技術的リソースやバックアップの提供",
+      "事件の背後にある大きな構図を明かす情報源"
+    ]
+  },
+  "gh:visualStyle": {
+    "gh:exteriorDesign": "Las Vegas Convention Center風の巨大なガラス張り建造物。複数の翼が放射状に広がり、中央にドーム型の指令センター。夜景ではネオンブルーの光が建物の輪郭を浮かび上がらせる。",
+    "gh:interiorDesign": "白とグレーを基調としたミニマルなデザイン。壁面には常にデータビジュアライゼーションが流れ、空中にホログラフィックディスプレイが浮かぶ。",
+    "gh:hyperLoopTunnel": "黒い空間に青白い光の線が走るトンネル。高速移動中はデータノードを通過するエフェクト。終点には光のゲートが出現。",
+    "gh:staffAppearance": "スマートカジュアルからフォーマルスーツまで様々。全員が透明なスマートグラスを着用。"
+  },
+  "gh:typicalCases": [
+    "国家を標的としたAPT（Advanced Persistent Threat）攻撃の調査",
+    "大規模な個人情報流出事件の追跡",
+    "ダークウェブ上の犯罪組織の摘発支援",
+    "重要インフラへのサイバー攻撃の防御・対応",
+    "新種のマルウェア・ランサムウェアの分析",
+    "サイバー犯罪に巻き込まれた若者の保護と更生支援"
+  ],
+  "schema:alternateName": ["CDA", "サイバー防衛庁", "Cyber Defense Agency"],
+  "schema:location": {
+    "@type": "schema:VirtualLocation",
+    "schema:description": "仮想空間内に存在。物理的な住所は非公開。アクセスポイントは国内複数箇所に設置（詳細は機密）。"
+  },
+  "schema:name": "サイバー防衛庁 (Cyber Defense Agency of Japan)"
+}

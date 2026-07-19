@@ -1,0 +1,394 @@
+# Phase B target — data-driven topology for `compose_scene_3d`.
+#
+# This file is the SSoT for the `kind='topology'` assistant row that will
+# replace the current `kind='py_factory'` registration once each Python node
+# is decomposed into an MCP tool (per ADR-2605082000 §2 — data-resolved kinds
+# only: mcp_tool | sql_udf | py_ext_udf | llm). The seed migration
+# `r_20260514130000_seed_mangaka_compose_scene_3d_assistant` reads this file
+# (via `lg_mangaka.topology` helper) and emits one INSERT per node + edge.
+#
+# Activation roadmap:
+#   Phase A (now)        — py_factory row, GRAPH = build_graph() (in-tree).
+#   Phase B (this file)  — topology row pending nodes/refs below to be
+#                          implemented as MCP tools (10 sub-primitives + 3
+#                          domain MCP tools listed in `pending_mcp_tools`).
+#   Phase C (activation) — flip `vertex_langgraph_deployment` to point at the
+#                          topology assistant; py_factory row goes `inactive`.
+#
+# Schema reference: kotodama.langgraph_loader._compile_topology.
+# Structural regression guard: lg/tests/test_compose_scene_3d_topology.py.
+#
+# ---------------------------------------------------------------------------
+# Phase C activation blockers (DO NOT flip deployment until these are closed):
+# ---------------------------------------------------------------------------
+#   1. LLM node bindings — text prompts inlined (P10.1, P10.1c). All 3 LLM
+#      nodes (`pose_characters`, `cinematography`, `critique_and_select`)
+#      now carry `config.args.system` + `config.args.user_template` that
+#      `kotodama.langgraph_node_resolvers.make_llm_node` can consume
+#      directly. Drift between these inlined prompts and the Python source
+#      constants (`_CINEMATOGRAPHY_SYSTEM`, `_VISION_SYSTEM`) is guarded by
+#      `lg/tests/test_compose_scene_3d_prompts.py`.
+#      RESIDUAL — sub-blocker P10.1b: `critique_and_select` uses
+#      `kind: llm` + `ref: vision`, but `make_llm_node` calls
+#      `call_tier_json(tier, system, user)` with text-only payload — it
+#      cannot fetch + base64 the candidate render PNGs. Phase C activation
+#      of the critique node needs either (a) a new `make_llm_vision_node`
+#      resolver that resolves `args.image_keys` against B2 + calls
+#      `lg_mangaka.llm.llm_vision_score`, or (b) a `vision` kind upstream
+#      in the resolver dispatcher. Until then, runtime stays on the Phase A
+#      in-tree path (`_step_critique_and_select`).
+#   2. Post-processor MCP tools — closed both sides.
+#      Cinematography: `cinematography → validate_camera_plan → simulate_one`.
+#      Camera clamping + 3-point lighting validation lives in
+#      `lg_mangaka.tools.tool_validate_camera_plan` (SSoT) with
+#      `_camera_from_llm` + `_lights_from_llm` helpers; Phase A
+#      `_step_cinematography` calls the same tool so behaviour stays
+#      bit-identical across paths. Lexicon
+#      `00-contracts/lexicons/com/etzhayyim/apps/mangaka/tools/validateCameraPlan.json`,
+#      seed migration
+#      `20260514150000_seed_mangaka_validate_camera_plan_mcp_tool`, tests
+#      `lg/tests/test_validate_camera_plan.py`.
+#      Critique: `critique_and_select → aggregate_critique → (DMN)`.
+#      `lg_mangaka.tools.tool_aggregate_critique` consumes the raw LLM
+#      axes per render, clamps + fills via `_clamp_and_fill_axes` (the
+#      canonical `_axes_from_parsed` equivalent), overlays Hume
+#      `emotionAlignment` via `lg_mangaka.hume_emotion` + `_blob.get`,
+#      and selects the highest-scoring render. Lexicon
+#      `00-contracts/lexicons/com/etzhayyim/apps/mangaka/tools/aggregateCritique.json`,
+#      seed migration
+#      `20260514160000_seed_mangaka_aggregate_critique_mcp_tool`, tests
+#      `lg/tests/test_aggregate_critique.py`.
+#      Phase A↔C parity guard:
+#      `lg/tests/test_compose_scene_3d_phase_c_parity.py`.
+#      RESIDUAL — the in-tree Phase A path
+#      (`_step_critique_and_select` + `_score_one_render`) keeps its own
+#      per-render LLM + Hume call because the vision plumbing sub-blocker
+#      P10.1b is unresolved; `tool_aggregate_critique` is the migration
+#      target once a `foreach` over renders + `make_llm_vision_node` land.
+#   3. Refinement-loop policy — DMN SSoT closed. Decision lives at
+#      `00-contracts/dmn/com/etzhayyim/policies/mangaka/composeScene3dRefinement.dmn`
+#      and is seeded into `vertex_dmn_model` by migration
+#      `20260514150000_seed_mangaka_compose_scene_3d_refinement_dmn`. Drift
+#      between the DMN rules and the Python predicate
+#      `_route_after_critique` is guarded by
+#      `lg/tests/test_compose_scene_3d_refinement_dmn.py`.
+#      RESIDUAL — `kotodama.langgraph_loader._compile_topology` does not
+#      yet dereference `dmn:<key>@<version>` refs at runtime; the Phase A
+#      in-tree path stays authoritative until the resolver gains a DMN
+#      evaluator. Today the seeded row is still useful for governance /
+#      audit / lineage queries against `vertex_dmn_model`.
+#   4. MCP tool serving endpoint — in-cluster short-circuit closed.
+#      Decision: the pod IS the MCP tool serving endpoint. `lg_mangaka.server`
+#      exposes `POST /xrpc/com.etzhayyim.mcp.message` (JSON-RPC `tools/call`
+#      envelope) + `POST /xrpc/{nsid}` (direct dispatch), both routed
+#      through `_dispatch_mcp_tool` → `_TOOL_NSID_TO_HANDLER` →
+#      `lg_mangaka.tools.*`. ADR-2605111200 compliant — RW, B2 and GPU all
+#      stay pod-side.
+#      Phase C activation: the topology Pregel running on the pod hits
+#      `mcp://com.etzhayyim.mangaka.tools.*` and `kotodama.langgraph_node_resolvers._resolve_mcp_nsid`
+#      short-circuits to localhost via the `MCP_NSID_OVERRIDE_<prefix>`
+#      env var pattern. Helm: `50-infra/vultr/lg-mangaka-pool/values.yaml`
+#      `mcpOverrides.aietzhayyimAppsMangakaTools: "http://localhost:8000"` →
+#      `MCP_NSID_OVERRIDE_ai_etzhayyim_apps_mangaka_tools` env on the deployment
+#      pod. The Pregel never leaves the container for tool dispatch.
+#      RESIDUAL — external MCP clients (Cursor / Claude / partner agents)
+#      still resolve `actor_host = mangaka.etzhayyim.com` from the registry and
+#      hit the SvelteKit CF Worker, which does not yet forward
+#      `tools/call` envelopes to the pod. External access stays best-effort
+#      (404) until either (a) a CF Worker route forwards via Cloudflare
+#      Tunnel / Service Binding, or (b) the registry's `actor_host` is
+#      flipped to `atproto.etzhayyim.com` so the existing MCP adapter handles the
+#      forward. Phase C activation does not depend on external access.
+
+assistant_id: com.etzhayyim.mangaka.composeScene3d
+version: 1
+kind: topology
+description: |
+  9 super-step Pregel for manga 3D scene composition. Replaces deterministic
+  preset camera + Python-bundled rendering with LLM cinematography, kami-
+  mangaka-scene headless render, and gpt-4o-mini-vision 7-axis critique.
+checkpointer_mode: postgres
+authored_by: did:web:mangaka.etzhayyim.com
+
+# Channels written by nodes (per-key reducer when langgraph compiles).
+state_keys:
+  - panel_rkey
+  - refine_from_rkey
+  - max_iter
+  - sim_seed
+  - render_angles
+  - dry_run
+  - panel_plan
+  - asset_refs
+  - pose_plan          # reducer: shallow-dict merge (Send fan-out)
+  - scene_dag
+  - camera_plan_raw    # P10.1: raw LLM output from cinematography
+  - camera_plan
+  - sim_result         # reducer: shallow-dict merge (Send fan-out)
+  - renders            # reducer: list concat
+  - selected
+  - score
+  - iteration
+  - status
+  - scene_rkey
+  - error
+
+entry: load_panel_plan
+
+# 9 super-steps. Each binds a node id → (kind, ref, config) row in
+# vertex_langgraph_assistant_node. `mcp://` refs resolve through
+# vertex_mcp_tool_def. `llm` refs resolve through the model registry.
+nodes:
+  - id: load_panel_plan
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.loadPanelPlan
+    config: {}
+  - id: resolve_assets
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.resolveAssets
+    config: {}
+  - id: pose_characters
+    kind: llm
+    ref: structured                # tier — see llm-model-registry.ts
+    # P10.1 — prompts inlined per make_llm_node contract
+    # (kotodama.langgraph_node_resolvers.make_llm_node:252). Returns
+    # raw JSON into state["pose_plan"]; per-character validation +
+    # ARKit expression mapping happens in the simulate_one fan-out router.
+    config:
+      input_keys: [panel_plan, asset_refs]
+      result_key: pose_plan
+      args:
+        max_tokens: 1024
+        temperature: 0.5
+        system: |
+          You are a manga character pose director. Given a panel plan and the
+          resolved character set, emit a JSON object mapping each character's
+          rkey to a pose record:
+
+            {
+              "<character_rkey>": {
+                "label": "<lexicon label, e.g. action.dash | action.swing | action.shout | action.idle>",
+                "expression": "<Happy | Angry | Sad | Surprised | Determined | Pained | Smirk | Neutral>",
+                "bones": [],
+                "ik_targets": [],
+                "root_xform": {
+                  "translation": [0.0, 0.0, 0.0],
+                  "rotation": [0.0, 0.0, 0.0, 1.0],
+                  "scale": [1.0, 1.0, 1.0]
+                }
+              },
+              ...
+            }
+
+          The `label` MUST be one of the action.* labels supported by
+          kami_mangaka_scene::lexicon::pose_preset
+          (action.rest/idle/dash/run/walk/swing/attack/hit/impact/fall/
+          cower/flinch/shout/yell/point/reach/stand_proud/heroic).
+          Place every character in `asset_refs.characters` even when the
+          panel action involves only one — non-focal characters get
+          action.idle. Return ONLY the JSON object, no commentary.
+        user_template: |
+          Panel plan:
+          {panel_plan}
+
+          Resolved character assets (only emit a pose for keys that appear here):
+          {asset_refs}
+  - id: place_scene
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.placeScene
+    config: {}
+  - id: cinematography
+    kind: llm
+    ref: structured
+    # P10.1 — prompt inlined per make_llm_node contract. Writes raw JSON
+    # into state["camera_plan_raw"]; the validator (`_camera_from_llm` +
+    # `_lights_from_llm` clamping) is the P10.2 transform.map node that
+    # writes the validated record to state["camera_plan"].
+    config:
+      input_keys: [panel_plan, iteration, score, selected]
+      result_key: camera_plan_raw
+      args:
+        max_tokens: 512
+        temperature: 0.4    # bumped to 0.6 on refine iterations by P10.2 router
+        system: |
+          You are a manga storyboard cinematographer. Given a panel plan,
+          emit a JSON object describing the camera and 3-point lighting
+          that best serves the action and mood. Honour Japanese manga
+          grammar (read right-to-left, OverShoulder for dialogue, Closeup
+          for impact, WormsEye for heroic stand, BirdsEye for spatial
+          reveal). Field schema:
+            shot          string, one of FullShot/MediumShot/Closeup/OverShoulder/Dutch/BirdsEye/WormsEye
+            eye           [x,y,z] floats, camera position in metres; characters stand near origin, head at y≈1.6
+            target        [x,y,z] floats, look-at point
+            up            [x,y,z] floats, usually [0,1,0]
+            fov_deg       float, 22..80; tighter for closeups, wider for action
+            roll_deg      float, default 0; ±15 for Dutch tilts; sign indicates angle direction
+            dof           {focus_distance_m: float, aperture: float} or null; non-null for closeup intimacy
+            lights        array of 3 objects with role in {Key,Fill,Rim},
+                          direction:[x,y,z] (toward subject), colour:[r,g,b], intensity:float
+          Return ONLY the JSON object — no commentary.
+        user_template: |
+          Panel plan:
+          {panel_plan}
+
+          Iteration: {iteration}
+          Previous score (0..1, null on first pass): {score}
+          Previous render selected (with critique notes, null on first pass): {selected}
+  # P10.2 — validator between cinematography (LLM, raw JSON) and the
+  # simulate_one fan-out. Clamps fov/roll, validates shot enum, replaces
+  # malformed lights with the 3-point default. Reads camera_plan_raw,
+  # writes camera_plan. SSoT: lg_mangaka.tools:tool_validate_camera_plan.
+  - id: validate_camera_plan
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.validateCameraPlan
+    config:
+      # `make_mcp_tool_node` maps these state keys → tool kwargs.
+      input_paths:
+        cameraPlanRaw: $.camera_plan_raw
+        fallbackShot:  $.panel_plan.shot
+      result_key: __scatter__   # tool returns {cameraPlan: {...}} → spread to state.camera_plan
+  - id: simulate_one
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.simulateCharacter
+    config: {}
+  - id: render_keyframes
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.renderKeyframes
+    config:
+      gpu_required: true
+      pod_pool: vke-render-pool
+  - id: critique_and_select
+    # P10.1b — flipped from `kind: llm` to `kind: llm_vision` so the new
+    # resolver `kotodama.langgraph_node_resolvers.make_llm_vision_node`
+    # dispatches the multimodal call. `image_keys` is a dotted-path list;
+    # `$.renders[*].blobKey` walks every render's blobKey and the
+    # `blob_fetcher` callback (passed in by `lg_mangaka.langgraph_loader`
+    # bootstrap from `lg_mangaka.blob.get`) materialises each one into
+    # bytes that the resolver base64-encodes before calling
+    # `kotodama.llm.call_tier_vision_json` against the OpenAI-compatible
+    # `vision` tier (gpt-4o-mini by default, override via
+    # `OPENAI_VISION_MODEL`).
+    #
+    # P10.1d follow-up still open — Hume `emotionAlignment` override lives
+    # in `aggregate_critique` (P10.2b) which runs AFTER this node. The
+    # `critique.axes` written here is the LLM self-report; the aggregator
+    # overlays the image-feature Hume score before the refinement edge.
+    kind: llm_vision
+    ref: vision                    # tier — see _VISION_TIER_OVERRIDES in kotodama.llm
+    config:
+      input_keys: [panel_plan, camera_plan]
+      # Path grammar: `<list>.*.<field>` walks each list element and
+      # collects the named field. Matches the wildcard handling in
+      # `make_llm_vision_node` (kotodama.langgraph_node_resolvers).
+      image_keys: [renders.*.blobKey]
+      result_key: critique_raw
+      args:
+        max_tokens: 384
+        temperature: 0.1
+        system: |
+          You score a manga panel render on eight axes. Each axis is a
+          float in [0, 1] where 1 is publication-ready and 0 is unusable.
+          Be ruthless — 0.5 is the working baseline, 0.75 is the
+          acceptance bar, 0.9+ is rare. Axes:
+            composition              overall layout balance, focal hierarchy, negative space
+            silhouette               character readability when reduced to a solid silhouette
+            characterRecognizability do faces / body language / costumes match the brief?
+            framing                  rule-of-thirds, headroom, leading lines
+            mangaShotGrammar         does it serve the declared shot type (FullShot/Closeup/OverShoulder/...)
+            lightingDrama            chiaroscuro, rim light, mood
+            actionClarity            is the action / emotion legible at-a-glance
+            emotionAlignment         does the rendered expression / palette match the brief's declared mood
+          Return ONLY a JSON object with the eight float fields above,
+          plus `notes` (<=240 chars on the biggest problem) and
+          `improvements` (<=240 chars actionable directives for the
+          cinematographer next iteration). Do not include any other keys.
+        user_template: |
+          Panel brief:
+          {panel_plan}
+
+          Camera:
+          {camera_plan}
+
+          Candidate renders to score (one row per angle / iteration):
+          {renders}
+  # P10.2b — critique-side aggregator. Reads `renders` (with optional
+  # `critique.axes` from the upstream vision LLM) + `panel_plan.mood` and
+  # fetches each render's PNG from B2 to overlay the Hume
+  # `emotionAlignment` score. Writes back {renders, selected, score} so
+  # the refinement-condition edge dispatches on a clean aggregate.
+  # SSoT: lg_mangaka.tools:tool_aggregate_critique.
+  - id: aggregate_critique
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.aggregateCritique
+    config:
+      input_paths:
+        renders:    $.renders
+        targetMood: $.panel_plan.mood
+      result_key: __scatter__   # tool returns {renders, selected, score} → spread to state
+  - id: persist
+    kind: mcp_tool
+    ref: mcp://com.etzhayyim.mangaka.tools.persistScene3d
+    config: {}
+
+# Linear backbone (sequence reflects the Pregel super-step order).
+edges:
+  - { from: load_panel_plan,    to: resolve_assets }
+  - { from: resolve_assets,     to: pose_characters }
+  - { from: pose_characters,    to: place_scene }
+  - { from: place_scene,        to: cinematography }
+  # P10.2 — cinematography no longer fans out directly; it feeds the
+  # validator first so simulate_one + render_keyframes always see a
+  # clamped camera_plan.
+  - { from: cinematography,     to: validate_camera_plan }
+  - { from: simulate_one,       to: render_keyframes }
+  - { from: render_keyframes,   to: critique_and_select }
+  # P10.2b — critique_and_select emits the raw LLM critique; aggregate_critique
+  # overlays Hume + picks best before the refinement-condition edge.
+  - { from: critique_and_select, to: aggregate_critique }
+  - { from: persist,            to: END }
+
+# Two conditional / fan-out points.
+conditional_edges:
+  # 1) validate_camera_plan → simulate_one fan-out: one Send per character.
+  #    Moved off `cinematography` in P10.2 so the fan-out fires only after
+  #    the camera plan has been validated (otherwise per-character renders
+  #    can pick up a malformed shot/fov from the raw LLM output).
+  - from: validate_camera_plan
+    router: send_fanout
+    fanout:
+      from_state: pose_plan
+      to_node: simulate_one
+      payload_keys: [char_rkey, pose]
+
+  # 2) aggregate_critique → either back to cinematography (refine) or
+  #    persist (accept). The from-node was `critique_and_select` before
+  #    P10.2b; now the aggregator is the score authority. Routing decision
+  #    lives in the DMN policy (ADR-2604261100).
+  - from: aggregate_critique
+    condition_ref: dmn:com.etzhayyim.policies.mangaka.composeScene3dRefinement@1.0.0
+    paths:
+      cinematography: cinematography
+      persist:        persist
+
+# Deployments registered against this assistant by the seed migration. The
+# Worker -> bpmn-dispatcher -> /runs route resolves the NSID to assistant via
+# `vertex_langgraph_deployment WHERE nsid=... AND status='active'`.
+deployments:
+  - nsid: com.etzhayyim.mangaka.composeScene3d
+    status: active
+    replicas: 1
+
+# MCP tools that must exist before Phase C activation. Each row will land
+# under `com.etzhayyim.mangaka.tools.*` with the lexicon JSON in
+# `00-contracts/lexicons/com/etzhayyim/apps/mangaka/tools/`. Sub-primitives
+# (audit.emit / time.now / crypto.hash etc.) come from the 10 generic
+# primitives already in `vertex_mcp_tool_def`.
+pending_mcp_tools:
+  - com.etzhayyim.mangaka.tools.loadPanelPlan        # SELECT vertex_mangaka
+  - com.etzhayyim.mangaka.tools.resolveAssets        # SELECT character/env/asset
+  - com.etzhayyim.mangaka.tools.placeScene           # scene_dag composition
+  - com.etzhayyim.mangaka.tools.validateCameraPlan   # P10.2 cinematography post-validator
+  - com.etzhayyim.mangaka.tools.simulateCharacter    # kami-mangaka-scene::settle
+  - com.etzhayyim.mangaka.tools.renderKeyframes      # GPU-bound — pod selector
+  - com.etzhayyim.mangaka.tools.aggregateCritique    # P10.2b: Hume overlay + best-of-N
+  - com.etzhayyim.mangaka.tools.persistScene3d       # vertex_mangaka_scene_3d INSERT

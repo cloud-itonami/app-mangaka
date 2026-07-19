@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "neutral_front",
+    "angle": "front-facing",
+    "expression": "neutral, calm, relaxed mouth"
+  },
+  {
+    "slug": "three_quarter_left_neutral",
+    "angle": "three-quarter view facing left",
+    "expression": "neutral, observant"
+  },
+  {
+    "slug": "three_quarter_right_neutral",
+    "angle": "three-quarter view facing right",
+    "expression": "neutral, observant"
+  },
+  {
+    "slug": "profile_left",
+    "angle": "left-facing side profile",
+    "expression": "quiet, focused"
+  },
+  {
+    "slug": "profile_right",
+    "angle": "right-facing side profile",
+    "expression": "quiet, focused"
+  },
+  {
+    "slug": "downcast_sad",
+    "angle": "head tilted downward",
+    "expression": "sad, guilty, eyes lowered"
+  },
+  {
+    "slug": "anxious_front",
+    "angle": "front-facing with slight head tilt",
+    "expression": "anxious, tense, worried eyes"
+  },
+  {
+    "slug": "surprised_front",
+    "angle": "front-facing",
+    "expression": "surprised, widened eyes, small parted mouth"
+  },
+  {
+    "slug": "angry_3q_left",
+    "angle": "three-quarter view facing left",
+    "expression": "angry, brows tense, sharp eyes"
+  },
+  {
+    "slug": "focused_3q_right",
+    "angle": "three-quarter view facing right",
+    "expression": "focused, analytical, intense eyes"
+  },
+  {
+    "slug": "gentle_smile_3q",
+    "angle": "three-quarter view",
+    "expression": "gentle small smile, softened eyes"
+  },
+  {
+    "slug": "action_shout",
+    "angle": "dynamic tilted angle",
+    "expression": "shouting or calling out, intense battle or panic energy"
+  }
+]

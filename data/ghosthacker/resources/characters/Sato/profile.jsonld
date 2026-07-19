@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:Ydot0mzyV4dHmmOjya8uS",
+  "gh:appearance": {
+    "gh:build": "Slim build, wearing a light blue polo shirt and dark chinos.",
+    "gh:eyes": "Fatigued worried eyes, soft iris detail, crystalline catchlights reflecting monitor glow.",
+    "gh:face": "24-year-old Japanese male, fatigued and worried expression.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, 24-year-old Japanese male, slim build, fatigued expression, short black hair, light blue polo shirt, carrying cables, realistic office lighting, worried eyes with crystalline catchlights.",
+    "gh:hair": "Simple short black hair, slightly messy.",
+    "gh:style": "Photorealistic, fatigued youth, realistic sweat, 8k."
+  },
+  "gh:slug": "Sato",
+  "schema:age": 24,
+  "schema:name": "佐藤 健太 (Kenta Sato)",
+  "schema:role": "IT Support"
+}

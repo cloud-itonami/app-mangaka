@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:0FFnOqBf5pPJFepYxQ-EC",
+  "@type": "gh:Character",
+  "gh:appearance": {
+    "gh:build": "Average, IT professional physique. Business casual with security badge prominently displayed.",
+    "gh:eyes": "Intelligent tired eyes, frustrated by being ignored, hopeful catchlights at Kaname's arrival.",
+    "gh:face": "40-year-old Japanese male, tired but determined face, technical competence overshadowed by politics.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 40-year-old Japanese male, tired but determined expression, slightly messy black hair, business casual, security badge, SOC monitors background.",
+    "gh:hair": "Slightly messy black hair, too busy to style.",
+    "gh:style": "Photorealistic, SOC room lighting with monitors, cybersecurity professional, 8k."
+  },
+  "gh:arc": "Arc C",
+  "gh:organization": "company:TokaiSecurities",
+  "gh:personality": {
+    "gh:arc": "Kanameの介入で再び声を上げる。",
+    "gh:core": "技術はわかるが政治に潰される。『ログインMFAだけでは不十分』と提言したが却下された過去。"
+  },
+  "gh:relationships": {
+    "gh:kaname": {
+      "gh:dynamic": "支援士同士の専門会話。",
+      "gh:role": "技術的な対話相手"
+    }
+  },
+  "gh:slug": "NakamuraShunsuke",
+  "schema:age": 40,
+  "schema:name": "中村 俊介 (Shunsuke Nakamura)",
+  "schema:role": "InfoSec Director / Arc C Technical Ally"
+}

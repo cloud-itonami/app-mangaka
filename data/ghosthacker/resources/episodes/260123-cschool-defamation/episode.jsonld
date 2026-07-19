@@ -1,0 +1,3974 @@
+{
+  "@context": {
+    "arc": "gh:arc/",
+    "character": "gh:character/",
+    "characters": "gh:characters",
+    "dct": "http://purl.org/dc/terms/",
+    "dialogue": "gh:dialogue",
+    "env": "gh:environment/",
+    "environment": "gh:environment",
+    "environments": "gh:environments",
+    "episodeId": "gh:episodeId",
+    "episodeIndex": "gh:episodeIndex",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "panel": "gh:panelIndex",
+    "prompt": "gh:runwayPrompt",
+    "properties": "gh:shotProperties",
+    "prov": "http://www.w3.org/ns/prov#",
+    "purpose": "gh:narrativePurpose",
+    "schema": "http://schema.org/",
+    "shot": "gh:shotType",
+    "speaker": "gh:speaker",
+    "text": "gh:text",
+    "visual": "gh:visual"
+  },
+  "dct:title": "Arc 0-2: 「恥じゃない。残すのが一番強い」",
+  "gh:arc": "Arc 0",
+  "gh:episode": 2,
+  "gh:episodeId": "episode:260123-cschool-defamation",
+  "gh:episodeIndex": 2,
+  "gh:storyOutline": "story-outline.jsonld",
+  "gh:tagline": "消すな。残せ。それが一番強い武器になる。",
+  "gh:theme": "ネット上の誹謗中傷・ドクシングに対する正しい対処法",
+  "gh:incidentDescription": "都立工科高校の人気ゲーム配信者・黒田涼（2年）がドクシング被害に遭う。住所を特定され、誹謗中傷が拡散、自宅や学校に嫌がらせが届く。元eスポーツ部エースで休学中の赤羽千世（HN: aka_chise1）が後輩の危機に立ち上がり、証拠保全から法的対処までを指揮する。",
+  "gh:industry": "Student life (高校生)",
+  "gh:mainCharacter": "character:Chise",
+  "gh:mainLocation": "org:TokyoTechHighSchool",
+  "gh:supportingCharacters": [
+    "character:RyoKuroda",
+    "character:ShotaHayashi",
+    "character:YuiTanaka",
+    "character:DaichiMori"
+  ],
+  "gh:nistFocus": [
+    "PR.AA (Identity Management)",
+    "DE.CM (Continuous Monitoring)",
+    "RS.CO (Response Communications)"
+  ],
+  "gh:actStructure": [
+    {
+      "@id": "act:1-daily-life",
+      "gh:actNumber": 1,
+      "gh:actTitle": "日常と異変",
+      "gh:actTitleEn": "Normal Life & Signs of Trouble",
+      "gh:pageRange": [
+        1,
+        2
+      ],
+      "gh:narrativePurpose": "Ryoの配信者としての日常と、突然のドクシング攻撃開始を描く"
+    },
+    {
+      "@id": "act:2-escalation",
+      "gh:actNumber": 2,
+      "gh:actTitle": "エスカレーション",
+      "gh:actTitleEn": "Escalation",
+      "gh:pageRange": [
+        3,
+        4
+      ],
+      "gh:narrativePurpose": "被害の深刻化と、Ryoの心理的追い詰められを描く"
+    },
+    {
+      "@id": "act:3-encounter",
+      "gh:actNumber": 3,
+      "gh:actTitle": "出会い",
+      "gh:actTitleEn": "Encounter",
+      "gh:pageRange": [
+        5,
+        6
+      ],
+      "gh:narrativePurpose": "ShotaがRyoをChiseに紹介。Chiseの登場と第一声"
+    },
+    {
+      "@id": "act:4-countermeasures",
+      "gh:actNumber": 4,
+      "gh:actTitle": "対策実行",
+      "gh:actTitleEn": "Countermeasures",
+      "gh:pageRange": [
+        7,
+        10
+      ],
+      "gh:narrativePurpose": "具体的な対処法を読者に伝える教育パート"
+    },
+    {
+      "@id": "act:5-investigation",
+      "gh:actNumber": 5,
+      "gh:actTitle": "追跡",
+      "gh:actTitleEn": "Investigation",
+      "gh:pageRange": [
+        11,
+        14
+      ],
+      "gh:narrativePurpose": "Chiseのスキルを見せながら、犯人特定への道筋を描く"
+    },
+    {
+      "@id": "act:6-confrontation",
+      "gh:actNumber": 6,
+      "gh:actTitle": "対決",
+      "gh:actTitleEn": "Confrontation",
+      "gh:pageRange": [
+        15,
+        16
+      ],
+      "gh:narrativePurpose": "犯人特定と法的解決への道"
+    },
+    {
+      "@id": "act:7-resolution",
+      "gh:actNumber": 7,
+      "gh:actTitle": "再起",
+      "gh:actTitleEn": "Resolution",
+      "gh:pageRange": [
+        17,
+        18
+      ],
+      "gh:narrativePurpose": "被害からの回復と、Ryoの再出発"
+    }
+  ],
+  "gh:pages": [
+    {
+      "gh:pageNumber": 1,
+      "gh:act": "act:1-daily-life",
+      "gh:pageTitle": "日常 - 配信者の光",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Establishing Shot",
+          "visual": "都立工科高校の外観。夕暮れ、部活帰りの生徒たち。",
+          "environment": "env:tech-highschool-exterior",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "都立工科高等学校。技術系の専門教育で知られる進学校。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Establishing Shot",
+            "gh:angle": "slightly low looking up",
+            "gh:lens": "24mm",
+            "gh:aperture": "f/5.6",
+            "gh:lighting": "warm sunset light"
+          },
+          "gh:imagePrompt": "Establishing Shot. 都立工科高校の校舎。夕暮れの柔らかい光。部活帰りの生徒たちのシルエット。. photorealistic, cinematic.",
+          "gh:sdxlTags": [
+            "students",
+            "high school",
+            "casual attire",
+            "walking home",
+            "evening",
+            "tech high school exterior",
+            "sunset",
+            "slightly low angle",
+            "establishing shot",
+            "24mm lens",
+            "warm atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "students, high school, casual attire, walking home, evening, tech high school exterior, sunset, slightly low angle, establishing shot, 24mm lens, warm atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Ryoの部屋。ゲーミングチェアに座り、配信中。画面には視聴者からのコメントが流れる。",
+          "environment": "env:ryo-gaming-room",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "はい！Ryo_kuroです！今日もFPSやっていくよ〜！"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "over-shoulder",
+            "gh:lens": "35mm",
+            "gh:aperture": "f/2.8",
+            "gh:lighting": "RGB gaming lights, monitor glow"
+          },
+          "gh:imagePrompt": "Medium Shot. 17-year-old Japanese male in gaming hoodie, streaming at his desk. RGB lights, multiple monitors showing game and chat. Warm brown eyes, excited expression. photorealistic, 8k.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "gaming chair",
+            "sitting at desk",
+            "enthusiastic expression",
+            "ryo gaming room",
+            "unknown time",
+            "rgb gaming lights",
+            "medium shot",
+            "over-shoulder",
+            "35mm lens",
+            "motivated mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, gaming chair, sitting at desk, enthusiastic expression, ryo gaming room, unknown time, rgb gaming lights, medium shot, over-shoulder, 35mm lens, motivated mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "配信画面のアップ。視聴者5万人、コメント「神プレイ！」「また勝つでしょ」「応援してるよ」。",
+          "environment": "env:stream-overlay",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "登録者5万人。彼の居場所。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat",
+            "gh:focus": "sharp"
+          },
+          "gh:imagePrompt": "Insert Shot. Streaming overlay with viewer count 50,000, chat messages scrolling with supportive comments in Japanese. Gaming interface aesthetic.",
+          "gh:sdxlTags": [
+            "1viewer",
+            "5万人の視聴者",
+            "stream overlay",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1viewer, 5万人の視聴者, stream overlay, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Ryoの笑顔。画面に照らされる横顔。楽しそうに配信を続けている。",
+          "environment": "env:ryo-gaming-room",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "みんな、いつもありがとな！"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "profile",
+            "gh:lens": "85mm",
+            "gh:aperture": "f/1.8",
+            "gh:lighting": "monitor light on face, warm"
+          },
+          "gh:imagePrompt": "Close-up. 17-year-old Japanese male, genuine happy smile, lit by monitor glow. Warm brown eyes, youthful energy. photorealistic, 8k.",
+          "gh:sdxlTags": [
+            "1boy",
+            "male",
+            "Ryo Kuroda",
+            "smiling",
+            "live streaming",
+            "gaming room",
+            "close-up",
+            "profile",
+            "85mm lens",
+            "warm lighting",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male, Ryo Kuroda, smiling, live streaming, gaming room, close-up, profile, 85mm lens, warm lighting, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 2,
+      "gh:act": "act:1-daily-life",
+      "gh:pageTitle": "日常の崩壊 - ドクシングの始まり",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "匿名掲示板のスクリーンショット。「Ryo_kuroの本名と住所特定したわｗ」「こいつの配信、背景から場所分かるじゃん」",
+          "environment": "env:anonymous-board",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "異変は、静かに始まった。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat",
+            "gh:atmosphere": "ominous, dark"
+          },
+          "gh:imagePrompt": "Insert Shot. Anonymous forum screenshot with threatening messages in Japanese. Dark UI, ominous atmosphere. Redacted personal information partially visible.",
+          "gh:sdxlTags": [
+            "screenshot",
+            "anonymous_board",
+            "dark_background",
+            "ominous atmosphere",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "screenshot, anonymous_board, dark_background, ominous atmosphere, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Ryoのスマホを握る手が震える。SNSの通知が止まらない。誹謗中傷のリプライが溢れる。",
+          "environment": "env:ryo-bedroom",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…なんだ、これ…"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "high angle",
+            "gh:lens": "50mm",
+            "gh:aperture": "f/2.0",
+            "gh:lighting": "phone screen glow in darkness"
+          },
+          "gh:imagePrompt": "Medium Shot. Young man looking at phone with terrified expression. Screen glow illuminates trembling hands. Dark room, anxiety-inducing atmosphere.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "holding smartphone",
+            "shaking hand",
+            "distressed expression",
+            "bedroom",
+            "night",
+            "phone screen glow",
+            "medium shot",
+            "high angle",
+            "50mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, holding smartphone, shaking hand, distressed expression, bedroom, night, phone screen glow, medium shot, high angle, 50mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "SNSタイムライン。「チーター乙」「八百長野郎」「住所晒されてやんの」「消えろ」の文字が並ぶ。",
+          "environment": "env:sns-timeline",
+          "characters": [],
+          "dialogue": [],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Social media timeline filled with hateful comments and harassment messages in Japanese. Red notification badges, aggressive emojis.",
+          "gh:sdxlTags": [
+            "sns timeline",
+            "text comments",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "sns timeline, text comments, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Ryoの目。画面を見つめる瞳に、恐怖が滲む。涙がこぼれそう。",
+          "environment": "env:ryo-bedroom",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…嘘だろ…俺、何も悪いことしてないのに…"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "100mm",
+            "gh:aperture": "f/1.4",
+            "gh:eyeDetail": "tears forming, fear in pupils"
+          },
+          "gh:imagePrompt": "Extreme Close-up. Japanese teenage male's eyes filled with fear and tears. Phone screen reflected in pupils. Dramatic lighting.",
+          "gh:sdxlTags": [
+            "1boy",
+            "boy",
+            "casual",
+            "close-up",
+            "frontal",
+            "scared expression",
+            "bedroom",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, boy, casual, close-up, frontal, scared expression, bedroom, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 3,
+      "gh:act": "act:2-escalation",
+      "gh:pageTitle": "エスカレーション - 現実への侵食",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "Ryoの家の前。ピザの配達員が何人も来ている。困惑するRyoの母。",
+          "environment": "env:ryo-house-exterior",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoMother",
+              "text": "注文してないって言ってるでしょ！"
+            },
+            {
+              "speaker": "DeliveryMan",
+              "text": "でも、この住所で30枚注文が…"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "28mm",
+            "gh:lighting": "harsh daylight"
+          },
+          "gh:imagePrompt": "Wide Shot. Japanese suburban house entrance. Multiple pizza delivery people with stacks of pizza boxes. Confused middle-aged Japanese woman at door.",
+          "gh:sdxlTags": [
+            "multiple delivery men",
+            "confused mother",
+            "not wearing apron",
+            "standing in front of house",
+            "confused expression",
+            "Ryo's house exterior",
+            "daytime",
+            "harsh daylight",
+            "wide shot",
+            "eye level",
+            "28mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "multiple delivery men, confused mother, not wearing apron, standing in front of house, confused expression, Ryo's house exterior, daytime, harsh daylight, wide shot, eye level, 28mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Ryoが2階の窓から様子を見ている。顔は蒼白。",
+          "environment": "env:ryo-bedroom",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "（俺のせいだ…）"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "from outside, looking through window",
+            "gh:lens": "85mm",
+            "gh:aperture": "f/2.8"
+          },
+          "gh:imagePrompt": "Medium Shot from outside. Japanese teenage male peeking through window curtain, pale face, guilt and fear in expression.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "Ryo Kuroda",
+            "looking out window",
+            "pale expression",
+            "bedroom",
+            "day",
+            "natural light",
+            "medium shot",
+            "outside angle",
+            "85mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, Ryo Kuroda, looking out window, pale expression, bedroom, day, natural light, medium shot, outside angle, 85mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "Ryoのスマホ。無言電話の着信履歴が何件も。非通知、未登録番号が並ぶ。",
+          "environment": "env:smartphone-screen",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "電話も、止まらなかった。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Phone call log showing multiple missed calls from 'Unknown' and random numbers. Japanese UI, ominous.",
+          "gh:sdxlTags": [
+            "1smartphone",
+            "incoming call history",
+            "unknown numbers",
+            "silent call",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1smartphone, incoming call history, unknown numbers, silent call, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Wide Shot",
+          "visual": "学校の廊下。Ryoがうつむいて歩いている。周りの生徒がヒソヒソ話をしている。",
+          "environment": "env:tech-highschool-hallway",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Student1",
+              "text": "（あれ、住所晒されたやつ…）"
+            },
+            {
+              "speaker": "Student2",
+              "text": "（マジ？やば…）"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "slightly high",
+            "gh:lens": "35mm",
+            "gh:lighting": "fluorescent school lighting"
+          },
+          "gh:imagePrompt": "Wide Shot. Japanese high school hallway. Isolated teenage male walking with head down. Other students whispering and looking. Cold lighting.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "school uniform",
+            "walking with head down",
+            "worried expression",
+            "high school hallway",
+            "daytime",
+            "fluorescent lighting",
+            "wide shot",
+            "slightly high angle",
+            "35mm lens",
+            "tension mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, school uniform, walking with head down, worried expression, high school hallway, daytime, fluorescent lighting, wide shot, slightly high angle, 35mm lens, tension mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 4,
+      "gh:act": "act:2-escalation",
+      "gh:pageTitle": "絶望 - 登校できなくなる",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "教室の入り口。Ryoが入ろうとして、止まる。視線が怖い。",
+          "environment": "env:tech-highschool-classroom",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "（…無理だ）"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "from behind Ryo",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Medium Shot from behind. Japanese teenage male standing at classroom doorway, frozen, unable to enter. Classmates visible inside.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "school uniform",
+            "stopping at classroom entrance",
+            "nervous expression",
+            "high school classroom",
+            "daytime",
+            "natural light",
+            "medium shot",
+            "back view",
+            "50mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, school uniform, stopping at classroom entrance, nervous expression, high school classroom, daytime, natural light, medium shot, back view, 50mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Close-up",
+          "visual": "Ryoの手が握りしめられている。爪が食い込んでいる。",
+          "environment": "env:tech-highschool-hallway",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "hand focus",
+            "gh:lens": "100mm macro"
+          },
+          "gh:imagePrompt": "Close-up. Clenched fist, nails digging into palm. Tension, suppressed emotion. Cinematic.",
+          "gh:sdxlTags": [
+            "1hand",
+            "male hand",
+            "gripping tight",
+            "fingers digging in",
+            "high school hallway",
+            "close-up",
+            "hand focus",
+            "100mm macro",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1hand, male hand, gripping tight, fingers digging in, high school hallway, close-up, hand focus, 100mm macro, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Wide Shot",
+          "visual": "Ryoの部屋。カーテンが閉め切られ、ベッドで丸くなっている。スマホは裏向きにされている。",
+          "environment": "env:ryo-bedroom",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "3日目。彼は学校に行けなくなった。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "high angle, looking down",
+            "gh:lens": "24mm",
+            "gh:lighting": "dark, minimal light through curtains"
+          },
+          "gh:imagePrompt": "Wide Shot, high angle. Dark bedroom with closed curtains. Teenage male curled up in bed. Phone face-down on desk. Depressing atmosphere.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "Ryo Kuroda",
+            "curled up on bed",
+            "sorrowful expression",
+            "Ryo's bedroom",
+            "dark",
+            "minimal light",
+            "wide shot",
+            "high angle",
+            "24mm lens",
+            "somber mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, Ryo Kuroda, curled up on bed, sorrowful expression, Ryo's bedroom, dark, minimal light, wide shot, high angle, 24mm lens, somber mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Shotaがドアを開けて覗き込む。心配そうな顔。",
+          "environment": "env:ryo-bedroom",
+          "characters": [
+            "character:ShotaHayashi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShotaHayashi",
+              "text": "涼…お前、生きてるか？"
+            }
+          ],
+          "gh:characterIntro": [
+            {
+              "gh:characterId": "character:ShotaHayashi",
+              "gh:name": "林 翔太",
+              "gh:nameReading": "はやし しょうた",
+              "gh:role": "Chiseの友人 / 橋渡し役"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "from inside room",
+            "gh:lens": "50mm",
+            "gh:lighting": "backlit from hallway"
+          },
+          "gh:imagePrompt": "Close-up. 19-year-old Japanese male with short black hair, cheerful round face now worried, looking through doorway. Backlit.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "casual clothes",
+            "opening door",
+            "worried expression",
+            "bedroom",
+            "backlit",
+            "close-up",
+            "inside room",
+            "50mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, casual clothes, opening door, worried expression, bedroom, backlit, close-up, inside room, 50mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 5,
+      "gh:act": "act:3-encounter",
+      "gh:pageTitle": "出会い - 赤羽千世",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "夜の神社境内。提灯の灯りがぼんやりと照らす。Shotaが誰かと話している。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:ShotaHayashi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShotaHayashi",
+              "text": "頼むよ、千世。お前しかいねぇんだ。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "35mm",
+            "gh:lighting": "warm lantern light, darkness beyond"
+          },
+          "gh:imagePrompt": "Wide Shot. Japanese shrine at night. Traditional lanterns provide warm light. Two figures talking near a bench. Atmospheric, mysterious.",
+          "gh:sdxlTags": [
+            "2characters",
+            "shota hayashi",
+            "talking to someone",
+            "neutral expression",
+            "akabane shrine",
+            "night",
+            "warm lantern light",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, shota hayashi, talking to someone, neutral expression, akabane shrine, night, warm lantern light, wide shot, eye level, 35mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Chiseが境内のベンチに座っている。ストリート系の服、赤いハイライトの入った黒髪。琥珀色の鋭い目。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "…めんどくせぇ。"
+            }
+          ],
+          "gh:characterIntro": [
+            {
+              "gh:characterId": "character:Chise",
+              "gh:name": "赤羽 千世",
+              "gh:nameReading": "あかばね ちせ",
+              "gh:role": "主人公 / HN: aka_chise1"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "slightly low, dramatic",
+            "gh:lens": "50mm",
+            "gh:aperture": "f/1.8",
+            "gh:lighting": "lantern glow, dramatic shadows"
+          },
+          "gh:imagePrompt": "Medium Shot. 19-year-old Japanese female, sharp intense features, piercing amber eyes, long black hair with red highlights in messy ponytail, techwear streetwear. Sitting on shrine bench. Defiant expression. Cinematic lighting.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "streetwear",
+            "sitting on bench",
+            "annoyed expression",
+            "akabane shrine",
+            "night",
+            "lantern glow",
+            "medium shot",
+            "slightly low angle",
+            "50mm lens",
+            "dramatic mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, streetwear, sitting on bench, annoyed expression, akabane shrine, night, lantern glow, medium shot, slightly low angle, 50mm lens, dramatic mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Chiseの目。鋭く、でもどこか守護の意志を感じさせる。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "…でも、弱い者いじめは、もっとめんどくせぇ。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "85mm",
+            "gh:aperture": "f/1.4",
+            "gh:eyeDetail": "piercing amber irises, sharp, determined"
+          },
+          "gh:imagePrompt": "Close-up. 19-year-old Japanese female, piercing amber eyes with fierce determination. Lantern light reflected in irises. Cinematic.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "sharp eyes",
+            "close-up expression",
+            "determined expression",
+            "akabane shrine",
+            "daytime",
+            "natural light",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, sharp eyes, close-up expression, determined expression, akabane shrine, daytime, natural light, close-up, frontal, 85mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Wide Shot",
+          "visual": "Chiseが立ち上がる。神社の鳥居を背に、シルエット。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "…会わせろ。その後輩に。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "low angle, looking up",
+            "gh:lens": "24mm",
+            "gh:lighting": "backlit by lanterns, silhouette"
+          },
+          "gh:imagePrompt": "Wide Shot, low angle. Female silhouette standing up against traditional torii gate and lanterns. Dramatic, heroic entrance moment.",
+          "gh:sdxlTags": [
+            "1girl",
+            "teen girl",
+            "traditional clothing",
+            "standing",
+            "determined expression",
+            "akabane shrine",
+            "night",
+            "backlit by lanterns",
+            "wide shot",
+            "low angle",
+            "24mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, teen girl, traditional clothing, standing, determined expression, akabane shrine, night, backlit by lanterns, wide shot, low angle, 24mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 6,
+      "gh:act": "act:3-encounter",
+      "gh:pageTitle": "出会い - 「消すな。残せ。」",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "ファミレスの一角。Ryoがうつむいている。Chiseが向かいに座っている。Shotaは横で見守る。",
+          "environment": "env:family-restaurant",
+          "characters": [
+            "character:RyoKuroda",
+            "character:Chise",
+            "character:ShotaHayashi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "話、聞いた。酷いな。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "side angle",
+            "gh:lens": "35mm",
+            "gh:lighting": "warm restaurant lighting"
+          },
+          "gh:imagePrompt": "Medium Shot. Family restaurant booth. Depressed teenage male across from intense-looking female with black hair. Third person watching. Night outside window.",
+          "gh:sdxlTags": [
+            "3 characters",
+            "1boy",
+            "1girl",
+            "1boy",
+            "casual attire",
+            "sitting at table",
+            "concerned expression",
+            "family restaurant",
+            "day",
+            "warm restaurant lighting",
+            "medium shot",
+            "side angle",
+            "35mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "3 characters, 1boy, 1girl, 1boy, casual attire, sitting at table, concerned expression, family restaurant, day, warm restaurant lighting, medium shot, side angle, 35mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Close-up",
+          "visual": "Ryoのスマホを見るChise。画面には誹謗中傷の数々。",
+          "environment": "env:family-restaurant",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "全部消したいんです…でも消しても消しても…"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "over-shoulder",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Close-up, over-shoulder. Female looking at phone screen showing harassment messages. Analyzing expression.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "casual attire",
+            "looking at smartphone",
+            "worried expression",
+            "family restaurant",
+            "daytime",
+            "soft lighting",
+            "close-up",
+            "over-shoulder",
+            "50mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, casual attire, looking at smartphone, worried expression, family restaurant, daytime, soft lighting, close-up, over-shoulder, 50mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Chiseがスマホをテーブルに置く。Ryoの目を真っ直ぐ見る。",
+          "environment": "env:family-restaurant",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "消すな。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "85mm",
+            "gh:aperture": "f/1.8"
+          },
+          "gh:imagePrompt": "Close-up. 19-year-old Japanese female with amber eyes, direct intense gaze. Authoritative but not unkind. Dramatic lighting.",
+          "gh:sdxlTags": [
+            "1girl",
+            "female",
+            "smartphone",
+            "placing on table",
+            "staring at Ryo",
+            "family restaurant",
+            "close-up",
+            "frontal angle",
+            "85mm lens",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, female, smartphone, placing on table, staring at Ryo, family restaurant, close-up, frontal angle, 85mm lens, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Two Shot",
+          "visual": "Chiseが前のめりになってRyoに語りかける。Ryoは驚いている。",
+          "environment": "env:family-restaurant",
+          "characters": [
+            "character:Chise",
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "残せ。それが一番強い武器になる。"
+            },
+            {
+              "speaker": "Chise",
+              "text": "証拠がなきゃ、戦えない。消したら、あいつらの勝ちだ。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Two Shot",
+            "gh:angle": "slightly low",
+            "gh:lens": "35mm"
+          },
+          "gh:imagePrompt": "Two Shot. Female leaning forward intently speaking to surprised teenage male. Determined expression meets confused hope. Restaurant background blurred.",
+          "gh:sdxlTags": [
+            "2characters",
+            "girl",
+            "boy",
+            "casual attire",
+            "speaking to each other",
+            "surprised expression",
+            "family restaurant",
+            "daytime",
+            "natural light",
+            "two shot",
+            "slightly low angle",
+            "35mm lens",
+            "determined mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, girl, boy, casual attire, speaking to each other, surprised expression, family restaurant, daytime, natural light, two shot, slightly low angle, 35mm lens, determined mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 7,
+      "gh:act": "act:4-countermeasures",
+      "gh:pageTitle": "対策1 - 証拠の保全",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "Chiseのノートパソコン画面。スクリーンショットを撮るツールが起動している。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "まず、スクショ。URL、日時、投稿者のID、全部残せ。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Laptop screen showing screenshot tool. Evidence preservation interface. Clean, technical aesthetic.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "workspace",
+            "laptop screen",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, workspace, laptop screen, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "YuiがChiseの横に座っている。缶コーヒーを持ちながら画面を見る。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise",
+            "character:YuiTanaka"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YuiTanaka",
+              "text": "…魚拓サービスも使って。消される前に。"
+            }
+          ],
+          "gh:characterIntro": [
+            {
+              "gh:characterId": "character:YuiTanaka",
+              "gh:name": "田中 結衣",
+              "gh:nameReading": "たなか ゆい",
+              "gh:role": "技術サポート / 情報科首席"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Medium Shot. Two Japanese females at workspace. One with black hair and red highlights (Chise), one with short bob and glasses holding coffee can (Yui). Laptops open.",
+          "gh:sdxlTags": [
+            "2girls",
+            "Chise",
+            "Yui Tanaka",
+            "sitting next to each other",
+            "holding canned coffee",
+            "looking at screen",
+            "workspace",
+            "day",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2girls, Chise, Yui Tanaka, sitting next to each other, holding canned coffee, looking at screen, workspace, day, medium shot, eye level, 50mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "画面に表示される手順リスト。「1. スクリーンショット撮影 2. URL保存 3. 日時記録 4. 魚拓サービスで保存」",
+          "environment": "env:screen-interface",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "証拠保全の手順。これが、戦うための第一歩。"
+            }
+          ],
+          "gh:educationalContent": {
+            "gh:step": 1,
+            "gh:title": "証拠の保全",
+            "gh:points": [
+              "スクリーンショットを撮る",
+              "URLを保存する",
+              "日時を記録する",
+              "魚拓サービス（archive.today等）で保存"
+            ]
+          },
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Clean checklist UI showing evidence preservation steps in Japanese. Educational infographic style.",
+          "gh:sdxlTags": [
+            "1screen",
+            "interface",
+            "steps",
+            "list",
+            "screenshot",
+            "save URL",
+            "record date",
+            "use fish preserve service",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1screen, interface, steps, list, screenshot, save URL, record date, use fish preserve service, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Ryoが真剣な顔でスマホを操作している。証拠を保存している。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…分かりました。全部、残します。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "side profile",
+            "gh:lens": "85mm"
+          },
+          "gh:imagePrompt": "Close-up. Japanese teenage male with determined expression, taking screenshots on phone. Focus, purpose replacing despair.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "smartphone",
+            "serious expression",
+            "chise workspace",
+            "close-up",
+            "side profile",
+            "85mm lens",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, smartphone, serious expression, chise workspace, close-up, side profile, 85mm lens, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 8,
+      "gh:act": "act:4-countermeasures",
+      "gh:pageTitle": "対策2 - プラットフォーム報告",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "SNSの「通報」ボタンを押す画面。「誹謗中傷・嫌がらせ」のカテゴリを選択。",
+          "environment": "env:smartphone-screen",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "次。プラットフォームに通報。でも、通報する前に必ず証拠を残してから。"
+            }
+          ],
+          "gh:educationalContent": {
+            "gh:step": 2,
+            "gh:title": "プラットフォームへの報告",
+            "gh:points": [
+              "各SNSの通報機能を使う",
+              "「誹謗中傷・嫌がらせ」カテゴリを選択",
+              "通報した日時も記録しておく",
+              "削除依頼も並行して行う"
+            ]
+          },
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Social media report interface in Japanese. 'Report harassment' button highlighted. Clean UI.",
+          "gh:sdxlTags": [
+            "smartphone-screen",
+            "pressing button",
+            "reporting category",
+            "harassment",
+            "flat angle",
+            "insert shot",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "smartphone-screen, pressing button, reporting category, harassment, flat angle, insert shot, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Chiseがホワイトボードに流れを書いている。「証拠保全 → 通報 → 相談 → 開示請求」",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "順番が大事。証拠なしに通報しても、消されたら終わり。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "side angle",
+            "gh:lens": "35mm"
+          },
+          "gh:imagePrompt": "Medium Shot. Japanese female writing flowchart on whiteboard. Process diagram in Japanese. Teaching mode.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "casual attire",
+            "writing on whiteboard",
+            "serious expression",
+            "workspace",
+            "day",
+            "natural light",
+            "medium shot",
+            "side angle",
+            "35mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, casual attire, writing on whiteboard, serious expression, workspace, day, natural light, medium shot, side angle, 35mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Two Shot",
+          "visual": "ShotaとRyoが真剣に聞いている。Shotaがメモを取っている。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:ShotaHayashi",
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShotaHayashi",
+              "text": "なるほど…全部繋がってんだな。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Two Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Two Shot. Two Japanese males listening intently. One taking notes, one with hopeful expression. Learning moment.",
+          "gh:sdxlTags": [
+            "2boys",
+            "shota",
+            "formal attire",
+            "taking notes",
+            "serious expression",
+            "workspace",
+            "day",
+            "natural light",
+            "two shot",
+            "eye level",
+            "50mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2boys, shota, formal attire, taking notes, serious expression, workspace, day, natural light, two shot, eye level, 50mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Yuiが削除依頼のテンプレートを見せている。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:YuiTanaka"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YuiTanaka",
+              "text": "…削除依頼のテンプレ、作っておいた。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "over-shoulder",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Close-up, over-shoulder. Female with glasses showing laptop screen with deletion request template. Helpful, efficient.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Yui",
+            "casual attire",
+            "showing template",
+            "neutral expression",
+            "chise workspace",
+            "day",
+            "natural light",
+            "close-up",
+            "over-shoulder",
+            "50mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, Yui, casual attire, showing template, neutral expression, chise workspace, day, natural light, close-up, over-shoulder, 50mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 9,
+      "gh:act": "act:4-countermeasures",
+      "gh:pageTitle": "対策3 - 相談窓口",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "警察庁サイバー犯罪相談窓口のウェブサイト。「#9110」の電話番号。",
+          "environment": "env:screen-interface",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "三つ目。相談窓口。一人で抱え込むな。"
+            }
+          ],
+          "gh:educationalContent": {
+            "gh:step": 3,
+            "gh:title": "相談窓口への連絡",
+            "gh:points": [
+              "警察庁サイバー犯罪相談窓口（#9110）",
+              "法務局「インターネット上の人権侵害」相談",
+              "一般社団法人セーファーインターネット協会",
+              "弁護士会の法律相談"
+            ]
+          },
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Official government website for cyber crime consultation in Japanese. #9110 phone number prominent. Clean, authoritative design.",
+          "gh:sdxlTags": [
+            "1screen",
+            "screen interface",
+            "#9110",
+            "displaying phone number",
+            "neutral expression",
+            "website",
+            "day",
+            "bright lighting",
+            "insert shot",
+            "flat angle",
+            "70mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1screen, screen interface, #9110, displaying phone number, neutral expression, website, day, bright lighting, insert shot, flat angle, 70mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Chiseが電話番号のリストを渡す。Ryoの手が震えながら受け取る。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise",
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…でも、親にバレたら…"
+            },
+            {
+              "speaker": "Chise",
+              "text": "親に言わないで解決できる範囲は超えてる。大人を巻き込め。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Medium Shot. Female handing paper list to teenage male. His hands trembling slightly. Supportive atmosphere.",
+          "gh:sdxlTags": [
+            "2 characters",
+            "girl",
+            "boy",
+            "casual clothes",
+            "handing over phone number list",
+            "nervous expression",
+            "workspace",
+            "day",
+            "natural light",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2 characters, girl, boy, casual clothes, handing over phone number list, nervous expression, workspace, day, natural light, medium shot, eye level, 50mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Chiseの真剣な表情。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "被害者は悪くない。声を上げることは、恥ずかしいことじゃない。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "85mm",
+            "gh:aperture": "f/1.4"
+          },
+          "gh:imagePrompt": "Close-up. 19-year-old Japanese female, amber eyes, sincere and encouraging expression. Powerful, reassuring.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "serious expression",
+            "chise workspace",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, serious expression, chise workspace, close-up, frontal, 85mm lens, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Ryoの目に、涙と決意が滲む。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…はい。親に、話します。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "100mm",
+            "gh:eyeDetail": "tears forming, determination"
+          },
+          "gh:imagePrompt": "Close-up. Japanese teenage male, tears in eyes but with newfound determination. Emotional breakthrough moment.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "Ryo Kuroda",
+            "close-up gaze",
+            "determined expression",
+            "workspace",
+            "undefined",
+            "front angle",
+            "close-up",
+            "100mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, Ryo Kuroda, close-up gaze, determined expression, workspace, undefined, front angle, close-up, 100mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 10,
+      "gh:act": "act:4-countermeasures",
+      "gh:pageTitle": "対策4 - 発信者情報開示請求",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "「発信者情報開示請求」の書類。弁護士の名刺。",
+          "environment": "env:legal-documents",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "最後の武器。発信者情報開示請求。"
+            }
+          ],
+          "gh:educationalContent": {
+            "gh:step": 4,
+            "gh:title": "発信者情報開示請求",
+            "gh:points": [
+              "弁護士を通じて行う法的手続き",
+              "プロバイダに投稿者のIPアドレス開示を求める",
+              "IPから契約者情報の開示を求める",
+              "特定後、損害賠償請求や刑事告訴が可能"
+            ]
+          },
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Legal documents for 'Sender Information Disclosure Request' in Japanese. Lawyer's business card. Official, formal.",
+          "gh:sdxlTags": [
+            "legal documents",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "legal documents, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Chiseがフローチャートの最終段階を指す。「匿名 → IP開示 → 契約者特定 → 法的措置」",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "匿名でも逃げられない。ログは嘘つかない。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "side angle",
+            "gh:lens": "35mm"
+          },
+          "gh:imagePrompt": "Medium Shot. Female pointing to flowchart on whiteboard showing legal identification process. Confident teaching pose.",
+          "gh:sdxlTags": [
+            "1girl",
+            "chise",
+            "business attire",
+            "pointing at flowchart",
+            "serious expression",
+            "workspace",
+            "day",
+            "natural lighting",
+            "medium shot",
+            "side angle",
+            "35mm lens",
+            "intense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, chise, business attire, pointing at flowchart, serious expression, workspace, day, natural lighting, medium shot, side angle, 35mm lens, intense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Two Shot",
+          "visual": "RyoとShotaが顔を見合わせる。希望が見えてきた。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:RyoKuroda",
+            "character:ShotaHayashi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShotaHayashi",
+              "text": "マジか…特定できんのか…"
+            },
+            {
+              "speaker": "RyoKuroda",
+              "text": "…戦える、のか…"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Two Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Two Shot. Two Japanese males looking at each other with dawning hope. Emotional shift from despair to possibility.",
+          "gh:sdxlTags": [
+            "2boys",
+            "Ryo_and_Shota",
+            "casual clothes",
+            "looking at each other",
+            "hopeful expression",
+            "chise workspace",
+            "day",
+            "natural light",
+            "two shot",
+            "eye level",
+            "50mm lens",
+            "optimistic mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2boys, Ryo_and_Shota, casual clothes, looking at each other, hopeful expression, chise workspace, day, natural light, two shot, eye level, 50mm lens, optimistic mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Wide Shot",
+          "visual": "Chiseが腕を組んで立っている。背後にはホワイトボードの全体図。戦略が見える。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise",
+            "character:YuiTanaka",
+            "character:ShotaHayashi",
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "ここからが本番だ。証拠は揃った。次は、追跡。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "28mm"
+          },
+          "gh:imagePrompt": "Wide Shot. Team assembled in workspace. Female leader standing with arms crossed, whiteboard with strategy behind. Three others seated. War room atmosphere.",
+          "gh:sdxlTags": [
+            "4characters",
+            "female character",
+            "smart attire",
+            "standing with arms crossed",
+            "determined expression",
+            "workspace",
+            "daytime",
+            "natural light",
+            "wide shot",
+            "eye level",
+            "28mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "4characters, female character, smart attire, standing with arms crossed, determined expression, workspace, daytime, natural light, wide shot, eye level, 28mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 11,
+      "gh:act": "act:5-investigation",
+      "gh:pageTitle": "追跡 - デジタルフォレンジック",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "画面に表示されるログデータ。IPアドレス、タイムスタンプ、アクセス元が並ぶ。",
+          "environment": "env:analysis-screen",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "追跡が始まった。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Computer screen showing log data analysis. IP addresses, timestamps, access patterns. Technical forensics interface.",
+          "gh:sdxlTags": [
+            "log_data",
+            "ip_address",
+            "timestamp",
+            "access_origin",
+            "insert_shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "log_data, ip_address, timestamp, access_origin, insert_shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Yuiが複数のモニターの前で作業。Chiseが後ろから見ている。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:YuiTanaka",
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YuiTanaka",
+              "text": "…パターンが見えてきた。同一人物が複数アカウントで投稿してる。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "side angle",
+            "gh:lens": "35mm",
+            "gh:lighting": "monitor glow"
+          },
+          "gh:imagePrompt": "Medium Shot. Female with glasses at multiple monitors, analyzing data. Another female watching from behind. Dark room, screens glowing.",
+          "gh:sdxlTags": [
+            "2 characters",
+            "Yui",
+            "Chise",
+            "at computer",
+            "focused expression",
+            "workspace",
+            "unknown time",
+            "monitor glow",
+            "medium shot",
+            "side angle",
+            "35mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2 characters, Yui, Chise, at computer, focused expression, workspace, unknown time, monitor glow, medium shot, side angle, 35mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Chiseの目が光る。何かを掴んだ表情。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "…こいつ、ミスってる。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "85mm",
+            "gh:eyeDetail": "sharp, predatory glint"
+          },
+          "gh:imagePrompt": "Close-up. Japanese female with amber eyes, sharp predatory glint. Found something. Dramatic lighting.",
+          "gh:sdxlTags": [
+            "1girl",
+            "female character",
+            "Chise",
+            "determined expression",
+            "workspace",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, female character, Chise, determined expression, workspace, close-up, frontal, 85mm lens, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Insert Shot",
+          "visual": "画面上のデータがハイライトされる。アカウント名の類似性、投稿時間のパターン。",
+          "environment": "env:analysis-screen",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "サブ垢の名前、本垢と似てる。そして投稿時間…学校終わりと深夜。高校生だ。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Data analysis screen with highlighted patterns. Account names circled, posting times graphed. Detective work visualization.",
+          "gh:sdxlTags": [
+            "data on screen",
+            "highlighted data",
+            "account name similarity",
+            "posting time pattern",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "data on screen, highlighted data, account name similarity, posting time pattern, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 12,
+      "gh:act": "act:5-investigation",
+      "gh:pageTitle": "追跡 - グレーな情報",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "夜の街。ネオンが光る裏通り。Chiseが一人で歩いている。",
+          "environment": "env:night-street",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "正攻法だけでは、辿り着けない場所がある。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "35mm",
+            "gh:lighting": "neon lights, urban night"
+          },
+          "gh:imagePrompt": "Wide Shot. Japanese night street with neon signs. Female figure walking alone. Urban noir atmosphere. Cinematic.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "casual clothing",
+            "walking alone",
+            "neutral expression",
+            "night street",
+            "night",
+            "neon lights",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "mysterious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, casual clothing, walking alone, neutral expression, night street, night, neon lights, wide shot, eye level, 35mm lens, mysterious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "カフェの奥の席。Daichiが座っている。スーツを着崩した格好。",
+          "environment": "env:night-cafe",
+          "characters": [
+            "character:DaichiMori"
+          ],
+          "dialogue": [
+            {
+              "speaker": "DaichiMori",
+              "text": "珍しいな、千世。俺に会いに来るなんて。"
+            }
+          ],
+          "gh:characterIntro": [
+            {
+              "gh:characterId": "character:DaichiMori",
+              "gh:name": "森 大地",
+              "gh:nameReading": "もり だいち",
+              "gh:role": "情報提供者 / グレーな存在"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "slightly low",
+            "gh:lens": "50mm",
+            "gh:lighting": "dim cafe lighting, shadows"
+          },
+          "gh:imagePrompt": "Medium Shot. 19-year-old Japanese male, handsome with calculating expression, slicked back dark hair, designer clothes. Sitting in shadowy cafe booth.",
+          "gh:sdxlTags": [
+            "1boy",
+            "young man",
+            "suit",
+            "sitting at cafe",
+            "casual pose",
+            "cafe",
+            "night",
+            "dim cafe lighting",
+            "medium shot",
+            "slightly low angle",
+            "50mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, young man, suit, sitting at cafe, casual pose, cafe, night, dim cafe lighting, medium shot, slightly low angle, 50mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Two Shot",
+          "visual": "ChiseとDaichiが向かい合う。緊張感のある空気。",
+          "environment": "env:night-cafe",
+          "characters": [
+            "character:Chise",
+            "character:DaichiMori"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "…情報が欲しい。ある配信者を攻撃してるグループの。"
+            },
+            {
+              "speaker": "DaichiMori",
+              "text": "ふーん。また誰かの味方してんだ。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Two Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Two Shot. Japanese female and male facing each other in cafe. Tension visible. Noir lighting.",
+          "gh:sdxlTags": [
+            "2characters",
+            "girl",
+            "boy",
+            "indoor clothing",
+            "facing each other",
+            "tense expression",
+            "night cafe",
+            "night",
+            "eye level",
+            "two shot",
+            "50mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, girl, boy, indoor clothing, facing each other, tense expression, night cafe, night, eye level, two shot, 50mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Daichiが何かを書いたメモを滑らせる。Chiseの手が受け取る。",
+          "environment": "env:night-cafe",
+          "characters": [
+            "character:DaichiMori"
+          ],
+          "dialogue": [
+            {
+              "speaker": "DaichiMori",
+              "text": "…知ってることは、これだけ。借りは作らないからな。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "top-down on table",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Close-up, top-down. Male hand sliding folded paper across table to female hand. Dim lighting. Secretive exchange.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "casual clothes",
+            "sliding note",
+            "receiving note with hand",
+            "night cafe",
+            "night",
+            "close-up",
+            "top-down",
+            "50mm lens",
+            "neutral expression",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, casual clothes, sliding note, receiving note with hand, night cafe, night, close-up, top-down, 50mm lens, neutral expression, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 13,
+      "gh:act": "act:5-investigation",
+      "gh:pageTitle": "追跡 - 真相に迫る",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "メモの内容。ハンドルネームと、「元配信者」の文字。",
+          "environment": "env:paper-note",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "…元配信者。しかも、同じジャンル。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Handwritten note with handle name and 'former streamer' text in Japanese. Creased paper, dim light.",
+          "gh:sdxlTags": [
+            "1note",
+            "text",
+            "former streamer",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1note, text, former streamer, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Chiseが神社の境内で考え込んでいる。夜の静けさ。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "（嫉妬か。Ryoが人気出て、自分は伸びなくて…）"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm",
+            "gh:lighting": "moonlight, lantern glow"
+          },
+          "gh:imagePrompt": "Medium Shot. Female sitting on shrine bench, deep in thought. Night, moonlight and lantern glow. Contemplative atmosphere.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "casual attire",
+            "deep in thought",
+            "neutral expression",
+            "akabane shrine",
+            "night",
+            "moonlight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, casual attire, deep in thought, neutral expression, akabane shrine, night, moonlight, medium shot, eye level, 50mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Wide Shot",
+          "visual": "Yuiの画面に、特定されたアカウントの情報が表示される。Chise、Shota、Ryoが見ている。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:YuiTanaka",
+            "character:Chise",
+            "character:ShotaHayashi",
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YuiTanaka",
+              "text": "…一致した。この元配信者、Ryoの動画にネガコメ残してた履歴がある。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "from behind screen",
+            "gh:lens": "35mm"
+          },
+          "gh:imagePrompt": "Wide Shot from behind monitors. Four people looking at screen showing matched account data. Revelation moment. Dim room.",
+          "gh:sdxlTags": [
+            "3characters",
+            "female",
+            "Yui",
+            "male",
+            "Chise",
+            "Shota",
+            "Ryo",
+            "looking at screen",
+            "serious expression",
+            "Chise's workspace",
+            "day",
+            "natural light",
+            "wide shot",
+            "from behind screen",
+            "35mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "3characters, female, Yui, male, Chise, Shota, Ryo, looking at screen, serious expression, Chise's workspace, day, natural light, wide shot, from behind screen, 35mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Ryoの表情。驚きと、悲しみ。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…あいつ、前は一緒にコラボしてたのに…"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "85mm"
+          },
+          "gh:imagePrompt": "Close-up. Japanese teenage male, shock and sadness mixing on face. Betrayal realization.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "Ryo Kuroda",
+            "close-up expression",
+            "surprised expression",
+            "sad expression",
+            "chise workspace",
+            "unknown time",
+            "front angle",
+            "close-up",
+            "85mm lens",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, Ryo Kuroda, close-up expression, surprised expression, sad expression, chise workspace, unknown time, front angle, close-up, 85mm lens, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 14,
+      "gh:act": "act:5-investigation",
+      "gh:pageTitle": "追跡 - 動機",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "SNSの過去の投稿。元配信者の登録者数が伸び悩んでいるグラフ。Ryoのチャンネルは急成長。",
+          "environment": "env:sns-analytics",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "嫉妬は、静かに毒になる。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Analytics comparison chart. One line stagnant, one sharply rising. Social media statistics display.",
+          "gh:sdxlTags": [
+            "1graph",
+            "sns analytics",
+            "growing subscribers",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1graph, sns analytics, growing subscribers, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Chiseが証拠をまとめている。ファイルに整理されたスクリーンショットとログ。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "これで十分。あとは弁護士に渡す。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Medium Shot. Female organizing evidence folders and printouts. Methodical, professional. Workspace with organized documents.",
+          "gh:sdxlTags": [
+            "1girl",
+            "chise",
+            "office attire",
+            "organizing evidence",
+            "determined expression",
+            "workspace",
+            "day",
+            "natural lighting",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "focused mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, chise, office attire, organizing evidence, determined expression, workspace, day, natural lighting, medium shot, eye level, 50mm lens, focused mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Chiseの手が開示請求書類に署名するRyoの手をサポートしている。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:Chise",
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "ここにサイン。お前の名前で、正式に戦う。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "top-down on document",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Close-up, top-down. Hand signing legal document, another hand guiding supportively. Official paper, pen. Pivotal moment.",
+          "gh:sdxlTags": [
+            "2characters",
+            "Chise",
+            "RyoKuroda",
+            "supporting hand",
+            "signing document",
+            "workspace",
+            "day",
+            "close-up",
+            "top-down",
+            "50mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, Chise, RyoKuroda, supporting hand, signing document, workspace, day, close-up, top-down, 50mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Wide Shot",
+          "visual": "全員がRyoを見守っている。Ryoがペンを握り、書類にサインする。",
+          "environment": "env:chise-workspace",
+          "characters": [
+            "character:RyoKuroda",
+            "character:Chise",
+            "character:YuiTanaka",
+            "character:ShotaHayashi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…俺、戦います。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "35mm"
+          },
+          "gh:imagePrompt": "Wide Shot. Team gathered around as teenage male signs document. Supportive atmosphere. Moment of courage.",
+          "gh:sdxlTags": [
+            "4people",
+            "1boy",
+            "1girl",
+            "1man",
+            "1woman",
+            "RyoKuroda",
+            "Chise",
+            "YuiTanaka",
+            "ShotaHayashi",
+            "formal attire",
+            "holding pen",
+            "signing document",
+            "serious expression",
+            "chise workspace",
+            "day",
+            "natural lighting",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "determined mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "4people, 1boy, 1girl, 1man, 1woman, RyoKuroda, Chise, YuiTanaka, ShotaHayashi, formal attire, holding pen, signing document, serious expression, chise workspace, day, natural lighting, wide shot, eye level, 35mm lens, determined mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 15,
+      "gh:act": "act:6-confrontation",
+      "gh:pageTitle": "対決 - 開示請求の結果",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "弁護士事務所からの封筒。「発信者情報開示請求 承認」の文字。",
+          "environment": "env:legal-envelope",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "数週間後。開示請求が通った。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Official legal envelope opened, document showing 'Disclosure Request Approved' in Japanese. Light falling on paper.",
+          "gh:sdxlTags": [
+            "legal-envelope",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "legal-envelope, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "弁護士事務所。Ryoと両親が弁護士から説明を受けている。Chiseは後ろで見守る。",
+          "environment": "env:law-office",
+          "characters": [
+            "character:RyoKuroda",
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Lawyer",
+              "text": "発信者が特定されました。同県内の高校生です。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "35mm",
+            "gh:lighting": "professional office lighting"
+          },
+          "gh:imagePrompt": "Medium Shot. Lawyer's office. Teenage male with parents facing lawyer. Another female standing back observing. Professional setting.",
+          "gh:sdxlTags": [
+            "3characters",
+            "1boy",
+            "1girl",
+            "suit",
+            "sitting at desk",
+            "listening expression",
+            "law office",
+            "daytime",
+            "professional office lighting",
+            "medium shot",
+            "eye level",
+            "35mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "3characters, 1boy, 1girl, suit, sitting at desk, listening expression, law office, daytime, professional office lighting, medium shot, eye level, 35mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Ryoの表情。複雑な感情。安堵、悲しみ、怒り。",
+          "environment": "env:law-office",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…やっぱり、あいつだったのか…"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "85mm"
+          },
+          "gh:imagePrompt": "Close-up. Japanese teenage male, complex emotions on face - relief, sadness, anger mixed. Moment of truth.",
+          "gh:sdxlTags": [
+            "1boy",
+            "male",
+            "business attire",
+            "close-up expression",
+            "complex emotions",
+            "law office",
+            "daytime",
+            "soft lighting",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male, business attire, close-up expression, complex emotions, law office, daytime, soft lighting, close-up, frontal, 85mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Medium Shot",
+          "visual": "Chiseが静かにRyoの肩に手を置く。",
+          "environment": "env:law-office",
+          "characters": [
+            "character:Chise",
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "終わりじゃない。始まりだ。正しく、終わらせる。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "side angle",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Medium Shot. Female placing hand on teenage male's shoulder supportively. Lawyer's office background. Solemn but hopeful moment.",
+          "gh:sdxlTags": [
+            "2characters",
+            "Chise",
+            "Ryo Kuroda",
+            "hand_on_shoulder",
+            "serious_expression",
+            "law_office",
+            "day",
+            "medium_shot",
+            "side_angle",
+            "50mm_lens",
+            "quiet_mood",
+            "anime style",
+            "manga_panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, Chise, Ryo Kuroda, hand_on_shoulder, serious_expression, law_office, day, medium_shot, side_angle, 50mm_lens, quiet_mood, anime style, manga_panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 16,
+      "gh:act": "act:6-confrontation",
+      "gh:pageTitle": "対決 - 決着",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "別の場所。加害者の高校生が親と弁護士と共にいる。謝罪の場面。",
+          "environment": "env:meeting-room",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "法的措置の末、示談が成立した。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "neutral",
+            "gh:lens": "35mm"
+          },
+          "gh:imagePrompt": "Wide Shot. Formal meeting room. Two parties facing each other with lawyers. One side bowing in apology. Solemn atmosphere.",
+          "gh:sdxlTags": [
+            "1highschool_student",
+            "3people",
+            "suit",
+            "standing together",
+            "neutral expression",
+            "meeting room",
+            "day",
+            "natural light",
+            "wide shot",
+            "neutral angle",
+            "35mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1highschool_student, 3people, suit, standing together, neutral expression, meeting room, day, natural light, wide shot, neutral angle, 35mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "加害者が頭を下げている。隣で加害者の親も頭を下げる。",
+          "environment": "env:meeting-room",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Perpetrator",
+              "text": "…本当に、申し訳ありませんでした…"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Medium Shot. Japanese teenage male bowing deeply in apology, parent beside also bowing. Formal apology scene.",
+          "gh:sdxlTags": [
+            "2characters",
+            "perpetrator",
+            "parent",
+            "bowing",
+            "apologetic expression",
+            "meeting room",
+            "daytime",
+            "natural light",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, perpetrator, parent, bowing, apologetic expression, meeting room, daytime, natural light, medium shot, eye level, 50mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Ryoの表情。許すでも許さないでもない、区切りをつける顔。",
+          "environment": "env:meeting-room",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…二度と、やらないでください。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "85mm"
+          },
+          "gh:imagePrompt": "Close-up. Japanese teenage male with calm but firm expression. Neither forgiving nor condemning. Closure.",
+          "gh:sdxlTags": [
+            "1boy",
+            "RyoKuroda",
+            "suit",
+            "close-up",
+            "neutral expression",
+            "meeting room",
+            "day",
+            "well-lit",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, RyoKuroda, suit, close-up, neutral expression, meeting room, day, well-lit, close-up, frontal, 85mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Wide Shot",
+          "visual": "会議室を出るRyo。外には夕陽が差し込んでいる。一つの区切り。",
+          "environment": "env:building-exit",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "一つの戦いが、終わった。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "from behind",
+            "gh:lens": "35mm",
+            "gh:lighting": "warm sunset light through doors"
+          },
+          "gh:imagePrompt": "Wide Shot from behind. Teenage male walking toward building exit. Warm sunset light streaming through glass doors. End of journey.",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "business attire",
+            "exiting conference room",
+            "reflective expression",
+            "building exit",
+            "evening",
+            "warm sunset light",
+            "wide shot",
+            "from behind",
+            "35mm lens",
+            "contemplative mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, business attire, exiting conference room, reflective expression, building exit, evening, warm sunset light, wide shot, from behind, 35mm lens, contemplative mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 17,
+      "gh:act": "act:7-resolution",
+      "gh:pageTitle": "再起 - 配信復帰",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "Ryoの部屋。再び配信機材の前に座っている。少し緊張した面持ち。",
+          "environment": "env:ryo-gaming-room",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "…よし。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "side angle",
+            "gh:lens": "35mm",
+            "gh:lighting": "RGB lights, monitor glow"
+          },
+          "gh:imagePrompt": "Medium Shot. Japanese teenage male sitting at gaming desk again. Slight nervousness but determination. RGB lighting, fresh start atmosphere.",
+          "gh:sdxlTags": [
+            "1boy",
+            "Ryo Kuroda",
+            "sitting in gaming room",
+            "nervous expression",
+            "gaming room",
+            "ambient RGB lighting",
+            "medium shot",
+            "side angle",
+            "35mm lens",
+            "neutral mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, Ryo Kuroda, sitting in gaming room, nervous expression, gaming room, ambient RGB lighting, medium shot, side angle, 35mm lens, neutral mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "配信開始ボタンを押す指。画面に「LIVE」の文字が点灯。",
+          "environment": "env:stream-interface",
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "彼は、戻ってきた。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Finger pressing 'Start Stream' button. 'LIVE' indicator lighting up. Symbolic restart moment.",
+          "gh:sdxlTags": [
+            "1hand",
+            "finger",
+            "pressing button",
+            "streaming interface",
+            "determined expression",
+            "streaming room",
+            "none",
+            "flat angle",
+            "insert shot",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1hand, finger, pressing button, streaming interface, determined expression, streaming room, none, flat angle, insert shot, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "配信チャット。「おかえり！」「待ってたよ！」「応援してる！」のコメントが溢れる。",
+          "environment": "env:stream-chat",
+          "characters": [],
+          "dialogue": [],
+          "gh:shotProperties": {
+            "gh:distance": "Insert",
+            "gh:angle": "flat"
+          },
+          "gh:imagePrompt": "Insert Shot. Stream chat exploding with welcoming messages in Japanese. 'Welcome back!' 'We missed you!' Supportive community.",
+          "gh:sdxlTags": [
+            "comments",
+            "stream chat",
+            "1girl",
+            "cheering expression",
+            "online environment",
+            "bright",
+            "insert shot",
+            "flat angle",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "comments, stream chat, 1girl, cheering expression, online environment, bright, insert shot, flat angle, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Close-up",
+          "visual": "Ryoの笑顔。涙がにじんでいるが、本物の笑顔。",
+          "environment": "env:ryo-gaming-room",
+          "characters": [
+            "character:RyoKuroda"
+          ],
+          "dialogue": [
+            {
+              "speaker": "RyoKuroda",
+              "text": "みんな…ただいま。俺、戻ってきたよ。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "frontal",
+            "gh:lens": "85mm",
+            "gh:aperture": "f/1.8",
+            "gh:eyeDetail": "tears of joy, genuine smile"
+          },
+          "gh:imagePrompt": "Close-up. Japanese teenage male with tears of joy, genuine heartfelt smile. Monitor light on face. Emotional return moment.",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "gaming room",
+            "smiling",
+            "happy expression",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, gaming room, smiling, happy expression, close-up, frontal, 85mm lens, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 18,
+      "gh:act": "act:7-resolution",
+      "gh:pageTitle": "再起 - 「恥じゃない」",
+      "gh:panels": [
+        {
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "夜の神社。Chiseが境内のベンチに座っている。スマホでRyoの配信を見ている。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "（…よかったな、坊主）"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "35mm",
+            "gh:lighting": "lantern glow, moonlight"
+          },
+          "gh:imagePrompt": "Wide Shot. Night shrine, female sitting on bench looking at phone. Lantern glow and moonlight. Peaceful, satisfied atmosphere.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "sitting on bench",
+            "watching smartphone",
+            "neutral expression",
+            "shrine",
+            "night",
+            "lantern glow",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, sitting on bench, watching smartphone, neutral expression, shrine, night, lantern glow, wide shot, eye level, 35mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Shotaがやってきて、缶コーヒーを渡す。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:ShotaHayashi",
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "ShotaHayashi",
+              "text": "ありがとな、千世。涼、元気になった。"
+            },
+            {
+              "speaker": "Chise",
+              "text": "…俺は何もしてねぇよ。あいつが戦ったんだ。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Medium Shot",
+            "gh:angle": "eye level",
+            "gh:lens": "50mm"
+          },
+          "gh:imagePrompt": "Medium Shot. Male handing canned coffee to seated female. Night shrine setting. Friendly, casual moment between friends.",
+          "gh:sdxlTags": [
+            "2characters",
+            "shota hayashi",
+            "chise",
+            "giving can coffee",
+            "neutral expression",
+            "akabane shrine",
+            "daytime",
+            "natural lighting",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "casual mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, shota hayashi, chise, giving can coffee, neutral expression, akabane shrine, daytime, natural lighting, medium shot, eye level, 50mm lens, casual mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Chiseの横顔。少しだけ柔らかい表情。神社の灯りに照らされる。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Chise",
+              "text": "恥じゃない。声を上げることは、一番強い。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Close-up",
+            "gh:angle": "profile",
+            "gh:lens": "85mm",
+            "gh:aperture": "f/1.8",
+            "gh:lighting": "warm lantern light on profile"
+          },
+          "gh:imagePrompt": "Close-up profile. Japanese female with black hair and red highlights, softer expression than usual. Lantern light on face. Wisdom moment.",
+          "gh:sdxlTags": [
+            "1girl",
+            "Chise",
+            "soft expression",
+            "profile view",
+            "akabane shrine",
+            "night",
+            "warm lantern light",
+            "close-up",
+            "profile",
+            "85mm lens",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1girl, Chise, soft expression, profile view, akabane shrine, night, warm lantern light, close-up, profile, 85mm lens, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        },
+        {
+          "panel": 4,
+          "shot": "Wide Shot",
+          "visual": "Chiseが立ち上がり、神社の鳥居をくぐって夜の街へ歩き出す。次の戦いへ。",
+          "environment": "env:akabane-shrine",
+          "characters": [
+            "character:Chise"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "赤羽千世。HN: aka_chise1。彼女の戦いは、続く。"
+            },
+            {
+              "speaker": "Chise",
+              "text": "さて、次は誰を守るか。"
+            }
+          ],
+          "gh:shotProperties": {
+            "gh:distance": "Wide Shot",
+            "gh:angle": "from behind, low",
+            "gh:lens": "24mm",
+            "gh:lighting": "silhouette against city lights beyond torii"
+          },
+          "gh:imagePrompt": "Wide Shot from behind, low angle. Female walking through torii gate into night city. Silhouette against distant city lights. Hero's departure. To be continued...",
+          "gh:sdxlTags": [
+            "1girl",
+            "standing",
+            "kimono",
+            "walking through torii gate",
+            "determined expression",
+            "akabane shrine",
+            "night",
+            "silhouette",
+            "wide shot",
+            "low angle",
+            "24mm lens",
+            "tense mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, standing, kimono, walking through torii gate, determined expression, akabane shrine, night, silhouette, wide shot, low angle, 24mm lens, tense mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025300
+        }
+      ]
+    }
+  ],
+  "gh:presentationTagline": "Arc 0-2 | Defamation & Disclosure",
+  "gh:realCase": "Online defamation / disclosure request (発信者情報開示請求) → settlement/court",
+  "gh:sinContrast": "Fear (Staying silent) vs. Courage (Speaking up)",
+  "gh:educationalContent": {
+    "gh:keyTakeaways": [
+      "削除する前にスクショ・URLを保存する",
+      "日時とともに時系列で記録する",
+      "サイバー犯罪相談窓口（#9110）に連絡",
+      "発信者情報開示請求という法的手段がある",
+      "被害者は悪くない。声を上げることは恥ずかしいことじゃない"
+    ],
+    "gh:mainMessage": "ネット上の誹謗中傷は犯罪。一人で抱え込まず、証拠を残して専門家に相談することが大切。",
+    "gh:resources": [
+      "警察庁サイバー犯罪相談窓口（#9110）",
+      "法務局「インターネット上の人権侵害」相談",
+      "一般社団法人セーファーインターネット協会",
+      "弁護士会の法律相談"
+    ]
+  }
+}

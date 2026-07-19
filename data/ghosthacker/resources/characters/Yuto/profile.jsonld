@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:E_d1jipHs2TAOCuRU4iqf",
+  "gh:appearance": {
+    "gh:build": "Average build, wearing a standard Japanese high school uniform.",
+    "gh:eyes": "Bright expressive brown eyes, realistic iris patterns, sharp catchlights.",
+    "gh:face": "16-year-old Japanese male student, expressive eyes, slightly anxious but friendly expression.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, a 16-year-old Japanese high school boy, expressive brown eyes with sharp catchlights, neat black hair, wearing a black school gakuran uniform, friendly but slightly anxious expression.",
+    "gh:hair": "Neat black schoolboy hair.",
+    "gh:style": "Photorealistic, cinematic lighting, 8k, high-end webtoon aesthetic."
+  },
+  "gh:slug": "Yuto",
+  "schema:age": 16,
+  "schema:name": "佐藤 勇人 (Yuto Sato)",
+  "schema:role": "Student / Victim"
+}

@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "arc": "gh:arc/",
+    "character": "gh:character/",
+    "characters": "gh:characters",
+    "dct": "http://purl.org/dc/terms/",
+    "dialogue": "gh:dialogue",
+    "env": "gh:environment/",
+    "environment": "gh:environment",
+    "environments": "gh:environments",
+    "episodeId": "gh:episodeId",
+    "episodeIndex": "gh:episodeIndex",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "org": "gh:organization/",
+    "panel": "gh:panelIndex",
+    "prompt": "gh:runwayPrompt",
+    "properties": "gh:shotProperties",
+    "prov": "http://www.w3.org/ns/prov#",
+    "purpose": "gh:narrativePurpose",
+    "schema": "http://schema.org/",
+    "shot": "gh:shotType",
+    "speaker": "gh:speaker",
+    "text": "gh:text",
+    "visual": "gh:visual"
+  },
+  "@id": "env:CDA-VirtualHQ-Zk8NmPwQt3",
+  "@type": ["gh:Environment", "schema:VirtualLocation"],
+  "dct:title": "サイバー防衛庁 仮想本庁舎",
+  "dct:description": "Las Vegas Convention Center風の巨大な仮想建造物。ガラスと金属の流線型デザイン、中央にドーム型指令センター。内部は白とグレー基調のミニマルデザイン、ホログラフィックディスプレイが空中に浮かぶ。",
+  "gh:slug": "cda-virtual-hq",
+  "gh:organization": {
+    "@id": "org:CDA-Jx9KmQwRt4VnBc7Hs2"
+  },
+  "gh:locationType": "virtual",
+  "gh:visualElements": {
+    "gh:exterior": [
+      "巨大なガラス張りの建造物",
+      "複数の翼が放射状に広がる構造",
+      "中央のドーム型指令センター",
+      "ネオンブルーの輪郭照明",
+      "仮想空間内の浮遊プラットフォーム"
+    ],
+    "gh:interior": [
+      "白とグレーを基調としたミニマルデザイン",
+      "壁面に流れるデータビジュアライゼーション",
+      "空中に浮かぶホログラフィックディスプレイ",
+      "透明なエレベーターと歩道",
+      "巨大なアトリウム空間"
+    ],
+    "gh:lighting": "寒色系の間接照明、ホログラムの青白い輝き、所々にアクセントとなるネオンブルー",
+    "gh:atmosphere": "近未来的で洗練された政府機関の雰囲気。静謐だが常に何かが動いている緊張感"
+  },
+  "gh:keyAreas": [
+    {
+      "gh:name": "中央オペレーションルーム",
+      "gh:description": "円形の巨大な部屋。壁面全体がディスプレイとなり、リアルタイムの脅威マップやデータストリームが表示される。中央に指揮台。",
+      "gh:shotSuggestion": "wide shot, high angle - 円形の部屋を俯瞰"
+    },
+    {
+      "gh:name": "ブリーフィングルーム",
+      "gh:description": "中規模の会議室。長いテーブルの上にホログラフィック投影機。外部協力者への案件説明で使用。",
+      "gh:shotSuggestion": "medium shot - テーブル越しの対話シーン"
+    },
+    {
+      "gh:name": "分析ラボ",
+      "gh:description": "六角形のワークステーションが並ぶ。各席には複数のモニターと3Dデータ可視化ツール。",
+      "gh:shotSuggestion": "tracking shot - ラボ内を移動しながら"
+    },
+    {
+      "gh:name": "アトリウム・エントランス",
+      "gh:description": "Hyper Loopの出口がある。天井まで吹き抜けの巨大空間。訪問者受付とセキュリティゲート。",
+      "gh:shotSuggestion": "extreme wide shot, low angle - 建物のスケール感を強調"
+    }
+  ],
+  "gh:runwayPrompt": "Futuristic virtual government facility interior, Las Vegas Convention Center inspired architecture, massive glass and metal structure, holographic displays floating in air, white and grey minimalist design, neon blue accent lighting, data visualization on walls, cyber security operations center, clean professional atmosphere, sci-fi government building, photorealistic, cinematic lighting"
+}

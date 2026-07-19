@@ -1,0 +1,1508 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "story:arc0-1-origin-v2",
+  "dct:title": "Ghost Hacker #00 / 『パスワードは覚えるな』",
+  "dct:description": "Read-once 45-page revision (v2): Yuto's sneaker-resale phishing case. Ren's 7-year stalled hunt finally gains traction when Nei pulls him into helping a classmate, leading to the first Vector Alignment Proof on the father's locked SIP device and Ren's decision to start a Ghost Hacker agency.",
+  "gh:arc": "Arc 0",
+  "gh:episode": 1,
+  "gh:episodeIndex": 1,
+  "gh:episodeId": "episode:arc0-1-origin",
+  "gh:slug": "arc-0-1-password-do-not-remember",
+  "gh:subtitle": "Don't Memorize Passwords",
+  "gh:tagline": "パスワードは、覚えるな。作って、預けろ。",
+  "gh:volume": "45 pages + pretitle (NeiPuni columns placed in margins / between acts)",
+  "gh:setting": {
+    "gh:era": "中学生時代（Ren 15歳・中3末）",
+    "gh:locations": [
+      "市立C中学校（公立中学）",
+      "Yutoの家",
+      "Renの家（隣接する2階建て / 父の遺した部屋）",
+      "Neiの家（Renの隣家）",
+      "バンコクの雑居ビルの一室（black0awd末端拠点）"
+    ]
+  },
+  "gh:theses": {
+    "gh:practical": "パスワードは、覚えるな。作って、預けろ",
+    "gh:psychological": "悪いのは、あなたじゃない。アクターだ",
+    "gh:philosophical": "情報は、物理だ"
+  },
+  "gh:protagonistArc": {
+    "gh:from": "7年間1人で父の系譜を追ってきたRen（停滞）",
+    "gh:to": "他人の事件を解決することで犯人に近づくと気づき、高校から「事務所」を始める決意",
+    "gh:decisivePage": 44,
+    "gh:decisiveChoice": "1件ずつ人を助けることを、仕事にすると決める瞬間"
+  },
+  "gh:complianceNote": {
+    "gh:rule": "Renはネットワーク監視をしない。Neiが学校でYutoの異変を察知 → Renに繋ぐ",
+    "gh:renActivity": "自分でアクセス権のある範囲（父の遺したサーバ・父名義のメール過去ログ・公開情報OSINT）のみ",
+    "gh:logSharing": "Yuto事件のログは、Yuto本人の同意の元、Yutoのスマホから共有される形"
+  },
+  "gh:propMotifs": [
+    {
+      "gh:id": "prop:hhkb",
+      "gh:name": "父のHHKB（ハッピーハッキングキーボード・無刻印・真っ黒）",
+      "gh:role": "Renの部屋で複数回反復登場。手が位置を覚えている者だけが使える。父が7年前まで論文執筆に使っていた道具",
+      "gh:appearances": [6, 7, 21, 43, 44, 45]
+    },
+    {
+      "gh:id": "prop:sip-device",
+      "gh:name": "父の遺したロック付きSIPデバイス（試作機）",
+      "gh:role": "信哉が中核アルゴリズムを量子・古典ハイブリッドで実装し、Vector Alignment Proof + TOTP ハイブリッド方式でロックをかけた。白瀬博士でも開けない",
+      "gh:lockMechanics": {
+        "gh:passwordRotation": "5秒ごとに量子乱数で切り替わる（総当たりは無意味）",
+        "gh:unlockKey": "ハッシュ難易度を下げること",
+        "gh:difficultyReduction": "人々が同じベクトルに向いたネットワークが1つ拡大されるたびに、指数関数的に低下",
+        "gh:initialState": {
+          "gh:lockDifficulty": "2^256 (effectively impossible)",
+          "gh:vectorAlignmentProof": "0 / ?",
+          "gh:decodedModules": "[]",
+          "gh:informationFieldVectorDensity": "0%"
+        },
+        "gh:postEpisodeState": {
+          "gh:lockDifficulty": "2^240 (▼ 16 bits)",
+          "gh:vectorAlignmentProof": "1 / ?",
+          "gh:decodedModules": "[Module 1: Ghost Detection — Input Preprocessor]",
+          "gh:informationFieldVectorDensity": "12%"
+        }
+      }
+    },
+    {
+      "gh:id": "prop:holonium-vision",
+      "gh:name": "Holonium Vision Projector (beta v0.1.638 Code SN)",
+      "gh:role": "Neiの父・白瀬聡が開発した、手のひらサイズのクリスタルキューブ型試作機。情報空間コンピューティングを物理空間に投影する",
+      "gh:appearances": [32, 33, 34, 35]
+    },
+    {
+      "gh:id": "prop:null-axe",
+      "gh:name": "NULL AXE",
+      "gh:role": "Renが情報場で握る、白い斧。情報的には斧、物理的にはほぼゼロ。エッジは穴のよう",
+      "gh:appearances": [35, 36, 38, 39]
+    },
+    {
+      "gh:id": "prop:safety-tape",
+      "gh:name": "安全第一・キープアウトテープ",
+      "gh:role": "Neiが情報場バトル時に隔離プロセスとして使用",
+      "gh:appearances": [36]
+    },
+    {
+      "gh:id": "prop:komekkon-donut",
+      "gh:name": "コメッコン米粉ドーナツ",
+      "gh:role": "Neiの好物。Yutoとの初対面・和解の小道具",
+      "gh:appearances": [1, 19, 22, 41, 43]
+    }
+  ],
+  "gh:castOfCharacters": [
+    {
+      "@id": "character:Ren",
+      "gh:displayName": "沼野 蓮 / Ren",
+      "gh:age": 15,
+      "gh:grade": "中3",
+      "gh:role": "Ghost Hacker 予備軍 / 主人公",
+      "gh:description": "7年前（小3冬・8歳）、父・信哉が国民年金情報の次世代防御基盤プロジェクトを率いていた最中、標的型メール+ランサムウェアの複合攻撃でプロジェクトが壊滅。約400万件の年金記録が流出+一部完全喪失。父はプロジェクト責任者として公的責任を取らされ、半年後に自死。独学でハッキング技術を蓄積。父の遺した系譜を追っているが1人では末端に届かず停滞している。授業中は寝ている（中学時代限定）",
+      "gh:creed": "一件ずつ潰すのは、怠惰のやることじゃない。根っこを切る。一回で",
+      "gh:visualTell": "瞳が銀色に光る瞬間（情報場が見えた時）"
+    },
+    {
+      "@id": "character:Nei",
+      "gh:displayName": "白瀬 寧 / Nei",
+      "gh:age": 15,
+      "gh:grade": "中3（D組）",
+      "gh:role": "ヒロイン / 観察者 / Renの幼馴染（隣家・5歳から）",
+      "gh:description": "他人には丁寧語基調、Renにだけ常にタメ口・呼び捨て。食いしん坊。ASD特性（数値化癖・聴覚過敏・比喩の直訳・心理学）。父は白瀬聡（情報物理応用研究所・Holonium Vision世界初実装）。本話の事件の発見者",
+      "gh:favoriteThings": ["コメッコンシリーズ", "物理工学"]
+    },
+    {
+      "@id": "character:Yuto",
+      "gh:displayName": "藤崎 悠斗 / Yuto",
+      "gh:age": 15,
+      "gh:grade": "中3 B組",
+      "gh:role": "本話の依頼人 / 被害者",
+      "gh:description": "真面目で温厚、少し気弱。Renとは席が近いが話したことはほとんどない。Neiとは学年が同じだけで面識はほぼない"
+    },
+    {
+      "@id": "character:Kazuo",
+      "gh:displayName": "藤崎 和夫 / Kazuo",
+      "gh:age": 45,
+      "gh:role": "Yutoの父",
+      "gh:description": "中小食品メーカーの営業部課長。週の半分は出張・接待で帰宅が遅い。ITは会社のメールを読める程度。穏やかだが、お金関係の大きな判断は父が引き受ける"
+    },
+    {
+      "@id": "character:Yuko",
+      "gh:displayName": "藤崎 裕子 / Yuko",
+      "gh:age": 42,
+      "gh:role": "Yutoの母",
+      "gh:description": "近所のドラッグストアでパート勤務。家計はスマホのレシート写メアプリで管理。家事・子育てを主に担当。口数は少なめだが、目を見て聞くタイプ。Yutoの生活リズムをずっと見ている"
+    },
+    {
+      "@id": "character:Akira",
+      "gh:displayName": "林 彰 / Akira",
+      "gh:age": 15,
+      "gh:role": "Yutoの友人 / スニーカー自慢",
+      "gh:description": "本命はHolonium Vision。論文には10年前から書かれていたが実物が見られるのは自分たちが最初の世代だと熱弁する"
+    },
+    {
+      "@id": "character:Saki",
+      "gh:displayName": "佐々木 咲 / Saki",
+      "gh:age": 15,
+      "gh:role": "Yutoのクラスの女子 / 最大の被害者",
+      "gh:description": "Meiの親友。SNS乗っ取り事件でMeiの非公開愚痴が晒され、最も深く傷つく"
+    },
+    {
+      "@id": "character:Mei",
+      "gh:displayName": "加藤 美依 / Mei",
+      "gh:age": 15,
+      "gh:role": "Sakiの親友",
+      "gh:description": "鍵付きアカウントで愚痴を書いていたが、Yuto名義の詐欺リンクを踏んだことで全件公開化される"
+    },
+    {
+      "@id": "character:nue",
+      "gh:displayName": "nue（鵺）",
+      "gh:role": "Renの唯一の友人 / Boston / Hacker Nues管理人",
+      "gh:description": "父が生きていた頃、学会仲間の息子として隣家のような距離で遊んだ子供時代からの友人。5年前、父がMITに移って渡米。米国のサイバー・フォレンジック研究所の未成年研究員として、FBI IC3と協働する案件にも関わる。Hacker Nues（中1で立ち上げたテック・ニュース掲示板）の管理人。文字で喋ると流暢、対面の声だけ詰まる",
+      "gh:handle": "nue"
+    },
+    {
+      "@id": "character:Shinya",
+      "gh:displayName": "沼野 信哉 / Shinya",
+      "gh:role": "Renの父（故人） / 情報物理学者+量子コンピューターサイエンティスト",
+      "gh:description": "7年前、国民年金情報・次世代防御基盤パイロット責任者。プロジェクトが標的型メール+ランサムウェア複合攻撃で壊滅し、公的責任を取って退職・公開謝罪。半年後、家族を守るための遺書を残して自死。SIPデバイスの中核アルゴリズムを量子・古典ハイブリッドで実装し、Vector Alignment Proof + TOTPハイブリッドの独自ロックをかけた",
+      "gh:legacy": "「情報は物理量だ。そして生きている。お前はゴーストをハックしろ」（メモ）"
+    },
+    {
+      "@id": "character:ShiraseSatoshi",
+      "gh:displayName": "白瀬 聡 / Satoshi",
+      "gh:role": "Neiの父 / 情報物理応用研究所",
+      "gh:description": "Holonium Vision世界初実装で著名。Renの父・信哉の理論を工学的に実装した試作機Holonium Vision Projectorをベータ版でNei経由でRenに渡す"
+    },
+    {
+      "@id": "character:NeiPuni",
+      "gh:displayName": "ぷにねい / NeiPuni",
+      "gh:role": "メタ解説ホスト",
+      "gh:description": "本編のコマ外・章間・柱に分散配置されるサイバーセキュリティ豆知識のホスト",
+      "gh:placementRule": "本編コマ内には基本的に入れない。柱/欄外・章間見開き・巻末おまけに配置"
+    },
+    {
+      "@id": "character:black0awdOperator",
+      "gh:displayName": "black0awd末端オペレータ",
+      "gh:role": "本話のアクター（末端）",
+      "gh:description": "1頁のみ登場、バンコクの雑居ビルの中東系若い男。Yutoから受け取ったSMS認証番号(847293)を使ってアカウントを乗っ取り、823件のアクティブセッションを運用中。事件後、nueのHoneypot probeに気づく前に1件減を観測"
+    },
+    {
+      "@id": "character:Akakise1",
+      "gh:displayName": "aka_chise1",
+      "gh:role": "Hacker Nuesの匿名投稿者（投稿#14） / 後の連載で再登場予定",
+      "gh:description": "「Tokyo。今週、DM詐欺の被害者、3人。手口、完全にblack0awd系。」と報告"
+    },
+    {
+      "@id": "character:Pa11erapiv0t",
+      "gh:displayName": "3pa11er3apiv0t",
+      "gh:role": "Hacker Nuesの匿名投稿者（投稿#22） / 金融監査側",
+      "gh:description": "「同週、都内の中小証券2社でログインセッション詐取の試行。同一C2系列。」と報告"
+    },
+    {
+      "@id": "character:GhostOwl",
+      "gh:displayName": "Ghost_Owl / Gh0st0wl",
+      "gh:role": "Ren本人のハンドル（投稿#44）",
+      "gh:description": "Hacker Nuesでの観察者ハンドル"
+    }
+  ],
+  "gh:nameConventions": {
+    "gh:NeiToRen": "常にカタカナ「レン」で呼び捨て + タメ口",
+    "gh:RenToNei": "「Nei」",
+    "gh:classmatesToRen": "「沼野くん」",
+    "gh:narration": "『蓮』（漢字）"
+  },
+  "gh:actStructure": [
+    {
+      "@id": "act:0-pretitle",
+      "gh:actNumber": 0,
+      "gh:actTitle": "プレタイトル",
+      "gh:actTitleEn": "Pre-title Hook",
+      "gh:emotionalArc": "恐怖と孤立 → フック",
+      "gh:keyBeat": "hook",
+      "gh:narrativePurpose": "深夜2時、SNS通知の滝に飲まれるYutoの絶望を見せ、読者を引き込む",
+      "gh:pageRange": [0, 0]
+    },
+    {
+      "@id": "act:1-daily-temptation",
+      "gh:actNumber": 1,
+      "gh:actTitle": "日常と誘惑",
+      "gh:actTitleEn": "Daily Life & Temptation",
+      "gh:emotionalArc": "平穏 → 羨望 → 誘惑 → 決断",
+      "gh:keyBeat": "setup",
+      "gh:narrativePurpose": "教室の昼休みでキャラ全員を導入、Renの停滞、nueとの再接続、Yutoの誘惑",
+      "gh:pageRange": [1, 8]
+    },
+    {
+      "@id": "act:2-signs",
+      "gh:actNumber": 2,
+      "gh:actTitle": "異変の兆候",
+      "gh:actTitleEn": "Signs of Trouble",
+      "gh:emotionalArc": "期待 → 不安 → 恐怖",
+      "gh:keyBeat": "build",
+      "gh:narrativePurpose": "SMS OTP窃取、乗っ取り、母のカード不正請求発覚、家族の柔らかい対応",
+      "gh:pageRange": [9, 15]
+    },
+    {
+      "@id": "act:3-collapse",
+      "gh:actNumber": 3,
+      "gh:actTitle": "崩壊",
+      "gh:actTitleEn": "Collapse",
+      "gh:emotionalArc": "恐怖 → 絶望 → 孤立",
+      "gh:keyBeat": "crisis",
+      "gh:narrativePurpose": "プレタイトルのシーンに戻り、SNS全乗っ取り、Yutoの完全な孤立",
+      "gh:pageRange": [16, 19]
+    },
+    {
+      "@id": "act:4-rescue",
+      "gh:actNumber": 4,
+      "gh:actTitle": "救いの手",
+      "gh:actTitleEn": "Helping Hand",
+      "gh:emotionalArc": "孤立 → 接触 → 希望",
+      "gh:keyBeat": "turn",
+      "gh:narrativePurpose": "NeiがYutoの異変を察知 → Renに繋ぐ。Ren、Yutoのために動くと決める",
+      "gh:pageRange": [20, 21]
+    },
+    {
+      "@id": "act:5-countermeasures",
+      "gh:actNumber": 5,
+      "gh:actTitle": "対策",
+      "gh:actTitleEn": "Countermeasures",
+      "gh:countermeasures": [
+        {"gh:step": 1, "gh:title": "漏洩チェック", "gh:titleEn": "Breach Check (HIBP)", "gh:pages": [22, 23]},
+        {"gh:step": 2, "gh:title": "カード停止とチャージバック", "gh:titleEn": "Card Stop & Chargeback", "gh:pages": [24, 25]},
+        {"gh:step": 3, "gh:title": "パスワードは覚えるな", "gh:titleEn": "Don't Memorize Passwords", "gh:pages": [26, 27]},
+        {"gh:step": 4, "gh:title": "別の窓口で注意喚起", "gh:titleEn": "Out-of-band Warning", "gh:pages": [28, 29]}
+      ],
+      "gh:emotionalArc": "混乱 → 理解 → 達成感",
+      "gh:keyBeat": "education",
+      "gh:narrativePurpose": "4つの対策×2ページで実用知識を読者に伝える",
+      "gh:pageRange": [22, 29]
+    },
+    {
+      "@id": "act:6-ghost-revelation",
+      "gh:actNumber": 6,
+      "gh:actTitle": "Ghost啓示",
+      "gh:actTitleEn": "Ghost Revelation",
+      "gh:emotionalArc": "罵倒 → 驚愕 → 理解 → 戦闘準備",
+      "gh:keyBeat": "revelation",
+      "gh:narrativePurpose": "教室での再罵倒、Holonium Vision起動、情報場の可視化、ロゴから7年前の系譜が繋がる",
+      "gh:pageRange": [30, 36]
+    },
+    {
+      "@id": "act:7-daemon-battle",
+      "gh:actNumber": 7,
+      "gh:actTitle": "Daemon戦",
+      "gh:actTitleEn": "Daemon Battle",
+      "gh:emotionalArc": "戦闘 → 葛藤の実体化 → 呪いの断絶 → 和解",
+      "gh:keyBeat": "climax",
+      "gh:narrativePurpose": "Yutoの罪悪感が生んだDaemonと戦い、『常識（呪い）』をNULL AXEで断つ。nueにログ送信、バンコクで1件減のアラート",
+      "gh:pageRange": [37, 41]
+    },
+    {
+      "@id": "act:8-resolution",
+      "gh:actNumber": 8,
+      "gh:actTitle": "終幕：決意",
+      "gh:actTitleEn": "Resolution",
+      "gh:emotionalArc": "和解 → 真の敵の認識 → 父の理論の実証 → 決意",
+      "gh:keyBeat": "resolution",
+      "gh:narrativePurpose": "3段の和解、Renの部屋でSIPデバイスのVector Alignment Proof=1成立、Ghost Hacker事務所開設の覚悟",
+      "gh:pageRange": [42, 45]
+    }
+  ],
+  "gh:pages": [
+    {
+      "gh:pageNumber": 0,
+      "gh:pageTitle": "プレタイトル / 恐怖の夜",
+      "gh:act": "act:0-pretitle",
+      "gh:pov": "Yuto",
+      "gh:setting": "深夜2時。真っ暗な部屋。ベッドの上。",
+      "gh:visualNote": "毛布にくるまった少年が、スマホの青白い光だけを見つめている。隈、涙。",
+      "gh:script": [
+        {"gh:type": "sfx", "gh:text": "ブーン。ブーン。ブーン。"},
+        {"gh:type": "notification", "gh:text": "「お前、マジで最悪」"},
+        {"gh:type": "notification", "gh:text": "「もう俺に連絡しないでくれ」"},
+        {"gh:type": "notification", "gh:text": "「絶縁。」"},
+        {"gh:type": "narration", "gh:text": "通知が、滝のように流れる。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "……おれ、スニーカーを、買っただけ、なのに。"},
+        {"gh:type": "title", "gh:text": "—— Ghost Hacker #00 / 『パスワードは覚えるな』——"}
+      ]
+    },
+    {
+      "gh:pageNumber": 1,
+      "gh:pageTitle": "昼休み、3日前の教室",
+      "gh:act": "act:1-daily-temptation",
+      "gh:pov": "Yuto",
+      "gh:setting": "C中学校3年B組。3日前の昼休み。窓際3番目の席で蓮が寝ている。",
+      "gh:visualNote": "机の上に未開封のコメッコン米粉ドーナツ。イヤホン片方外れ、シャーペンは手から転げ落ちている。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "廊下から、隣のD組の白瀬寧が、コメッコンのドーナツ袋を片手に、ずかずかと入ってきた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "レン"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "レン、起きろ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……ねむい"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ご飯"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……うーん。ねむい"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "起きないと、コメッコンの米粉ドーナツ、わたしが、全部 食べるよ"},
+        {"gh:type": "telop", "gh:text": "白瀬 寧 / 好きなもの: コメッコンシリーズ、物理工学"},
+        {"gh:type": "narration", "gh:text": "Neiはおもむろに蓮の米粉ドーナツを食べ始めた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "それ俺の・・・なんだけど"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ちゃんと起きてお昼食べなよ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "怠惰がおれの美徳なんだよ..."},
+        {"gh:type": "telop", "gh:text": "沼野 蓮 / 好きなもの: 怠惰、ハッキング"},
+        {"gh:type": "narration", "gh:text": "蓮は半分だけ目を開けて、Neiが差し出したコメッコンの米粉ドーナツを左手で受け取り、そのままかじった。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "沼野くん、今日も寝てた。いつも、隣のクラスの白瀬さんが、起こしに来る。授業は聞いてないのに、テストはいつも上位にいる。変な奴、だ。"},
+        {"gh:type": "narration", "gh:text": "教室の中央。林彰（アキラ）が、真新しいスニーカーを箱から出した。"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "見てくれ。ついに、限定モデル"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "うわっ、即完売のやつ！"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "えっ、本物？"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "本物。発売30秒で勝負ついた"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "指の速さがモノを言うんだよ"}
+      ]
+    },
+    {
+      "gh:pageNumber": 2,
+      "gh:pageTitle": "誘惑の種",
+      "gh:act": "act:1-daily-temptation",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "いくら？"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "定価2万5千。転売だと5万超えてた"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "お年玉、吹っ飛んだ？"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "来年の分も前借り"},
+        {"gh:type": "narration", "gh:text": "Akiraは、教室のYutoの方を、チラッと見た。"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "Yutoも欲しいんだろ？顔に書いてあるぞ"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、いや、まぁ……カッコいいなって……"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "……2万5千、か。お年玉、貯めれば……"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "ねぇ、Akiraさあ、本当はスニーカーより、アレ欲しいんでしょ?"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "アレ?"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "Holonium Vision"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "あー、現実空間でゲームができるやつ?"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "うっ……バレた。本命はそっち"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "でも、まだ市販されてないでしょ?"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "来年、コンシューマ版出るって噂。100万らしい"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "100万!? 高っ"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "だってめちゃくちゃリアルな仮想世界で遊べるんだぞ。論文には10年前から書いてあるけど、実物が見られるのは、俺たちが最初の世代だ"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "Akira、そういう熱意だけは、本物だよね……"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "ニュースで見た。情報物理応用研究所の試作機、まだ世界に数台って"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "Holonium Vision、聞いたことはある。Ghost — 空間コンピューティング、現実に情報空間——を、目に見える形にする装置、らしい。学校の理科の先生も、「あと数年で、世界が変わる」と言っていた。——でも、実物は、見たことがない。"},
+        {"gh:type": "narration", "gh:text": "窓際で、蓮が、コメッコンの米粉ドーナツを咀嚼しながら、薄目を開けた。瞳が、一瞬、銀色に光った。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "muttering through chewing", "gh:text": "……ねむい"},
+        {"gh:type": "narration", "gh:text": "そして、残り半分を一口でかじって、また寝た。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 3,
+      "gh:pageTitle": "放課後、下校路",
+      "gh:act": "act:1-daily-temptation",
+      "gh:pov": "Nei",
+      "gh:setting": "放課後の下校路。隣家同士の幼馴染であるNeiと蓮が並んで歩く。蓮はイヤホン、Neiはヘッドホン。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "教室を出る直前、Yutoの姿がNeiの視界の端に映っていた。15秒、右手の人差し指が机の端を、ずっと触っていた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "レン"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ん"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "3年B組の、藤崎くん"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "知らん"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "15秒、机の端を、指で触ってた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "それがどうしたんだ?"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "迷ってる時の、癖だね"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "何かを、買いたがってる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ふーん"},
+        {"gh:type": "monologue", "gh:speaker": "Nei", "gh:text": "わたしは、人の細かい動きを、数えてしまう。止められない。15秒以上、同じ場所を触る人は、何かを買いたがっている。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 4,
+      "gh:pageTitle": "Yutoの部屋、その夜",
+      "gh:act": "act:1-daily-temptation",
+      "gh:pov": "Yuto",
+      "gh:setting": "夜。Yutoの部屋。ノートPC。限定スニーカーの転売サイトを検索している。",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "5万……高い……"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "でも、Akiraだけ、ズルい……"},
+        {"gh:type": "narration", "gh:text": "検索結果の中ほど。新着広告。"},
+        {"gh:type": "ad", "gh:text": "『TokyoSneaker-Premium.shop』時間限定・在庫1足！定価2万5千円 → 1万2千円。残り27分"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、安……"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "時間限定、マジか……"},
+        {"gh:type": "screen", "gh:text": "カウントダウン: 00:27:00 → 00:26:59"}
+      ],
+      "gh:neiPuniColumn": "時間限定カウントダウンは、詐欺サイトの第一級シグナル。『人に考えさせない』手法は、心理学の言葉でFUDと言います"
+    },
+    {
+      "gh:pageNumber": 5,
+      "gh:pageTitle": "誘惑に負ける",
+      "gh:act": "act:1-daily-temptation",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "怪しいけど……"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "でも、大手っぽいロゴ……"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "レビューも、いい感じ……"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "来月のお小遣いでいけそうだし、、"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……買おう"},
+        {"gh:type": "narration", "gh:text": "財布から、母のクレジットカードを、こっそり取り出す。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "ママのカード……ちょっとだけ……"},
+        {"gh:type": "sfx", "gh:text": "（ポチッ）"},
+        {"gh:type": "screen", "gh:text": "注文完了"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "やった！明日、届く！"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "Akiraに、自慢、してやる……"},
+        {"gh:type": "narration", "gh:text": "ベッドに転がって、スマホでアキラのSNSを見に行く。悔しさを、喜びで上書きする。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 6,
+      "gh:pageTitle": "Renの部屋、事件の全体（捜査壁）",
+      "gh:act": "act:1-daily-temptation",
+      "gh:pov": "Ren",
+      "gh:visualNote": "見開き推奨コマ。部屋の四方の壁が7年分の捜査の痕で埋まっている。",
+      "gh:setDressing": {
+        "gh:northWall": "父の写真（学会講演・家族写真・最後のスナップ）。中央に父のメモの複製：『情報は物理量だ。そして生きている。お前はゴーストをハックしろ』",
+        "gh:eastWall": "時系列タイムライン（月単位7年分／紙を縦に繋いだもの）— 小3春: 父・信哉が国民年金情報・次世代防御基盤パイロット責任者就任 / 小3冬: 標的型メール+ランサムウェアの複合攻撃で約400万件流出+一部完全喪失、国会で集中砲火 / 小4春: 父、公的責任を取って退職・公開謝罪 / 小4夏: 父、自死。家族を守るための遺書 / 小4〜小6: 独学（父のPC） / 中1: Nei母・誹謗中傷事件 / 中2〜中3: 海外サーバー、Hacker Nuesなどで末端追跡、断片的手口の復元",
+        "gh:southWall": "世界地図、赤いピン — 東欧・ロシア（中枢の噂） / 東南アジア（バンコク・マニラ・プノンペン — 末端拠点） / 日本（国内末端オペレーター候補地）",
+        "gh:westWall": "被害者リスト163名（最初の47名 = 7年前の年金流出事件のなりすまし二次被害者 + 116名 = 同一アクター推定の後続被害者。大半が自死・破産・行方不明・なりすまし被害で人生を壊された人。Renが手紙で連絡を取った遺族・本人からの返信メモ数十枚）",
+        "gh:floor": "プリンタ出力・ノート・銀行記録の写し",
+        "gh:ceiling": "紐で吊るしたホワイトボード。相関図の補足",
+        "gh:center": "机・モニター3枚・ノートPC・父のHHKB（無刻印・真っ黒）",
+        "gh:deskEdge": "桐の小箱。中に父の遺したSIPデバイス試作機。父・信哉が中核アルゴリズムを量子・古典ハイブリッド計算で実装し、Vector Alignment Proof + TOTPハイブリッドの独自ロックをかけた（白瀬博士でも開けない）"
+      },
+      "gh:sipDeviceBootScreen": [
+        "Lock Difficulty: 2^256 (effectively impossible)",
+        "Vector Alignment Proof: 0 / ?",
+        "Decoded Modules: [ ]",
+        "Information Field Vector Density: ▒▒░░░░░░ 0%",
+        "——7年間、どの数値も、微塵も動かない"
+      ],
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "すべてのピン・写真・紙片が、赤い糸で繋がれている。刑事ドラマで見るような、あの壁。Renは、壁の前に立って、腕を組んで、ただ、見ていた。"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "7年。集めた。繋いだ。辿った。ここまでは、わかった。——ここから先が、動かない。コンピューターの技術、クラッキング、ハッキング技術、OSINT、HUMINT、SIGINT、、あらゆる技術を学んで、あの日からずっと毎晩、学んで来た。中枢は中東のどこか。そこまでは掴んだ。でも、誰が、今、どこで、誰を狙ってるかは、わからない。俺の側の情報は、枯れた。相手の側の新しい情報が、要る。"},
+        {"gh:type": "narration", "gh:text": "Renは、壁から目を離して、机に近づいた。机の端の桐の小箱を、ちらっと見る。蓋に薄い埃。小箱の隣で、父のSIPデバイスの起動ランプが、7年間ずっと薄く点滅している。"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "父さんのHolonium デバイス。中核アルゴリズムは、父さんが書いた。量子・古典ハイブリッドで。鍵は、父さんがかけた。Vector Alignment Proof + TOTPの、ハイブリッド。このデバイスの中に情報がまだ隠されてあるはずだ、、パスワード自体は、5秒ごとに、量子乱数で、変わる。総当たりは、無意味。解ける条件は、難易度を下げること。難易度は、父さんが論文に書いた理論に従う ——『人々が、同じベクトルに揃ったネットワークに加わるたびに、指数関数的に、計算能力が、増える』。情報熱力学と、量子コンピューティング・ネットワーク理論の、合成。——父さんが、何を、待っていたのか、いまだに、わからない。"},
+        {"gh:type": "narration", "gh:text": "椅子を引いた。座った。父のHHKBの手触りを、指先で確かめる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……動かねー、な"}
+      ],
+      "gh:neiPuniColumn": "この壁の情報は、すべて公開情報+父の遺品+遺族から頂いた連絡から、Ren君が7年かけて集めたものです。他人の通信を勝手に覗くのは違法なので、やっていません"
+    },
+    {
+      "gh:pageNumber": 7,
+      "gh:pageTitle": "Hacker Nues、動く",
+      "gh:act": "act:1-daily-temptation",
+      "gh:pov": "Ren → nue → Nei",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Renが椅子に座った瞬間、右のモニターに通知。"},
+        {"gh:type": "screen", "gh:text": "New DM / from: nue"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……珍しく、向こうから、来た"},
+        {"gh:type": "dm", "gh:speaker": "nue (Boston, USA)", "gh:text": "レン、起きてるか? Hacker Nues、今夜、スレッドが立った。君の父さんの系統の再燃案件だ。日本側の匿名2人が、同じ系統の被害と観測を報告している。俺もAPACトラフィックの異常、30%増を捕まえた。公開板の方で、すでに話が進んでる。君も参加した方がいい。やっと、向こう側が、動いたな。"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "nue。父が生きていた頃、学会仲間の息子として、隣家のような距離で遊んだ、子供時代からの唯一の友人。5年前、nueの父がMITに移って、家族ごと渡米。今、米国のサイバー・フォレンジック研究所の未成年研究員として、FBI IC3と協働する案件にも関わっている。——国外のアクターに、合法的に手を入れられる、俺の唯一の味方。"},
+        {"gh:type": "narration", "gh:text": "Renは、HHKBで、ブラウザを立ち上げた。Hacker Nues — nueが中1の頃に立ち上げた、世界中のエンジニアが集まるテック・ニュース掲示板。Renは2-3年前、nue本人から直接招待されて、読むようになった。"},
+        {"gh:type": "screen", "gh:text": "Thread: black0awd actor family: renewed activity in APAC. Victims spiking. — black0awdアクター系統、アジア太平洋で活動再燃。被害者、急増中"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……動いた"},
+        {"gh:type": "narration", "gh:text": "瞳が、銀色に、光った。スレッドを開く。投稿者は、複数。Renは1つずつ、目を走らせる。"},
+        {"gh:type": "post", "gh:speaker": "aka_chise1（投稿#14）", "gh:text": "Tokyo。今週、DM詐欺の被害者、3人。手口、完全にblack0awd系。腹、立つ。"},
+        {"gh:type": "post", "gh:speaker": "3pa11er3apiv0t（投稿#22）", "gh:text": "金融監査側から確認。同週、都内の中小証券2社でログインセッション詐取の試行。同一C2系列。"},
+        {"gh:type": "post", "gh:speaker": "nue（投稿#31）", "gh:text": "こちらBoston。APAC向けC2トラフィックの暗号トンネル、2週間前から30%増量。Honeypotに飛び込んできた制御ペイロードのhash、別スレッドに投下する。管轄内で合法に処理できる範囲で、できる限り共有する。日本側の同業者、急ぎで連携したい。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……めちゃくちゃ喋るな... 、相変わらず"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "nueは、文字で喋ると、誰より流暢だ。対面の声だけが、詰まる。——両方が、同じnueだ。"},
+        {"gh:type": "narration", "gh:text": "Renは、HHKBの上を、指で、静かに走らせる。"},
+        {"gh:type": "post", "gh:speaker": "Ghost_Owl（投稿#44 / Ren本人）", "gh:text": "Gh0st0wlから具体的な被害は、まだ、掴めていない。観察を続ける。"},
+        {"gh:type": "narration", "gh:text": "Renは、aka_chise1と3pa11er3apiv0tの2つのハンドルを、見たことのない仲間として、タグ付けして保存した。nueは、もとより、戦友。"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "——いつか、会うのかもしれない。"},
+        {"gh:type": "narration", "gh:text": "部屋の外。隣の家の2階の窓から、Neiが、Renの部屋の明かりを見ていた。いつもより、指が、早い。"},
+        {"gh:type": "dm", "gh:speaker": "Nei", "gh:text": "レン"},
+        {"gh:type": "dm", "gh:speaker": "Ren", "gh:text": "ん"},
+        {"gh:type": "dm", "gh:speaker": "Nei", "gh:text": "今日、動いた?"},
+        {"gh:type": "dm", "gh:speaker": "Ren", "gh:text": "ちょっと、動いた"},
+        {"gh:type": "dm", "gh:speaker": "Nei", "gh:text": "nueから?"},
+        {"gh:type": "dm", "gh:speaker": "Ren", "gh:text": "nueから"},
+        {"gh:type": "dm", "gh:speaker": "Nei", "gh:text": "……やっと、だね"},
+        {"gh:type": "dm", "gh:speaker": "Ren", "gh:text": "ああ"},
+        {"gh:type": "dm", "gh:speaker": "Nei", "gh:text": "レン"},
+        {"gh:type": "dm", "gh:speaker": "Ren", "gh:text": "なに"},
+        {"gh:type": "dm", "gh:speaker": "Nei", "gh:text": "1人では、届かないんじゃない?"},
+        {"gh:type": "narration", "gh:text": "Renは、HHKBの、無刻印の'J'の位置のキー（手が覚えている場所）を、人差し指で、軽く叩いた。"},
+        {"gh:type": "sfx", "gh:text": "カチャ。"}
+      ],
+      "gh:neiPuniColumn": "Hacker Nuesはnue君が中1の頃に立ち上げた、世界中のエンジニアが観察と議論を書き込む公開の掲示板。誰でも読めて、誰でも投稿できます。他人のサーバーに勝手に入るのはどの国でも違法です。nue君はアメリカの合法的なサイバー・フォレンジック研究所に所属しており、FBI IC3などと協働しています。権限の範囲で国外調査を担当してくれる、頼もしいパートナーです"
+    },
+    {
+      "gh:pageNumber": 8,
+      "gh:pageTitle": "Yuto、3日の待機",
+      "gh:act": "act:1-daily-temptation",
+      "gh:pov": "Yuto",
+      "gh:setting": "Yutoの部屋、翌朝、翌々朝、3日目。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "届かない。スマホの画面で、配送状況を、何度も更新する。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……まだ、来ない"},
+        {"gh:type": "narration", "gh:text": "母が買い物袋を玄関に置く音。Yutoはベッドで慌ててスマホを隠す。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "3日経った。何も、来ない。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 9,
+      "gh:pageTitle": "問い合わせ",
+      "gh:act": "act:2-signs",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoは意を決して、転売サイトの問い合わせフォームからDMを送る。"},
+        {"gh:type": "dm", "gh:speaker": "Yuto", "gh:text": "すみません、まだ届かないんですが……"},
+        {"gh:type": "narration", "gh:text": "1分で返信。"},
+        {"gh:type": "dm", "gh:speaker": "TokyoSneaker-Premium.shop", "gh:text": "お問い合わせありがとうございます！確認させてください (^^)"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "あ、返事、くれた"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "ちゃんと対応してくれる人で、よかった……"}
+      ]
+    },
+    {
+      "gh:pageNumber": 10,
+      "gh:pageTitle": "SMSの罠",
+      "gh:act": "act:2-signs",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "dm", "gh:speaker": "TokyoSneaker-Premium.shop", "gh:text": "配送元に確認したところ、住所確認が必要みたいです 💦 お手数おかけしてすみません！今からSMSで確認番号が届くので、その番号を教えてもらえますか？配送会社への本人確認に使います！"},
+        {"gh:type": "sfx", "gh:text": "ピン。"},
+        {"gh:type": "sms", "gh:speaker": "Neli", "gh:text": "【Neli】認証番号：847293 この番号は他人に教えないでください"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……え？"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "でも、配送会社の確認、なら……"},
+        {"gh:type": "dm", "gh:speaker": "Yuto", "gh:text": "847293です！"},
+        {"gh:type": "dm", "gh:speaker": "TokyoSneaker-Premium.shop", "gh:text": "ありがとうございます！確認できました ✨ これで発送手続き進められます！"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "よかった……これで、届くはず"}
+      ],
+      "gh:neiPuniColumn": "公式SMSに『他人に教えないで』と書いてあるものは、絶対に教えてはいけません。家の鍵そのものだからです"
+    },
+    {
+      "gh:pageNumber": 11,
+      "gh:pageTitle": "乗っ取りの一瞬（Yutoは気づかない）",
+      "gh:act": "act:2-signs",
+      "gh:pov": "black0awd末端オペレータ",
+      "gh:setting": "バンコクの雑居ビルの一室。雑然としたデスク。モニターに日本語のSNS画面。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "中東系の若い男が、Yutoから受け取った『847293』を、Neliのログイン画面に打ち込む。"},
+        {"gh:type": "screen", "gh:text": "ログイン成功。アクティブセッション追加。"},
+        {"gh:type": "narration", "gh:text": "男、薄く微笑む。指を動かす。YutoのNeliの友達リスト、全件ダウンロード開始。"}
+      ],
+      "gh:neiPuniColumn": "乗っ取りは、一瞬で終わります。気づくのは、早くて翌朝、遅いと数日後"
+    },
+    {
+      "gh:pageNumber": 12,
+      "gh:pageTitle": "翌朝、教室 — リンクの出所",
+      "gh:act": "act:2-signs",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "翌朝、C中学校3年B組。Yutoが教室に入った瞬間、空気が凍った。30人の目が、彼を、一斉に、見る。"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "おい、昨日の夜、お前のリンク、何だよ！？"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、リンク……？"},
+        {"gh:type": "screen", "gh:text": "Neli（Yuto名義・友達全員宛に一斉送信）：『みんな見て！限定スニーカー、半額で譲ってる神サイト、見つけた！このリンクから → [怪しいURL]』"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "俺も、クラスの半分も、お前からの通知で、このリンク、送られてきたんだよ！"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "そんな、俺、送ってない……！"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "でも、お前のアカウントから来てんだよ！"},
+        {"gh:type": "narration", "gh:text": "そこへ、Meiが、青ざめた顔で前に出てきた。震えている。目は下を向いている。"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "……私、リンク、踏んじゃって……"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え……"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "私の鍵付きアカウント、全部……公開に、なってる"},
+        {"gh:type": "narration", "gh:text": "Meiがスマホを差し出す。画面には、Meiの鍵付きだったSNSの投稿が、全件、公開の設定で晒されていた。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 13,
+      "gh:pageTitle": "翌朝、教室 — 晒された本音",
+      "gh:act": "act:2-signs",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "スマホのタイムラインを下にスクロールすると、Meiが数ヶ月分、鍵付きで書き溜めていた非公開の愚痴が延々と流れていた。細かく読まなくても、Sakiの名前があちこちに何度も出てくる。"},
+        {"gh:type": "post", "gh:speaker": "Mei（流出投稿）", "gh:text": "Sakiのマウント、マジでだるい"},
+        {"gh:type": "post", "gh:speaker": "Mei（流出投稿）", "gh:text": "昨日もあの子に振り回された"},
+        {"gh:type": "post", "gh:speaker": "Mei（流出投稿）", "gh:text": "本当は、一緒にいると、疲れる"},
+        {"gh:type": "post", "gh:speaker": "Mei（流出投稿）", "gh:text": "Saki、見栄っ張りすぎて、引く"},
+        {"gh:type": "narration", "gh:text": "Sakiが、その画面を真正面から見てしまった。Sakiの顔が真っ白になる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:emotion": "震える声", "gh:text": "Mei……これ、本当に……？"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "ご、ごめん……"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "……親友だと、思ってた"},
+        {"gh:type": "narration", "gh:text": "Sakiの目から、涙が、勝手に、こぼれた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:emotion": "Yutoに、泣きながら", "gh:text": "あんたのリンク、踏んだから、私の本音が、全部……！"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "親友に、一番、見られたくなかったのに……！"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:emotion": "Yutoに", "gh:text": "最初にそのリンクを送ってきたのは、お前だろ"},
+        {"gh:type": "narration", "gh:text": "教室中の視線が、Yutoに、集中する。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "俺は、送ってない。俺のアカウントが、乗っ取られて……でも——俺のリンクで、Meiが、乗っ取られた。Meiの投稿が、晒された。Sakiが、壊れた。——俺の、せいだ。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 14,
+      "gh:pageTitle": "階段、1人",
+      "gh:act": "act:2-signs",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoは教室から逃げ、階段の踊り場で、しゃがみ込んだ。両膝を抱えて、顔を埋める。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "（俺の、せいで……）（俺が、ポチッ、って、やったせいで……）（息が、できない……）"},
+        {"gh:type": "narration", "gh:text": "窓際で、蓮が寝ている姿が、階段の上から、見えた。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "Yutoは、蓮の方を、見なかった。見ても、助けてくれるわけ、ないから。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 15,
+      "gh:pageTitle": "母、父にメッセで相談（軽め）",
+      "gh:act": "act:2-signs",
+      "gh:pov": "Yuto",
+      "gh:setting": "Yutoの家。夜。リビング。母・裕子が自分のカードの明細を眺めながら、お茶をすすっている。Yutoはソファの端で、スマホを見ているふり。",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "あれ？"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "Yuto、ちょっといい"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "お母さんのカード、身に覚えのない請求が、3日で、10万入ってて、、、"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "ギフトカードばっかり。変なの"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "Yuto、心当たり、ない? ネットで、何か、買ったりしてない?"},
+        {"gh:type": "narration", "gh:text": "気軽な質問の声。テレビでさっき見た不正請求のニュースが、母の頭の片隅に、先にある。Yutoは、膝の上で、両手を、握った。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……知らない"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "俺じゃない"},
+        {"gh:type": "narration", "gh:text": "母は、3秒、Yutoの目を、見た。Yutoの視線は、床。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuko", "gh:text": "……ちょっと、様子おかしいかな？まあ、不正請求のほうが可能性高いか。今、問い詰めても、ご飯まずくなるだけね。"},
+        {"gh:type": "narration", "gh:text": "母はスマホを取り出して、夫とのメッセージアプリを開いた。"},
+        {"gh:type": "message", "gh:speaker": "Yuko → Kazuo", "gh:text": "わたしのカードに、身に覚えのない請求10万ぐらい来ているんだけど。。。あなたも知らないわよね？　3日分、ぜんぶギフトカード。不正請求かもー。。"},
+        {"gh:type": "narration", "gh:text": "5分で既読。"},
+        {"gh:type": "message", "gh:speaker": "Kazuo → Yuko", "gh:text": "ええ、不正請求? よくニュースで聞くやつね。とりあえず、明日、カード止めよう。今夜は終電。帰ったらそのまま寝るわ。詳しくは明日 🙏"},
+        {"gh:type": "message", "gh:speaker": "Yuko → Kazuo", "gh:text": "はーい、お疲れさま 🍵"},
+        {"gh:type": "narration", "gh:text": "母は、スマホを置いて、Yutoの方を見た。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:emotion": "柔らかく", "gh:text": "お父さん『明日、カード止めよう』って。不正請求かもね"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "続きは、明日。Yuto、夜、ちゃんと、寝な"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "お風呂、沸かしとくから"},
+        {"gh:type": "narration", "gh:text": "Yutoの頭の上に、母の手が、一瞬だけ、軽く、置かれた。それから、母は、キッチンに戻って、明日の弁当の下準備を、始めた。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "……1万2千円は、俺が、ポチッ、ってやった。でも、10万は、本当に知らない。——お母さん、ちょっと、気づいてた気がする。でも、問い詰めずに、弁当、作ってくれてる。……明日、どうしよう。"},
+        {"gh:type": "narration", "gh:text": "深夜、玄関が静かに開いた。父が、帰ってきた音。Yutoは、ベッドで、寝たふり。リビングで、両親が、普通に話している声が、小さく、聞こえる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Kazuo", "gh:emotion": "小声", "gh:text": "で、カード、何で使われてたの?"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "ギフトカード、3日分"},
+        {"gh:type": "dialogue", "gh:speaker": "Kazuo", "gh:text": "あー、典型的なやつだなぁ"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuko", "gh:text": "明日、電話するね。戻ってくるかしら。"},
+        {"gh:type": "narration", "gh:text": "普通の大人の会話が、壁越しに、聞こえている。——Yutoだけが、布団の中で、眠れない。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 16,
+      "gh:pageTitle": "夜、プレタイトルの場面に帰る",
+      "gh:act": "act:3-collapse",
+      "gh:pov": "Yuto",
+      "gh:setting": "夜。Yutoの部屋。プレタイトルと同じ構図。毛布の中で丸まっている。",
+      "gh:script": [
+        {"gh:type": "sfx", "gh:text": "ブーン、ブーン。スマホ。"},
+        {"gh:type": "narration", "gh:text": "絶縁、最悪、もう連絡しないで、の通知。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "（全部、俺のせいだ……）"}
+      ]
+    },
+    {
+      "gh:pageNumber": 17,
+      "gh:pageTitle": "絶望の濃度",
+      "gh:act": "act:3-collapse",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "SNSはすべて乗っ取られて、入れない。Neliは、自分名義で「リンクありがとう〜 次も楽しみ♡」の返信が、知らないアカウントから届いている。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "……消えたい。"},
+        {"gh:type": "narration", "gh:text": "スマホを、床に、投げる。床で、スマホが、震え続ける。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 18,
+      "gh:pageTitle": "翌朝、教室の隅",
+      "gh:act": "act:3-collapse",
+      "gh:pov": "Nei",
+      "gh:setting": "C中学校、廊下。朝のチャイム。Nei（隣のD組）が、B組の教室を通りがかりに、中を見た。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoが、窓際の一番端の席で、机に突っ伏している。周囲の誰も、声を掛けていない。Akiraも、Sakiも、視線を逸らしている。"},
+        {"gh:type": "narration", "gh:text": "Neiは、3秒、その光景を見た。眉が、ほんの1mm、動いた。"},
+        {"gh:type": "monologue", "gh:speaker": "Nei", "gh:text": "藤崎くん、座っていない。座ったまま、でも、いない。そういう姿勢は、見たことがある。——中1の時、わたしが、そうだったから。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 19,
+      "gh:pageTitle": "Nei、Yutoに声をかける",
+      "gh:act": "act:3-collapse",
+      "gh:pov": "Nei",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "NeiはB組の教室に、ずかずかと入った。自分のクラスではないのに。Yutoの机の前に、立つ。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "藤崎くん"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "藤崎 悠斗くん"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:emotion": "顔を上げない", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "コメッコンの米粉ドーナツ、食べますか"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……え"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "朝、食べてないですよね。目の下のクマの濃さが、昨日より0.3濃くなってます"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……なんだ、それ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "食べないと、判断を間違えます。経験上"},
+        {"gh:type": "narration", "gh:text": "Neiが、コメッコンの袋から、米粉ドーナツを、1個、机の上に置いた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……いらない"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "そうですか..."},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ありがとうございました"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、持って帰るの？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "はい、わたしが、食べます"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……"},
+        {"gh:type": "narration", "gh:text": "Yuto、ほんの小さく、ふっと笑った。笑ったのは、3日ぶりだった。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "藤崎くん"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "はい"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "助けられる人、いますけど"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……え"}
+      ]
+    },
+    {
+      "gh:pageNumber": 20,
+      "gh:pageTitle": "NeiからRenへ",
+      "gh:act": "act:4-rescue",
+      "gh:pov": "Nei → Ren",
+      "gh:setting": "放課後。C中学校3年B組の教室。窓際3番目の席。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Renは、寝ていなかった。スマホの画面を、食い入るように見ている。昨夜のHacker Nuesのスレッド。nueからの、報告。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "小声、自分に", "gh:text": "……ようやく、動いた"},
+        {"gh:type": "narration", "gh:text": "Renは、机のものを、カバンに、ざっと詰め、立ち上がりかけた。そこへ、Neiが、ずかずかと、隣のD組から、入ってきた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "レン"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……ん？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "B組の藤崎くん、助けてあげてほしい"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……今日はちょっと忙しいんだよな"},
+        {"gh:type": "narration", "gh:text": "Renが、カバンを、肩にかけた、その時。Neiが、Renの袖を、ぎゅっと、掴んだ。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……離せ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "……"},
+        {"gh:type": "narration", "gh:text": "Renが、振り返って、Neiの顔を、見た。Neiは、いつもの淡々とした顔じゃなかった。眉も、声も、動かないのに、目だけが真っ直ぐにRenを見ている。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "藤崎くん、昔の、わたしと、同じ目、してた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……"},
+        {"gh:type": "narration", "gh:text": "3秒。Renは、Neiの目を、見返した。それから、カバンを、机の上に、戻した。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……わかったよ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "うん"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "Nei"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "うん"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "藤崎、呼んで来てくれ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "はい"}
+      ]
+    },
+    {
+      "gh:pageNumber": 21,
+      "gh:pageTitle": "Ren、動く",
+      "gh:act": "act:4-rescue",
+      "gh:pov": "Ren",
+      "gh:visualNote": "RenがHHKBを軽く叩く瞬間。動く前の1叩き（カチャ）",
+      "gh:script": [
+        {"gh:type": "sfx", "gh:text": "カチャ。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 22,
+      "gh:pageTitle": "Step 1. 漏洩チェック (1/2)",
+      "gh:act": "act:5-countermeasures",
+      "gh:pov": "Nei（実演モード）",
+      "gh:setting": "放課後のC中学校3年B組の教室。クラスメイトはほとんど帰った後。窓から夕陽。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoが、緊張した顔で、教室に戻ってくる。窓際3番目の席に蓮、その前の席をNeiがくるりと後ろ向きに座っている。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……し、失礼、します……"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "机に頬杖", "gh:text": "そこ座れ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "前の席から振り返り", "gh:text": "食べますか、コメッコンの米粉ドーナツ"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、いや……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "じゃあ、わたしが、食べます"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……え！？"}
+      ]
+    },
+    {
+      "gh:pageNumber": 23,
+      "gh:pageTitle": "Step 1. 漏洩チェック (2/2)",
+      "gh:act": "act:5-countermeasures",
+      "gh:pov": "Nei",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Neiは自分のタブレットをYutoの机に置き、Have I Been Pwnedのサイトを見せた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ここに、藤崎くんのメールアドレス、入れてください"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、入れていいの？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "大丈夫です。自分のアドレスを、自分で調べるサイトです"},
+        {"gh:type": "screen", "gh:text": "（入力）→ 4件の漏洩履歴。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "藤崎くんのアドレス、4サービスで、過去に漏れています"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……え"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "今回の詐欺が初めてじゃないです。今回が、トドメです"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "同じパスワード、使い回してましたよね"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……うん……"}
+      ],
+      "gh:neiPuniColumn": "パスワード再利用が、一番よく見る被害原因です。1つ漏れると、全部漏れる構造です"
+    },
+    {
+      "gh:pageNumber": 24,
+      "gh:pageTitle": "Step 2. カード停止とチャージバック (1/2)",
+      "gh:act": "act:5-countermeasures",
+      "gh:pov": "Nei",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "次です。お金"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "母さんが、もうカード止めました……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "チャージバック、やってもらいましたか"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、何、それ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "カード会社に、『これは不正利用です』と申告する手続きです。申告すると、不正利用の分は、9割以上のケースで、戻ってきます"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……え、本当に？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "本当です"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "母さん、知らないかも……"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "机に突っ伏したまま", "gh:text": "連絡しろ"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "はい……"}
+      ]
+    },
+    {
+      "gh:pageNumber": 25,
+      "gh:pageTitle": "Step 2. カード停止とチャージバック (2/2)",
+      "gh:act": "act:5-countermeasures",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoが廊下に出て、母に電話。母、驚きながら、カード会社に折り返しの電話。15分後、Yutoが教室に戻ってくる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:emotion": "電話を切りながら", "gh:text": "……戻してそう、って……"},
+        {"gh:type": "narration", "gh:text": "Yutoの膝が、脱力した。机にへたり込む。"}
+      ],
+      "gh:neiPuniColumn": "チャージバックを覚えてください。これを知らないために、泣き寝入りする被害者が毎月何万人います"
+    },
+    {
+      "gh:pageNumber": 26,
+      "gh:pageTitle": "Step 3. パスワードは覚えるな (1/2)",
+      "gh:act": "act:5-countermeasures",
+      "gh:pov": "Nei / Ren",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "次"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "はい"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "パスワードは何文字以上が安全だと思う？"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "えっ、8文字とか...?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "8文字だと..., 1日だな"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "な、何が？"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "パスワードが解析されるのが"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "ええっ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "最低でも12文字、16文字以上じゃないと、すぐに解析されてしまうよ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "サイトごとに違う、16文字以上のランダムなパスワードを使うようにしよう"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "そんなの絶対に覚えられないよ..."},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "パスワードは、覚えるな"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……え"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "自分でパスワードを覚えない。機械に任せる"}
+      ]
+    },
+    {
+      "gh:pageNumber": 27,
+      "gh:pageTitle": "Step 3. パスワードは覚えるな (2/2)",
+      "gh:act": "act:5-countermeasures",
+      "gh:pov": "Nei / Ren / Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Neiはタブレットで、パスワードマネージャのアプリを開く。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "パスワードマネージャーを使う"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "い、いや。なんかよくわかんなくて、使っていないけど。携帯変えたら消えるの嫌だし。。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "大丈夫。端末を変えても、引き継がれる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "そうだったんだ..."},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "これを使って自分でパスワードを覚えない。機械に任せる"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……それ、ズルじゃない？"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "机に頬杖", "gh:text": "ズルじゃない"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "人間の記憶力で、覚える方が、ムリがある。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "そのためのパスワードマネージャーだ"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……"},
+        {"gh:type": "narration", "gh:text": "Yutoが、自分のスマホで、Neli / Margasnit / V / ゲーム、全サイトで切り替える。教室の隅で15分。完了。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "机から、目だけ動かして", "gh:text": "——通った"}
+      ]
+    },
+    {
+      "gh:pageNumber": 28,
+      "gh:pageTitle": "Step 4. 別の窓口で、注意喚起 (1/2)",
+      "gh:act": "act:5-countermeasures",
+      "gh:pov": "Nei / Ren",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "最後。お詫びと、注意喚起"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "SNSで繋がってる人、全員に"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……全員"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "全員"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……何を、書けば"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "2つだけ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "1：俺のアカウントは乗っ取られた。リンクは踏むな"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "2：すでに踏んだ人は、すぐ #9110 と 188 へ。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "謝るのは、後でいい。今は、被害を、止めるのが先"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……謝るの、後でいいの？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "今、長いお詫びを書いても、踏む人は、もう踏みます"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "机に頬杖、目を閉じて", "gh:text": "火は、まず、消す"}
+      ]
+    },
+    {
+      "gh:pageNumber": 29,
+      "gh:pageTitle": "Step 4. 別の窓口で、注意喚起 (2/2)",
+      "gh:act": "act:5-countermeasures",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoは自分のスマホのメールアプリ（Mliag）を開いた。SNSで繋がっている全員にそれぞれ、メッセージを送る。"},
+        {"gh:type": "email", "gh:speaker": "Yuto → 全員（注意喚起）", "gh:text": "件名：【至急】私のアカウントが乗っ取られました。リンクを踏まないでください\nみなさんへ、藤崎悠斗です。私のNeli・SNSのアカウントが乗っ取られて、私の名義で怪しいリンク付きのDMが、みなさんに送られています。絶対に、リンクを踏まないでください。もう踏んでしまった方は、・警察相談 #9110 / 消費者ホットライン 188。詳しい経緯は、改めて、直接、お伝えします。本当に、すみません。藤崎悠斗"},
+        {"gh:type": "narration", "gh:text": "Yutoは、送信ボタンを、震える指で、押した。"},
+        {"gh:type": "sfx", "gh:text": "ピッ。"},
+        {"gh:type": "screen", "gh:text": "宛先：47名。送信完了。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……送った"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "うん"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……これで、いいの？"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "いい"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "謝るのは、明日、顔、見て、やれ"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……"},
+        {"gh:type": "narration", "gh:text": "Yutoの目から、ほんの少し、涙が、落ちた。Neiがコメッコンの米粉ドーナツを、もう1つ、差し出した。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "食べる?"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……食べる"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "...（わたしの分が、減るなぁ）"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、やっぱ、いいです"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "冗談です"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "（冗談、ぽくない……！）"}
+      ]
+    },
+    {
+      "gh:pageNumber": 30,
+      "gh:pageTitle": "翌朝、教室、罵倒",
+      "gh:act": "act:6-ghost-revelation",
+      "gh:pov": "Yuto",
+      "gh:setting": "翌朝、C中学校3年B組。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoが教室に入ると、空気はまだ、凍っていた。メールで経緯は伝えた。でも、許されてはいない。Sakiが、机の向こうから、Yutoを、睨む。Akiraは、新品のスニーカーを、しまっている。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……みんな、ごめん"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "今更やっても意味なくね？"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "もう私たちの情報、漏れてんだよ。お前のせいで"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "ほんとだよ。俺のアカウントも、おかしくなった"},
+        {"gh:type": "narration", "gh:text": "クラスメイトが、Yutoを、囲む。"},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "……言葉が、刺さる。物理的に、刺さる。"},
+        {"gh:type": "narration", "gh:text": "窓際の席で、寝ていた蓮が、薄目を、開けた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "机に頬杖、低い声", "gh:text": "……お前ら"},
+        {"gh:type": "dialogue", "gh:speaker": "クラスメイト", "gh:text": "は?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "怒りの、向け先、間違えてる"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "は? 何それ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ほんとうに悪いやつは別にいるだろ"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "……何、寝起きで、偉そうに"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "沼野、関係ないだろ"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "まぁ、そうだよな、、。しょせん、Yutoが謝っても、それで気が済むわけでもない。顔が見えない犯人に怒りの矛先を人は向けられない。警察もいまの刑事法ではほとんどのケースで事件化できない。いつも被害者の自己責任になる。父さんもそれで責任をとって、、死んだ。犯人を見つけ出さない限り、、変わらない。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "また、目を閉じて", "gh:text": "……ああ、そうだな。"},
+        {"gh:type": "narration", "gh:text": "廊下から、その様子を、Neiが、静かに見ていた。"},
+        {"gh:type": "monologue", "gh:speaker": "Nei", "gh:text": "……また、これ。被害者を、被害者で、上書きする流れ。中1の時、わたしの母も、こうやって、追い詰められた。母は、詐欺の被害者だった。なのに、ネットで「お前が悪い」と、何千人にも、罵られた。レンが、犯人を見つけてくれるまで、母は、外に出られなくなっていた。——悪いのは、犯人。被害者でも、罵る側でも、ない。それを、誰かが、強い口調で、言わないと、またループする。どうすれば良いのだろう。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 31,
+      "gh:pageTitle": "幻肢痛",
+      "gh:act": "act:6-ghost-revelation",
+      "gh:pov": "Yuto / Nei / Ren",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoの胸の内側で、何か、重いものが、脈を打った。"},
+        {"gh:type": "sfx", "gh:text": "ドクン。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:emotion": "胸を押さえて", "gh:text": "……痛い"},
+        {"gh:type": "narration", "gh:text": "周囲は、誰も、気づかない。窓際の蓮の席に、Neiが、いつの間にか、立っていた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ゴースト…"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "小声、寝ているRenに", "gh:text": "ねぇ、レン"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "寝ながら、目だけ開けて", "gh:text": "ん"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "レンのお父さんの研究、覚えている？"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "もちろん。「情報は物理量」ランダウアーの原理を量子コンピューターに応用する研究だ。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "パパが、Holon Deviceに搭載できたんだって。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "一瞬の間", "gh:text": "白瀬博士が？Holon Deviceに？"},
+        {"gh:type": "narration", "gh:text": "Renが驚きの表情をみせる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "うん。それでこれ、パパがレンくんにって"},
+        {"gh:type": "narration", "gh:text": "Neiが小型のデバイスをレンにおもむろに渡す。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "博士から、、これはなんなんだ？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "Spirit in Physics"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "情報に「質量」を持たせる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さんの研究テーマ..."},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ベータ版だって"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ベータ版(開発者向け)か、、"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "なんで、いまコレを？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "パパがね、レンくんならこれで”ゴースト”もハックできるだろうって"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ゴーストハック、、情報場をハックするか。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "うん。やってみようよ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "え。いま？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "うん。Renならハックできる。この空気感を"}
+      ]
+    },
+    {
+      "gh:pageNumber": 32,
+      "gh:pageTitle": "SIP Project Map: ON ／ 白瀬博士、明かされる",
+      "gh:act": "act:6-ghost-revelation",
+      "gh:pov": "Nei / Ren / Akira / Mei / Saki",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Neiが、ポケットから、手のひらサイズのクリスタルキューブ型のデバイスをゴゾゴゾと取り出した。デバイスにはHolonium Vision: Projector : beta v 0.1.638 Code SNと書かれている。"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:emotion": "席で振り返って", "gh:text": "ちょ……それ……まさか……！？"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:emotion": "席を立つ", "gh:text": "Holonium Vision!? 本物!?"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "あれ、まだ市販されてないやつ……！？"},
+        {"gh:type": "narration", "gh:text": "クラスメイトの視線が、一斉に、Neiの手元に集まる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "父の、試作機"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "父!?"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "——白瀬 聡（さとし）"},
+        {"gh:type": "narration", "gh:text": "教室、3秒、凍る。"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "——あの、白瀬聡!? 情報物理応用研究所の!?"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "『Holonium Vision、世界初実装』って、ニュースで見た!"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "えっ、Nei、白瀬博士の娘だったの……？"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "マジか……納得。ガチで天才家系じゃん……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "淡々", "gh:text": ""},
+        {"gh:type": "monologue", "gh:speaker": "Yuto", "gh:text": "……白瀬さん、そういう人だったんだ"},
+        {"gh:type": "narration", "gh:text": "Neiはキューブを、机に置いた。親指で、上面を、軽く、押す。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ヨイショ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "Holonium Projection Map: ON"},
+        {"gh:type": "sfx", "gh:text": "ブン。"},
+        {"gh:type": "narration", "gh:text": "キューブの6面が、青く、脈打つ。波紋が、教室全体に、広がる。"}
+      ],
+      "gh:neiPuniColumn": "SIPデバイスは、白瀬寧さんのお父さんが開発中の試作機です。Ren君のお父さんの理論を、工学的に実装した道具です"
+    },
+    {
+      "gh:pageNumber": 33,
+      "gh:pageTitle": "情報場の可視化 ／ ロゴ、見つける",
+      "gh:act": "act:6-ghost-revelation",
+      "gh:pov": "Ren",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "世界が、反転した。教室の黒板、窓、机、クラスメイトの姿が、黒と青のワイヤーフレームに変容し、現実と二重に見える。"},
+        {"gh:type": "dialogue", "gh:speaker": "クラスメイト", "gh:text": "な、なに!? VR!?"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "うわっ、何これ……！"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "なんだ、教室がデジタルに……！"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "きゃー！オバケ！"},
+        {"gh:type": "narration", "gh:text": "空中に、グロテスクな黒い塊が、いくつも、浮かんでいる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "あれ……？"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "淡々と、解説モード", "gh:text": "これは情報空間コンピューティング。空間に情報空間を投影したもの。イメージが、質量に変換された世界。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "特に生命の感情、想い、思考から生まれたものをゴースト、霊と定義している"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "悪意の形、、だな"},
+        {"gh:type": "narration", "gh:text": "——その時、Renの目が、1つの塊で、止まった。Yutoの背中の塊の表面で、詐欺サイトのロゴが、ちらりと、浮かんで、消えた。配色。アイコンの傾き。影の付け方。Renの瞳が、銀色に、光った。"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "——このロゴ。7年前、父さんのプロジェクトを潰した、あのランサムウェアの、ロックスクリーンに、出てた、マーク。配色。アイコンの傾き。影の付け方。——同じ作者の、署名だ。7年経って、同じアクターが、まだ、稼働してる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "小声、Neiにだけ", "gh:text": "Nei"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ん"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——あいつらに繋がってる"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "うん。知ってた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "いつから"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "昨日、藤崎くんのスマートフォンで"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……そうか"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "淡々", "gh:text": ""}
+      ]
+    },
+    {
+      "gh:pageNumber": 34,
+      "gh:pageTitle": "ランダウアーの原理",
+      "gh:act": "act:6-ghost-revelation",
+      "gh:pov": "Ren",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "指を立てて", "gh:text": "情報は、物理だ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "1ビットを消すだけで、熱が出る"},
+        {"gh:type": "insert", "gh:text": "Landauer's Principle / 1ビット消去 = 熱発生の図"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "人の感情や想い、熱量も、重さになる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "それが、Ghostだ"},
+        {"gh:type": "narration", "gh:text": "教室の情報場の中。クラスメイト1人ひとりの背中に、小さな黒い点が、張り付いている。小さな噂、小さな嫉妬、小さな悪意。そして、Yuto自身の背中に、ひときわ、大きな黒い塊が、脈打っていた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "なんだこれ……俺の……？"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "それはおまえが自分のせいと思い込んで、生み出した情報場"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "幻肢痛。僅かな物理量しかない情報が肉体に痛みを与える。"},
+        {"gh:type": "overlay", "gh:text": "INFORMATION IS PHYSICS"}
+      ]
+    },
+    {
+      "gh:pageNumber": 35,
+      "gh:pageTitle": "ゴーストハックの時間だ",
+      "gh:act": "act:6-ghost-revelation",
+      "gh:pov": "Ren",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Renが、ゆっくり、Yutoの前に。ゴーストの前にたつ。"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "れ、Ren……？"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "だ、大丈夫なのか……"},
+        {"gh:type": "narration", "gh:text": "Renは、手を、斜め下に、伸ばした。Renが持つグリップ型のデバイスがHolon Deviceとリンクして、僅かな音を立てて、動き出す。情報場の中、無音の空気の歪みから、白い斧が、Renの手に握られた。エッジは、光っていない。穴のようだ。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "静かに、しかし、力強く", "gh:text": "——ゴーストハックの、時間だ"},
+        {"gh:type": "narration", "gh:text": "近くに浮いていた小さな黒い塊、しかしひとの形を薄ぼんやりと保ったもの、GhostをRenがNULL AXEで一閃。Ghostが様々な色、感情を発露しながら、空に散った。20-30体はいるであろうゴースト、一斉に周囲に散っていた他のゴーストもレンに襲いかかる。まるで炎がさらに燃え広がるように。熱量が情報を埋めようと集まってくる。レンはそのゴーストをかわし、すれ違い様に斧を振り下ろす。白く発光する斧に触れたゴーストは次々と形を維持することができなくかり、色とりどりに霧散していく。"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:emotion": "指差して、パニック", "gh:text": "うおぉ！斧!? どこから!? あぶなくね!?"}
+      ]
+    },
+    {
+      "gh:pageNumber": 36,
+      "gh:pageTitle": "NULL AXE説明 ／ 安全第一",
+      "gh:act": "act:6-ghost-revelation",
+      "gh:pov": "Nei / Ren",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "淡々と、Akiraに", "gh:text": "あれはNULL AXE。情報を、物質化した斧だから、物理的には当たりません"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "い、いや、見た目、めっちゃ斧なんだけど……！"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "情報的には、斧。物理的には、ほぼゼロ"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "……意味わかんない"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "NULL AXEを構えながら、低く", "gh:text": "Nei、ちょっとでかいのが、来るかも"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "隔離プロセスできるか"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "はい"},
+        {"gh:type": "narration", "gh:text": "Neiは、おもむろに、カバンから、「安全第一、キープアウト」と書かれた黄色いテープを取り出した。"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "……それ?"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "それ"},
+        {"gh:type": "narration", "gh:text": "Neiが、Yutoの周囲に、テープをぐるりと張る。クラスメイトたちを、テープの外側に、誘導する。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "クラスメイトに、丁寧に", "gh:text": "ちょっと、離れてね"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:emotion": "テープの外で", "gh:text": "工事現場かよ……！"},
+        {"gh:type": "narration", "gh:text": "Yutoは、まだ、自分の胸を押さえて、苦しんでいる。周囲が見えていない。Yutoの背中の黒い塊が、さらに膨らんでいく。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 37,
+      "gh:pageTitle": "Daemon出現",
+      "gh:act": "act:7-daemon-battle",
+      "gh:pov": "Ren / Nei",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoの背中の塊が、Yutoの形をした巨大な影に、ぐにゃりと膨らんだ。教室を、見下ろすほどの巨体。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "こいつは…Daemonだな。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "より多くの情報を持つ、「止まることができない」ゴースト…"},
+        {"gh:type": "narration", "gh:text": "Daemonの表面では、悪口・不正請求の数字・親への申し訳なさなど、Yutoの心の中のデータが、渦を巻いている。安全第一テープの外側で、クラスメイトが、震える。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ken", "gh:text": "な、なんだ、アレ……！"},
+        {"gh:type": "dialogue", "gh:speaker": "Shota", "gh:text": "Yutoから……出てきた……？"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "なぁ、白瀬さんもういいだろ！早くそれ止めろよ！これを消してくれ！！"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "これを止めても。「消えない」。Holon Deviceは情報場を空間に投影しているだけ。みんなの感情や想い、空気が可視化されただけだから、見えなくなるだけで、この情報場は消えない"},
+        {"gh:type": "dialogue", "gh:speaker": "クラスメイト", "gh:text": "…"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki, Akira, Mei", "gh:text": "…"},
+        {"gh:type": "narration", "gh:text": "何も言わずに下を向く。自分たちが先ほどYutoに向けていた気持ちがそのものが（情報場として可視化されたことに気づく）。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 38,
+      "gh:pageTitle": "Daemonの攻撃 ／ Renの覚悟",
+      "gh:act": "act:7-daemon-battle",
+      "gh:pov": "Ren",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Daemon", "gh:emotion": "Yutoの歪んだ顔、絶望と怒りで", "gh:text": "今更、遅い！ 何をしてもやったものはどうにもならない！！"},
+        {"gh:type": "narration", "gh:text": "Daemonの波が、Renに、襲いかかる。Ren、吹き飛ばされる。膝を、片膝つく。"},
+        {"gh:type": "dialogue", "gh:speaker": "Daemon", "gh:text": "だろ!? お前は、一生、許されない——"},
+        {"gh:type": "narration", "gh:text": "Ren、ゆっくりと、立ち上がる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "静かに、しかし、力強く", "gh:text": "——そうだな"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "やったものは、元に戻せない"},
+        {"gh:type": "dialogue", "gh:speaker": "Daemon", "gh:text": "——"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "NULL AXEを、構えながら", "gh:text": "だがな——"}
+      ]
+    },
+    {
+      "gh:pageNumber": 39,
+      "gh:pageTitle": "/dev/null SLASH!! ／ 呪いを断つ",
+      "gh:act": "act:7-daemon-battle",
+      "gh:pov": "Ren",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "集中した目で", "gh:text": "俺がハックするのは——『常識（呪い）』という、情報（言葉）だ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "きっかけを作ったのは、お前。そこは、認めろ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "だが ——"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "悪口を書いたのは、お前じゃない"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "それを、晒したのも、お前じゃない"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "Sakiを、直接、傷つけた責任は、お前じゃ、ない"},
+        {"gh:type": "dialogue", "gh:speaker": "Daemon", "gh:text": "う、うるさいっ！！"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "お前は、犯人の道具に、されたんだ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "責任の、中身を、取り違えるな！"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "斧を水平に突き出し。声を、安全第一テープの外側のクラスメイト全員に、向けて", "gh:text": "——お前らも、聞け"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "罵ったお前らも、被害者だ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "Yutoを、責めても、何も終わらない"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "次の被害者が、また、同じ流れで、潰されるだけだ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "怒りは、アクターに"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——俺とNeiは、7年、それを、知ってる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "悪いのは、アクターだ"},
+        {"gh:type": "insert", "gh:text": "Yutoを縛る鎖のような言葉『全部あんたのせいだ』"},
+        {"gh:type": "narration", "gh:text": "Ren、NULL AXEを、振り上げる。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——/dev/null SLASH!!"},
+        {"gh:type": "narration", "gh:text": "一閃。Daemonそのものではなく、呪いの言葉が、シャノンの文字列になって、砕け散った。Yutoを縛っていた鎖が、断ち切られる。Daemonが、ふっと、消え始める。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 40,
+      "gh:pageTitle": "Daemon消滅 ／ Yutoの謝罪",
+      "gh:act": "act:7-daemon-battle",
+      "gh:pov": "Yuto",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Daemonが完全に消滅し、周囲の小さなGhostも、光の粒子に変わって、消える。教室が、元に戻っていく。情報場が、薄れる。Yutoが、目を開ける。意識が、戻る。胸の重みが、抜けていた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……軽く、なった"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "淡々と", "gh:text": "Daemonも倒せたね"},
+        {"gh:type": "narration", "gh:text": "Yutoは、立ち上がって、深く、頭を下げた。クラスメイトに、向かって。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "みんな、ごめん！俺の不注意で、みんなに、迷惑かけた"},
+        {"gh:type": "narration", "gh:text": "クラスメイトたちが、状況を飲み込もうとする。さっきの黒い塊が、自分たちの罵倒と、Yutoの罪悪感だったと、薄ら、気づくいている。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 41,
+      "gh:pageTitle": "和解／nueへ送信／バンコクの一室",
+      "gh:act": "act:7-daemon-battle",
+      "gh:pov": "Ren",
+      "gh:script": [
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:emotion": "まだ怒って", "gh:text": "謝っても、許されないよ……！"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:emotion": "怯えず、正面から", "gh:text": "うん。悪かった"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "でも——俺の不注意と、Meiの愚痴と、それを晒したアクターは、別の話だ"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "俺が背負うのは、1つだけ。リンクを広めた、不注意"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "私も……ごめん"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "俺も、お前のアカウント乗っ取りのこと、責めすぎた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "壁にNULL AXEを立てかけ、欠伸しながら", "gh:text": "本当に悪いやつは、偽サイトを仕事にしてる奴らだ。1人に背負わすな"},
+        {"gh:type": "narration", "gh:text": "クラスに、少しずつ、空気が、戻る。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "Yuto, おまえの端末に残ってるアクターの情報、ログをもらってもいいか？"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え、うん。もちろん、いいけど、、"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ありがとう"},
+        {"gh:type": "narration", "gh:text": "情報場の残響の中で、Renは、Daemonの残滓から、アクターの痕跡を、すくい上げていった。"},
+        {"gh:type": "evidence-list", "gh:items": ["詐欺サイトのロゴファイル（メタデータ込み・作成者署名）", "C2通信の暗号トンネルのhash断片", "Bot制御APIの署名フォーマット", "運用時間帯（UTC+7基準のシフト）"]},
+        {"gh:type": "narration", "gh:text": "Renは、それを、nueに、1行で、投げた。"},
+        {"gh:type": "dm", "gh:speaker": "Ren → nue", "gh:text": "ログ、4種、投げる。7年前、と、同じ系統に、見える。確認してくれ。"},
+        {"gh:type": "narration", "gh:text": "5秒。nueから、即返信。"},
+        {"gh:type": "dm", "gh:speaker": "nue → Ren", "gh:text": "受信。……hash、完全一致。7年前の、father caseの、同じファミリー。"},
+        {"gh:type": "dm", "gh:speaker": "nue → Ren", "gh:text": "俺の側、いま動く。FBI IC3と、Interpol Cybercrime Directoratに、エスカレートする。"},
+        {"gh:type": "dm", "gh:speaker": "nue → Ren", "gh:text": "君は、そのまま、教室で、寝てろ。後で、共有する。"},
+        {"gh:type": "dm", "gh:speaker": "nue → Ren", "gh:text": "——追えるかもしれないな、犯人に。7年ぶりに。"},
+        {"gh:type": "narration", "gh:text": "Renの瞳が、もう一度、銀色に、光った。ほんの1mm、口の端が、上がった。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "小声、自分に", "gh:text": "……動いた"},
+        {"gh:type": "scene-change", "gh:text": "—— その頃、バンコクの雑居ビルの一室 ——"},
+        {"gh:type": "panel", "gh:text": "中東系の若い男、ディスプレイ、ティーカップを取り落とす"},
+        {"gh:type": "dialogue", "gh:speaker": "black0awdOperator", "gh:text": "——え、なんで、落ちた……？"},
+        {"gh:type": "screen", "gh:text": "active_accounts: 1件減"},
+        {"gh:type": "dialogue", "gh:speaker": "black0awdOperator", "gh:text": "……いや、まだ、823件、動いてる……大丈夫"},
+        {"gh:type": "narration", "gh:text": "——だが、画面の端で、別のアラートが、静かに点滅していた。"},
+        {"gh:type": "alert", "gh:text": "【Inbound probe / Source: nue (US) — Honeypot triggered】"},
+        {"gh:type": "dialogue", "gh:speaker": "black0awdOperator", "gh:emotion": "気づかず", "gh:text": "……ちっ。FBIか。やりずらい。"}
+      ]
+    },
+    {
+      "gh:pageNumber": 42,
+      "gh:pageTitle": "翌日、教室、3段の和解",
+      "gh:act": "act:8-resolution",
+      "gh:pov": "Yuto",
+      "gh:setting": "翌朝、C中学校3年B組。",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Yutoが教室に入ると、教室の前の方で、Meiが、Sakiの前に、立っていた。一晩経って、顔を合わせるのも、それぞれ、辛い。でも、Meiは、自分から、Sakiの前に、立っていた。"},
+        {"gh:type": "section", "gh:title": "第1段：Mei → Saki（愚痴の書き手としての謝罪）"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:emotion": "震える声で", "gh:text": "Saki、ごめん"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "愚痴を、書いたのは、本当に、私"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "疲れたとき、吐き出したくて、鍵付きで、書いてた"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "でも、Sakiに、見せるつもりは、なかった"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "それを勝手に開かれたのは、私も晒された被害者だけど——"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "書いた中身の責任は、私に、ある"},
+        {"gh:type": "narration", "gh:text": "Sakiは、3秒、Meiを見た。ゆっくり、頷いた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "……Mei、書き方、下手くそすぎ"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "うん……"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "でも、本音があるのは、しょうがない。私たち、完璧な親友じゃ、ない"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "話、もう一度、しよう"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "……うん"},
+        {"gh:type": "narration", "gh:text": "2人が、短く、抱きしめ合った。"},
+        {"gh:type": "section", "gh:title": "第2段：Yuto → Mei（リンクを広めた不注意の謝罪）"},
+        {"gh:type": "narration", "gh:text": "Yutoが、続けて、前に出た。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "Mei、ごめん"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "俺のリンクを君が踏んだから、君の鍵付きアカウントが、開いた"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "俺が広めてしまった不注意は、俺の責任"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "書いた中身は、俺の責任じゃない。でも、道具にされたのは、俺の不注意だ"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "……藤崎くん"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "私、藤崎くんが書いたって、勘違いして、ぶつけた"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "ごめん"},
+        {"gh:type": "section", "gh:title": "第3段：Ren、寝ながら総括"},
+        {"gh:type": "narration", "gh:text": "窓際で、蓮が寝ていた。コメッコンの米粉ドーナツを咀嚼したまま。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "寝ながら、目は閉じたまま", "gh:text": "……一つを除いてちゃんと責任をとったな。"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "え"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "愚痴を書いたのは、Mei。リンクを広めたのは、Yuto。それを広めさせたのは、アクター。——アクターだけが、まだ責任を取っていない。"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "Ren、お前……いつからいてたの……"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "寝ながら、全部"},
+        {"gh:type": "dialogue", "gh:speaker": "Saki", "gh:text": "……アクター、許せないな"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei", "gh:text": "うん"},
+        {"gh:type": "dialogue", "gh:speaker": "Yuto", "gh:text": "……うん"},
+        {"gh:type": "narration", "gh:text": "クラスに、少しずつ、空気が、戻った。"},
+        {"gh:type": "dialogue", "gh:speaker": "Akira", "gh:text": "なあ、レン。おまえこういうのに詳しいんだろ。何かオレたちで手伝えることあるか？スクショとか、メッセージとかは持っているんだけど、、"},
+        {"gh:type": "dialogue", "gh:speaker": "Mei, Saki", "gh:text": "わ、私たちの情報も使える？"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "あ、あぁ。多ければ多いほどもちろん助かる"}
+      ]
+    },
+    {
+      "gh:pageNumber": 43,
+      "gh:pageTitle": "放課後、Renの部屋 ／ 気づき",
+      "gh:act": "act:8-resolution",
+      "gh:pov": "Ren",
+      "gh:setting": "放課後。Renの部屋。父のHHKB（無刻印・真っ黒）。机の上に、Yutoの事件から得た新しいblack0awd末端の手がかりが並んでいる。",
+      "gh:newEvidence": [
+        "詐欺サイトのロゴファイル（メタデータ — 7年前のランサムウェアロックスクリーンのマークと、同一作者署名）",
+        "バンコクの拠点IP範囲（断片）",
+        "Bot制御APIの署名フォーマット",
+        "運用時間帯（UTC+7基準の勤務シフト）",
+        "使っている日本語UIのクセ（絵文字使用率）"
+      ],
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "壁の捜査壁、西壁 — 被害者リスト163名に、Renは、ペンで1行、加えた。"},
+        {"gh:type": "evidence-entry", "gh:text": "164. 藤崎 悠斗（中3・東京）\n被害内容: 12,000円 + 母のカード 100,000円 + 友人からの信頼\nリカバリープロセス済み（チャージバック完了）\n——同一系統、確認"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "7年、俺は、1人で、追ってた。父の、遺した情報だけで、動いてた。——届かなかった。でも、今日。Yuto1人を、助けただけで——父さんを、ころした奴らと、同じロゴに、辿り着いた。——被害者の、生きた事件。これが、俺に、足りなかったもの、だった。"},
+        {"gh:type": "narration", "gh:text": "Neiがウチの冷蔵庫からコメッコンの米粉プリンを取り出して、スプーンで食べている。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "レン"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ん"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "1人だけでやるより、だれかを助けるほうが、近いね"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……ああ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "被害者の手元には、犯人の指紋が残ってる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "俺の手元には限られた情報しか、なかった"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "生きてる人の、ログには、生きてる犯人がいる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……うん"},
+        {"gh:type": "narration", "gh:text": "——その時。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "……レン"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ん"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "アレ"},
+        {"gh:type": "narration", "gh:text": "Neiが、机の端の桐の小箱を、指差した。箱の蓋の隙間から、青白い光が、漏れている。7年間、ずっと薄く点滅していたランプが、強く、脈打っていた。Renが、蓋を、開ける。父のHolonデバイス。起動画面。7年間、微塵も動かなかった数値が、書き換わっていた。"},
+        {"gh:type": "screen", "gh:text": "Lock Difficulty:        2^256  →  2^240    (▼ 16 bits)\nVector Alignment Proof: 0 / ?  →  1 / ?\nInformation Field\n  Vector Density:       ▒▒░░░░░░ 0%  →  ▓▓▒░░░░░ 12%\nDecoded Modules:        [ Module 1: Ghost Detection — Input Preprocessor ]"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "……"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "難易度、下がった"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "16ビット"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "Vector Alignment Proof、1"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "7年間、0だった、のに"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "……モジュール1、読める"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "Ghost検出の、入力前処理ステップ"},
+        {"gh:type": "narration", "gh:text": "RenとNeiは、5秒、画面を、ただ見ていた。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "……レン、論文の応用研究のセクション。覚えてる?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "あぁ、、"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "Vector Alignment Proof"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "人々が、同じベクトルに向いたネットワークに加わるたびに、指数関数的に、計算能力が、増える"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "情報熱力学では、エントロピーが下がれば、利用可能情報量が増える"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "量子コンピューティング・ネットワーク理論では、N個の量子ビットが揃えば、状態空間は2^Nにスケールする"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さんは、それを社会グラフに適用した。N人が同じベクトルに揃えば、共有計算能力は2^Nに増える"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "理論は、7年前にあった。実証は誰もできなかった"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……今日、オレたちが、実証したのか"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "うん。Yutoと、Sakiと、Meiと、Akiraの4人が、『悪いのはアクター』という、同じベクトルに、揃った"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "被害者と罵った側が、共通の方向を見出して、整列した"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "Vector Alignment Proof、1つ目"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さん、論文の付録に書いてたな"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "何てかいてたの？"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "『Vector Aligiment Proof = 努力 + 友情 = 勝利の指数関数解』"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ジャンプかな"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さん、漫画好きだったから"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "……知らなかった"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "個々の努力(effort)、相互認識(friendship)、計算的勝利(victory)。3要素を、真面目に方程式化してた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……父さん、変な人だな"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "そういうとこ、レンに似てるね"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "——父さん。これ、を待ってたのか。1人で計算するんじゃなく、人々が、同じベクトルに揃うことを。人の感情を、情報として、扱うことを。人の想いを、量子もつれ的に、束ねることを。——ゴーストハッカーって、そういう意味だったのか。"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "Ren"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ん"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "残り回数、わかる?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "分からない。Proofの上限は、論文にも、書いてなかった"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "指数関数なら、次は16ビット、その次は32ビット?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さんが、そう書いたなら、そう"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "……めんどくせーな"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:emotion": "プリン咀嚼", "gh:text": "……でも、めんどくさい方が、レンの父さんっぽいよ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:emotion": "笑", "gh:text": "……だな"}
+      ]
+    },
+    {
+      "gh:pageNumber": 44,
+      "gh:pageTitle": "決意",
+      "gh:act": "act:8-resolution",
+      "gh:pov": "Ren",
+      "gh:visualNote": "ページ44 = 主人公の決定的1選択：「1件ずつ人を助けることを、仕事にする」と決める瞬間",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Renは、父のHHKBに、指を置いた。無刻印の'J'の位置のキー（手が覚えている場所）を、人差し指で、軽く、叩いた。"},
+        {"gh:type": "sfx", "gh:text": "カチャ。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "Nei"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "うん"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——俺、仕事にするよ"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "仕事?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ゴーストハックを"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "サイバーセキュリティ、じゃなくて?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——違う"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "俺は、7年、計算で追ってた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さんのロックも、計算で開けようとしてた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——間違ってた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さんは、情報と人を、同じものとして、扱えって、書いてた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "人の感情も、情報だ。情報も、人の感情と、同じように扱う"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "同じベクトルに揃った人々のネットワークに加わるたびに、計算能力が、指数関数的に増える"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "人々のベクトルを揃えるたびに、難易度が、下がる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "努力、友情、勝利"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "ジャンプ三原則"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さんが、方程式化してた、やつだ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "個々の努力で、仲間と整列して、計算的に勝つ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——ゴーストハッカーの、戦闘原理だ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "1件ずつ、ベクトルを、揃えてくと、父さんの、犯人まで、繋がるし、父さんが残したパスワードロックも、開く"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "レンが、1件ずつって、言うの、初めて"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "根っこを切るには、1件ずつ、ゴーストハックするのが、一番早いって、今日、Yutoで、気づいた"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "だから——人を助ける。ゴーストハッカー。サイバーセキュリティじゃなくて"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "nueは?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "もう、動いてる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "あいつが国外、俺が国内、Neiが現場"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——ベクトル、3方向から、揃える"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "矛盾してる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "してる"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——でも、それが本物の怠惰なんだろ"}
+      ]
+    },
+    {
+      "gh:pageNumber": 45,
+      "gh:pageTitle": "エピローグ / 事務所、始める",
+      "gh:act": "act:8-resolution",
+      "gh:pov": "Ren",
+      "gh:script": [
+        {"gh:type": "narration", "gh:text": "Renは、胸ポケットに手を当てた。父の遺した、メモ。"},
+        {"gh:type": "memo", "gh:text": "情報は物理だ。そして生きている。お前は、ゴーストを見ろ。"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "父さん"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——俺、ゴースト、見るよ"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "情報も、人の感情も、同じものとして"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "それで、犯人まで、繋げる"},
+        {"gh:type": "narration", "gh:text": "Renは、ノートPCを開いて、新しいファイルを作った。"},
+        {"gh:type": "screen", "gh:text": "ファイル名：NewsHacker_Agency_Plan.md"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "……事務所?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "仕事を、始める"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "サイバーセキュリティ。ゴーストハッカー事務所"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "——困ってる奴を、金取って、助ける"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "え。高校はどうするの？"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "通信制高校にするよ。生活費、家に負担かけられないし"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "レン"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "ん"},
+        {"gh:type": "dialogue", "gh:speaker": "Nei", "gh:text": "わたしも、手伝っていい?"},
+        {"gh:type": "dialogue", "gh:speaker": "Ren", "gh:text": "いいのか？"},
+        {"gh:type": "narration", "gh:text": "Renはもう一度、父のHHKB（無刻印・真っ黒）の'J'のキーを、叩いた。"},
+        {"gh:type": "sfx", "gh:text": "カチャ。"},
+        {"gh:type": "monologue", "gh:speaker": "Ren", "gh:text": "——父さん。俺は、ゴーストを、見る。1人、また1人。仲間が見つかるたびに——アクターに、1歩、近づく。——怠惰に、着実に。やるか。"},
+        {"gh:type": "narration", "gh:text": "窓の外。隣の家の2階、Neiの部屋の電気が、ついていた。"},
+        {"gh:type": "outro", "gh:text": "—— Ghost Hacker #00『パスワードは覚えるな』 / 了 ——"},
+        {"gh:type": "outro", "gh:text": "—— 次回、『ゴーストハッカー事務所』始動 ——"}
+      ]
+    }
+  ],
+  "gh:neiPuniColumns": {
+    "gh:placementRule": "本編のコマ内には基本的に入れない。柱/欄外（各頁の上下または側面の帯に1〜2行）+ 章間見開き（単行本仕様でActの区切りに挿入される『ぷにねい解説1ページ』枠）+ 巻末おまけ。本読切では章間2ヶ所（Act 3→4の手前 / Act 5→6の手前）+ 各頁の欄外に分散",
+    "gh:interludeColumns": [
+      {
+        "gh:placement": "Act 3 → Act 4 の境界",
+        "gh:title": "パスワードは覚えるな",
+        "gh:items": [
+          "SMS認証番号を他人に教えない",
+          "パスワードマネージャの使い方（各種アプリ）",
+          "2FAは認証アプリで",
+          "チャージバックという言葉を覚える",
+          "漏洩チェックサイト（Have I Been Pwned）の使い方"
+        ]
+      },
+      {
+        "gh:placement": "Act 5 → Act 6 の境界",
+        "gh:title": "もし、引っかかってしまったら",
+        "gh:items": [
+          "アカウントを先に守る（パスワード変更・2FA・全端末ログアウト）",
+          "お金を止める（カード停止・チャージバック）",
+          "相談窓口に連絡（#9110 / 188 / IPA / 国民生活センター）",
+          "別窓口から友達に伝える（メール・電話・対面）",
+          "SNSで謝らない・釈明投稿しない"
+        ]
+      }
+    ],
+    "gh:bonusPage": "パスワードマネージャ比較表（単行本巻末おまけ）"
+  },
+  "gh:designNotes": {
+    "gh:complianceFix": [
+      "Renはネットワーク監視をしない。Neiが学校でYutoの異変を察知 → Renに繋ぐ",
+      "Renが夜までやっている作業は自分でアクセス権のある範囲（父の遺したサーバ・父名義のメール過去ログ・公開情報OSINT）のみ",
+      "Yuto事件のログは、Yuto本人の同意の元、Yutoのスマホから共有される形"
+    ],
+    "gh:renSevenYearStall": "自分1人だけの情報源では、7年追っても、犯人の現在位置には届かない。この停滞感をAct 1後半（ページ6-7）で明示。「1人では、届かないんじゃない?」とNeiが問いかける",
+    "gh:growthArc": "Yuto事件から得られた新しい手がかり（バンコクのIP範囲・Bot API署名・運用時間帯・UIクセ）→ 『1人助ければ、1歩、系統樹に近づく』という気づき → 高校から事務所を始める覚悟。連載の開始点 = 読切のラストの直接的続き",
+    "gh:ghostBattleLocation": "Act 6は教室内で開始（SIPデバイス起動・情報場発現）。Act 7は教室の安全第一テープ内側で完結。クラスメイトの3割は情報場がうっすら見える設定（後日、AkiraやSakiがNews Hackerに興味を持つ伏線）",
+    "gh:hhkbAppearances": [
+      "頁6-7: Renの夜の作業（停滞の象徴 + 仲間の萌芽）",
+      "頁21: 動く前の1叩き（カチャ）",
+      "頁43-45: 決意の1叩き + エピローグ（カチャ）"
+    ],
+    "gh:antagonistFaceTime": [
+      "頁11: 乗っ取りの瞬間（1カット、セリフなし、手元のみ）",
+      "頁41: Yuto救出後の反応（1カット、ログの断片がRen側に返る）"
+    ],
+    "gh:decisiveChoice": "ページ44: 『1件ずつ人を助けることを、仕事にする』と決める瞬間。7年間『1人で、父の系譜だけを追う』主義だったRenが、他人を助けることで間接的に犯人に近づく戦略を、自分で選ぶ。彼の『怠惰』の定義が動かないことから1件ずつ人を助けながら根っこに向かうことへ、明確に拡張される瞬間",
+    "gh:jumpThreePrinciples": {
+      "gh:effort": "Yutoが自分で全サービス切替・メール送信 / Renの7年間の積み重ね / Neiの観察眼",
+      "gh:friendship": "RenとNeiの幼馴染バディ / YutoとSaki/Akiraの再接続 / nueとのチャット（布石）",
+      "gh:victory": "Yutoのアカウント復旧 / 友人関係修復 / 末端1つからの手がかり獲得 / 事務所開設の覚悟"
+    },
+    "gh:serializationHook": {
+      "gh:lastLine": "次回、『ゴーストハッカー事務所』始動",
+      "gh:part1Arc0": "連載第1話 = 事務所開設直後、初めての有償依頼",
+      "gh:yutoReturn": "連載Arc1〜2あたりでクラスメイト枠として再登場",
+      "gh:classmateReturn": "中学校の担任・クラスメイト（Saki / Akira / Mei）も連載第1話で再登場可能"
+    },
+    "gh:supervision": {
+      "gh:middleSchoolSnsHarm": "教育学・青少年ネット安全検討会",
+      "gh:cybercrimeMethods": "JPCERT/CC、IPA、警察庁サイバー犯罪対策プロジェクト",
+      "gh:legalCompliance": "通信の秘密・個人情報保護法の描写を、弁護士監修",
+      "gh:informationPhysics": "情報物理・情報倫理学の大学研究者",
+      "gh:neiPuniColumn": "掲載時点の最新情報にアップデートする編集体制"
+    }
+  },
+  "gh:educationalContent": {
+    "gh:keyTakeaways": [
+      "時間限定カウントダウンは詐欺の第一級シグナル（FUD）",
+      "公式SMSの認証番号を他人に教えない（家の鍵そのもの）",
+      "12文字以上、サイトごとに違うランダムなパスワード。記憶せず、パスワードマネージャに任せる",
+      "チャージバック制度を知る — 9割以上のケースで戻ってくる",
+      "アカウント乗っ取り発覚時は別窓口で全員に注意喚起、謝罪は後回し（火を消すのが先）",
+      "悪いのは犯人。被害者でも、罵る側でもない"
+    ],
+    "gh:resources": [
+      "警察相談窓口 #9110",
+      "消費者ホットライン 188",
+      "IPA",
+      "国民生活センター",
+      "Have I Been Pwned (haveibeenpwned.com)"
+    ]
+  }
+}

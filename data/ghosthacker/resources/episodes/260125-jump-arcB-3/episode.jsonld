@@ -1,0 +1,2813 @@
+{
+  "@context": {
+    "arc": "gh:arc/",
+    "character": "gh:character/",
+    "characters": "gh:characters",
+    "dct": "http://purl.org/dc/terms/",
+    "dialogue": "gh:dialogue",
+    "env": "gh:environment/",
+    "environment": "gh:environment",
+    "environments": "gh:environments",
+    "episodeId": "gh:episodeId",
+    "episodeIndex": "gh:episodeIndex",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "panel": "gh:panelIndex",
+    "prompt": "gh:runwayPrompt",
+    "properties": "gh:shotProperties",
+    "prov": "http://www.w3.org/ns/prov#",
+    "purpose": "gh:narrativePurpose",
+    "schema": "http://schema.org/",
+    "shot": "gh:shotType",
+    "speaker": "gh:speaker",
+    "text": "gh:text",
+    "visual": "gh:visual"
+  },
+  "dct:title": "Arc B-3: 「終端刻印」",
+  "gh:arc": "Arc B",
+  "gh:credentials": [
+    "OSCP",
+    "GXPN"
+  ],
+  "gh:episode": 8,
+  "gh:episodeId": "episode:260125-jump-arcB-3",
+  "gh:episodeIndex": 8,
+  "gh:incidentDescription": "リスク計算を放棄し、場当たり的にVPNを繋いだ『短気』が物流を止めた。TakeruはGXPNの精密な計算で感染パケットを仕分け、汚染区画を切り離してラインを再起動させる。",
+  "gh:industry": "Manufacturing (製造)",
+  "gh:mainCharacter": "character:Takeru",
+  "gh:nistFocus": [
+    "PR.IR-04 (Network Segmentation)",
+    "RS.MA-01 (Containment)"
+  ],
+  "gh:pages": [
+    {
+      "gh:pageNumber": 1,
+      "gh:panels": [
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "24時間後。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 夜明けの物流倉庫。昨日と同じ場所だけど、空気が違う。コンベヤは回っている。静かに、確実に。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 夜明けの物流倉庫。昨日と同じ場所だけど、空気が違う。コンベヤは回っている。静かに、確実に。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "夜明けの物流倉庫。昨日と同じ場所だけど、空気が違う。コンベヤは回っている。静かに、確実に。",
+          "gh:sdxlTags": [
+            "1warehouse",
+            "logistics warehouse",
+            "conveyor belt",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "soft diffused daylight",
+            "clean air",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1warehouse, logistics warehouse, conveyor belt, wide shot, eye level, 35mm lens, soft diffused daylight, clean air, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Takeru",
+            "character:Nei"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "…24時間経った。"
+            },
+            {
+              "speaker": "Nei",
+              "text": "再発、なし。ログ、クリーン。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. TakeruとNeiが管制室に入る。約束通り戻ってきた。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. TakeruとNeiが管制室に入る。約束通り戻ってきた。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "TakeruとNeiが管制室に入る。約束通り戻ってきた。",
+          "gh:sdxlTags": [
+            "2characters",
+            "boy",
+            "girl",
+            "entering control room",
+            "neutral expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, boy, girl, entering control room, neutral expression, logistics warehouse, day, soft diffused daylight, medium shot, eye level, 50mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "最後のチェック、入れに来た。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. Takeruの目。怒りは静まっている。代わりに、確認する目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Takeruの目。怒りは静まっている。代わりに、確認する目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Takeruの目。怒りは静まっている。代わりに、確認する目。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "casual clothes",
+            "close-up of eye",
+            "calm expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal angle",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, casual clothes, close-up of eye, calm expression, logistics warehouse, day, soft diffused daylight, close-up, frontal angle, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 2,
+      "gh:panels": [
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "DONE CRITERIA: [x] stable [x] log [x] 24h monitor"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. ホワイトボードのDONE条件。三つ全てにチェックが入っている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. ホワイトボードのDONE条件。三つ全てにチェックが入っている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Insert Shot",
+          "visual": "ホワイトボードのDONE条件。三つ全てにチェックが入っている。",
+          "gh:sdxlTags": [
+            "1whiteboard",
+            "checkmarks",
+            "logistics warehouse",
+            "insert shot",
+            "over-shoulder",
+            "50mm lens",
+            "soft natural light",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1whiteboard, checkmarks, logistics warehouse, insert shot, over-shoulder, 50mm lens, soft natural light, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi",
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "…来たか。"
+            },
+            {
+              "speaker": "Takeru",
+              "text": "約束だ。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 山下本部長が待っていた。昨日までの敵意はない。ただ、複雑な目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 山下本部長が待っていた。昨日までの敵意はない。ただ、複雑な目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "山下本部長が待っていた。昨日までの敵意はない。ただ、複雑な目。",
+          "gh:sdxlTags": [
+            "2characters",
+            "YamashitaTsuyoshi",
+            "Takeru",
+            "standing in logistics warehouse",
+            "calm expression",
+            "logistics warehouse",
+            "daytime",
+            "soft natural light",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, YamashitaTsuyoshi, Takeru, standing in logistics warehouse, calm expression, logistics warehouse, daytime, soft natural light, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "…24時間。一度も再発しなかった。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. 山下の目。認めたくないけど、認めざるを得ない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. 山下の目。認めたくないけど、認めざるを得ない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "山下の目。認めたくないけど、認めざるを得ない。",
+          "gh:sdxlTags": [
+            "1boy",
+            "young man",
+            "formal attire",
+            "close-up shot",
+            "frontal angle",
+            "worried expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "close-up",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, young man, formal attire, close-up shot, frontal angle, worried expression, logistics warehouse, daytime, soft diffused daylight, close-up, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 3,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:TamuraSeiichi",
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "TamuraSeiichi",
+              "text": "Takeruくん、ちょっと見てほしいものが。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 田村IT部長がサーバールームから呼ぶ。何か見つけた様子。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 田村IT部長がサーバールームから呼ぶ。何か見つけた様子。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "田村IT部長がサーバールームから呼ぶ。何か見つけた様子。",
+          "gh:sdxlTags": [
+            "2characters",
+            "Tamura Seiichi",
+            "Takeru",
+            "calling from server room",
+            "neutral expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, Tamura Seiichi, Takeru, calling from server room, neutral expression, logistics warehouse, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "VPN LOG ANALYSIS: 30 days / pattern detected"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. モニター画面。一ヶ月分のVPNログ。異常パターンが赤くハイライトされている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. モニター画面。一ヶ月分のVPNログ。異常パターンが赤くハイライトされている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "モニター画面。一ヶ月分のVPNログ。異常パターンが赤くハイライトされている。",
+          "gh:sdxlTags": [
+            "1monitor",
+            "vpn_log",
+            "highlighted_anomalies",
+            "insert_shot",
+            "over-shoulder_angle",
+            "insert_distance",
+            "soft_diffused_daylight",
+            "gentle_shadows",
+            "50mm_lens",
+            "luminous_atmosphere",
+            "anime_style",
+            "manga_panel",
+            "cinematic",
+            "detailed_background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1monitor, vpn_log, highlighted_anomalies, insert_shot, over-shoulder_angle, insert_distance, soft_diffused_daylight, gentle_shadows, 50mm_lens, luminous_atmosphere, anime_style, manga_panel, cinematic, detailed_background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:TamuraSeiichi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "TamuraSeiichi",
+              "text": "一ヶ月前から…本部長の「急げ」の度に、誰かがVPN設定を無断で変えてた。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 田村の目。組織の問題が見えてきた。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 田村の目。組織の問題が見えてきた。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Medium Shot",
+          "visual": "田村の目。組織の問題が見えてきた。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "glasses",
+            "looking concerned",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, glasses, looking concerned, logistics warehouse, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 4,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Takeru",
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "…一ヶ月。今回が初めてじゃなかった。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. Takeruが山下に向き直る。今度は怒りじゃなく、問いかけ。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. Takeruが山下に向き直る。今度は怒りじゃなく、問いかけ。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "Takeruが山下に向き直る。今度は怒りじゃなく、問いかけ。",
+          "gh:sdxlTags": [
+            "2characters",
+            "teen boy",
+            "Takeru",
+            "Yamashita Tsuyoshi",
+            "facing each other",
+            "questioning expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, teen boy, Takeru, Yamashita Tsuyoshi, facing each other, questioning expression, logistics warehouse, daytime, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "…知ってた。知ってて、見て見ぬふりをした。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. 山下の拳が震えている。怒りじゃなく、後悔。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. 山下の拳が震えている。怒りじゃなく、後悔。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "山下の拳が震えている。怒りじゃなく、後悔。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "casual clothing",
+            "clenching fist",
+            "regretful expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "insert shot",
+            "over shoulder",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, casual clothing, clenching fist, regretful expression, logistics warehouse, daytime, soft diffused daylight, insert shot, over shoulder, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "トヨタから毎日電話がくる。『遅れるな、遅れるな』って。俺も…その圧力を現場に流してた。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 山下が初めて弱さを見せる。48年の人生で積み上げた『短気』の正体。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 山下が初めて弱さを見せる。48年の人生で積み上げた『短気』の正体。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Medium Shot",
+          "visual": "山下が初めて弱さを見せる。48年の人生で積み上げた『短気』の正体。",
+          "gh:sdxlTags": [
+            "1man",
+            "middle-aged man",
+            "business attire",
+            "showing vulnerability",
+            "serious expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "calm atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1man, middle-aged man, business attire, showing vulnerability, serious expression, logistics warehouse, day, soft diffused daylight, medium shot, eye level, 50mm lens, calm atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 5,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:SasakiKenta",
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "SasakiKenta",
+              "text": "本部長…現場もそうでした。『急げ』が来ると、みんな正規手順を飛ばしてた。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 佐々木センター長も口を開く。組織全体の問題が露わになる。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 佐々木センター長も口を開く。組織全体の問題が露わになる。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "佐々木センター長も口を開く。組織全体の問題が露わになる。",
+          "gh:sdxlTags": [
+            "2characters",
+            "Sasaki Kenta",
+            "Yamashita Tsuyoshi",
+            "speaking",
+            "concerned expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, Sasaki Kenta, Yamashita Tsuyoshi, speaking, concerned expression, logistics warehouse, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "カン…（遠くで鐘の音）"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. 空気が歪む。遠くから、あの音が聞こえてくる。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. 空気が歪む。遠くから、あの音が聞こえてくる。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "空気が歪む。遠くから、あの音が聞こえてくる。",
+          "gh:sdxlTags": [
+            "1sound",
+            "warehouse",
+            "listening to bell sound",
+            "insert shot",
+            "over-shoulder",
+            "50mm lens",
+            "luminous atmosphere",
+            "soft lighting",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1sound, warehouse, listening to bell sound, insert shot, over-shoulder, 50mm lens, luminous atmosphere, soft lighting, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Nei",
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "…また？"
+            },
+            {
+              "speaker": "Takeru",
+              "text": "違う。これは…残滓だ。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. Takeruの目。Ghostの残滓。完全に消えてはいない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Takeruの目。Ghostの残滓。完全に消えてはいない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Takeruの目。Ghostの残滓。完全に消えてはいない。",
+          "gh:sdxlTags": [
+            "2boys",
+            "Takeru",
+            "Nei",
+            "eyes",
+            "close-up",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2boys, Takeru, Nei, eyes, close-up, logistics warehouse, day, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 6,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:GhostClock"
+          ],
+          "dialogue": [
+            {
+              "speaker": "GhostClock",
+              "text": "（まだ…終わって…ない）"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Ghost「始業の鐘」の残滓が現れる。今度は小さい。でも、消えていない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Ghost「始業の鐘」の残滓が現れる。今度は小さい。でも、消えていない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Medium Shot",
+          "visual": "Ghost「始業の鐘」の残滓が現れる。今度は小さい。でも、消えていない。",
+          "gh:sdxlTags": [
+            "1ghost",
+            "ghost clock",
+            "small size",
+            "appearing",
+            "neutral expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1ghost, ghost clock, small size, appearing, neutral expression, logistics warehouse, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "インシデントは終わった。でも…『短気』の根は残ってる。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. Takeruがモニターを見る。『組織の問題』を可視化したデータ。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. Takeruがモニターを見る。『組織の問題』を可視化したデータ。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "Takeruがモニターを見る。『組織の問題』を可視化したデータ。",
+          "gh:sdxlTags": [
+            "1boy",
+            "character:Takeru",
+            "casual attire",
+            "looking at monitor",
+            "contemplative expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "insert shot",
+            "over-shoulder angle",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, character:Takeru, casual attire, looking at monitor, contemplative expression, logistics warehouse, daytime, soft diffused daylight, insert shot, over-shoulder angle, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "…どうすりゃいい。俺に何ができる。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. 山下の目。初めて『助けを求める』目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. 山下の目。初めて『助けを求める』目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "山下の目。初めて『助けを求める』目。",
+          "gh:sdxlTags": [
+            "1boy",
+            "YamashitaTsuyoshi",
+            "no special attire",
+            "looking helpless",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, YamashitaTsuyoshi, no special attire, looking helpless, logistics warehouse, daytime, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 7,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Takeru",
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "『急げ』をやめろなんて言わない。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. Takeruが山下の前に立つ。対峙ではなく、同じ方向を向いて。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. Takeruが山下の前に立つ。対峙ではなく、同じ方向を向いて。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "Takeruが山下の前に立つ。対峙ではなく、同じ方向を向いて。",
+          "gh:sdxlTags": [
+            "2boys",
+            "takeru",
+            "yamashita tsuyoshi",
+            "standing side by side",
+            "neutral expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2boys, takeru, yamashita tsuyoshi, standing side by side, neutral expression, logistics warehouse, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "急ぐなら、急ぐための手順を作れ。『飛ばしていいこと』と『絶対飛ばしちゃいけないこと』を分けろ。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Takeruが語る。怒りじゃなく、提案。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Takeruが語る。怒りじゃなく、提案。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Takeruが語る。怒りじゃなく、提案。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Takeru",
+            "casual attire",
+            "speaking",
+            "neutral expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, Takeru, casual attire, speaking, neutral expression, logistics warehouse, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "…手順か。俺が一番嫌いだったやつだ。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. 山下が苦笑する。変われるかもしれない顔。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. 山下が苦笑する。変われるかもしれない顔。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "山下が苦笑する。変われるかもしれない顔。",
+          "gh:sdxlTags": [
+            "1boy",
+            "YamashitaTsuyoshi",
+            "casual clothing",
+            "smirking expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "gentle mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, YamashitaTsuyoshi, casual clothing, smirking expression, logistics warehouse, day, soft diffused daylight, close-up, frontal, 85mm lens, gentle mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 8,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:TamuraSeiichi",
+            "character:SasakiKenta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "TamuraSeiichi",
+              "text": "僕が緊急用VPN手順を書きます。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action."
+            },
+            {
+              "speaker": "SasakiKenta",
+              "text": "俺が現場に落とし込む。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 田村と佐々木が名乗り出る。組織が変わり始める。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 田村と佐々木が名乗り出る。組織が変わり始める。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "田村と佐々木が名乗り出る。組織が変わり始める。",
+          "gh:sdxlTags": [
+            "2characters",
+            "male characters",
+            "casual attire",
+            "standing together",
+            "neutral expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, male characters, casual attire, standing together, neutral expression, logistics warehouse, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:GhostClock"
+          ],
+          "dialogue": [
+            {
+              "speaker": "GhostClock",
+              "text": "（……消え……ない……）"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Ghost残滓が抵抗する。でも、もう力がない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Ghost残滓が抵抗する。でも、もう力がない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Ghost残滓が抵抗する。でも、もう力がない。",
+          "gh:sdxlTags": [
+            "1ghost",
+            "ghost clock",
+            "none",
+            "resisting",
+            "determined expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1ghost, ghost clock, none, resisting, determined expression, logistics warehouse, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "消えなくていい。…形を変えろ。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. Takeruの目。怒りを『手順』に変える。Ghost残滓に向かって。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Takeruの目。怒りを『手順』に変える。Ghost残滓に向かって。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Takeruの目。怒りを『手順』に変える。Ghost残滓に向かって。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Takeru",
+            "determined expression",
+            "glaring at ghost remnants",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, Takeru, determined expression, glaring at ghost remnants, logistics warehouse, day, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 9,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi",
+            "character:GhostClock"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "俺の『短気』だ。俺が決着つける。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "POV Shot, ARIA-style. 山下がGhost残滓に向き合う。自分の怒りと、自分で向き合う。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "POV Shot, ARIA-style. 山下がGhost残滓に向き合う。自分の怒りと、自分で向き合う。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "first-person POV",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "POV",
+            "gh:focus": "subject focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "POV Shot",
+          "visual": "山下がGhost残滓に向き合う。自分の怒りと、自分で向き合う。",
+          "gh:sdxlTags": [
+            "2characters",
+            "Yamashita_tsuyoshi",
+            "Ghost_Clock",
+            "facing each other",
+            "determined expression",
+            "logistics_warehouse",
+            "daytime",
+            "soft_diffused_daylight",
+            "POV_shot",
+            "first_person_POV",
+            "35mm_lens",
+            "luminous_mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, Yamashita_tsuyoshi, Ghost_Clock, facing each other, determined expression, logistics_warehouse, daytime, soft_diffused_daylight, POV_shot, first_person_POV, 35mm_lens, luminous_mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi",
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "…行け。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. Takeruが山下の背中を見守る。これは山下の戦い。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. Takeruが山下の背中を見守る。これは山下の戦い。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Wide Shot",
+          "visual": "Takeruが山下の背中を見守る。これは山下の戦い。",
+          "gh:sdxlTags": [
+            "2characters",
+            "1boy",
+            "1girl",
+            "casual clothing",
+            "watching from behind",
+            "determined expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, 1boy, 1girl, casual clothing, watching from behind, determined expression, logistics warehouse, daytime, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "今日から変える。俺が。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. 山下がホワイトボードに新しいルールを書き始める。『緊急時手順』の第一行。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. 山下がホワイトボードに新しいルールを書き始める。『緊急時手順』の第一行。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "山下がホワイトボードに新しいルールを書き始める。『緊急時手順』の第一行。",
+          "gh:sdxlTags": [
+            "1boy",
+            "male character",
+            "casual clothing",
+            "writing on whiteboard",
+            "focused expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "insert shot",
+            "over-shoulder angle",
+            "50mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, male character, casual clothing, writing on whiteboard, focused expression, logistics warehouse, daytime, soft diffused daylight, insert shot, over-shoulder angle, 50mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 10,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:GhostClock"
+          ],
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "（鐘の音が…変わっていく）"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "POV Shot, ARIA-style. Ghost残滓が変質していく。『焦り』から『リズム』へ。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "POV Shot, ARIA-style. Ghost残滓が変質していく。『焦り』から『リズム』へ。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "first-person POV",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "POV",
+            "gh:focus": "subject focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "POV Shot",
+          "visual": "Ghost残滓が変質していく。『焦り』から『リズム』へ。",
+          "gh:sdxlTags": [
+            "1ghost",
+            "GhostClock",
+            "no attire",
+            "POV shot",
+            "soft expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "POV",
+            "first-person angle",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1ghost, GhostClock, no attire, POV shot, soft expression, logistics warehouse, day, soft diffused daylight, POV, first-person angle, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Nei",
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "…消えてないけど、違うものになった。"
+            },
+            {
+              "speaker": "Takeru",
+              "text": "怒りは消えない。でも、使い方を変えられる。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. Ghost残滓が淡く光り、倉庫のリズムと同調する。もう脅威じゃない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. Ghost残滓が淡く光り、倉庫のリズムと同調する。もう脅威じゃない。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Wide Shot",
+          "visual": "Ghost残滓が淡く光り、倉庫のリズムと同調する。もう脅威じゃない。",
+          "gh:sdxlTags": [
+            "2characters",
+            "ghost",
+            "warehouse attire",
+            "interacting",
+            "calm expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, ghost, warehouse attire, interacting, calm expression, logistics warehouse, daytime, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "INCIDENT: CLOSED / DONE"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. モニター画面。『DONE』のステータス。正式に終端。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. モニター画面。『DONE』のステータス。正式に終端。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Insert Shot",
+          "visual": "モニター画面。『DONE』のステータス。正式に終端。",
+          "gh:sdxlTags": [
+            "1monitor",
+            "status screen",
+            "done status",
+            "over-shoulder",
+            "insert shot",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "insert shot",
+            "top-down angle",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1monitor, status screen, done status, over-shoulder, insert shot, logistics warehouse, daytime, soft diffused daylight, insert shot, top-down angle, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 11,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Takeru",
+            "character:YamashitaTsuyoshi",
+            "character:TamuraSeiichi",
+            "character:SasakiKenta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "これでインシデントは終わり。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 管制室に全員が集まる。戦いが終わった瞬間。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 管制室に全員が集まる。戦いが終わった瞬間。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "管制室に全員が集まる。戦いが終わった瞬間。",
+          "gh:sdxlTags": [
+            "4boys",
+            "four boys",
+            "casual wear",
+            "gathered in control room",
+            "relieved expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "4boys, four boys, casual wear, gathered in control room, relieved expression, logistics warehouse, day, soft diffused daylight, wide shot, eye level, 35mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi",
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "…ありがとう。とは言わん。"
+            },
+            {
+              "speaker": "Takeru",
+              "text": "言わなくていい。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. 山下とTakeruが向き合う。もう敵じゃない。ライバルでもない。ただ、同じ戦いを終えた者同士。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. 山下とTakeruが向き合う。もう敵じゃない。ライバルでもない。ただ、同じ戦いを終えた者同士。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "山下とTakeruが向き合う。もう敵じゃない。ライバルでもない。ただ、同じ戦いを終えた者同士。",
+          "gh:sdxlTags": [
+            "2characters",
+            "YamashitaTsuyoshi",
+            "Takeru",
+            "facing each other",
+            "serious expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, YamashitaTsuyoshi, Takeru, facing each other, serious expression, logistics warehouse, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "…でも、次からは『手順』やるよ。それだけは約束する。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. 山下の目。48年で初めて、『待つ』ことを選んだ男の目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. 山下の目。48年で初めて、『待つ』ことを選んだ男の目。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "山下の目。48年で初めて、『待つ』ことを選んだ男の目。",
+          "gh:sdxlTags": [
+            "1man",
+            "middle-aged man",
+            "formal attire",
+            "close-up on face",
+            "determined expression",
+            "logistics warehouse",
+            "daytime",
+            "soft daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "serious mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1man, middle-aged man, formal attire, close-up on face, determined expression, logistics warehouse, daytime, soft daylight, close-up, frontal, 85mm lens, serious mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 12,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:TamuraSeiichi",
+            "character:SasakiKenta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "TamuraSeiichi",
+              "text": "僕も…もっと早く声を上げるべきでした。"
+            },
+            {
+              "speaker": "SasakiKenta",
+              "text": "俺たちも、現場で止められなかった。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 田村と佐々木が反省を口にする。組織全体が変わろうとしている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 田村と佐々木が反省を口にする。組織全体が変わろうとしている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "田村と佐々木が反省を口にする。組織全体が変わろうとしている。",
+          "gh:sdxlTags": [
+            "2characters",
+            "boy",
+            "casual clothing",
+            "standing in warehouse",
+            "serious expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, boy, casual clothing, standing in warehouse, serious expression, logistics warehouse, day, soft diffused daylight, wide shot, eye level, 35mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Nei",
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "…いい会社になるかも。"
+            },
+            {
+              "speaker": "Takeru",
+              "text": "なるさ。自分で変えようとしてるから。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. NeiとTakeruが静かに話す。戦いの後の静けさ。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. NeiとTakeruが静かに話す。戦いの後の静けさ。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "NeiとTakeruが静かに話す。戦いの後の静けさ。",
+          "gh:sdxlTags": [
+            "2characters",
+            "Nei",
+            "Takeru",
+            "casually talking",
+            "calm expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, Nei, Takeru, casually talking, calm expression, logistics warehouse, day, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "SE",
+              "text": "ゴォォ…（コンベヤの安定した音）"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. コンベヤベルト。今は『急げ』じゃなく、『手順』の上で回っている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. コンベヤベルト。今は『急げ』じゃなく、『手順』の上で回っている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "コンベヤベルト。今は『急げ』じゃなく、『手順』の上で回っている。",
+          "gh:sdxlTags": [
+            "conveyor_belt",
+            "logistics_warehouse",
+            "soft_diffused_light",
+            "close-up",
+            "frontal",
+            "85mm_lens",
+            "pristine_atmosphere",
+            "anime_style",
+            "manga_panel",
+            "cinematic",
+            "detailed_background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "conveyor_belt, logistics_warehouse, soft_diffused_light, close-up, frontal, 85mm_lens, pristine_atmosphere, anime_style, manga_panel, cinematic, detailed_background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 13,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Takeru",
+            "character:Nei"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "行くか。"
+            },
+            {
+              "speaker": "Nei",
+              "text": "次の依頼？"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Action Shot, ARIA-style. TakeruとNeiが倉庫を出る準備をする。仕事は終わった。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Action Shot, ARIA-style. TakeruとNeiが倉庫を出る準備をする。仕事は終わった。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "dynamic tracking",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject tracking focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows",
+            "gh:movement": "handheld or tracking shot, subtle motion blur"
+          },
+          "panel": 1,
+          "shot": "Action Shot",
+          "visual": "TakeruとNeiが倉庫を出る準備をする。仕事は終わった。",
+          "gh:sdxlTags": [
+            "2characters",
+            "boy",
+            "girl",
+            "casual attire",
+            "getting ready to leave",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "dynamic tracking",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "2characters, boy, girl, casual attire, getting ready to leave, logistics warehouse, daytime, soft diffused daylight, medium shot, dynamic tracking, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "どこにでもある。…『急ぎすぎて壊す』やつらは。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Full Page Splash, ARIA-style. 倉庫の外。朝日が差し込む。TakeruとNeiが光の中に歩き出す。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Full Page Splash, ARIA-style. 倉庫の外。朝日が差し込む。TakeruとNeiが光の中に歩き出す。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "dynamic angle",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "impact composition, clear silhouette and motion lines",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus with emphasized subject",
+            "gh:lens": "28mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Full Page Splash",
+          "visual": "倉庫の外。朝日が差し込む。TakeruとNeiが光の中に歩き出す。",
+          "gh:sdxlTags": [
+            "2characters",
+            "1boy",
+            "1girl",
+            "casual attire",
+            "walking in light",
+            "determined expression",
+            "logistics warehouse",
+            "morning",
+            "soft diffused daylight",
+            "wide shot",
+            "dynamic angle",
+            "28mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, 1boy, 1girl, casual attire, walking in light, determined expression, logistics warehouse, morning, soft diffused daylight, wide shot, dynamic angle, 28mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 14,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:YamashitaTsuyoshi",
+            "character:TamuraSeiichi",
+            "character:SasakiKenta"
+          ],
+          "dialogue": [
+            {
+              "speaker": "YamashitaTsuyoshi",
+              "text": "よし…始めるか。新しい手順の策定会議。"
+            },
+            {
+              "speaker": "TamuraSeiichi",
+              "text": "はい！"
+            },
+            {
+              "speaker": "SasakiKenta",
+              "text": "任せてください！"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Action Shot, ARIA-style. 山下、田村、佐々木が会議室に向かう。組織変革の第一歩。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Action Shot, ARIA-style. 山下、田村、佐々木が会議室に向かう。組織変革の第一歩。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "dynamic tracking",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject tracking focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows",
+            "gh:movement": "handheld or tracking shot, subtle motion blur"
+          },
+          "panel": 1,
+          "shot": "Action Shot",
+          "visual": "山下、田村、佐々木が会議室に向かう。組織変革の第一歩。",
+          "gh:sdxlTags": [
+            "3men",
+            "businessmen",
+            "suits",
+            "walking towards meeting room",
+            "determined expression",
+            "logistics warehouse",
+            "daylight",
+            "medium shot",
+            "dynamic tracking",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "3men, businessmen, suits, walking towards meeting room, determined expression, logistics warehouse, daylight, medium shot, dynamic tracking, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "Narration",
+              "text": "小島ロジスティクスは、あの日から変わった。『急げ』は消えなかったけど、『手順』の上で急ぐようになった。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Full Page Splash, ARIA-style. 倉庫全景。コンベヤが回り、トラックが出庫していく。日常が戻った。でも、以前とは違う日常。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Full Page Splash, ARIA-style. 倉庫全景。コンベヤが回り、トラックが出庫していく。日常が戻った。でも、以前とは違う日常。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "dynamic angle",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "impact composition, clear silhouette and motion lines",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus with emphasized subject",
+            "gh:lens": "28mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Full Page Splash",
+          "visual": "倉庫全景。コンベヤが回り、トラックが出庫していく。日常が戻った。でも、以前とは違う日常。",
+          "gh:sdxlTags": [
+            "warehouse",
+            "conveyor_belt",
+            "truck",
+            "daily_life",
+            "dynamic_angle",
+            "wide_shot",
+            "soft_diffused_daylight",
+            "gentle_shadows",
+            "28mm_lens",
+            "luminous_atmosphere",
+            "anime_style",
+            "manga_panel",
+            "cinematic",
+            "detailed_background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "warehouse, conveyor_belt, truck, daily_life, dynamic_angle, wide_shot, soft_diffused_daylight, gentle_shadows, 28mm_lens, luminous_atmosphere, anime_style, manga_panel, cinematic, detailed_background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 15,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Takeru",
+            "character:Nei"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "あの本部長、変わると思う？"
+            },
+            {
+              "speaker": "Takeru",
+              "text": "変わったさ。…もう。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. 道路を歩くTakeruとNei。朝日に向かって。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. 道路を歩くTakeruとNei。朝日に向かって。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "道路を歩くTakeruとNei。朝日に向かって。",
+          "gh:sdxlTags": [
+            "2characters",
+            "teen boy",
+            "teen girl",
+            "walking on road",
+            "conversational pose",
+            "logistics warehouse",
+            "morning",
+            "soft daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "2characters, teen boy, teen girl, walking on road, conversational pose, logistics warehouse, morning, soft daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [],
+          "dialogue": [
+            {
+              "speaker": "UI",
+              "text": "NEXT MISSION: finance sector / TokyoSec"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Insert Shot, ARIA-style. Takeruのスマートフォン画面。新しい依頼の通知。金融セクター。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Insert Shot, ARIA-style. Takeruのスマートフォン画面。新しい依頼の通知。金融セクター。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "over-shoulder or top-down insert",
+            "gh:aperture": "f/2.0",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Insert",
+            "gh:focus": "sharp focus on object/screen",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Insert Shot",
+          "visual": "Takeruのスマートフォン画面。新しい依頼の通知。金融セクター。",
+          "gh:sdxlTags": [
+            "1smartphone",
+            "notification",
+            "finance sector",
+            "insert shot",
+            "over-shoulder",
+            "close-up",
+            "bright atmosphere",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "50mm lens",
+            "calm mood",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1smartphone, notification, finance sector, insert shot, over-shoulder, close-up, bright atmosphere, logistics warehouse, daytime, soft diffused daylight, 50mm lens, calm mood, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Nei"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Nei",
+              "text": "…Kanameの領域だね。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. Neiの目。次の戦場を見据えている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Neiの目。次の戦場を見据えている。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Neiの目。次の戦場を見据えている。",
+          "gh:sdxlTags": [
+            "1girl",
+            "Nei",
+            "determined expression",
+            "close-up shot",
+            "frontal angle",
+            "85mm lens",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1girl, Nei, determined expression, close-up shot, frontal angle, 85mm lens, logistics warehouse, daytime, soft diffused daylight, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    },
+    {
+      "gh:pageNumber": 16,
+      "gh:panels": [
+        {
+          "characters": [
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "あいつには、あいつの戦い方がある。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Wide Shot, ARIA-style. Takeruが遠くを見る。ライバルであり、仲間でもあるKanameを思う。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Wide Shot, ARIA-style. Takeruが遠くを見る。ライバルであり、仲間でもあるKanameを思う。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/2.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Wide Shot",
+            "gh:focus": "deep focus",
+            "gh:lens": "35mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 1,
+          "shot": "Wide Shot",
+          "visual": "Takeruが遠くを見る。ライバルであり、仲間でもあるKanameを思う。",
+          "gh:sdxlTags": [
+            "1boy",
+            "teen boy",
+            "casual outfit",
+            "looking into distance",
+            "thoughtful expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "wide shot",
+            "eye level",
+            "35mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, teen boy, casual outfit, looking into distance, thoughtful expression, logistics warehouse, day, soft diffused daylight, wide shot, eye level, 35mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "終端刻印。…これが俺のやり方だ。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Medium Shot, ARIA-style. Takeruが拳を握る。怒りを力に変える、それがTakeruの戦い方。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Medium Shot, ARIA-style. Takeruが拳を握る。怒りを力に変える、それがTakeruの戦い方。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "eye level",
+            "gh:aperture": "f/1.8",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Medium Shot",
+            "gh:focus": "subject focus, soft background",
+            "gh:lens": "50mm",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 2,
+          "shot": "Medium Shot",
+          "visual": "Takeruが拳を握る。怒りを力に変える、それがTakeruの戦い方。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Takeru",
+            "fist",
+            "angry expression",
+            "logistics warehouse",
+            "daytime",
+            "soft diffused daylight",
+            "medium shot",
+            "eye level",
+            "50mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark"
+          ],
+          "gh:sdxlPrompt": "1boy, Takeru, fist, angry expression, logistics warehouse, daytime, soft diffused daylight, medium shot, eye level, 50mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        },
+        {
+          "characters": [
+            "character:Takeru"
+          ],
+          "dialogue": [
+            {
+              "speaker": "Takeru",
+              "text": "次は…『傲慢』か。"
+            }
+          ],
+          "environment": "env:logistics-warehouse",
+          "gh:imagePrompt": "Close-up, ARIA-style. Takeruの目。琥珀色の瞳に、次の戦いへの闘志が燃える。Arc B 完。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:runwayPrompt": "Close-up, ARIA-style. Takeruの目。琥珀色の瞳に、次の戦いへの闘志が燃える。Arc B 完。. luminous atmosphere, soft diffused natural light, pristine clean air. shot on 35mm, f/2.8, cinematic live-action.",
+          "gh:shotProperties": {
+            "gh:angle": "frontal",
+            "gh:aperture": "f/1.2",
+            "gh:atmosphere": "ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+            "gh:composition": "clean composition, clear subject separation",
+            "gh:distance": "Close-up",
+            "gh:eyeDetail": "highly detailed expressive eyes, intricate iris patterns, sharp sparkling catchlights, crystalline ocular texture",
+            "gh:focus": "shallow depth of field, creamy bokeh",
+            "gh:lens": "85mm prime",
+            "gh:lighting": "soft diffused daylight, gentle shadows"
+          },
+          "panel": 3,
+          "shot": "Close-up",
+          "visual": "Takeruの目。琥珀色の瞳に、次の戦いへの闘志が燃える。Arc B 完。",
+          "gh:sdxlTags": [
+            "1boy",
+            "Takeru",
+            "none",
+            "intense gaze",
+            "determined expression",
+            "logistics warehouse",
+            "day",
+            "soft diffused daylight",
+            "close-up",
+            "frontal",
+            "85mm lens",
+            "luminous atmosphere",
+            "anime style",
+            "manga panel",
+            "cinematic",
+            "detailed background"
+          ],
+          "gh:sdxlNegative": [
+            "low quality",
+            "worst quality",
+            "blurry",
+            "deformed",
+            "extra fingers",
+            "bad anatomy",
+            "watermark",
+            "text"
+          ],
+          "gh:sdxlPrompt": "1boy, Takeru, none, intense gaze, determined expression, logistics warehouse, day, soft diffused daylight, close-up, frontal, 85mm lens, luminous atmosphere, anime style, manga panel, cinematic, detailed background",
+          "gh:sdxlModel": "gpt-4o-mini",
+          "gh:sdxlGeneratedAt": 1778025394
+        }
+      ]
+    }
+  ],
+  "gh:presentationTagline": "Arc B | Salvation",
+  "gh:realCase": "Kojima Press / Toyota Supply Chain (2022)",
+  "gh:sinContrast": "Impulsive Wrath (Calculation Failure) vs. Calculated Wrath (Optimization)"
+}

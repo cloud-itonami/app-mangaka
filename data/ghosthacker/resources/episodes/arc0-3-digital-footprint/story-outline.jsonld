@@ -1,0 +1,309 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "story:arc0-3-digital-footprint-v2",
+  "dct:title": "Arc 0-3: 「投稿は永遠に消えない」",
+  "dct:description": "Read-once Cschool side episode (v2 alignment with arc0-1 design). 42-page Saki POV: 承認欲求から始まったSNS投稿が、写真の背景・メタデータからストーカーに住所と学校を特定される。RenとNeiが3件目のVector Alignment Proofを成立させ、SIPデバイスの Lock Difficulty が 2^232 → 2^216 に跳ねる（▼16bit）。アクター側は別系統だが、ChiseのHacker Nuesスレッド経由で関連性が浮上する。",
+  "gh:arc": "Arc 0",
+  "gh:episode": 3,
+  "gh:episodeIndex": 3,
+  "gh:episodeId": "episode:arc0-3-digital-footprint",
+  "gh:slug": "arc-0-3-digital-footprint",
+  "gh:subtitle": "Saki's Story — Doxing via SNS Photos & Metadata",
+  "gh:tagline": "投稿は、永遠に消えない。だから、最初に何を見せるかを選ぶ。",
+  "gh:theme": "デジタルフットプリント・SNS写真からのドクシング・ストーカー対策",
+  "gh:theses": {
+    "gh:practical": "写真は『何が写っているか』ではなく『何が漏れるか』で選ぶ",
+    "gh:psychological": "承認欲求は罪じゃない。だが、それを餌にする奴は犯罪者だ",
+    "gh:philosophical": "情報は、物理だ — 投稿は、永遠に重さを持って残り続ける"
+  },
+  "gh:protagonistArc": {
+    "gh:from": "arc0-2 で2FAを固めたSaki。だが SNS への投稿習慣そのものは変えていなかった。承認欲求のループから抜けられないでいた",
+    "gh:to": "ストーカー被害を経て、『見せ方』そのものを変える。SNSをやめるのではなく、何を見せるかを能動的に選ぶようになる",
+    "gh:decisivePage": 39,
+    "gh:decisiveChoice": "SNSを畳むのではなく、『新しい投稿』を1枚だけ作ると決める瞬間。承認欲求の Daemon を消すのではなく、付き合い方を変える"
+  },
+  "gh:complianceNote": {
+    "gh:rule": "Renはストーカーの個人特定をしない。本話の特定は警察への通報＋プラットフォーム提出を経由する",
+    "gh:redLine": "RenとNeiは『被害者の写真メタデータの解析』を本人合意の元で行う。攻撃者側のサーバには触らない",
+    "gh:lawful": "ストーカー規制法の警告→禁止命令→逮捕の正規ルートを描写"
+  },
+  "gh:crossEpisodeLinks": {
+    "gh:arc01ContinuityCohort": "arc0-1, arc0-2 と同じ C中学校3年B組。Yuto/Mei/Akira/Saki の関係性は arc0-2 末の対等化以降",
+    "gh:antagonistLink": "本話のストーカーは個人犯（30代男性）で arc0-1 の black0awd 系統とは別系統。だが、彼が利用していた『SNS分析サイト』は black0awd と同じ運営者ファミリーが提供する解析ツール群の一部。Hacker Nues スレッドで Chise（aka_chise1）が同種のサイトを観測しており、本話末で arc0-2 の defamation スレッドと相互引用される",
+    "gh:vapBeat": "Sakiが『見せ方を変える』選択をし、クラス全員が SNS 投稿のリスクを共有した瞬間、3件目の Vector Alignment Proof が成立。SIPデバイスは Lock Difficulty 2^232 → 2^216（▼16bit）、Vector Alignment Proof は 1.5 → 2、Module 2: Daemon Pattern Library が完全復号、Module 3: Vector Tracker が部分復号"
+  },
+  "gh:propMotifs": [
+    {
+      "gh:id": "prop:saki-camera-icon",
+      "gh:name": "Sakiのカメラアイコン",
+      "gh:role": "Sakiの SNS フィード。本話で『何を見せるか』のテーマ全体の象徴。最初は無防備な背景込みの自撮り、最終的にトリミング・モザイク・象徴写真へ進化"
+    },
+    {
+      "gh:id": "prop:exif-viewer",
+      "gh:name": "EXIF閲覧アプリ",
+      "gh:role": "Step 1 の主役。Sakiの過去2年分の投稿写真を読み込むと、GPS座標・撮影時刻・端末モデルがずらりと並ぶ"
+    },
+    {
+      "gh:id": "prop:hhkb",
+      "gh:name": "父のHHKB",
+      "gh:role": "Renの夜パートで再登場。本話では Module 2 の完全復号と Module 3 の部分復号を見る場面で『カチャ』が2回鳴る"
+    },
+    {
+      "gh:id": "prop:akabane-hokora",
+      "gh:name": "赤羽八幡神社の祠（オフスクリーン）",
+      "gh:role": "本話のラストで Chise（オフスクリーン）が Hacker Nues に投稿『同種の SNS 解析サイトを観測。アクターファミリーが同じか確認したい』を書き込む。Renは画面でこれを読む"
+    }
+  ],
+  "gh:castOfCharacters": [
+    {
+      "@id": "character:Saki",
+      "gh:displayName": "佐々木 咲 / Saki Sasaki",
+      "gh:age": 15,
+      "gh:grade": "C中学校3年B組",
+      "gh:role": "主人公 / 被害者",
+      "gh:description": "arc0-1, arc0-2 を経て成長した Saki。本話では SNS 投稿習慣そのものに向き合う。承認欲求と自己表現の境界を学ぶ"
+    },
+    {
+      "@id": "character:Mei",
+      "gh:displayName": "加藤 美依 / Mei Kato",
+      "gh:age": 15,
+      "gh:role": "Sakiの親友 / 隣に並んで動く",
+      "gh:description": "arc0-2 末の対等な友情を維持。本話では Saki の隣で歩き続ける役割"
+    },
+    {
+      "@id": "character:Yuto",
+      "gh:displayName": "藤崎 悠斗 / Yuto Fujisaki",
+      "gh:age": 15,
+      "gh:role": "クラスメイト",
+      "gh:description": "arc0-1 から成長した Yuto。本話では Saki の『見せ方を変える』選択に共感し、自分の SNS も見直す"
+    },
+    {
+      "@id": "character:Stalker",
+      "gh:displayName": "ストーカー（30代男性）",
+      "gh:role": "アクター（個人犯）",
+      "gh:description": "Sakiの SNS 投稿写真の背景・EXIF から自宅と学校を特定。最初の現場接触の前に警察通報＋禁止命令で阻止される"
+    },
+    {
+      "@id": "character:Ren",
+      "gh:displayName": "沼野 蓮 / Ren Numano",
+      "gh:age": 15,
+      "gh:role": "解決者",
+      "gh:description": "本話では『3件目で Module 2 完全復号 + Module 3 部分復号』を達成。父の理論の実証フェーズ。本話で初めて『1件ずつ助けることは間違っていない』と確信する"
+    },
+    {
+      "@id": "character:Nei",
+      "gh:displayName": "白瀬 寧 / Nei Shirase",
+      "gh:age": 15,
+      "gh:role": "ヒロイン / EXIF解析の実演担当",
+      "gh:description": "本話の Step 1（メタデータ削除）の実演を全面担当。Sakiの過去2年分の投稿写真を本人合意の元で解析"
+    },
+    {
+      "@id": "character:NeiPuni",
+      "gh:displayName": "ぷにねい / NeiPuni",
+      "gh:role": "メタ解説ホスト",
+      "gh:description": "本話では『EXIF とは何か』『背景に映る情報』『公開範囲設定の落とし穴』『過去投稿の見直し方』などの解説を担当"
+    },
+    {
+      "@id": "character:Chise",
+      "gh:displayName": "赤羽 千世 / Chise Akabane（オフスクリーン）",
+      "gh:role": "Hacker Nues 投稿者として登場（顔出しなし）",
+      "gh:description": "本話末で Hacker Nues に投稿。RenとChiseの匿名同業関係が、Vector Alignment Proof のメトリクス上で初めて並列観測される"
+    }
+  ],
+  "gh:actStructure": [
+    {
+      "@id": "act:0-pretitle",
+      "gh:actNumber": 0,
+      "gh:actTitle": "プレタイトル — 視線",
+      "gh:emotionalArc": "日常 → 不気味な視線",
+      "gh:keyBeat": "hook",
+      "gh:narrativePurpose": "深夜、誰かが Sakiの SNS 投稿を分析している。手元のカット。EXIF閲覧画面",
+      "gh:pageRange": [0, 0]
+    },
+    {
+      "@id": "act:1-daily-sns",
+      "gh:actNumber": 1,
+      "gh:actTitle": "日常とSNS",
+      "gh:actTitleEn": "Daily Life & Social Media",
+      "gh:emotionalArc": "楽しさ → 無防備 → 気軽な投稿",
+      "gh:keyBeat": "setup",
+      "gh:narrativePurpose": "Sakiのインフルエンサー願望と安易な投稿習慣。arc0-1, arc0-2 を経た成長後でも、SNS の習慣だけは残っていた",
+      "gh:pageRange": [1, 6]
+    },
+    {
+      "@id": "act:2-exposure",
+      "gh:actNumber": 2,
+      "gh:actTitle": "特定の恐怖",
+      "gh:actTitleEn": "Digital Exposure",
+      "gh:emotionalArc": "違和感 → 発覚 → 恐怖",
+      "gh:keyBeat": "build",
+      "gh:narrativePurpose": "写真の背景・EXIFから住所・学校が特定される過程を描く。最初は『誰かに見られている気がする』程度から始まる",
+      "gh:pageRange": [7, 12]
+    },
+    {
+      "@id": "act:3-stalking",
+      "gh:actNumber": 3,
+      "gh:actTitle": "忍び寄る影",
+      "gh:actTitleEn": "Stalking Begins",
+      "gh:emotionalArc": "恐怖 → パニック → 孤立",
+      "gh:keyBeat": "crisis",
+      "gh:narrativePurpose": "ストーカーの接近。校門前での待ち伏せ未遂。Sakiが登校できなくなる",
+      "gh:pageRange": [13, 16]
+    },
+    {
+      "@id": "act:4-rescue",
+      "gh:actNumber": 4,
+      "gh:actTitle": "救いの手",
+      "gh:actTitleEn": "Helping Hand",
+      "gh:emotionalArc": "絶望 → 接触 → 希望",
+      "gh:keyBeat": "turn",
+      "gh:narrativePurpose": "Mei が Sakiに気づき、Yuto に相談、Yuto が Nei に繋ぐ、Nei が Ren に繋ぐ。arc0-1 の手順の習熟",
+      "gh:pageRange": [17, 18]
+    },
+    {
+      "@id": "act:5-countermeasures",
+      "gh:actNumber": 5,
+      "gh:actTitle": "対策",
+      "gh:actTitleEn": "Countermeasures",
+      "gh:countermeasures": [
+        {"gh:step": 1, "gh:title": "メタデータ削除", "gh:titleEn": "EXIF Removal", "gh:pages": [19, 20], "gh:description": "EXIF閲覧アプリで Sakiの過去2年分の投稿の GPS座標・撮影時刻・端末モデルを可視化。投稿前のメタデータ削除習慣"},
+        {"gh:step": 2, "gh:title": "背景ぼかし・加工", "gh:titleEn": "Background Blur", "gh:pages": [21, 22], "gh:description": "制服・部活グッズ・特徴的な看板・住所がわかる風景の処理。ぼかし vs トリミング vs 別アングル"},
+        {"gh:step": 3, "gh:title": "公開範囲設定", "gh:titleEn": "Privacy Settings", "gh:pages": [23, 24], "gh:description": "投稿単位 vs アカウント単位の公開範囲。フォロワー承認ポリシー。位置情報タグの全削除"},
+        {"gh:step": 4, "gh:title": "過去投稿の見直し", "gh:titleEn": "Past Post Review", "gh:pages": [25, 26], "gh:description": "過去2年分のSNS投稿の棚卸し。削除 vs 公開範囲縮小 vs アーカイブ。同時に警察通報の手順も解説"}
+      ],
+      "gh:emotionalArc": "混乱 → 理解 → 達成感",
+      "gh:keyBeat": "education",
+      "gh:narrativePurpose": "具体的なSNSプライバシー対策と、ストーカー規制法の警察通報手順",
+      "gh:pageRange": [19, 26]
+    },
+    {
+      "@id": "act:6-ghost-battle",
+      "gh:actNumber": 6,
+      "gh:actTitle": "Ghost顕現＋バトル",
+      "gh:actTitleEn": "Ghost Revelation & Battle",
+      "gh:emotionalArc": "対峙 → 驚愕 → 戦闘開始",
+      "gh:keyBeat": "revelation",
+      "gh:narrativePurpose": "Holonium Vision再起動。Sakiの背中の Ghost は『承認欲求』のループ。Ren が情報の質量を解説",
+      "gh:pageRange": [27, 32]
+    },
+    {
+      "@id": "act:7-daemon-battle",
+      "gh:actNumber": 7,
+      "gh:actTitle": "内なる葛藤",
+      "gh:actTitleEn": "Inner Conflict",
+      "gh:emotionalArc": "戦闘 → 自己認識 → 断絶 → 解放",
+      "gh:keyBeat": "climax",
+      "gh:narrativePurpose": "承認欲求の Daemon は『消すべきもの』ではなく『付き合い方を変えるもの』。Renは『承認欲求＝悪』という呪いを NULL AXE で断つ。Daemon は消えず、形を変えて Saki に戻る",
+      "gh:pageRange": [33, 38]
+    },
+    {
+      "@id": "act:8-resolution",
+      "gh:actNumber": 8,
+      "gh:actTitle": "終幕：新たな投稿",
+      "gh:actTitleEn": "Resolution: A New Post",
+      "gh:emotionalArc": "解放 → 再出発 → 縦糸の脈動",
+      "gh:keyScenes": [
+        "Sakiが SNS に新しい投稿を1枚だけ作る。背景なし、EXIFなし、シンプルな手書きメモの写真。文字: 『今日から、選んで見せる』",
+        "Mei, Yuto, Akira がそれぞれ自分の SNS 設定を見直す",
+        "クラスのデジタルフットプリント問題を、ぷにねい解説ページで集約",
+        "（読者だけが見る）Renの部屋。SIPデバイス Lock Difficulty 2^232 → 2^216（▼16bit）、Vector Alignment Proof 1.5 → 2、Module 2 完全復号 + Module 3 部分復号",
+        "（読者だけが見る）Hacker Nues スレッドに新着投稿: aka_chise1『同種の SNS 解析サイトを観測。アクターファミリーが同じか確認したい』。Renは画面でこれを読み、ロックスクリーンに辿り着く前に1人つぶやく：『……動いた、また』"
+      ],
+      "gh:keyBeat": "resolution",
+      "gh:narrativePurpose": "安全にSNSを楽しむ方法を示し、連載第1話への直接接続",
+      "gh:pageRange": [39, 42]
+    }
+  ],
+  "gh:neiPuniColumns": {
+    "gh:placementRule": "本編コマ外・柱・章間見開きに配置",
+    "gh:perPageColumns": [
+      {"gh:page": 0, "gh:text": "あなたの『何気ない投稿』には、実はGPS座標・撮影時刻・端末モデルが埋まっています"},
+      {"gh:page": 7, "gh:text": "ストーカーは、SNSの背景の『電柱の番号』『マンホールの管理コード』だけで住所を特定します"},
+      {"gh:page": 13, "gh:text": "ストーカー被害は、警察に通報すれば『警告 → 禁止命令 → 逮捕』のステップで保護されます"},
+      {"gh:page": 19, "gh:text": "EXIF（画像のメタデータ）は、投稿前に削除する習慣を。多くのSNSは自動削除しますが、確実とは限りません"},
+      {"gh:page": 23, "gh:text": "公開範囲は『投稿単位』で見直す。1枚の写真の中に、絶対に見せてはいけない情報が含まれているかも"},
+      {"gh:page": 39, "gh:text": "SNSをやめる必要はありません。何を見せるか、を能動的に選ぶだけです"}
+    ],
+    "gh:interludeColumns": [
+      {
+        "gh:placement": "Act 5 → Act 6 の境界",
+        "gh:title": "ストーカー規制法の流れ",
+        "gh:items": [
+          "1. 警察に相談（#9110、ストーカー専用窓口）",
+          "2. 証拠提出（SNS分析・現場の写真・メッセージのスクショ）",
+          "3. 警告（行為者に警察から）",
+          "4. 禁止命令（警告に従わない場合）",
+          "5. 逮捕（命令違反 / 暴行・脅迫等）",
+          "並行して接近禁止仮処分・住所秘匿措置も可能"
+        ]
+      },
+      {
+        "gh:placement": "Act 7 → Act 8 の境界",
+        "gh:title": "投稿の前の3秒の問い",
+        "gh:items": [
+          "1. この写真の背景に、住所が映っていないか？",
+          "2. EXIF を消したか？（自動削除でも一度確認）",
+          "3. この投稿は、見られて困らないか？",
+          "4. この投稿は、3年後の自分も恥ずかしくないか？",
+          "5. 公開範囲は『投稿単位』で正しいか？"
+        ]
+      }
+    ]
+  },
+  "gh:designNotes": {
+    "gh:complianceFix": [
+      "Renはストーカーの個人特定をしない。特定は警察通報＋プラットフォーム提出経由",
+      "EXIF解析は被害者本人合意の元",
+      "ストーカー規制法の正規ルートを描写"
+    ],
+    "gh:vapMetricBeat": "本話で SIPデバイスの数値を Lock Difficulty 2^232 → 2^216（▼16bit）、Vector Alignment Proof を 1.5 → 2、Module 2 完全復号 + Module 3 部分復号 として記録。Arc 0 全3話で Lock Difficulty が 2^256 → 2^216（合計▼40bit）、Vector Alignment Proof が 0 → 2 に到達。連載第1話以降で第3回・第4回が成立する設計",
+    "gh:jumpThreePrinciples": {
+      "gh:effort": "Sakiの過去2年分の投稿全件棚卸し / Neiの徹夜のEXIF解析 / クラス全員のSNS設定見直し",
+      "gh:friendship": "Mei-Saki-Yuto-Akiraの4人がデジタルフットプリント問題を共有 / Hacker Nues 経由でChise（aka_chise1）と Renの匿名連携",
+      "gh:victory": "ストーカー逮捕 / Sakiの『新しい投稿』 / Module 2 完全復号 + Module 3 部分復号 / Renの『1件ずつ』戦略の確信"
+    },
+    "gh:antagonistDuality": "本話のストーカーは個人犯。だが彼が利用していた SNS 解析サイトは black0awd ファミリーの周辺事業。Hacker Nues スレッドで Chise が同種サイトを観測しており、本話末で arc0-2 (defamation) スレッドと相互引用される — 個人犯の背景にあるエコシステムを示唆",
+    "gh:trinityActivation": "Arc 0-1（Ren）→ Arc 0-2 cschool-defamation（Chise）→ Arc 0-3 cschool-yami-baito（Kaname）の3者は Hacker Nues 上で並列観測。本話（arc0-3 digital-footprint）で Renは Chise の投稿を初めて『リアルタイムで』読み、向こう側の動きと自分の動きが同期しつつあることに気づく",
+    "gh:arc0Closure": "Arc 0 の3話（Cschool側）+ Arc 0-2/0-3 高校編（Chise/Kaname）= 計5本のRead-onceで、SIPデバイスの Lock Difficulty が 2^256 → 2^216（▼40bit）、Vector Alignment Proof = 2 に到達。連載第1話で『Ghost Hacker事務所』開所、初めての有償依頼で第3回 VAP が成立する設計"
+  },
+  "gh:educationalContent": {
+    "gh:keyTakeaways": [
+      "EXIF（画像のメタデータ）は投稿前に削除",
+      "背景の電柱・看板・制服から住所・学校が特定される",
+      "公開範囲は『投稿単位』で見直す",
+      "ストーカー被害は警察に相談（警告→禁止命令→逮捕）",
+      "投稿は永遠に消えない。だから何を見せるかを選ぶ"
+    ],
+    "gh:resources": [
+      "警察相談 #9110（ストーカー専用窓口あり）",
+      "都道府県警察のストーカー対策室",
+      "JPCERT/CC",
+      "各SNSの位置情報タグ削除手順"
+    ]
+  },
+  "gh:incidentSummary": {
+    "gh:type": "デジタルフットプリント・SNS写真ドクシング・ストーカー",
+    "gh:victim": "character:Saki",
+    "gh:nistFocus": [
+      "PR.DS (Data Security)",
+      "PR.AC (Access Control)",
+      "ID.RA (Risk Assessment)"
+    ],
+    "gh:description": "中学2年生のSakiがSNSの写真投稿から住所・学校を特定され、ストーカー被害に遭う。RenとNeiがSIP Project Mapで『承認欲求』のGhostを可視化し、NULL AXEで『承認欲求＝悪』という呪いを断ち切る。デジタルフットプリントの危険性と対策を学ぶ"
+  },
+  "gh:mainCharacter": "character:Saki",
+  "gh:supportCharacters": [
+    "character:Ren",
+    "character:Nei",
+    "character:Mei",
+    "character:Yuto",
+    "character:Akira",
+    "character:Chise"
+  ],
+  "gh:mainLocation": "org:KounanMiddleSchool"
+}

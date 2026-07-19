@@ -1,0 +1,1 @@
+{:schema "etzhayyim.migration/repository-v1" :source-revision "398a3d5796ea9cba704b64a9f0bd116fc443fcdf" :source-path "60-apps/etzhayyim-project-mangaka" :canonical-files ["README.edn" "migration.edn"]}

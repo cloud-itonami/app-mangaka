@@ -1,0 +1,17 @@
+{
+  "name": "kami-mangaka-scene",
+  "type": "module",
+  "description": "Mangaka headless 3D scene composition facade (kami-vrm + kami-scene-graph + kami-render + kami-postfx). Driven by lg_mangaka.compose_scene_3d Pregel graph. ADR-2605141200.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "files": [
+    "kami_mangaka_scene_bg.wasm",
+    "kami_mangaka_scene.js",
+    "kami_mangaka_scene.d.ts"
+  ],
+  "main": "kami_mangaka_scene.js",
+  "types": "kami_mangaka_scene.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

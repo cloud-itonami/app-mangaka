@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:-92K_XHOYpG8IqRwbvCqb",
+  "gh:appearance": {
+    "gh:build": "Small build, wearing a beige blouse and dark skirt, reading glasses on a silver chain.",
+    "gh:eyes": "Sharp strict eyes behind reading glasses, realistic iris patterns, precise catchlights.",
+    "gh:face": "58-year-old Japanese woman, strict expression, realistic aging details.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, 58-year-old Japanese woman, small build, strict expression, short permed black hair, beige blouse, reading glasses on chain, cinematic office lighting, sharp eyes with precise catchlights.",
+    "gh:hair": "Short permed black hair.",
+    "gh:style": "Photorealistic, strict Japanese office lady, 8k."
+  },
+  "gh:slug": "Matsuda",
+  "schema:age": 58,
+  "schema:name": "松田 ヨシ子 (Yoshiko Matsuda)",
+  "schema:role": "Accounting Manager"
+}

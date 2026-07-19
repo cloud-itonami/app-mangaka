@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "gh:environment:uKNdEt7x2BIQMYRw8zYhE",
+  "@type": "gh:EnvironmentPrompt",
+  "gh:description": "The near-future setting of Ghost Hacker. A dense, cold, data-saturated metropolis where AR overlays are part of daily life.",
+  "gh:elements": [
+    "Densely packed skyscrapers with holographic ads",
+    "Floating AR data streams between buildings",
+    "Congested streets with modern electric vehicles",
+    "Rivers of light from neon signage"
+  ],
+  "gh:lighting": "Night scene, high-contrast neon highlights, atmospheric haze",
+  "gh:prompt": "Professional monochrome manga art. Bird's eye view of Tokyo 2026 at night. Densely packed skyscrapers, rivers of neon data streams flowing between buildings, holographic advertisements. Modern urban architecture. High contrast, heavy screentone for the night sky, crisp outlines, halftone dot textures on building facades, cinematic composition.",
+  "gh:slug": "tokyo-2026",
+  "schema:name": "Tokyo 2026 (東京 2026)"
+}

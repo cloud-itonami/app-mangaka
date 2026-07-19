@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "org": "gh:organization/",
+    "character": "gh:character/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "org:AkabaneHachimanShrine",
+  "@type": ["gh:OrganizationProfile", "schema:Place"],
+  "schema:name": "赤羽八幡神社 (Akabane Hachiman Shrine)",
+  "schema:alternateName": "赤羽八幡 / Akabane Hachiman",
+  "gh:arc": "Arc 0-2 (Background)",
+
+  "schema:location": {
+    "@type": "schema:Place",
+    "schema:address": "東京都北区赤羽",
+    "schema:description": "住宅街の中にひっそりと佇む小さな八幡神社。地元民に愛される氏神様。"
+  },
+
+  "gh:history": {
+    "gh:origin": "平安時代末期に創建と伝わる。源氏ゆかりの八幡信仰。",
+    "gh:nameOrigin": "「赤羽」は赤い矢羽根を納めていた武具職人の集落から。神社名もそこに由来。",
+    "gh:warTime": "東京大空襲で社殿の一部が焼失。戦後に氏子たちの力で再建。",
+    "gh:present": "現在は小規模ながら地域の中心的存在。初詣や七五三で賑わう。"
+  },
+
+  "gh:atmosphere": "昼間は静かで穏やか。夜は意外と人が集まる。終電を逃した人、夜型の若者、散歩の老人。境内は24時間開放されており、地域のセーフティネット的な役割も果たしている。",
+
+  "gh:people": {
+    "gh:regulars": [
+      "夜の常連（終電を逃した人、夜型の若者）",
+      "スケーター（参道で練習する）",
+      "地元のおっちゃん（昔話と世間話）",
+      "ホームレスのおじさん（冬は焚き火に当たりに来る）",
+      "バンドマン・DJ（夜に練習の合間に休憩）",
+      "IT系の人（夜逃げ中のプログラマーもいた）"
+    ],
+    "gh:chiseConnection": "千世はこれらの人々と幼い頃から自然に交流。ストリートカルチャーもハッキングの基礎も、ここで学んだ。"
+  },
+
+  "gh:visualStyle": {
+    "gh:exterior": "朱塗りの鳥居、石段、古い狛犬。周囲は住宅街。",
+    "gh:interior": "小さな本殿、社務所、手水舎。境内には大きなイチョウの木。",
+    "gh:night": "参道の石灯籠が灯る。静かだが、ベンチに人影があることも。",
+    "gh:season": "秋（イチョウの黄葉）"
+  },
+
+  "gh:keyCharacters": [
+    {
+      "@id": "character:Chise",
+      "gh:role": "宮司の孫娘",
+      "gh:description": "境内で育った。正月は巫女装束で手伝う。"
+    },
+    {
+      "@id": "character:ChiseGrandfather",
+      "gh:role": "現役宮司",
+      "gh:description": "穏やかで寡黙。千世を黙って見守っている。",
+      "gh:age": 75
+    },
+    {
+      "@id": "character:ChiseGrandmother",
+      "gh:role": "千世を名付けた人（故人）",
+      "gh:description": "元巫女。『千の世を生きてほしい』という願いを込めて命名。数年前に他界。",
+      "gh:legacy": "「困っている人を見捨てるな」という教えを千世に残した。"
+    }
+  ],
+
+  "gh:storyFunction": {
+    "gh:role": "千世のルーツ / 情報収集の拠点",
+    "gh:scenes": [
+      "夜の境内での情報屋との密談",
+      "正月の巫女姿（ギャップ）",
+      "おばあちゃんの墓参り",
+      "祖父との無言の会話"
+    ],
+    "gh:symbolism": "「守る」という神社の精神が、千世のハッカーとしての信念の源。"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "chat:UIM-QmTqyAnGqVuBL3q4P",
+  "@type": "gh:ChatSession",
+  "dct:title": "[AUTO-PILOT START] Goal: エピソード...",
+  "gh:messages": [
+    {
+      "content": "[AUTO-PILOT START] Goal: エピソード全体の構成、台詞、演出を統合的に評価し、完成度を極限まで高めるための A2A 共同作業を開始してください。",
+      "context_json": "[]",
+      "role": "user"
+    },
+    {
+      "content": "Autonomous generation started. Workflow ID: a2a-gen-20260125-103459. Agents are now collaborating...",
+      "role": "assistant"
+    },
+    {
+      "agent_mode": "scenario",
+      "content": "🧠 Scenario Agent is brainstorming the next plot points...",
+      "role": "system"
+    },
+    {
+      "agent_mode": "general",
+      "content": "🔍 Analyzing storyboard context to determine relevant scope...",
+      "role": "system"
+    },
+    {
+      "agent_mode": "scenario",
+      "content": "🚀 Requesting OpenRouter\nModel: anthropic/claude-sonnet-4.5\nPrompt Length: 321 chars",
+      "role": "debug"
+    },
+    {
+      "agent_mode": "general",
+      "content": "👑 Starting Episode Master A2A Loop...",
+      "role": "system"
+    }
+  ],
+  "gh:slug": "2jxez2p21oo",
+  "schema:dateCreated": 1769337293884
+}

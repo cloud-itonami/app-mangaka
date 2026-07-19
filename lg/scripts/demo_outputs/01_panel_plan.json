@@ -1,0 +1,16 @@
+{
+  "panel_plan": {
+    "rkey": "gh-panel-arc01-p1n1",
+    "page_number": 1,
+    "panel_number": 1,
+    "shot": "Closeup",
+    "characters": [
+      "Chise",
+      "Kota"
+    ],
+    "environment": "shrine-courtyard-night",
+    "action": "Chise dashes toward the laptop, eyes locked on the screen",
+    "mood": "urgent, determined",
+    "props": []
+  }
+}

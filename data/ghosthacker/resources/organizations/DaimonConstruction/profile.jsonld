@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "company": "gh:company/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "incident": "gh:incident/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "company:ah33KaKFscNnZKffuc6aZ",
+  "@type": "gh:CompanyProfile",
+  "gh:arc": "Arc A",
+  "gh:atmosphere": "家族的経営。DX化は遅れており、連絡は電話とFAXが主流。壁には「安全第一」のポスターと歴代社長（初代：大門辰五郎）のモノクロ写真。",
+  "gh:businessType": "総合建設業（主に地元の公共工事やマンション建設）",
+  "gh:incidentReport": {
+    "@id": "incident:260125-jump-Ransomware",
+    "dct:date": "2026-11-21",
+    "dct:title": "社内システム全停止およびランサムウェア感染疑義",
+    "gh:impact": "現場への図面供給ストップによる工期遅延。翌週に控えた給与振込の不能リスク（これが社員の士気に直結）。",
+    "gh:securityLevel": "Low (ルーターは家電量販店で購入したもの、パスワードはモニターに付箋貼り付け)",
+    "gh:symptoms": [
+      "社内PCの一斉ロック（画面に『Pay or Delete』のガイダンス表示）",
+      "共有サーバー内のCAD図面データへのアクセス不可",
+      "会計システム停止による給与支払い遅延の危機",
+      "インターネットバンキングへの不正アクセス形跡"
+    ]
+  },
+  "gh:keyCharacters": [
+    {
+      "@id": "character:President",
+      "gh:sourceFile": "characters/President/profile.jsonld"
+    },
+    {
+      "@id": "character:Shouta",
+      "gh:sourceFile": "characters/Shouta/profile.jsonld"
+    },
+    {
+      "@id": "character:Yasumoto",
+      "gh:sourceFile": "characters/Yasumoto/profile.jsonld"
+    },
+    {
+      "@id": "character:Matsuda",
+      "gh:sourceFile": "characters/Matsuda/profile.jsonld"
+    },
+    {
+      "@id": "character:Sato",
+      "gh:sourceFile": "characters/Sato/profile.jsonld"
+    }
+  ],
+  "gh:organizationChart": {
+    "gh:levels": [
+      {
+        "gh:level": 1,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:President",
+            "gh:title": "代表取締役社長"
+          },
+          {
+            "gh:characterId": "character:Shouta",
+            "gh:title": "後継者候補"
+          }
+        ],
+        "gh:title": "経営層"
+      },
+      {
+        "gh:level": 2,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:Yasumoto",
+            "gh:title": "総務部長"
+          },
+          {
+            "gh:characterId": "character:Matsuda",
+            "gh:title": "経理課長"
+          }
+        ],
+        "gh:title": "管理職"
+      },
+      {
+        "gh:level": 3,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:Sato",
+            "gh:title": "IT担当"
+          }
+        ],
+        "gh:title": "実務担当"
+      }
+    ]
+  },
+  "gh:slug": "DaimonConstruction",
+  "schema:employeeCount": 52,
+  "schema:foundingDate": "1920",
+  "schema:location": {
+    "@type": "schema:Place",
+    "schema:address": "東京都大田区蒲田 4丁目 (Tokyo, Ota City, Kamata 4-chome)",
+    "schema:description": "町工場と住宅が混在する下町エリア。自社ビルは古いが手入れの行き届いた3階建て。"
+  },
+  "schema:name": "株式会社 大門建設 (Daimon Construction Co., Ltd.)"
+}

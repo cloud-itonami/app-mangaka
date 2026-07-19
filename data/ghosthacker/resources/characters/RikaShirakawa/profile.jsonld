@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:d4WfpaCGjDNNqOKvI70-J",
+  "gh:appearance": {
+    "gh:build": "Graceful, model-like proportions.",
+    "gh:eyes": "Warm honey-brown, sharp and observant.",
+    "gh:face": "18-year-old Japanese female, refined beautiful features, warm but perceptive eyes.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, elegant lighting, raw photo, 18-year-old Japanese female, refined beautiful features, chestnut brown wavy hair, warm honey-brown observant eyes, elegant school uniform, graceful pose.",
+    "gh:hair": "Chestnut brown, elegantly styled in loose waves.",
+    "gh:style": "Photorealistic, elegant sophistication, 8k."
+  },
+  "gh:arc": "Arc 0-3",
+  "gh:background": {
+    "gh:family": "父は大手法律事務所のパートナー弁護士。母は元外交官。",
+    "gh:reputation": "文武両道の完璧な生徒会長。だが、生徒の問題に真摯に向き合う姿勢で信頼も厚い。",
+    "gh:school": "星蘭学院高等部 3年。生徒会長。"
+  },
+  "gh:personality": {
+    "gh:hidden": "観察眼が鋭い。学校内の『異変』にすぐ気づく。",
+    "gh:motivation": "生徒を守ることが生徒会長の責任。",
+    "gh:surface": "穏やかで品がある。誰にでも平等に接する。"
+  },
+  "gh:relationships": {
+    "gh:kaname": {
+      "gh:dynamic": "Kanameの能力を認めている。彼の『冷たさ』の裏にある正義感も見抜いている。",
+      "gh:type": "生徒会のパートナー"
+    },
+    "gh:sora": {
+      "gh:dynamic": "特待生として苦労していることを知っている。気にかけている。",
+      "gh:type": "後輩"
+    }
+  },
+  "gh:slug": "RikaShirakawa",
+  "gh:storyFunction": {
+    "gh:contribution": "学校内での異変に最初に気づく。Kanameに調査を依頼。生徒会としての正式なサポートを提供。",
+    "gh:dialogue": "「水城くん、ちょっと相談があるの。青山さんのこと、気になってて…」",
+    "gh:role": "協力者 / 情報提供者"
+  },
+  "schema:age": 18,
+  "schema:name": "白川 理香 (Rika Shirakawa)",
+  "schema:role": "Student Council President / Ally"
+}

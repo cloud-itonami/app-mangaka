@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "gh:org:XeU7QzGvLDLdZTx6a8kxO",
+  "@type": [
+    "gh:OrganizationProfile",
+    "schema:EducationalOrganization"
+  ],
+  "gh:arc": "Arc 0",
+  "gh:atmosphere": "表向きは“自由で先進的”。だが、個人情報やアカウントの安全は“自己責任”として放置されやすい。",
+  "gh:keyCharacters": [
+    {
+      "@id": "character:HomeroomTeacher",
+      "gh:role": "担任 / 相談窓口になり得る",
+      "gh:sourceFile": "characters/HomeroomTeacher/profile.jsonld"
+    },
+    {
+      "@id": "character:Yuto",
+      "gh:role": "被害者 / 読者の目線",
+      "gh:sourceFile": "characters/Yuto/profile.jsonld"
+    },
+    {
+      "@id": "character:Akira",
+      "gh:role": "トレンド側 / きっかけを作る",
+      "gh:sourceFile": "characters/Akira/profile.jsonld"
+    },
+    {
+      "@id": "character:Mei",
+      "gh:role": "ムードメーカー / 空気を動かす",
+      "gh:sourceFile": "characters/Mei/profile.jsonld"
+    },
+    {
+      "@id": "character:Saki",
+      "gh:role": "観察者 / 見抜く役",
+      "gh:sourceFile": "characters/Saki/profile.jsonld"
+    },
+    {
+      "@id": "character:Kota",
+      "gh:role": "技術好き / 知識の橋渡し",
+      "gh:sourceFile": "characters/Kota/profile.jsonld"
+    }
+  ],
+  "gh:securityPostureForStory": {
+    "gh:baseline": "“事故は起きる”前提が薄い",
+    "gh:teachingGoal": "読者が「落ち着く→確認する→順番に止める」を体で覚える",
+    "gh:weakPoints": [
+      "相談導線が弱い（先生に言いづらい／友だちに言いづらい）",
+      "被害の“見える化”がされない（どこが危ないか分からず混乱する）"
+    ]
+  },
+  "gh:slug": "Cschool",
+  "gh:studentCulture": [
+    "DMとタイムラインが人間関係の温度計になっている",
+    "「限定」「話題」「今だけ」に弱い",
+    "困っても“恥”が先に来て相談が遅れる"
+  ],
+  "gh:typicalRisks": [
+    "偽通販・偽ログイン画面への誘導（SNSの広告/DM/リンク）",
+    "アカウント乗っ取り → なりすまし拡散",
+    "パスワード使い回し → “連鎖”で被害拡大",
+    "個人情報の入力（住所・電話・カード情報）を急がされる"
+  ],
+  "schema:location": {
+    "@type": "schema:Place",
+    "schema:address": "東京都内（通学圏の私立校）",
+    "schema:description": "校舎は新しく、廊下は明るい。生徒のスマホ利用は黙認されがちで、休み時間の“空気”はSNSと一緒に流れる。"
+  },
+  "schema:name": "C高校 (C-School)"
+}

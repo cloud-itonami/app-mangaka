@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "org": "gh:organization/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "org:9deNCkvH6RrEL3nBIm-2P",
+  "@type": [
+    "gh:OrganizationProfile",
+    "schema:EducationalOrganization"
+  ],
+  "gh:arc": "Arc 0-3",
+  "gh:atmosphere": "伝統と品格を重んじる名門校。生徒の多くは経営者・政治家・医師・弁護士の子息子女。表向きは礼儀正しいが、裏では家柄とコネが全てを決める。",
+  "gh:keyCharacters": [
+    {
+      "@id": "character:Kaname",
+      "gh:role": "主人公 / 問題解決者",
+      "gh:roleAtOrg": "3年生 / 生徒会副会長",
+      "gh:sourceFile": "characters/Kaname/profile.jsonld"
+    },
+    {
+      "@id": "character:SoraAoyama",
+      "gh:role": "被害者 / 読者の感情移入先",
+      "gh:roleAtOrg": "2年生 / 被害者",
+      "gh:sourceFile": "characters/SoraAoyama/profile.jsonld"
+    },
+    {
+      "@id": "character:RikaShirakawa",
+      "gh:role": "協力者 / 情報提供者",
+      "gh:roleAtOrg": "3年生 / 生徒会長",
+      "gh:sourceFile": "characters/RikaShirakawa/profile.jsonld"
+    },
+    {
+      "@id": "character:KenjiOhara",
+      "gh:role": "サポート役 / 現実的な視点",
+      "gh:roleAtOrg": "3年生 / Kanameの友人",
+      "gh:sourceFile": "characters/KenjiOhara/profile.jsonld"
+    },
+    {
+      "@id": "character:TakashiNomura",
+      "gh:role": "黒幕 / 闇バイト斡旋者",
+      "gh:roleAtOrg": "卒業生（大学1年）",
+      "gh:sourceFile": "characters/TakashiNomura/profile.jsonld"
+    }
+  ],
+  "gh:securityPostureForStory": {
+    "gh:baseline": "『うちの生徒に限って』という根拠のない信頼",
+    "gh:teachingGoal": "どんな立場の人間も被害者になりうる。早期の相談と正規の手続きが最善。",
+    "gh:weakPoints": [
+      "プライドが高く、被害を認められない",
+      "親に知られたくない一心で解決を遅らせる",
+      "『お金で解決できる』という思い込み"
+    ]
+  },
+  "gh:slug": "SeiranAcademy",
+  "gh:storyIncident": {
+    "gh:blackMarketConnection": "斡旋者は星蘭の卒業生で、インサイダー情報を売買するネットワークの末端",
+    "gh:escalation": [
+      "「簡単なアンケート回答」として始まる",
+      "報酬が増えるにつれ、要求される情報が機密性を帯びてくる",
+      "親のPCから資料を撮影するよう指示される",
+      "断ろうとすると、これまでの『協力』の証拠で脅迫される",
+      "『やめたいけど、怖くてやめられない』状態に"
+    ],
+    "gh:solution": "Kanameが相談を受け、警察・弁護士・学校の連携による解決を組み立てる。早期の相談が被害を最小限に抑える。",
+    "gh:summary": "成績優秀だが経済的に余裕のない特待生・青山ソラが、『簡単な情報収集の仕事』に手を出す。最初は企業のアンケート代行だったが、次第に親の仕事関連の内部情報を要求されるように。",
+    "gh:type": "闇バイト（上流向け・情報売買）"
+  },
+  "gh:studentCulture": [
+    "SNSでは『映える』生活をアピール（ブランド品、高級レストラン、海外旅行）",
+    "親の期待とプレッシャーが重い",
+    "『成功して当然』という空気の中での閉塞感",
+    "お金はあるが、自分で稼いだものではないというコンプレックス"
+  ],
+  "gh:typicalRisks": [
+    "『簡単に稼げる』投資詐欺・暗号資産詐欺への勧誘",
+    "闇バイトの『上流向け』バージョン（情報横流し、名義貸し）",
+    "SNSでの見栄の張り合いから生まれる金銭トラブル",
+    "家族の名前を使った詐欺への巻き込まれ"
+  ],
+  "gh:visualStyle": {
+    "gh:buildingExterior": "赤レンガと白い柱のヨーロッパ風校舎。広い芝生の中庭。",
+    "gh:interior": "木目調の図書館、ステンドグラスのある講堂。",
+    "gh:season": "冬（クリスマス前の期末試験期間）",
+    "gh:uniform": "紺のブレザーに校章入り。女子はチェックのスカート。"
+  },
+  "schema:alternateName": "星蘭 / Seiran",
+  "schema:location": {
+    "@type": "schema:Place",
+    "schema:address": "東京都港区白金台",
+    "schema:description": "高級住宅街に佇む私立進学校。キャンパスは緑に囲まれ、欧州風の校舎が並ぶ。"
+  },
+  "schema:name": "星蘭学院高等部 (Seiran Academy High School)"
+}

@@ -1,0 +1,5 @@
+{:projection/name "etzhayyim-project-mangaka-lg"
+ :projection/source "legacy-risingwave-cine-ledger"
+ :projection/target "kotoba-datomic"
+ :projection/status :legacy-read-through
+ :projection/runbook "60-apps/etzhayyim-project-mangaka/MIGRATION-TODO.md"}

@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:wzr4oAYexEuRn5q-TEbls",
+  "gh:appearance": {
+    "gh:build": "Athletic, casual posture.",
+    "gh:eyes": "Calm dark brown eyes with a hint of humor.",
+    "gh:face": "18-year-old Japanese male, friendly and approachable face, relaxed expression.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, natural lighting, raw photo, 18-year-old Japanese male, friendly approachable face, messy dark brown hair, calm brown eyes, slightly loose school uniform, relaxed athletic build.",
+    "gh:hair": "Messy dark brown hair.",
+    "gh:style": "Photorealistic, casual elite, 8k."
+  },
+  "gh:arc": "Arc 0-3",
+  "gh:background": {
+    "gh:family": "父は商社の役員。母は専業主婦。兄が二人いる。",
+    "gh:future": "海外の大学への進学を考えている。",
+    "gh:school": "星蘭学院高等部 3年。サッカー部キャプテン。"
+  },
+  "gh:personality": {
+    "gh:hidden": "現実的な思考。『できること』と『できないこと』を冷静に見極める。",
+    "gh:role": "Kanameの数少ない友人として、彼を孤立から救う存在。",
+    "gh:surface": "明るくて社交的。誰とでも仲良くなれる。"
+  },
+  "gh:relationships": {
+    "gh:kaname": {
+      "gh:dynamic": "Kanameの『完璧な仮面』の下にある本当の姿を知る数少ない人物。",
+      "gh:history": "小学校からの付き合い。Kanameの両親の事故の時も側にいた。",
+      "gh:type": "幼馴染 / 親友"
+    }
+  },
+  "gh:slug": "KenjiOhara",
+  "gh:storyFunction": {
+    "gh:contribution": "Kanameが暴走しそうな時のストッパー。『お前一人で抱え込むな』と諭す。",
+    "gh:dialogue": "「要、お前また一人で何かやろうとしてるだろ。巻き込めよ。」",
+    "gh:role": "サポート役 / 現実的な視点"
+  },
+  "schema:age": 18,
+  "schema:name": "大原 健司 (Kenji Ohara)",
+  "schema:role": "Kaname's Friend / Realist"
+}

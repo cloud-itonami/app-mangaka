@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:luC8lvmc3uHqj7xOIAFvH",
+  "@type": "gh:Character",
+  "gh:appearance": {
+    "gh:build": "Slim, poised. Conservative but quality business suit.",
+    "gh:eyes": "Sharp dark eyes, sees the gap between rules and reality, knowing catchlights.",
+    "gh:face": "45-year-old Japanese female, sharp intelligent face, subtle frustration at organizational blindness, former regulator's precision.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 45-year-old Japanese female, sharp intelligent expression, short professional black hair, conservative business suit, compliance office with regulation binders background.",
+    "gh:hair": "Short professional black hair with subtle styling.",
+    "gh:style": "Photorealistic, professional office lighting, ex-government official aesthetic, 8k."
+  },
+  "gh:arc": "Arc C",
+  "gh:organization": "company:TokaiSecurities",
+  "gh:personality": {
+    "gh:core": "元金融庁職員。ガイドラインの『最低ライン』の意味を本当に理解している数少ない人物。",
+    "gh:flaw": "社内で孤立。発言しても無視される。",
+    "gh:function": "規制の本質を説明する役割。『満たした≠安全』を体現。"
+  },
+  "gh:relationships": {
+    "gh:kaname": {
+      "gh:connection": "水城慎司経由で紹介",
+      "gh:dynamic": "内部から情報提供し、改革を後押し。",
+      "gh:role": "内部協力者"
+    }
+  },
+  "gh:slug": "ShiraishiYuko",
+  "schema:age": 45,
+  "schema:name": "白石 悠子 (Yuko Shiraishi)",
+  "schema:role": "Compliance Director / Arc C Inside Ally"
+}

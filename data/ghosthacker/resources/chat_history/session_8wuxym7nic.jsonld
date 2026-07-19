@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "chat:7Mrsu22VPAVNNitTpwQYX",
+  "@type": "gh:ChatSession",
+  "dct:title": "🚀 Requesting OpenRouter\nModel...",
+  "gh:messages": [
+    {
+      "agent_mode": "episode",
+      "content": "🚀 Requesting OpenRouter\nModel: anthropic/claude-sonnet-4.5\nPrompt Length: 1671 chars",
+      "role": "debug"
+    }
+  ],
+  "gh:slug": "8wuxym7nic",
+  "schema:dateCreated": 1769339230613
+}

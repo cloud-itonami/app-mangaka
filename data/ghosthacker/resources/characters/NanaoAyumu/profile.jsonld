@@ -1,0 +1,147 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:NanaoAyumu",
+  "schema:name": "七尾 歩 (Ayumu Nanao)",
+  "schema:role": "Teen Cybersecurity Researcher (US / Boston) / Ren の子供時代からの唯一の友人 / News Hacker 遠隔メンバー",
+  "schema:age": 16,
+  "schema:nationality": "日本 / 米国永住権 (アクティブな日本国籍)",
+  "schema:residence": "米国マサチューセッツ州ボストン (Cambridge 近郊)",
+  "gh:slug": "NanaoAyumu",
+  "gh:arc": "読切から遠隔で登場 / Part 1 中盤で対面回 / Part 2 以降正式合流",
+
+  "gh:appearance": {
+    "gh:gender": "男性（可愛い系男子 / soft cute boy）",
+    "gh:face": "16-year-old cute boyish Japanese-American teen, delicate fine features, soft jawline, quiet observant gaze, large almond-shaped dark brown eyes behind slightly oversized silver-rim glasses. 幼さを残した柔らかい顔立ちで、一見すると中性的に見えるが、本人は『男性』としてのアイデンティティを持つ。",
+    "gh:hair": "Soft ash-grey shaggy bob cut, partly covering the eyes. 少し長めの前髪。",
+    "gh:build": "Slim, slightly below average height. Oversized dark knit cardigan over a grey hoodie, loose pants, white sneakers. Layered clothing against sensory overstimulation. 男子として服を選んでいるが、女子と見間違われることも時々ある。",
+    "gh:eyes": "Large almond-shaped dark brown irises, soft catchlights, reads as observant rather than shy once you look closely.",
+    "gh:style": "Photorealistic, soft diffused lighting, slightly desaturated palette, 8k.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, soft diffused lighting, raw photo, 16-year-old cute boyish Japanese-American teen male, soft delicate features, ash-grey shaggy bob partly covering eyes, large almond-shaped dark brown irises, silver-rim glasses, oversized dark knit cardigan over grey hoodie, loose pants, quiet observant expression, visibly male with boyish cute charm."
+  },
+
+  "gh:background": {
+    "gh:family": {
+      "gh:structure": "父・七尾 伊織（情報物理学者、MIT 情報科学研究所准教授）、母・七尾 詩織（フリーランス校正者、日英バイリンガル）との 3 人家族。5 年前 (Ayumu 11 歳・小 5 夏) に父の MIT 招聘を機に家族ごと渡米、以来ボストン (Cambridge 近郊) 在住。",
+      "gh:father": "七尾 伊織（いおり）。情報物理学者・MIT 情報科学研究所准教授。専門は *実験情報物理* — ランダウアー原理の *実験的検証* と情報熱力学の計測技術。Ren の父・沼野信哉（理論・情報物理）、Nei の父・白瀬聡（工学・SIP デバイス実装）と 20 年以上の親友で、3 人は *理論 / 工学 / 実験* の三位一体として学会で知られた共同研究チーム。Ren 父の死後、Ren の母とは連絡を絶たれたが、Ren 本人とは *息子の友人* として繋がりを保ち続けている。白瀬聡の SIP デバイス研究にも、*実験データの米国側パートナー* として寄与。Ayumu の技術的興味を全力でバックアップする育て方。",
+      "gh:mother": "七尾 詩織。フリーランス校正者。日英バイリンガル。Ayumu の吃音と感覚特性を静かに支える理解者。",
+      "gh:atmosphere": "家庭内は静かで、発声を急かされない。英語と日本語が半々で飛び交う。母は『喋る速度を合わせる側が合わせる』を徹底。"
+    },
+    "gh:childhoodWithRen": "Ren 父・沼野信哉と Ayumu 父・七尾伊織が 20 年来の学会仲間であったため、Ren と Ayumu は 0 歳児から家族ぐるみ。隣町の公園・学会イベント・夏休みの研究合宿で一緒に過ごし、*Ren の父の書斎* で 2 人一緒にプログラミングの基礎を教わった。Ren 父の死 (Ren 8 歳・Ayumu 8 歳) の時、Ayumu 父が Ren を強く支えた。3 年後、Ayumu 家が渡米。以降は *ネット越し* の繋がりが中心だが、2 人の友情は途切れていない。",
+    "gh:school": "ボストン近郊の magnet STEM 高等学校 (Boston Latin School 相当)。1 年。対面授業では発表を免除してもらっており、評価はレポート・筆記中心。",
+    "gh:hackerOrigin": "小 4 (渡米直前) で OSS 暗号ライブラリのソースを読むのが日課に。渡米後、現地の CTF コミュニティに匿名参加し、暗号カテゴリで国際ランカー入り。14 歳で MIT CSAIL のオフィスアワーに飛び入り参加し、*未成年研究員* として一部プロジェクトに招かれる。現在はボストン近郊のサイバー・フォレンジック研究所の契約研究員として、FBI IC3 および Interpol の非公開案件に *許可された範囲で* 協力している。",
+    "gh:currentState": "米国ボストン在住・高校 1 年相当・サイバー・フォレンジック研究所所属の未成年研究員。News Hacker の遠隔メンバーとして、国外 actor への *合法的な* 侵入・ログ取得・honeypot 運用を担当。日本側の Ren / Nei / (未来の) Chise / Kaname が *踏み込めない* 領域を、*米国側の司法協力の枠内で* カバーする。HN は『nue (ヌエ)』。"
+  },
+
+  "gh:traumaIncident": {
+    "gh:type": "いじめ動画の学内裏サイト拡散",
+    "gh:name": "『音声ファイル事件』（Ayumu の心内での呼称）",
+    "gh:year": "Ayumu 13歳（中1）の秋",
+    "gh:summary": "国語の授業で教師から強制的に朗読をさせられ、吃音の発作が悪化。同級生が隠し撮りした音声ファイルが切り貼り・早送り加工されて学内裏サイトに投稿され、短期間で半数以上の生徒に共有される。通学不能になり、2学期から不登校。",
+    "gh:recovery": "母が校正業で培った人脈からNPOのサイバー相談窓口に繋がり、そこの法務担当経由で投稿者特定・削除依頼が進む。並行してAyumu自身が匿名CTFコミュニティで自分の技術を認められ、『自分の声は詰まっても、コードは詰まらない』という自己定義を獲得。",
+    "gh:meaning": "『音声で自分を伝えることができない』という経験が、Ayumu を『テキストと暗号の世界で完全に流暢な自分』へ向かわせた直接の入口。",
+    "gh:knownBy": ["母", "News Hacker メンバー（HN越しに断片情報のみ）"]
+  },
+
+  "gh:neurodiversity": {
+    "gh:diagnosis": "発達性吃音（Developmental Stuttering / 流暢性障害）+ 軽度の感覚過敏傾向",
+    "gh:note": "吃音は『発達障害』『精神疾患』とは別カテゴリの神経発達的な流暢性障害。本人の性格・知能・意思の弱さとは無関係。",
+    "gh:traits": {
+      "gh:blockType": "主に『ブロック（声が出ない無音の詰まり）』と『繰り返し（語頭音を数回繰り返す）』。特定の語頭音（ア・カ・タ行）で発症率が高い。",
+      "gh:situationalVariance": "安心できる相手・1対1・落ち着いた環境では比較的流暢。人数が増える、急かされる、評価される場面で悪化。",
+      "gh:fluentChannels": "チャット、コード、文章、歌、独り言ではほぼ吃らない。コード読み上げは意外にも流暢。",
+      "gh:secondaryBehaviors": "話す直前に一瞬目を伏せる／指でキーボードのホームポジションを空打ちする癖がある。",
+      "gh:sensoryTraits": "聴覚過敏傾向。複数人が同時に喋る教室・繁華街は疲弊する。"
+    },
+    "gh:strengthFraming": "対面発声コミュニケーションを不得手にしている代わりに、テキスト・コード領域での処理の速さと正確さが際立つ。寡黙ゆえの観察力。ノイズから異常パターンを抜き出す解析センス。",
+    "gh:weaknessFraming": "対面交渉・電話・大人数の場は消耗する。リアルタイム発声が必要な場面は Nei や Ren が代弁する必要がある。",
+    "gh:speechPattern": "対面: 語頭でブロック・繰り返しが出る（例: 『あ、あ、あの……』『か……帰ります』）。本人が気にしていない時ほど流暢。チャット: 完全に流暢。コードレビュー: 淡々と長文を打ち込む。",
+    "gh:storyMetaphor": "『声の通信が詰まる』という物理的現象と、『Ghost（情報場）は通信そのもの』という本作の中核メタファーが直接接続する。吃音キャラは本作のテーマを体現するキャラクター。"
+  },
+
+  "gh:skills": {
+    "gh:hackerName": "nue (ヌエ)",
+    "gh:nameOrigin": "『鵺（ぬえ）』- 日本神話の混成幻獣。複数の獣の合成＝合成／改ざん／復元の暗号家のメタファー。また、声を持つが正体が見えない存在＝本人の非対面性とも重なる。",
+    "gh:reputation": "CTFコミュニティで『nue』は暗号カテゴリの上位常連。国際大会予選通過経験あり。",
+    "gh:technical": [
+      "暗号解読（古典〜現代暗号・ハッシュ・鍵回復）",
+      "デジタル・フォレンジック（メモリダンプ・ディスクイメージ解析）",
+      "マルウェア静的解析・リバースエンジニアリング",
+      "ログの統計的異常検出（Nei の解析と相互補完）"
+    ],
+    "gh:uniqueStrength": "人間のネットワーク経由では入れない『技術的に閉じた情報』を開ける役割。警察・プラットフォーム・他国のCTF仲間と暗号だけで対話できる。",
+    "gh:foundedPlatform": "*Hacker Nues* — 中 1 の頃 (渡米から 2 年目・13 歳) に Ayumu が個人で立ち上げた、世界中のエンジニア向けの英語ベースのテックニュース掲示板。Hacker News のオマージュで、運営者ハンドル『nue』に由来する命名。匿名投稿可・モデレーションは Ayumu と少数の運営者で実施。読切時点では月間アクティブユーザー数十万規模、サイバー犯罪研究者・セキュリティエンジニア・現役 CTF プレイヤーが集う *公開の情報共有ハブ* に育っている。Ren を 2-3 年前に *直接、招待* したのも Ayumu。"
+  },
+
+  "gh:relationships": {
+    "gh:ren": {
+      "gh:type": "News Hacker 仲間（オンラインのみ）",
+      "gh:dynamic": "最初期は HN でのやり取りのみ。Ren の直感を Ayumu の暗号技術が裏打ちするコンビ芸。読切では登場なし、連載初期（Arc 0-2 前後）で対面イベントを設計予定。",
+      "gh:firstImpression": "Ren は『nue』が技術的に信頼できると早くから認識している。『nue、頼む』で済むレベルの信頼関係が先にある。"
+    },
+    "gh:nei": {
+      "gh:type": "データ共有の最良のパートナー",
+      "gh:dynamic": "Nei のパターン解析結果に Ayumu の暗号解読が結合して事件が解ける典型パターン。チャットだけで完結する『声のないコンビ芸』。"
+    },
+    "gh:kaname": {
+      "gh:type": "技術的な尊敬と倫理的な距離",
+      "gh:dynamic": "Kaname の『法的手続き主義』と Ayumu の『技術的真実主義』は時に衝突する。"
+    },
+    "gh:mother": {
+      "gh:type": "最大の理解者",
+      "gh:dynamic": "詩織は Ayumu の速度で話す唯一の大人。Ayumu が対面発声をする数少ない相手。"
+    }
+  },
+
+  "gh:iconicScenes": [
+    {
+      "gh:scene": "Ren との初対面（連載で設計予定）",
+      "gh:description": "Ren が Ayumu の自宅を訪ねる。Ayumu は対面で言葉が詰まる。Ren は『…なら、キーボード貸せ。』と差し出す。Ayumu、流暢にキーボードで返す。『は、は、初めまして。nue、です。』『知ってる。nue の方が流暢だろ。こっちで話そう。』",
+      "gh:impact": "本作の『声 vs コード＝通信のメタファー』を一発で立てる名シーン候補。"
+    },
+    {
+      "gh:scene": "解読の瞬間",
+      "gh:description": "深夜のキーボード音のみ。Nei のパターン出力 → Ayumu の暗号解読 → 結果をコードブロックで共有。誰も一言も発さないが通信は完全に成立している。",
+      "gh:impact": "『吃音キャラ＝寡黙なのではなく、通信メディアが違うだけ』という本質表現。"
+    }
+  ],
+
+  "gh:onlinePresence": {
+    "gh:avatar": {
+      "gh:type": "verylonganimals",
+      "gh:animal": "ヌエ / コウモリ系（Bat / Chimera）",
+      "gh:description": "verylonganimalsのながーいコウモリ。夜の反響定位（echolocation）で世界を把握するメタファー。声ではなく反響で通信する存在。",
+      "gh:color": "薄墨グレー / 琥珀色の目",
+      "gh:usage": "全オンライン活動で使用。対面アバターは存在しない。",
+      "gh:reason": "コウモリ＝音の反射で世界を読む＝暗号解析と吃音キャラ両方のメタファー。"
+    },
+    "gh:handleVariations": ["nue", "ヌエ", "ながこうもり"]
+  },
+
+  "gh:sensitivityNote": {
+    "gh:policy": "吃音は『治すべき障害』でも『かわいい個性』でもなく、本人の喋り方のひとつとして描く。言い直し・無理な発声訓練を美談にしない。『流暢に話せるようになって解決』というオチを絶対に使わない。",
+    "gh:editorialGuideline": "商業化時は日本吃音・流暢性障害学会所属の言語聴覚士および吃音当事者団体の監修を前提。『からかい』表現は被害側の描写として限定的に、加害側の視点は採用しない。",
+    "gh:representation": "対面での詰まりと、テキスト・コードでの流暢さの『両方が同じ Ayumu』であることを徹底して描く。吃音を『ハンディキャップを乗り越える感動話』の題材にしない。"
+  },
+
+  "gh:comedyRole": {
+    "gh:type": "省エネボケ / チャット間ボケ（遠隔系）",
+    "gh:gags": [
+      "チャットでの異常に短い返信（Ren『@nue 起きてるか』→ nue『いる。』のリズムギャグ）",
+      "Ren が長文の相談をしている間に『3 行で。』と返すクール指摘",
+      "コードコメントで冗談を 1 行だけ仕込む（// TODO: 寝る）",
+      "対面で吃る時、キーボードを差し出されて『は、は、助かります』と打ち込むコメディ（本人は笑いを取ろうとしていない）",
+      "鳩サブレー・白い恋人などの地方銘菓を突然送ってくる",
+      "CTF 大会の予選通過報告をすごく小さく誇らしげに混ぜる"
+    ],
+    "gh:balance": "省エネボケ 5 : 寡黙クール 5。吃音描写はコメディの文脈では *使わず*、あくまでチャットと対面の温度差でギャップを作る。",
+    "gh:donotcross": "吃音そのものをネタにしない。いじめ動画事件の回想・対面での緊張・発声に詰まる瞬間はコメディ封印。"
+  }
+}

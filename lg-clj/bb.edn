@@ -1,0 +1,21 @@
+{;; App-scoped babashka project for lg-mangaka — clj/cljc port of the LangGraph
+ ;; Python server (ADR-2606280030: langgraph-python → langgraph-clj). Scoped to
+ ;; THIS app only; the repo-root bb.edn is untouched. langgraph-clj is pinned to
+ ;; the same SHA as the repo-root bb.edn.
+ ;;
+ ;;   bb --config 60-apps/etzhayyim-project-mangaka/lg-clj/bb.edn test
+ ;;   bb --config 60-apps/etzhayyim-project-mangaka/lg-clj/bb.edn serve
+ ;;
+ ;; This is a WAVE-2 PARTIAL port (the app is large: 38 graphs / ~96 py files).
+ ;; The Python FastAPI app under `lg/` remains the deployed runtime and COEXISTS;
+ ;; this clj twin is additive. See server.cljc for the ported-vs-remaining split.
+ :paths ["src" "test"]
+ :deps  {com-junkawasaki/langgraph-clj
+         {:git/url "https://github.com/com-junkawasaki/langgraph-clj"
+          :git/sha "c7daa07d4e50f55d7e2a02e4b89dbeb2b200961d"}}
+ :tasks
+ {test  {:doc "Run the lg-mangaka clojure.test suite under bb"
+         :task (load-file "run_tests.clj")}
+  serve {:doc "Start the lg-mangaka XRPC/runs HTTP server"
+         :requires ([lg-mangaka.server])
+         :task (apply lg-mangaka.server/-main *command-line-args*)}}}

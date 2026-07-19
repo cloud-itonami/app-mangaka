@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:nXNHr6ILqqJWjW0emVq9V",
+  "@type": "gh:Character",
+  "gh:appearance": {
+    "gh:build": "Slim, professional. Wears company polo and utility vest with tools.",
+    "gh:eyes": "Sharp analytical eyes, cool blue-gray iris, observant catchlights.",
+    "gh:face": "28-year-old Japanese female, calm analytical face, professional demeanor, slight frustration at being ignored.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 28-year-old Japanese female, calm professional expression, black ponytail, company polo, utility vest, multiple monitors background.",
+    "gh:hair": "Black hair tied in practical ponytail.",
+    "gh:style": "Photorealistic, tech operations aesthetic, 8k."
+  },
+  "gh:arc": "Arc B",
+  "gh:organization": "company:KojimaLogistics",
+  "gh:personality": {
+    "gh:arc": "Takeruの介入で初めて声を上げる。",
+    "gh:core": "冷静沈着。セキュリティの重要性を理解しているが、現場で発言力がない。"
+  },
+  "gh:relationships": {
+    "gh:takeru": {
+      "gh:dynamic": "Takeruの技術力に感銘。事件後、セキュリティ強化の推進役に。",
+      "gh:role": "技術協力者"
+    }
+  },
+  "gh:slug": "EndoRisa",
+  "schema:age": 28,
+  "schema:name": "遠藤 理沙 (Risa Endo)",
+  "schema:role": "System Operations Chief / Arc B Tech Support"
+}

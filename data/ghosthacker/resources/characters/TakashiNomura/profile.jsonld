@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:YFfsc06aL0u3W-6vqgU2j",
+  "gh:appearance": {
+    "gh:build": "Well-dressed, designer brands.",
+    "gh:eyes": "Dark eyes that calculate profit in every interaction.",
+    "gh:face": "20-year-old Japanese male, charming but with cold eyes underneath.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, dramatic lighting, raw photo, 20-year-old Japanese male, charming face with cold calculating eyes, stylishly permed dark hair, expensive designer clothes, confident predatory pose.",
+    "gh:hair": "Stylishly permed dark hair.",
+    "gh:style": "Photorealistic, predatory charm, 8k."
+  },
+  "gh:arc": "Arc 0-3",
+  "gh:background": {
+    "gh:darkSide": "大学入学後、投資詐欺グループに勧誘される。今は末端の斡旋役。",
+    "gh:education": "星蘭学院卒業生。現在は有名私大の経済学部2年。",
+    "gh:family": "父は不動産会社経営。裕福だが愛情のない家庭。"
+  },
+  "gh:methods": {
+    "gh:recruitment": [
+      "SNSで『高収入バイト』を匂わせる",
+      "星蘭の卒業生という信頼を利用",
+      "最初は簡単な仕事で信頼させる",
+      "徐々にハードルを上げる",
+      "断ろうとすると過去の活動で脅迫"
+    ],
+    "gh:targets": "経済的に困っている学生、承認欲求の強い学生"
+  },
+  "gh:personality": {
+    "gh:hidden": "他人を『使えるか使えないか』でしか見ていない。良心の呵責がない。",
+    "gh:motivation": "自分も上から搾取されている。生き残るために下を搾取する。",
+    "gh:surface": "親しみやすく、後輩思いの『いい先輩』を演じる。"
+  },
+  "gh:slug": "TakashiNomura",
+  "gh:storyFunction": {
+    "gh:fate": "Kanameの調査により証拠を押さえられ、警察に通報される",
+    "gh:message": "加害者も『被害者だった』側面。だが選択の責任は逃れられない。",
+    "gh:reveal": "中盤で星蘭の卒業生であることが判明",
+    "gh:role": "黒幕 / 闇バイト斡旋者"
+  },
+  "schema:age": 20,
+  "schema:name": "野村 隆 (Takashi Nomura)",
+  "schema:role": "Antagonist / Recruiter"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "etzhayyim-wasm-mangaka-mng4k4x1",
+  "version": "1.0.0",
+  "description": "mangaka.etzhayyim.com — Manga creation appview powered by KAMI Engine canvas",
+  "main": "svelte/.svelte-kit/cloudflare/_worker.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --dir svelte dev",
+    "build": "pnpm --dir svelte build",
+    "preview": "pnpm --dir svelte preview",
+    "check": "pnpm --dir svelte check"
+  },
+  "dependencies": {
+    "@etzhayyim/kotodama-host-sdk": "workspace:*",
+    "aws4fetch": "^1.0.20"
+  }
+}

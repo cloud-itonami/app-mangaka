@@ -1,0 +1,146 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:JFCqrbye-y1D4fIjf73zO",
+  "gh:appearance": {
+    "gh:build": "Model-like tall and slender, wearing a perfectly tailored white suit.",
+    "gh:eyes": "Cold obsidian-like dark irises, sharp mirror-like catchlights, arrogant expression.",
+    "gh:face": "18-year-old Japanese male, perfectly sculpted handsome face, arrogant and cold eyes with obsidian-like dark irises.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 18-year-old Japanese male, perfectly sculpted face, arrogant cold eyes with obsidian-like dark irises and sharp catchlights, white suit, luxury aesthetic.",
+    "gh:hair": "Stylishly set dark brown hair.",
+    "gh:style": "Photorealistic, luxury elite vibe, sharp focus, 8k."
+  },
+  "gh:arc": "Arc 0-3 (Main) / Arc C (Rival)",
+  "gh:arc03Role": {
+    "gh:growth": "『弱さを見せることは恥ではない』と理解する。早期相談の重要性を伝える。",
+    "gh:incident": "特待生の青山ソラが闇バイトに巻き込まれていることに気づく。",
+    "gh:position": "主人公",
+    "gh:theme": "『やめたい…でも、怖い』という声に応える。"
+  },
+  "gh:background": {
+    "gh:currentState": "表向きは完璧な優等生。裏では叔父の紹介で企業のセキュリティ監査に協力。HN: 3pa11er3apiv0t (Spiraler Pivot)",
+    "gh:family": {
+      "gh:origin": "水城家 - 旧華族の末裔。表向きは没落したが、金融・法曹界に人脈を持つ。",
+      "gh:parents": "両親は Kaname 13歳の春に自動車事故で他界。父は大手総合商社の情報システム部門役員、母は弁護士。叔父の慎司（MizukiShinji）が後見人。",
+      "gh:uncle": "叔父は元官僚（経産省出身）。現在は投資ファンド経営。Kanameの才能を見出し、金融業界の案件を紹介。"
+    },
+    "gh:hackerOrigin": "叔父から企業の不正調査の手伝いを依頼されたのがきっかけ。法的に問題のない範囲での調査能力を磨く。並行して、両親の事故調査報告書を独自に追い続けている。",
+    "gh:school": "A学園 高等部 3年・生徒会長。都内有数の進学校（偏差値最上位・中高一貫・旧財閥系）。成績は常にトップ3。生徒会長としての政務能力と調整力で、在校生・教員・理事会から高評価。News Hacker 活動は完全に非公開で、表の完璧な優等生像と両立している。"
+  },
+
+  "gh:traumaIncident": {
+    "gh:type": "サイバー攻撃関連の両親死亡事故（公式には『単純事故』として処理）",
+    "gh:name": "『水城家 事故』（Kaname家内での呼称）",
+    "gh:year": "Kaname 13歳の春",
+    "gh:summary": "両親が同乗した車が高速道路上で制御を失い横転・死亡。公式事故報告書は『運転ミス』で処理されたが、Kanameは17歳時点で事故直前の車載ECUログと、父が勤務していた商社のサイバー攻撃インシデント（同時期の標的型攻撃による役員個人情報流出・ECU遠隔操作の痕跡）を独自に紐づけ、『事故ではない可能性』を結論。ただし物証は不十分で、正規ルートでは再調査を動かせない。",
+    "gh:suspectedMechanism": [
+      "父の商社が標的型攻撃を受け、役員の個人端末経由でクルマの予約整備システムに侵入された痕跡",
+      "整備時期の近接ECUファームが差し替えられていた可能性",
+      "事故直後、叔父が一切の証拠物・端末を引き取って封印している事実"
+    ],
+    "gh:perpetrator": "未特定。産業スパイ系の外国アクターが第一容疑。だが Kaname の真の懸念は『叔父が関与を知っていて隠蔽している可能性』。",
+    "gh:fatherAndMotherLegacy": "父の遺した『秩序と法が壊れた時、最後に残るのは記録だ』という口癖、母の弁護士としての『証拠第一主義』がKanameの方法論の原型。",
+    "gh:meaning": "Kanameが『法と論理の剣』に異常に執着する理由。いつか叔父すら含めて裁ける位置に立つためには、完璧な手続きと証拠の達人である必要がある、という動機。",
+    "gh:knownBy": ["Kaname本人のみ（News Hacker 内でもHN越しの断片情報しか共有していない）"]
+  },
+
+  "gh:neurodiversity": {
+    "gh:diagnosis": "サイコパシー特性（高機能・向社会型 / High-functioning Pro-social Psychopathy）",
+    "gh:note": "臨床的な『反社会性パーソナリティ障害』とは別枠。法務・外科・金融などの高ストレス職で合法的に機能するタイプ。作中でも法の外には踏み込まない。",
+    "gh:traits": {
+      "gh:shallowAffect": "感情の起伏が浅い。怒り・恐怖・喜びを薄く均した状態が基準値。",
+      "gh:fearlessness": "恐怖反応が薄い。サイバー調査の危険領域でも心拍が上がらない。",
+      "gh:coldCognition": "高度なメタ認知と長期計算。感情を意思決定に介在させない。",
+      "gh:manipulativeCapacity": "他者の感情を正確に読み、必要なら演出的に扱える。だが Kaname 自身は『使わない』ことを美学にしている（叔父への反発心）。",
+      "gh:glibCharm": "表層的な魅力・礼儀正しさ。社交場では完璧。",
+      "gh:lowEmpathy": "情動的共感（相手と一緒に感じる）は薄いが、認知的共感（相手の状態を理解する）は高い。"
+    },
+    "gh:strengthFraming": "恐怖の欠如＝夜の追跡・危険な調査を淡々と遂行できる強み。冷静な計算＝複雑な金融犯罪の構造を見抜く思考力。認知的共感＝被害者の状況を正確に評価できる力。",
+    "gh:weaknessFraming": "情動的共感の薄さから、仲間や被害者との距離感を誤ることがある。叔父への疑念と依存が唯一の感情的アンカー。",
+    "gh:selfImposedEthic": "『感情は弱さではなく、使うと誤るノイズだ』という自前の倫理。母（弁護士）の『証拠第一主義』と合流し、『法の手続きだけは絶対に守る』という行動原理になっている。",
+    "gh:trajectory": "連載後半で、Renとの衝突と和解を経て『情動的共感を後天的に学ぶ』成長弧を設計可能。"
+  },
+
+  "gh:sensitivityNote": {
+    "gh:policy": "サイコパシーは『悪役の属性』として安易に消費しない。スペクトラムであること、必ずしも犯罪性と結びつかないこと、社会的に機能するタイプが存在することを作中で示す。",
+    "gh:editorialGuideline": "商業化時は犯罪心理学・司法精神医学の専門家監修を前提。『サイコパス＝犯罪者』のステレオタイプ表現を避ける。",
+    "gh:representation": "Kaname は『冷たい悪役』ではなく『感情の使い方を自分で選んでいる主人公側キャラクター』として描く。"
+  },
+
+  "gh:comedyRole": {
+    "gh:type": "インテリボケ / 完璧主義者の隙（ギャップ系）",
+    "gh:gags": [
+      "意識高い系の名言と同時に 1 箇所ボタンがかけ違っている",
+      "ホチキスの針の向きが水平でないと 30 秒止まる",
+      "コンビニでおにぎりを 5 個買って賞味期限を秒単位でソート",
+      "Chise のストリート系語彙を完全に直訳的に受け取る（『マジ卍』→『十字章、ですか』）",
+      "自分の Ghost が NULL AXE に比べて *地味* という劣等感を時々見せる",
+      "叔父の話題が出ると一瞬で高機能モードが崩れる"
+    ],
+    "gh:balance": "ギャップボケ 5 : クールシリアス 5。感情表出の平坦さ自体が『ズレ』を生むタイプ。",
+    "gh:donotcross": "両親の事故の回想・叔父と直接対峙するシリアス回はコメディ封印。"
+  },
+  "gh:hiddenBackground": {
+    "gh:religion": "キリスト教（プロテスタント・聖公会）",
+    "gh:connection": "水城家は明治期にキリスト教に改宗した旧華族の一つ。星蘭学院もキリスト教系のミッションスクール。",
+    "gh:nameOrigin": "『要（Kaname）』は家の『要（かなめ）』＝柱となれという意味。洗礼名は『ミカエル』（大天使ミカエル＝正義の守護者）。",
+    "gh:influence": "Kanameは形式的には信者だが、信仰は薄い。ただし『正しさ』『秩序』『罪と罰』という概念は無意識に内面化されている。",
+    "gh:symbol": "ミカエル＝剣を持つ天使。Kanameが『法と論理』という剣で悪を裁くメタファー。",
+    "gh:storyUse": "表立っては出てこないが、Kanameの『正しい手続き』へのこだわり、罪悪感への敏感さはキリスト教的な倫理観に根ざしている。",
+    "gh:contrast": "仏教（諦観・受容）のRen vs キリスト教（正義・裁き）のKaname という対比。"
+  },
+  "gh:personality": {
+    "gh:hidden": "実は正義感が強い。弱者を見捨てられない。だが『感情で動くのは愚かだ』と自分を縛っている。",
+    "gh:motivation": "『正しい手続き』で世界を変える。法と論理で悪を追い詰める。",
+    "gh:surface": "冷静沈着。完璧主義。他人を見下すような態度。",
+    "gh:weakness": "人を信頼することが苦手。孤立しがち。叔父への依存。"
+  },
+  "gh:relationships": {
+    "gh:ren": {
+      "gh:dynamic": "Renの『感覚的なアプローチ』を軽蔑するが、その結果には敬意を抱いている。",
+      "gh:history": "オンラインで対峙したことがある。手法の違いから衝突。",
+      "gh:type": "ライバル / 対照的な存在"
+    },
+    "gh:chise": {
+      "gh:dynamic": "Chiseの『ストリート』なやり方を野蛮だと思っている。でも女性としての共感もある。",
+      "gh:type": "対極の存在"
+    },
+    "gh:uncle": {
+      "gh:dynamic": "尊敬しているが、どこか計算高い叔父に違和感も。",
+      "gh:type": "後見人 / メンター"
+    }
+  },
+  "gh:skills": {
+    "gh:hackerName": "3pa11er3apiv0t (Spiraler Pivot)",
+    "gh:reputation": "金融業界では『若き監査人』として知られる",
+    "gh:technical": [
+      "金融システムの分析",
+      "法的証拠の構築",
+      "コーポレートガバナンス",
+      "データ分析・可視化"
+    ]
+  },
+  "gh:slug": "Kaname",
+  "schema:age": 18,
+  "schema:name": "水城 要 (Kaname Mizuki)",
+  "schema:role": "Elite Hacker / Rival",
+
+  "gh:onlinePresence": {
+    "gh:avatar": {
+      "gh:type": "verylonganimals",
+      "gh:animal": "ペンギン (Penguin)",
+      "gh:description": "verylonganimalsのながーいペンギン。スーツのような白黒のカラーリングがエリート感を演出。冷静で隙がないが、実は仲間想い。",
+      "gh:color": "白黒 / クールな黒い目",
+      "gh:usage": "企業関連の調査や公式な場での活動時に使用",
+      "gh:reason": "ペンギン＝整然とした外見と集団行動。Kanameの完璧主義とエリート感、でも実は群れを守る性質を反映。"
+    },
+    "gh:handleVariations": ["3pa11er3apiv0t", "Emperor_Penguin", "ながぺんぎん"]
+  }
+}

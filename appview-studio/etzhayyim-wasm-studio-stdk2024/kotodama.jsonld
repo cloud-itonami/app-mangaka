@@ -1,0 +1,40 @@
+{
+  "@context": "https://etzhayyim.com/ns/kotodama/v1",
+  "@id": "did:web:studio.etzhayyim.com",
+  "convoSystemPrompt": "studio.etzhayyim.com — minimal LangGraph Studio replacement for lg-mangaka. Self-hosted (no LangSmith dependency). Lists registered graphs, renders the Pregel DAG via Mermaid, invokes graphs with arbitrary input, streams run state via SSE.",
+  "deploy": {},
+  "duties": ["勤労の義務"],
+  "governance": {
+    "raci": "responsible",
+    "classification": "internal",
+    "complianceFrameworks": ["studio-policy"]
+  },
+  "kpi": ["agent debug 効率"],
+  "name": "etzhayyim-wasm-studio",
+  "nanoid": "stdk2024",
+  "performerType": "service",
+  "profile": {
+    "agentType": "reactive",
+    "capabilities": ["langgraph-inspect", "pregel-viz", "graph-invoke"],
+    "description": "LangGraph Studio replacement (Svelte SPA on CF Worker, proxies to lg-mangaka-studio k8s pod). Internal-only behind CF Access @etzhayyim.co.jp / Microsoft IdP.",
+    "displayName": "Studio",
+    "isBot": true
+  },
+  "project": "studio",
+  "routes": [
+    {
+      "host": "studio.etzhayyim.com",
+      "paths": ["/"],
+      "tls": true
+    }
+  ],
+  "runtimeType": "worker",
+  "space": {
+    "channels": [],
+    "description": "Internal Studio plane for inspecting lg-mangaka graphs",
+    "historyVisibility": "joined",
+    "joinRule": "invite",
+    "name": "Studio"
+  },
+  "uiType": "appview"
+}

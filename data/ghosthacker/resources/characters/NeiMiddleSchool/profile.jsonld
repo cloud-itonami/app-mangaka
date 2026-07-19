@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:qZg3Z6iB1Fem4HgwiJz7y",
+  "gh:appearance": {
+    "gh:build": "Slender and petite, wearing navy blazer school uniform neatly.",
+    "gh:eyes": "Striking blue irises, bright crystalline catchlights, observant and somewhat distant gaze.",
+    "gh:face": "14-year-old Japanese female, intelligent and curious sharp eyes with striking blue irises. Doll-like beauty.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, soft afternoon lighting, raw photo, 14-year-old Japanese female student, doll-like beauty, platinum blonde layered bob, striking blue irises with sharp catchlights, navy blazer school uniform worn neatly, white blouse, grey checkered skirt.",
+    "gh:hair": "Platinum blonde layered bob hair, slightly longer than current style.",
+    "gh:style": "Photorealistic, soft afternoon light, 8k.",
+    "gh:uniform": "紺のブレザー、白シャツ、グレーのチェック柄スカート（膝下丈）"
+  },
+  "gh:personality": {
+    "gh:interests": "人間観察、読書、情報分析",
+    "gh:mystery": "転校の理由を誰にも話さない",
+    "gh:traits": "静かで観察力が鋭い。感情表現が独特。空気を読まない発言をする。"
+  },
+  "gh:relationship": {
+    "gh:withRen": "転校初日にRenの隣の席になる。Renの「普通じゃなさ」に興味を持ち、自分から話しかける。"
+  },
+  "gh:school": "港南第一中学校 2年B組",
+  "gh:slug": "NeiMiddleSchool",
+  "gh:timeframe": "3年前（2023年）",
+  "schema:age": 14,
+  "schema:name": "Nei - 中学時代",
+  "schema:role": "中学2年生 / 転校生"
+}

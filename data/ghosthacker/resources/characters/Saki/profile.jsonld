@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:7M1ZB8O_k92uby_CDC7tc",
+  "gh:appearance": {
+    "gh:build": "Slender build, wearing a school uniform neatly.",
+    "gh:eyes": "Calm analytical dark eyes, precise iris patterns, clear catchlights.",
+    "gh:face": "14-year-old Japanese female student, calm and analytical expression, sharp features.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, a 14-year-old Japanese middle school girl, long straight black hair, calm analytical expression, sharp dark eyes with clear catchlights, wearing a neat navy blazer school uniform.",
+    "gh:hair": "Long straight black hair.",
+    "gh:style": "Photorealistic, cinematic lighting, 8k, high-end webtoon aesthetic."
+  },
+  "gh:slug": "Saki",
+  "schema:age": 14,
+  "schema:name": "水野 サキ (Saki Mizuno)",
+  "schema:role": "Student / Two-Faced Friend",
+  "gh:personality": {
+    "gh:publicSelf": {
+      "gh:traits": ["優等生", "穏やか", "気配り上手", "Meiの親友"],
+      "gh:description": "表向きはMeiの一番の親友。いつも一緒に行動し、週末も遊びに行く仲。クラスでは穏やかで優しいイメージ。"
+    },
+    "gh:privateSelf": {
+      "gh:traits": ["比較癖", "嫉妬", "本音を隠す", "SNSで愚痴"],
+      "gh:description": "実はMeiの明るさや人気に嫉妬している。Akiraの「金持ち自慢」にもイラついている。本音は鍵垢でしか言えない。",
+      "gh:privateAccount": "@saki_private",
+      "gh:samplePosts": [
+        "Meiってマジうざい、いつも自慢ばっか",
+        "Akiraってスニーカーで調子乗りすぎw",
+        "親友のフリ疲れた",
+        "なんで私がいつも合わせなきゃいけないの"
+      ]
+    }
+  },
+  "gh:arc01Role": {
+    "gh:function": "被害者でありながら、加害者的側面も持つ複雑なキャラクター。彼女の鍵垢暴露がクラスの人間関係を破壊する",
+    "gh:keyDialogue": "ちがっ…！あれは愚痴で…本気じゃなくて…！",
+    "gh:emotionalArc": "表面的な友情 → リンク踏む → 鍵垢暴露 → パニック → 孤立",
+    "gh:thematicRole": "「誰もが裏の顔を持つ」というテーマを体現。SNSの鍵垢文化の危うさを示す"
+  },
+  "gh:relationships": [
+    {"character": "character:Mei", "type": "親友（表向き）", "realFeeling": "嫉妬と疲労"},
+    {"character": "character:Akira", "type": "クラスメイト", "realFeeling": "イラつき"},
+    {"character": "character:Yuto", "type": "クラスメイト", "note": "彼のリンクを踏んでしまった"}
+  ],
+  "gh:onlinePresence": {
+    "gh:publicAccount": "@saki_mizuno",
+    "gh:privateAccount": "@saki_private",
+    "gh:avatar": {
+      "gh:type": "verylonganimals",
+      "gh:animal": "ネコ (Cat)",
+      "gh:description": "verylonganimalsのながーいネコ。表向きは穏やかだが、気まぐれで本心が読めない。",
+      "gh:color": "グレー / 半目",
+      "gh:usage": "公開アカウントで使用。鍵垢はアバターなし",
+      "gh:reason": "ネコ＝二面性、気まぐれ、本心を見せない"
+    }
+  }
+}

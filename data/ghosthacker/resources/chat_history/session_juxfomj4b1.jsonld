@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "chat:vjT_pPy8hWR9Uvs5SGjIG",
+  "@type": "gh:ChatSession",
+  "dct:title": "[AUTO-PILOT START] Goal: 今のストー...",
+  "gh:messages": [
+    {
+      "content": "[AUTO-PILOT START] Goal: 今のストーリーの完成度を評価して、ブラッシュアップ案を提示・適用してください。",
+      "context_json": "[]",
+      "role": "user"
+    }
+  ],
+  "gh:slug": "juxfomj4b1",
+  "schema:dateCreated": 1769330374451
+}

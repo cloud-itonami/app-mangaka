@@ -1,0 +1,33 @@
+assistant : com.etzhayyim.mangaka.composeScene3d v1 (topology)
+entry     : load_panel_plan
+state keys: 20
+nodes     : 11
+
+nodes:
+  • load_panel_plan           kind=mcp_tool     ref=mcp://com.etzhayyim.mangaka.tools.loadPanelPlan
+  • resolve_assets            kind=mcp_tool     ref=mcp://com.etzhayyim.mangaka.tools.resolveAssets
+  • pose_characters           kind=llm          ref=structured
+  • place_scene               kind=mcp_tool     ref=mcp://com.etzhayyim.mangaka.tools.placeScene
+  • cinematography            kind=llm          ref=structured
+  • validate_camera_plan      kind=mcp_tool     ref=mcp://com.etzhayyim.mangaka.tools.validateCamera...
+  • simulate_one              kind=mcp_tool     ref=mcp://com.etzhayyim.mangaka.tools.simulateCharacter
+  • render_keyframes          kind=mcp_tool     ref=mcp://com.etzhayyim.mangaka.tools.renderKeyframes
+  • critique_and_select       kind=llm_vision   ref=vision
+  • aggregate_critique        kind=mcp_tool     ref=mcp://com.etzhayyim.mangaka.tools.aggregateCritique
+  • persist                   kind=mcp_tool     ref=mcp://com.etzhayyim.mangaka.tools.persistScene3d
+
+backbone:
+  START → load_panel_plan
+  load_panel_plan          → resolve_assets
+  resolve_assets           → pose_characters
+  pose_characters          → place_scene
+  place_scene              → cinematography
+  cinematography           → validate_camera_plan
+  simulate_one             → render_keyframes
+  render_keyframes         → critique_and_select
+  critique_and_select      → aggregate_critique
+  persist                  → END
+
+conditional:
+  validate_camera_plan     ──Send(per pose_plan key)→ simulate_one
+  aggregate_critique       ──DMN(dmn:com.etzhayyim.policies.mangaka.composeScene3dRefinement)→ [cinematography→cinematography | persist→persist]

@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:N_IL_eSN_TB13MoJ6um_F",
+  "@type": "gh:Character",
+  "gh:appearance": {
+    "gh:build": "Slim, energetic. Professional but slightly more fashionable than typical auditor.",
+    "gh:eyes": "Bright curious eyes, questioning everything, inspired catchlights.",
+    "gh:face": "32-year-old Japanese female, bright eager face, questioning established norms, aspiring CISA.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 32-year-old Japanese female, bright eager expression, medium-length black hair, professional attire, audit documents and laptop background.",
+    "gh:hair": "Medium-length black hair, neat professional style.",
+    "gh:style": "Photorealistic, office lighting, young professional aesthetic, 8k."
+  },
+  "gh:arc": "Arc C",
+  "gh:organization": "company:TokaiSecurities",
+  "gh:personality": {
+    "gh:arc": "Kanameの監査眼に感銘を受け、弟子入り志願。",
+    "gh:core": "CISA取得を目指す若手。形骸化した監査に疑問を持っている。"
+  },
+  "gh:relationships": {
+    "gh:kaname": {
+      "gh:dynamic": "Kanameの理想を体現しようとする。事件後の改革推進役。",
+      "gh:role": "弟子志願 / 若手協力者"
+    }
+  },
+  "gh:slug": "AokiReina",
+  "schema:age": 32,
+  "schema:name": "青木 玲奈 (Reina Aoki)",
+  "schema:role": "Internal Audit Manager / Arc C Young Ally"
+}

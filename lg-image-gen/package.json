@@ -1,0 +1,21 @@
+{
+  "name": "lg-image-gen",
+  "version": "0.1.0",
+  "description": "LangGraph TS pipeline for arc0-1 panel image generation (3-stage: build prompt → generate → persist)",
+  "type": "module",
+  "scripts": {
+    "run": "tsx src/run.ts",
+    "run-one": "tsx src/run.ts --panel-id"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.30",
+    "@langchain/langgraph": "^0.2.34",
+    "pdf-lib": "^1.17.1",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

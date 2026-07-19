@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:E6xXDDLkMPAsUfvulgNg7",
+  "gh:appearance": {
+    "gh:build": "Fit and athletic build, wearing a navy blue three-piece suit.",
+    "gh:eyes": "Intricate dark brown iris, sharp catchlights, reflecting office light.",
+    "gh:face": "26-year-old Japanese male, sharp eyes with deep brown iris patterns, slightly fatigued but determined expression.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, a 26-year-old Japanese businessman, sharp eyes with intricate deep brown iris patterns and sparkling catchlights, short clean-cut black hair, wearing a navy blue three-piece suit, natural skin tone.",
+    "gh:hair": "Short clean-cut black hair, business style.",
+    "gh:style": "Photorealistic, cinematic lighting, 8k, highly detailed skin texture."
+  },
+  "gh:slug": "Shouta",
+  "schema:age": 26,
+  "schema:name": "大門 翔太 (Shouta Daimon)",
+  "schema:role": "Client / Successor"
+}

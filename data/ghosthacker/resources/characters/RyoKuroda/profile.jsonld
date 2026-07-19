@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:EHQYDRl3bsq5oa5BSFVfW",
+  "gh:appearance": {
+    "gh:build": "Average height, slim. Wears gaming merch hoodies.",
+    "gh:eyes": "Warm brown irises, slightly anxious expression.",
+    "gh:face": "17-year-old Japanese male, soft features, naturally friendly expression, slightly nervous eyes.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, cinematic lighting, raw photo, 17-year-old Japanese male, soft friendly face, dark brown wavy hair, brown eyes with slight anxiety, gaming hoodie, casual pose.",
+    "gh:hair": "Dark brown, slightly wavy, medium length.",
+    "gh:style": "Photorealistic, casual gaming aesthetic, 8k."
+  },
+  "gh:arc": "Arc 0-2",
+  "gh:background": {
+    "gh:dream": "将来はプロゲーマーかストリーマーとして生計を立てたい。",
+    "gh:family": "両親と妹の4人家族。普通の中流家庭。",
+    "gh:school": "都立工科高等学校 2年（情報科）。",
+    "gh:streaming": "HN: Ryo_kuro。登録者5万人の中堅ゲーム配信者。FPSが得意。"
+  },
+  "gh:incident": {
+    "gh:escalation": [
+      "匿名掲示板に住所・本名が晒される",
+      "SNSで誹謗中傷が拡散（『チーターだ』『八百長だ』等のデマ）",
+      "自宅に嫌がらせ（ピザの大量注文、無言電話）",
+      "学校にも噂が広まり、登校しづらくなる"
+    ],
+    "gh:psychologicalImpact": "配信が怖くなる。外出も怖い。誰も信じられなくなる。",
+    "gh:trigger": "配信中に映り込んだ背景から住所を特定される"
+  },
+  "gh:personality": {
+    "gh:hidden": "実は繊細で傷つきやすい。ネガティブコメントを気にしすぎる傾向。",
+    "gh:strength": "素直。助けを求めることを恥ずかしがらない。",
+    "gh:surface": "明るくて人懐っこい。配信では視聴者との絡みが上手い。",
+    "gh:weakness": "自己防衛の知識が足りない。『バズりたい』欲が強すぎる時がある。"
+  },
+  "gh:slug": "RyoKuroda",
+  "gh:storyFunction": {
+    "gh:growth": "Chiseの助けを借りて、『逃げる』ではなく『記録して戦う』を学ぶ。",
+    "gh:message": "被害者は悪くない。声を上げることは恥ずかしいことじゃない。",
+    "gh:role": "被害者 / 読者の感情移入先"
+  },
+  "schema:age": 17,
+  "schema:name": "黒田 涼 (Ryo Kuroda)",
+  "schema:role": "Victim / Game Streamer"
+}

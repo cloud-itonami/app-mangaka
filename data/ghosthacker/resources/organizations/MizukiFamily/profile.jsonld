@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "family": "gh:family/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "family:nh2xoeciCrnkdWubP48ni",
+  "@type": "gh:FamilyProfile",
+  "dct:title": "水城家 - 金融界の影の実力者",
+  "gh:description": "表向きは没落した旧華族。だが金融・法曹界に広がる人脈と情報網を持つ。Kanameのおじさんが現当主として、一族の復興を静かに進めている。",
+  "gh:familyDynamic": {
+    "gh:shinjiKanameRelation": {
+      "gh:currentState": "Kanameは叔父の知性を尊敬しつつも、その計算高さに違和感を感じることも。",
+      "gh:history": "Kanameの両親は事故で他界。慎司が後見人的立場。",
+      "gh:tension": "正義 vs 一族の利益",
+      "gh:type": "叔父・甥"
+    }
+  },
+  "gh:history": {
+    "gh:decline": "戦後の財閥解体で表舞台から退く",
+    "gh:goal": "一族の復興と金融界での地位回復",
+    "gh:origin": "明治期に財閥系銀行の創業に関わった旧華族",
+    "gh:present": "金融・法曹界に広がる人脈で影響力を維持"
+  },
+  "gh:members": [
+    {
+      "@id": "character:MizukiShinji",
+      "gh:familyPosition": "現当主（Kanameの叔父）",
+      "gh:role": "影の支援者 / フィクサー",
+      "gh:sourceFile": "characters/MizukiShinji/profile.jsonld"
+    },
+    {
+      "@id": "character:Kaname",
+      "gh:familyPosition": "本家の長男",
+      "gh:role": "一族の期待を背負う / 主人公",
+      "gh:sourceFile": "characters/Kaname/profile.jsonld"
+    }
+  ],
+  "gh:slug": "Mizuki",
+  "gh:storyFunction": {
+    "gh:arcC": {
+      "gh:hiddenMotivation": "水城家の金融界での影響力拡大",
+      "gh:introduction": "慎司おじさんが『親戚の優秀な若者』としてKanameを東海証券に紹介。",
+      "gh:surfaceMotivation": "甥の才能を活かして企業を助ける"
+    },
+    "gh:futurePlot": {
+      "gh:conflict": "Kanameの正義感と一族の野望の衝突",
+      "gh:foreshadowing": "Arc Dで明かされる水城家の過去と、慎司の真の目的"
+    }
+  },
+  "schema:name": "水城家 (Mizuki Family)"
+}

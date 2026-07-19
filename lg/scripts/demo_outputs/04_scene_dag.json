@@ -1,0 +1,82 @@
+{
+  "scene_dag": {
+    "@context": "https://kami.etzhayyim.com/mangaka-scene/v1",
+    "environment": {
+      "biome": "Plains",
+      "weather": "clear",
+      "seed": 42,
+      "ground_size_m": 64.0,
+      "layout_anchors": [
+        {
+          "name": "lantern",
+          "xform": {}
+        }
+      ]
+    },
+    "characters": [
+      {
+        "rkey": "Chise",
+        "vrm_blob_key": "blobs/mangaka/vrm/sha256-chise-demo",
+        "pose": {
+          "label": "action.dash",
+          "expression": "Determined",
+          "bones": [],
+          "ik_targets": [],
+          "root_xform": {
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        }
+      },
+      {
+        "rkey": "Kota",
+        "vrm_blob_key": "blobs/mangaka/vrm/sha256-kota-demo",
+        "pose": {
+          "label": "action.dash",
+          "expression": "Determined",
+          "bones": [],
+          "ik_targets": [],
+          "root_xform": {
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        }
+      }
+    ],
+    "props": [],
+    "panel": {
+      "rkey": "gh-panel-arc01-p1n1",
+      "shot": "Closeup",
+      "action": "Chise dashes toward the laptop, eyes locked on the screen",
+      "mood": "urgent, determined"
+    }
+  }
+}

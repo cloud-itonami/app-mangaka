@@ -1,0 +1,72 @@
+// no-server-key: read-only — pending Stage A-E member-signed-writes refactor per ADR-2605231525
+{
+  "name": "kotodama-mng4k4x1",
+  "main": "src/app.ts",
+  "compatibility_date": "2025-03-17",
+  "compatibility_flags": ["nodejs_compat","nodejs_als"],
+  "alias": { "@etzhayyim/kotodama-host-sdk": "/Users/junkawasaki/etzhayyimcojp/etzhayyim-apps-etzhayyimcojp/40-engine/kotoba/crates/kotoba-kotodama/sdk/kotodama-host-sdk/src/index.ts", "pg": "/Users/junkawasaki/etzhayyimcojp/etzhayyim-apps-etzhayyimcojp/node_modules/.pnpm/pg@8.20.0/node_modules/pg/lib/index.js", "@etzhayyim/xrpc/transport": "/Users/junkawasaki/etzhayyimcojp/etzhayyim-apps-etzhayyimcojp/10-protocol/xrpc/src/transport.ts", "@etzhayyim/xrpc/auth": "/Users/junkawasaki/etzhayyimcojp/etzhayyim-apps-etzhayyimcojp/10-protocol/xrpc/src/auth.ts", "@etzhayyim/xrpc/error": "/Users/junkawasaki/etzhayyimcojp/etzhayyim-apps-etzhayyimcojp/10-protocol/xrpc/src/error.ts", "@etzhayyim/xrpc/nsid": "/Users/junkawasaki/etzhayyimcojp/etzhayyim-apps-etzhayyimcojp/10-protocol/xrpc/src/nsid.ts", "@etzhayyim/xrpc/encode": "/Users/junkawasaki/etzhayyimcojp/etzhayyim-apps-etzhayyimcojp/10-protocol/xrpc/src/encode.ts", "@cloudflare/puppeteer": "/Users/junkawasaki/etzhayyimcojp/etzhayyim-apps-etzhayyimcojp/node_modules/.pnpm/@cloudflare+puppeteer@0.0.14_bufferutil@4.1.0_utf-8-validate@5.0.10/node_modules/@cloudflare/puppeteer/lib/esm/puppeteer/puppeteer-cloudflare.js" },
+  "assets": {
+    "directory": "./svelte/build",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "single-page-application"
+  },
+  "vars": {
+    "APP_ACTOR_HANDLE": "mangaka",
+    "APP_CAPABILITIES": "[\"work-management\",\"panel-layout\",\"asset-management\",\"mangaka-search\"]",
+    "APP_DESCRIPTION": "Manga creation appview -- KAMI Engine canvas-based manga editor with AI-assisted drawing, panel layout, inking, and toning.",
+    "APP_DISPLAY_NAME": "Mangaka",
+    "APP_EMBED_MODE": "draw",
+    "APP_EMBED_URL": "https://mng4k4x1.etzhayyim.com/?embed=1",
+    "APP_FRAMEWORK": "ts-native",
+    "APP_NANOID": "mng4k4x1",
+    "APP_PERFORMER_TYPE": "service",
+    "APP_UI_TYPE": "game",
+    "B2_BUCKET": "etzhayyim-cdn",
+    "B2_ENDPOINT": "s3.us-west-004.backblazeb2.com",
+    "B2_REGION": "us-west-004"
+  },
+  "r2_buckets": [
+    { "binding": "YATA_R2", "bucket_name": "etzhayyim-cache" },
+    { "binding": "CACHE_R2", "bucket_name": "etzhayyim-cache" }
+  ],
+  "hyperdrive": [
+    { "binding": "HYPERDRIVE", "id": "e84c0a2babe44fc7b74818e394b4b896" }
+  ],
+  "services": [
+    { "binding": "PDS_SERVICE", "service": "etzhayyim-pds-2603241700" },
+    { "binding": "PDS_RPC", "service": "etzhayyim-pds-2603241700", "entrypoint": "PdsRPC" },
+    { "binding": "MURAKUMO_SERVICE", "service": "etzhayyim-murakumo-2603241700" },
+    { "binding": "COMFYUI_SERVICE", "service": "etzhayyim-comfyui-2604221600" }
+  ],
+  "secrets_store_secrets": [
+    { "binding": "SS_YATA_S3_KEY_ID", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "yata_s3_key_id" },
+    { "binding": "SS_YATA_S3_SECRET_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "yata_s3_secret_key" },
+    { "binding": "SS_OPENROUTER_API_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "openrouter_api_key" },
+    { "binding": "SS_PUBLIC_CLERK_PUBLISHABLE_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "public_clerk_publishable_key" },
+    { "binding": "SS_CLERK_SECRET_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "clerk_secret_key" },
+    { "binding": "SS_SIGNING_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "signing_key" },
+    { "binding": "SS_HUME_API_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "hume_api_key" },
+    { "binding": "SS_HUME_SECRET_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "hume_secret_key" },
+    { "binding": "SS_HIGGSFIELD_API_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "higgsfield_api_key" },
+    { "binding": "SS_HIGGSFIELD_API_SECRET", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "higgsfield_api_secret" },
+    { "binding": "SS_RUNWAY_API_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "runway_api_key" },
+    { "binding": "SS_EPIDEMIC_SOUND_JWT_1", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "epidemic_sound_jwt_1" },
+    { "binding": "SS_EPIDEMIC_SOUND_JWT_2", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "epidemic_sound_jwt_2" },
+    { "binding": "SS_TURN_KEY_ID", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "turn_key_id" },
+    { "binding": "SS_TURN_KEY_API_TOKEN", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "turn_key_api_token" },
+    { "binding": "SS_CLOUDFLARE_REGISTRAR_API_TOKEN", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "cloudflare_registrar_api_token" },
+    { "binding": "SS_WEBYUBIN_USERNAME", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "webyubin_username" },
+    { "binding": "SS_WEBYUBIN_PASSWORD", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "webyubin_password" },
+    { "binding": "SS_WEBYUBIN_PAYMENT_CARD_LAST4", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "webyubin_payment_card_last4" },
+    { "binding": "SS_M365_CLIENT_SECRET", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "m365_client_secret" },
+    { "binding": "DISPATCHER_INTERNAL_SECRET", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "dispatcher_internal_secret" }
+  ],
+  "rules": [
+    { "type": "CompiledWasm", "globs": ["**/*.wasm"] }
+  ],
+  "routes": [
+    { "pattern": "mng4k4x1.etzhayyim.com/*", "zone_name": "etzhayyim.com" },
+    { "pattern": "mangaka.etzhayyim.com/*", "zone_name": "etzhayyim.com" }
+  ]
+}

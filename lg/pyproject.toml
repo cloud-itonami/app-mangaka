@@ -1,0 +1,44 @@
+[project]
+name = "lg-mangaka"
+version = "0.1.0"
+description = "mangaka.etzhayyim.com OSS LangGraph FastAPI server (P4 scaffold, 2026-05-08)"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "granian>=1.6",
+    "uvicorn[standard]>=0.30",
+    "apscheduler>=3.10",
+    "PyYAML>=6.0",
+    "langgraph>=0.2.50",
+    "langgraph-checkpoint>=2.0.0",
+    "langgraph-checkpoint-postgres>=2.0.0",
+    "langchain-core>=0.3.0",
+    "psycopg[binary,pool]>=3.2.0",
+    "httpx>=0.27.0",
+    "kotodama",
+    "pydantic>=2.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyright>=1.1.300",
+    # `langgraph dev` — local LangGraph Studio (in-memory checkpointer).
+    # See scripts/dev.sh for the launch command.
+    "langgraph-cli[inmem]>=0.1.55",
+]
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "lg_mangaka",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.0",
+]

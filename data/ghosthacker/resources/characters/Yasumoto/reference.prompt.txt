@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1boy, 52 year old, 52-year-old Japanese man, oily skin, anxious and defensive expression, darting eyes., Messy receding salt-and-pepper hair., Anxious darting eyes, oily texture on eyelids, sharp catchlights from fluorescent lights., Slightly overweight, wearing a rumpled gray business suit., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

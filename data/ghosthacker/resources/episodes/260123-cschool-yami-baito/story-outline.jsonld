@@ -1,0 +1,361 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "story:cschool-yami-baito-v2",
+  "dct:title": "Arc 0-3: 「やめたい…でも、怖い」",
+  "dct:description": "Read-once Kaname origin (v2 alignment with arc0-1 design): 3pa11er3apiv0t (Hacker Nues #22 poster, finance-audit angle) saves underclassman Sora from a yami-baito ring run by an alumnus of his own school. Connects to arc0-1 via Hacker Nues thread; Kaname's metrics-driven OSINT and uncle Mizuki's regulatory leverage triangulate against Nomura. Ends with the second Vector Alignment Proof beat on Ren's SIP device.",
+  "gh:arc": "Arc 0",
+  "gh:episode": 3,
+  "gh:episodeIndex": 3,
+  "gh:episodeId": "episode:cschool-yami-baito",
+  "gh:slug": "arc-0-3-kaname",
+  "gh:subtitle": "Kaname's Story — Dark Part-time Job & Information Trading",
+  "gh:tagline": "一人で抱え込まなくていい。逃げ道は、必ずある。",
+  "gh:theme": "闇バイト・特殊詐欺への巻き込まれからの脱出",
+  "gh:theses": {
+    "gh:practical": "高すぎる報酬は、価格ではなく罠だ",
+    "gh:psychological": "脅されているのは、被害者だ。早く相談すれば加害者にならずに済む",
+    "gh:philosophical": "情報は、物理だ — 売られた口座・身分証は、永遠に残る"
+  },
+  "gh:protagonistArc": {
+    "gh:from": "星蘭学院3年・生徒会副会長。完璧主義で『感情で動くのは弱さ』と信じてきたKaname",
+    "gh:to": "Soraを救うために『感情で動くことは、弱さじゃない』と認める。Hacker Nuesに投稿#22で金融監査側の観測を共有し、Ren側のレーダーに匿名同業者として捕捉される",
+    "gh:decisivePage": 41,
+    "gh:decisiveChoice": "叔父の力（規制側）と自分の論理（生徒会副会長としての立場）を、Soraの保護に正面から使うと決める瞬間"
+  },
+  "gh:complianceNote": {
+    "gh:rule": "Kanameの調査は、合法的範囲（公開情報OSINT、本人合意の元での記録共有、叔父・水城慎司を介した規制側ルート）のみ",
+    "gh:redLine": "卒業生ネットワークを使った非公式調査は『情報源は誰か』を必ず明示。プライベートな金融情報は叔父経由の正規ルートでしか触らない"
+  },
+  "gh:crossEpisodeLinks": {
+    "gh:hackerNuesThread": "arc0-1 ページ7のスレッド『black0awd actor family: renewed activity in APAC』に、Kanameは投稿#22として『金融監査側から確認。同週、都内の中小証券2社でログインセッション詐取の試行。同一C2系列。』を投稿（=Soraの事件の周辺で観測した金融側の異常）",
+    "gh:renObservation": "Renは投稿#22のhandle『3pa11er3apiv0t』を『見たことのない仲間』としてタグ付けして保存（arc0-1 ページ7）。本話で扱う特殊詐欺グループは、arc0-1のblack0awdアクター系統と同じ送金ロンダリング経路を共有していることがエピローグで示唆される",
+    "gh:vapBeat": "Soraが『助けて』と言えた瞬間、Hacker Nuesに投稿#22が立った瞬間、Renの部屋のSIPデバイスが2回目の脈動を見せる（コマ1枚・無セリフ）。本話末でVector Alignment Proofは1→2 になりかける（次のジャンプの伏線）"
+  },
+  "gh:propMotifs": [
+    {
+      "gh:id": "prop:rosary-anglican",
+      "gh:name": "聖公会のロザリオ（プロテスタント系）",
+      "gh:role": "Kanameの胸ポケットに常備。祖母の遺品。彼は祈らないが、決断の前にロザリオの感触を確かめる。神道(Chise)・仏教(Ren)との対比"
+    },
+    {
+      "gh:id": "prop:legal-pad",
+      "gh:name": "黄色いリーガルパッド",
+      "gh:role": "Kanameの議事録ツール。叔父のロースクール時代の書き癖を継いでいる。論点・証拠・リスクの3列で構造化"
+    },
+    {
+      "gh:id": "prop:uncle-business-card",
+      "gh:name": "水城慎司の名刺（金融庁時代）",
+      "gh:role": "叔父の現役時代の名刺。Kanameは緊急時にだけ取り出す。本話のクライマックスで初めて使う（=規制側の正面ルートの起動）"
+    }
+  ],
+  "gh:castOfCharacters": [
+    {
+      "@id": "character:Kaname",
+      "gh:displayName": "水城 要 / Kaname Mizuki",
+      "gh:age": 18,
+      "gh:grade": "星蘭学院3年・生徒会副会長",
+      "gh:role": "主人公 / 問題解決者",
+      "gh:description": "成績は常にトップ3。法と論理で戦う。HN: 3pa11er3apiv0t。聖公会(プロテスタント系)の家系で、感情を抑制することを美徳としてきた",
+      "gh:hackerHandle": "3pa11er3apiv0t",
+      "gh:religionContext": "キリスト教 / 聖公会 — 『正義は手続きの中に宿る』",
+      "gh:visualTell": "胸ポケットのロザリオ、黄色いリーガルパッド、銀縁の眼鏡"
+    },
+    {
+      "@id": "character:SoraAoyama",
+      "gh:displayName": "青山 ソラ / Sora Aoyama",
+      "gh:age": 17,
+      "gh:grade": "星蘭学院2年（特待生）",
+      "gh:role": "依頼人 / 被害者",
+      "gh:description": "母子家庭で経済的に苦しい。真面目で努力家だがプライドが高い。SNSで見つけた『高時給の簡単な仕事』に手を出してしまう"
+    },
+    {
+      "@id": "character:RikaShirakawa",
+      "gh:displayName": "白川 理香 / Rika Shirakawa",
+      "gh:age": 18,
+      "gh:role": "生徒会長 / 協力者",
+      "gh:description": "法律事務所パートナーの娘。Soraの異変に最初に気づく観察眼"
+    },
+    {
+      "@id": "character:KenjiOhara",
+      "gh:displayName": "小原 健司 / Kenji Ohara",
+      "gh:age": 18,
+      "gh:role": "Kanameの親友",
+      "gh:description": "サッカー部キャプテン。Kanameの孤立を防ぐ唯一の同年代の友人"
+    },
+    {
+      "@id": "character:TakashiNomura",
+      "gh:displayName": "野村 隆 / Takashi Nomura",
+      "gh:age": 27,
+      "gh:role": "黒幕 / 闇バイト斡旋者",
+      "gh:description": "星蘭学院の卒業生（10年前）。投資詐欺グループの末端斡旋役。卒業生ネットワークを悪用してSoraを誘い込む"
+    },
+    {
+      "@id": "character:MizukiShinji",
+      "gh:displayName": "水城 慎司 / Shinji Mizuki",
+      "gh:age": 52,
+      "gh:role": "Kanameの叔父 / アドバイザー / 元金融庁",
+      "gh:description": "元官僚（金融庁・証券取引等監視委員会）。現在は独立コンサル。本話の合法的な調査ルートの『正面玄関』を提供する"
+    },
+    {
+      "@id": "character:NeiPuni",
+      "gh:displayName": "ぷにねい / NeiPuni",
+      "gh:role": "メタ解説ホスト",
+      "gh:description": "本編コマ外・章間・柱に分散配置。本話では『闇バイトの典型パターン』『被害者として保護される条件』『口座売買の刑事リスク』などの解説を担当"
+    },
+    {
+      "@id": "character:nue",
+      "gh:displayName": "nue（鵺）",
+      "gh:role": "Hacker Nues管理人 / 国外連携 / 本話では未登場（オフスクリーン）",
+      "gh:description": "Bostonからスレッド統括。Kanameの投稿#22の金融セクター観測を、APAC全体のC2トラフィック異常と重ね合わせている（本人にはまだ見えない）"
+    }
+  ],
+  "gh:actStructure": [
+    {
+      "@id": "act:0-pretitle",
+      "gh:actNumber": 0,
+      "gh:actTitle": "プレタイトル",
+      "gh:actTitleEn": "Pre-title Hook",
+      "gh:emotionalArc": "希望 → 罠の予兆",
+      "gh:keyBeat": "hook",
+      "gh:narrativePurpose": "Soraがスマホで『簡単な仕事 高時給』と検索する瞬間。最初の1件への申し込みボタン",
+      "gh:pageRange": [0, 0]
+    },
+    {
+      "@id": "act:1-temptation",
+      "gh:actNumber": 1,
+      "gh:actTitle": "誘惑",
+      "gh:actTitleEn": "Temptation",
+      "gh:emotionalArc": "日常の苦しみ → 甘い誘惑 → 踏み出す一歩",
+      "gh:keyScenes": [
+        "星蘭学院の華やかな日常（格差の中のSora）",
+        "母の夜勤、家計の押入れ",
+        "SNSで見つけた『高時給の簡単な仕事』",
+        "最初の仕事は『簡単なアンケート回答』、報酬5,000円",
+        "報酬が振り込まれる喜び"
+      ],
+      "gh:narrativePurpose": "Soraが闇バイトに手を出すまでの心理を描く。同時に、Kanameは生徒会室で監査資料を整理しているシーンと並行モンタージュ",
+      "gh:pageRange": [1, 6]
+    },
+    {
+      "@id": "act:2-escalation",
+      "gh:actNumber": 2,
+      "gh:actTitle": "深入り",
+      "gh:actTitleEn": "Deeper",
+      "gh:emotionalArc": "成功体験 → 要求の変化 → 不安の芽生え",
+      "gh:keyScenes": [
+        "報酬が増える（5,000円→1万円→3万円）",
+        "要求される情報が機密性を帯び始める",
+        "『お母さんの仕事の資料、少し見せて』",
+        "Soraの中の警報が鳴り始める",
+        "Soraの口座情報・身分証コピーを渡してしまう"
+      ],
+      "gh:narrativePurpose": "闇バイトの典型的なエスカレーションパターンを描く",
+      "gh:pageRange": [7, 12]
+    },
+    {
+      "@id": "act:3-trap",
+      "gh:actNumber": 3,
+      "gh:actTitle": "罠",
+      "gh:actTitleEn": "Trapped",
+      "gh:emotionalArc": "拒否 → 脅迫 → 絶望",
+      "gh:keyScenes": [
+        "断ろうとするSora",
+        "『今までの記録、全部あるんだよ』",
+        "脅迫メッセージ（学校にバラす、親に言う、警察に言う）",
+        "Sora、逃げ場がないと思い込む",
+        "登校できなくなる"
+      ],
+      "gh:narrativePurpose": "脅迫による心理的拘束のリアリティを描く",
+      "gh:pageRange": [13, 18]
+    },
+    {
+      "@id": "act:4-discovery",
+      "gh:actNumber": 4,
+      "gh:actTitle": "発見",
+      "gh:actTitleEn": "Discovery",
+      "gh:emotionalArc": "異変の察知 → 調査 → 真相への接近",
+      "gh:keyScenes": [
+        "生徒会長・理香がSoraの異変に気づく",
+        "Kanameに相談『水城くん、ちょっと相談があるの』",
+        "Kanameが独自に調査を開始（リーガルパッドで論点整理）",
+        "闇バイトの典型パターンを見抜く",
+        "Kanameは胸ポケットのロザリオに触れる（決断のサイン）"
+      ],
+      "gh:narrativePurpose": "Kanameがソラの異変に気づき、介入を始める",
+      "gh:pageRange": [19, 24]
+    },
+    {
+      "@id": "act:5-rescue",
+      "gh:actNumber": 5,
+      "gh:actTitle": "救出",
+      "gh:actTitleEn": "Rescue",
+      "gh:countermeasures": [
+        {
+          "gh:step": 1,
+          "gh:title": "相談窓口への連絡",
+          "gh:titleEn": "Help Lines",
+          "gh:description": "警察ヤング・テレホン、#9110、消費者ホットライン188、法テラス",
+          "gh:pages": [25, 26]
+        },
+        {
+          "gh:step": 2,
+          "gh:title": "証拠の保全",
+          "gh:titleEn": "Evidence Preservation",
+          "gh:description": "脅迫メッセージ、取引記録、振込履歴のスクショ保存。タイムスタンプ付き魚拓",
+          "gh:pages": [27, 28]
+        },
+        {
+          "gh:step": 3,
+          "gh:title": "口座の凍結・携帯の対処",
+          "gh:titleEn": "Account Freeze",
+          "gh:description": "売ってしまった口座の無効化手続き、携帯のSIM再発行、身分証の盗難届",
+          "gh:pages": [29, 30]
+        },
+        {
+          "gh:step": 4,
+          "gh:title": "弁護士・警察との連携",
+          "gh:titleEn": "Legal & Police Coordination",
+          "gh:description": "被害者として保護される条件・道筋。早期相談の重要性",
+          "gh:pages": [31, 32]
+        }
+      ],
+      "gh:emotionalArc": "接触 → 信頼構築 → 打ち明け → 希望",
+      "gh:keyScenes": [
+        "Kanameがソラに声をかける（生徒会室・夕方）",
+        "最初は拒絶される",
+        "Kanameの言葉『一人で抱え込まなくていい』",
+        "ソラが全てを打ち明ける（涙）",
+        "『逃げ道は、必ずある』"
+      ],
+      "gh:narrativePurpose": "Kanameがソラに寄り添い、解決への道を示す",
+      "gh:pageRange": [25, 32]
+    },
+    {
+      "@id": "act:6-confrontation",
+      "gh:actNumber": 6,
+      "gh:actTitle": "対決",
+      "gh:actTitleEn": "Confrontation",
+      "gh:emotionalArc": "調査完了 → 証拠確保 → 法的決着",
+      "gh:keyScenes": [
+        "叔父・慎司への相談（金融庁時代の名刺を初めて使う）",
+        "Kanameが野村隆（卒業生）を特定",
+        "星蘭の卒業生ネットワークを悪用していたことが判明",
+        "警察・学校・金融庁との連携で野村を追い詰める",
+        "Kanameが Hacker Nues に匿名で投稿#22『金融監査側から確認。同週、都内の中小証券2社でログインセッション詐取の試行。同一C2系列。』を書き込む"
+      ],
+      "gh:narrativePurpose": "黒幕の特定と法的解決。Hacker Nuesへの投稿で arc0-1 と接続",
+      "gh:pageRange": [33, 40]
+    },
+    {
+      "@id": "act:7-resolution",
+      "gh:actNumber": 7,
+      "gh:actTitle": "再生",
+      "gh:actTitleEn": "Rebirth",
+      "gh:emotionalArc": "解決 → 和解 → 前を向く → 縦糸の脈動",
+      "gh:keyScenes": [
+        "Soraが母に全てを打ち明ける",
+        "『助けてって言えてよかった』",
+        "Kanameの内面の変化『感情で動くことは、弱さじゃない』",
+        "Kanameが自室で Hacker Nues を眺める。Ghost_Owl（Ren）の投稿#44 と aka_chise1 の投稿#14 を見て、初めて『同業者がいる』と気づく",
+        "（読者だけが見る）Renの部屋のSIPデバイス、画面の隅で2回目の脈動。『Vector Alignment Proof』のメトリクスは、まだ1のまま。だが、揃いかけている人々のベクトルが、画面外で増えている兆候"
+      ],
+      "gh:narrativePurpose": "被害からの回復と、Kanameの成長。Ren側のメトリクス再脈動で連載の縦糸を強化",
+      "gh:pageRange": [41, 45]
+    }
+  ],
+  "gh:neiPuniColumns": {
+    "gh:placementRule": "本編コマ外・柱・章間見開きに配置。本編には基本的に入れない",
+    "gh:perPageColumns": [
+      {"gh:page": 0, "gh:text": "『簡単に稼げる』には必ず裏があります。時給の異常な高さは、犯罪の値段です"},
+      {"gh:page": 7, "gh:text": "口座・携帯・身分証を売ると、犯罪に使われて自分が加害者扱いされるリスクがあります"},
+      {"gh:page": 13, "gh:text": "脅されたら、それは既に犯罪。あなたは加害者ではなく被害者です。早く相談すれば加害者にならずに済みます"},
+      {"gh:page": 25, "gh:text": "未成年の闇バイト被害者は、早期相談で『被害者保護』の対象になることが多いです"},
+      {"gh:page": 41, "gh:text": "助けを求めることは、強さです。『一人で抱え込まなくていい』"}
+    ],
+    "gh:interludeColumns": [
+      {
+        "gh:placement": "Act 3 → Act 4 の境界",
+        "gh:title": "闇バイトの見分け方",
+        "gh:items": [
+          "高すぎる報酬（時給1万円以上など）",
+          "仕事内容が曖昧",
+          "身分証や口座情報を要求される",
+          "秘密厳守を強調される",
+          "最初は簡単な仕事から始まる",
+          "連絡が秘匿性の高いアプリ（Telegram, Signalなど）に限定される"
+        ]
+      },
+      {
+        "gh:placement": "Act 5 → Act 6 の境界",
+        "gh:title": "もし、引っかかってしまったら",
+        "gh:items": [
+          "1人で悩まない。家族・先生・警察のいずれかに今すぐ相談",
+          "ヤング・テレホン（各都道府県警察）",
+          "警察相談ダイヤル #9110",
+          "消費者ホットライン 188",
+          "法テラス（日本司法支援センター）",
+          "売ってしまった口座は今すぐ銀行に連絡して凍結",
+          "携帯のSIM再発行と身分証の盗難届"
+        ]
+      }
+    ]
+  },
+  "gh:designNotes": {
+    "gh:complianceFix": [
+      "Kanameの調査は OSINT・公開情報・本人合意ログの範囲のみ",
+      "卒業生ネットワークを介した情報収集は『情報源を必ず明示』",
+      "金融機関側の機密情報は叔父・水城慎司を介した規制側の正規ルートでしか触らない"
+    ],
+    "gh:religionContext": "キリスト教 / 聖公会 — 『正義は手続きの中に宿る』。Kanameは祈らないが、ロザリオは決断のスイッチ。Renの仏教(天台宗)、Chiseの神道(八幡信仰)と対比",
+    "gh:hackerNuesConnection": "Act 6 で Kanameは Hacker Nues に匿名（3pa11er3apiv0t）で投稿#22 を書き込む。これは arc0-1 ページ7 でRenが読んでいた投稿。本話のラストでは、KanameがRen（Ghost_Owl）の投稿#44 と Chise（aka_chise1）の投稿#14 を見て『同業者がいる』と気づく。3者はまだ会わない",
+    "gh:vapBeat": "本話のラスト（Act 7）で、Renの部屋のSIPデバイスが2回目の脈動を見せるコマを挿入。読者だけが見る。Vector Alignment Proofの数値はまだ1のまま — つまり、現時点で揃ったのは『悪いのはアクター』のベクトルが arc0-1 で1回成立しただけ。Chise・Kanameの揃い切りは Arc 1（連載第1話）以降",
+    "gh:jumpThreePrinciples": {
+      "gh:effort": "Soraが助けを求める勇気 / Kanameの夜中のリーガルパッド / 慎司の規制側ルートの再起動",
+      "gh:friendship": "Kanameと健司の信頼 / 理香の観察眼 / KanameとSoraの距離が近づく",
+      "gh:victory": "野村の特定と立件 / Soraの母との再会 / Kanameが『感情で動く』ことを認める"
+    },
+    "gh:trinityForeshadowing": "Arc 0-1（Ren / 中学生 / 仏教 / Cschool）→ Arc 0-2（Chise / 高校生 / 神道 / 都立工科） → Arc 0-3（Kaname / 高校生 / キリスト教 / 星蘭学院）の3者は、年齢・学校・宗教・拠点が違うが、Hacker Nuesの同一スレッドで観測しあっている。連載第1話で初めて1つの場で出会う"
+  },
+  "gh:educationalContent": {
+    "gh:keyTakeaways": [
+      "『簡単に稼げる』仕事には裏がある",
+      "一度でも応じると、脅迫材料にされる",
+      "脅されても、相談すれば助けてもらえる",
+      "被害者は罪に問われないことが多い（早期相談が重要）",
+      "口座や携帯を売ると、犯罪に使われて自分が加害者扱いされるリスク"
+    ],
+    "gh:mainMessage": "闇バイトは一度始めると抜け出しにくい。でも、被害者として助けを求めれば必ず道はある",
+    "gh:resources": [
+      "警察相談ダイヤル #9110",
+      "消費者ホットライン 188",
+      "法テラス（日本司法支援センター）",
+      "ヤング・テレホン（各都道府県警察）",
+      "金融庁『詐欺的な投資勧誘』注意喚起"
+    ],
+    "gh:warningSignsOfDarkJob": [
+      "高すぎる報酬（時給1万円以上など）",
+      "仕事内容が曖昧",
+      "身分証や口座情報を要求される",
+      "秘密厳守を強調される",
+      "最初は簡単な仕事から始まる",
+      "連絡が秘匿性の高いアプリ（Telegram, Signalなど）に限定される"
+    ]
+  },
+  "gh:incidentSummary": {
+    "gh:type": "闇バイト（情報売買・特殊詐欺への加担）",
+    "gh:victim": "character:SoraAoyama",
+    "gh:nistFocus": [
+      "ID.RA (Risk Assessment)",
+      "PR.AA (Identity/Access)",
+      "RS.AN (Response Analysis)"
+    ],
+    "gh:description": "特待生の青山ソラが、経済的理由から『簡単な情報収集バイト』に手を出す。最初は軽い仕事だったが、次第に親の仕事に関わる機密情報を要求されるように。断ろうとすると過去の活動記録で脅迫される"
+  },
+  "gh:mainCharacter": "character:Kaname",
+  "gh:mainLocation": "org:SeiranAcademy"
+}

@@ -1,0 +1,284 @@
+{
+  "@context": {
+    "gh": "https://ghosthacker.etzhayyim.com/ns/"
+  },
+  "@type": "gh:GenerationQueue",
+  "gh:maxConcurrent": 1,
+  "gh:jobs": [
+    {
+      "@id": "job:MsjhaQ2gFrUh",
+      "@type": "gh:GenerationJob",
+      "gh:status": "completed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 2,
+      "gh:panel": 2,
+      "gh:model": "local",
+      "gh:prompt": "Tamakiの足元。神楽の一拍。小さな振動が床を走る。. Shot type: Close-up. Dialogue: Narration: Tree of Life（生命の樹）に錨を下ろす感覚。ここから始める。.",
+      "gh:imageUrl": "/images/episodes/episode:sip-vol01-ch01/pages/2/nJGlgkFhkYGP_v1.png",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.438377+09:00",
+      "gh:startedAt": "2026-03-07T10:22:07.890288+09:00",
+      "gh:completedAt": "2026-03-07T10:22:18.762847+09:00"
+    },
+    {
+      "@id": "job:3T8yaxcZpvMC",
+      "@type": "gh:GenerationJob",
+      "gh:status": "cancelled",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 3,
+      "gh:panel": 3,
+      "gh:model": "local",
+      "gh:prompt": "空気が柔らかくなった部屋。Nei-chanが光の羽をあおぐ。チーム全員の存在が感じられる。. Shot type: Wide Shot. Dialogue: Narration: 空気が少し柔らかくなる。.",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.589871+09:00",
+      "gh:startedAt": "2026-03-07T10:22:46.506925+09:00",
+      "gh:completedAt": "2026-03-07T10:22:49.52338+09:00"
+    },
+    {
+      "@id": "job:GdKrSigiBfxn",
+      "@type": "gh:GenerationJob",
+      "gh:status": "cancelled",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 3,
+      "gh:panel": 4,
+      "gh:model": "local",
+      "gh:prompt": "半透明の着信。微細なノイズが散る。. Shot type: Close-up. Dialogue: Nei-chan: ToLのトリアージ担当から.",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.659952+09:00",
+      "gh:startedAt": "2026-03-07T10:22:49.524354+09:00",
+      "gh:completedAt": "2026-03-07T10:22:52.543009+09:00"
+    },
+    {
+      "@id": "job:A0ZuLY0gvQDr",
+      "@type": "gh:GenerationJob",
+      "gh:status": "cancelled",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 4,
+      "gh:panel": 2,
+      "gh:model": "local",
+      "gh:prompt": "Nei-chanがTamakiの意識にだけ聞こえる声で囁く。. Shot type: Close-up. Dialogue: Nei-chan: タマ、この人、すごく「正しい」匂いがする。でも、なんで苦しいの？.",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.771268+09:00",
+      "gh:startedAt": "2026-03-07T10:22:55.5637+09:00",
+      "gh:completedAt": "2026-03-07T10:22:58.573622+09:00"
+    },
+    {
+      "@id": "job:PUMkU7JetujS",
+      "@type": "gh:GenerationJob",
+      "gh:status": "completed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 1,
+      "gh:panel": 1,
+      "gh:model": "local",
+      "gh:prompt": "海面上昇後の東京。運河が道路を置き換え、撤去された高架の跡は緑に覆われている。光の網が街に編み込まれ、静かな脈動がある。夕方の青い光。. Shot type: Extreme Wide Shot. Dialogue: Narration: 運河は青い。窓をなぞる指先の体温が、ガラス越しに街へ融けていく。.",
+      "gh:imageUrl": "/images/episodes/episode:sip-vol01-ch01/pages/1/U7huvLTuHIJE_v2.png",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:16:15.830511+09:00",
+      "gh:startedAt": "2026-03-07T10:16:15.831778+09:00",
+      "gh:completedAt": "2026-03-07T10:16:36.513454+09:00"
+    },
+    {
+      "@id": "job:1SaJevBR5k8_",
+      "@type": "gh:GenerationJob",
+      "gh:status": "completed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 1,
+      "gh:panel": 1,
+      "gh:model": "local",
+      "gh:prompt": "海面上昇後の東京。運河が道路を置き換え、撤去された高架の跡は緑に覆われている。光の網が街に編み込まれ、静かな脈動がある。夕方の青い光。. Shot type: Extreme Wide Shot. Dialogue: Narration: 運河は青い。窓をなぞる指先の体温が、ガラス越しに街へ融けていく。.",
+      "gh:imageUrl": "/images/episodes/episode:sip-vol01-ch01/pages/1/U7huvLTuHIJE_v3.png",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:19:54.590298+09:00",
+      "gh:startedAt": "2026-03-07T10:19:54.591035+09:00",
+      "gh:completedAt": "2026-03-07T10:20:08.23813+09:00"
+    },
+    {
+      "@id": "job:5nJS4Xb-YUHw",
+      "@type": "gh:GenerationJob",
+      "gh:status": "completed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 1,
+      "gh:panel": 1,
+      "gh:model": "local",
+      "gh:prompt": "海面上昇後の東京。運河が道路を置き換え、撤去された高架の跡は緑に覆われている。光の網が街に編み込まれ、静かな脈動がある。夕方の青い光。. Shot type: Extreme Wide Shot. Dialogue: Narration: 運河は青い。窓をなぞる指先の体温が、ガラス越しに街へ融けていく。.",
+      "gh:imageUrl": "/images/episodes/episode:sip-vol01-ch01/pages/1/U7huvLTuHIJE_v4.png",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.388965+09:00",
+      "gh:startedAt": "2026-03-07T10:21:44.389135+09:00",
+      "gh:completedAt": "2026-03-07T10:21:56.952294+09:00"
+    },
+    {
+      "@id": "job:ItKUMB8tLYf5",
+      "@type": "gh:GenerationJob",
+      "gh:status": "completed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 2,
+      "gh:panel": 1,
+      "gh:model": "local",
+      "gh:prompt": "Tamakiが窓ガラスに指を触れている。運河の反射が顔に揺れる。. Shot type: Medium Shot. Dialogue: Narration: いい感じでいる——呼吸を一つ置き、私の足場を確認する。.",
+      "gh:imageUrl": "/images/episodes/episode:sip-vol01-ch01/pages/2/7ROofCeGcOoX_v1.png",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.411174+09:00",
+      "gh:startedAt": "2026-03-07T10:21:56.952436+09:00",
+      "gh:completedAt": "2026-03-07T10:22:07.890108+09:00"
+    },
+    {
+      "@id": "job:pwlnVpIQPH1E",
+      "@type": "gh:GenerationJob",
+      "gh:status": "completed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 2,
+      "gh:panel": 3,
+      "gh:model": "local",
+      "gh:prompt": "Nei-chanがTamakiの肩で光の羽をひとあおぎ。ASCの制御が合う瞬間。. Shot type: Close-up. Dialogue: Nei-chan: うん。タマ、今なら静かに潜れる.",
+      "gh:imageUrl": "/images/episodes/episode:sip-vol01-ch01/pages/2/1WcZT5rLWc-9_v1.png",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.464077+09:00",
+      "gh:startedAt": "2026-03-07T10:22:18.763021+09:00",
+      "gh:completedAt": "2026-03-07T10:22:30.235738+09:00"
+    },
+    {
+      "@id": "job:KQhG2egyOcKz",
+      "@type": "gh:GenerationJob",
+      "gh:status": "completed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 3,
+      "gh:panel": 1,
+      "gh:model": "local",
+      "gh:prompt": "Kaedeの通信。半透明の通信ウィンドウ越し。. Shot type: Medium Shot. Dialogue: Kaede: 汚染レベル、上がってる……. Kaede: Tamaki、慎重に。救急で言えば、これは\"要注意\"レベル.",
+      "gh:imageUrl": "/images/episodes/episode:sip-vol01-ch01/pages/3/TxHVr4epKPVn_v1.png",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.489637+09:00",
+      "gh:startedAt": "2026-03-07T10:22:30.235945+09:00",
+      "gh:completedAt": "2026-03-07T10:22:45.020036+09:00"
+    },
+    {
+      "@id": "job:rXnhZylqOeyh",
+      "@type": "gh:GenerationJob",
+      "gh:status": "cancelled",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 3,
+      "gh:panel": 2,
+      "gh:model": "local",
+      "gh:prompt": "Hibikiの周波数が部屋に流れ込む。温かい音色を光の粒子で表現。. Shot type: Medium Shot. Dialogue: Hibiki: Tudo bem, Tamaki。音の処方箋、調律したよ.",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.515032+09:00",
+      "gh:startedAt": "2026-03-07T10:22:45.020188+09:00",
+      "gh:completedAt": "2026-03-07T10:22:46.506633+09:00"
+    },
+    {
+      "@id": "job:jqIJT31YMYF_",
+      "@type": "gh:GenerationJob",
+      "gh:status": "cancelled",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 4,
+      "gh:panel": 1,
+      "gh:model": "local",
+      "gh:prompt": "Logos登場。黒いスーツの青年。輪郭が不安定——灯が強いほど影が濃くなる。. Shot type: Medium Shot. Dialogue: Narration: 現れたのは、黒いスーツの青年——Logos。その輪郭は、灯が強いほど影が濃くなる絵のように不安定だった。.",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:createdAt": "2026-03-07T10:21:44.729765+09:00",
+      "gh:startedAt": "2026-03-07T10:22:52.543756+09:00",
+      "gh:completedAt": "2026-03-07T10:22:55.562814+09:00"
+    },
+    {
+      "@id": "job:RTZ4jmiLIz73",
+      "@type": "gh:GenerationJob",
+      "gh:status": "failed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 1,
+      "gh:panel": 1,
+      "gh:model": "local",
+      "gh:prompt": "海面上昇後の東京。運河が道路を置き換え、撤去された高架の跡は緑に覆われている。光の網が街に編み込まれ、静かな脈動がある。夕方の青い光。. Shot type: Extreme Wide Shot. Dialogue: Narration: 運河は青い。窓をなぞる指先の体温が、ガラス越しに街へ融けていく。.",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:error": "failed to generate image locally: local image gen error (500): Internal Server Error",
+      "gh:createdAt": "2026-02-12T20:28:57.167773+09:00",
+      "gh:startedAt": "2026-02-12T20:28:57.168102+09:00",
+      "gh:completedAt": "2026-02-12T20:28:57.978006+09:00"
+    },
+    {
+      "@id": "job:MaXseNSX8Rxx",
+      "@type": "gh:GenerationJob",
+      "gh:status": "failed",
+      "gh:episodeId": "episode:sip-vol01-ch01",
+      "gh:pageNumber": 2,
+      "gh:panel": 1,
+      "gh:model": "local",
+      "gh:prompt": "Tamakiが窓ガラスに指を触れている。運河の反射が顔に揺れる。. Shot type: Medium Shot. Dialogue: Narration: いい感じでいる——呼吸を一つ置き、私の足場を確認する。.",
+      "gh:progress": {
+        "gh:currentStep": 0,
+        "gh:totalSteps": 0,
+        "gh:estimatedRemainingMs": 0,
+        "gh:avgStepTimeMs": 0
+      },
+      "gh:error": "failed to generate image locally: local image gen error (500): Internal Server Error",
+      "gh:createdAt": "2026-02-12T20:34:57.197184+09:00",
+      "gh:startedAt": "2026-02-12T20:34:57.197522+09:00",
+      "gh:completedAt": "2026-02-12T20:34:57.438612+09:00"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+masterpiece, best quality, very aesthetic, anime illustration, character reference sheet, 1boy, 26 year old, 26-year-old Japanese male, sharp eyes with deep brown iris patterns, slightly fatigued but determined expression., Short clean-cut black hair, business style., Intricate dark brown iris, sharp catchlights, reflecting office light., Fit and athletic build, wearing a navy blue three-piece suit., neutral expression, T-pose or relaxed standing pose, full body shot, plain white background, clean line art
+
+--- negative ---
+low quality, worst quality, normal quality, lowres, blurry, deformed, extra fingers, bad anatomy, malformed hands, bad proportions, photograph, photorealistic, 3d render, monochrome, grayscale, multiple panels, collage, comic page, wings, nsfw, logo, watermark, signature, text overlay

@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "company": "gh:company/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "incident": "gh:incident/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "company:2hwbkQ7QZVVOmyEzUsmOE",
+  "@type": "gh:CompanyProfile",
+  "gh:arc": "Arc B",
+  "gh:atmosphere": "24時間稼働の物流センター。始業の鐘が絶対。遅延は死活問題。現場は『急げ』の空気が支配。VPNで本社・工場と接続しているが、セキュリティよりスピード優先。",
+  "gh:businessType": "自動車部品物流（トヨタ系サプライチェーンの一次下請け）",
+  "gh:incidentReport": {
+    "@id": "incident:260125-jump-SupplyChain",
+    "dct:date": "2026-11-25",
+    "dct:title": "サプライチェーン攻撃によるライン停止",
+    "gh:ghost": {
+      "gh:form": "秒針の刃が首元に迫る時計の怪物",
+      "gh:name": "始業の鐘",
+      "gh:origin": "締切のプレッシャーが物理化"
+    },
+    "gh:impact": "トヨタ系サプライチェーン全体への波及リスク。数十億円規模の損害可能性。",
+    "gh:rootCause": "リスク計算を放棄した『短気』な判断。場当たり的VPN接続と証拠を消す再起動指示。",
+    "gh:symptoms": [
+      "VPN経由での不正アクセス検知",
+      "在庫管理システムのデータ改ざん",
+      "コンベヤ制御システムへの横展開",
+      "『始業の鐘』に間に合わせようとした場当たり的再起動が被害拡大"
+    ]
+  },
+  "gh:keyCharacters": [
+    {
+      "@id": "character:YamashitaTsuyoshi",
+      "gh:role": "物流本部長 / クライアント",
+      "gh:sourceFile": "characters/YamashitaTsuyoshi/profile.jsonld"
+    },
+    {
+      "@id": "character:TamuraSeiichi",
+      "gh:role": "情報システム部長 / 内部協力者",
+      "gh:sourceFile": "characters/TamuraSeiichi/profile.jsonld"
+    },
+    {
+      "@id": "character:SasakiKenta",
+      "gh:role": "川崎センター長 / 現場代表",
+      "gh:sourceFile": "characters/SasakiKenta/profile.jsonld"
+    },
+    {
+      "@id": "character:EndoRisa",
+      "gh:role": "システム運用チーフ / 技術サポート",
+      "gh:sourceFile": "characters/EndoRisa/profile.jsonld"
+    }
+  ],
+  "gh:organizationChart": {
+    "gh:description": "典型的な日本の物流会社。現場と本社の温度差が大きい。",
+    "gh:levels": [
+      {
+        "gh:level": 1,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:KojimaYuzo",
+            "gh:name": "小島 雄三 (Yuzo Kojima)",
+            "gh:title": "代表取締役社長"
+          },
+          {
+            "gh:characterId": "character:MiuraMasato",
+            "gh:name": "三浦 正人 (Masato Miura)",
+            "gh:title": "専務取締役（営業統括）"
+          }
+        ],
+        "gh:title": "経営層"
+      },
+      {
+        "gh:level": 2,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:YamashitaTsuyoshi",
+            "gh:title": "物流本部長"
+          },
+          {
+            "gh:characterId": "character:TamuraSeiichi",
+            "gh:title": "情報システム部長"
+          }
+        ],
+        "gh:title": "部長クラス"
+      },
+      {
+        "gh:level": 3,
+        "gh:positions": [
+          {
+            "gh:characterId": "character:SasakiKenta",
+            "gh:title": "川崎センター長"
+          },
+          {
+            "gh:characterId": "character:EndoRisa",
+            "gh:title": "システム運用チーフ"
+          }
+        ],
+        "gh:title": "現場リーダー"
+      }
+    ]
+  },
+  "gh:slug": "KojimaLogistics",
+  "schema:employeeCount": 320,
+  "schema:foundingDate": "1978",
+  "schema:location": {
+    "@type": "schema:Place",
+    "schema:address": "神奈川県川崎市川崎区 (Kawasaki, Kawasaki-ku)",
+    "schema:description": "京浜工業地帯に隣接する物流拠点。自動車部品のジャストインタイム配送を担う一次サプライヤー。"
+  },
+  "schema:name": "小島ロジスティクス株式会社 (Kojima Logistics Co., Ltd.)"
+}

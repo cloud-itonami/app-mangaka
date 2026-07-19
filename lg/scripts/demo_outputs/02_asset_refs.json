@@ -1,0 +1,36 @@
+{
+  "asset_refs": {
+    "characters": {
+      "Chise": {
+        "vrm_blob_key": "blobs/mangaka/vrm/sha256-chise-demo",
+        "name": "赤羽 千世",
+        "appearance": {
+          "hair": "long black, red highlights"
+        },
+        "expressions": {}
+      },
+      "Kota": {
+        "vrm_blob_key": "blobs/mangaka/vrm/sha256-kota-demo",
+        "name": "幸太",
+        "appearance": {
+          "hair": "short black"
+        },
+        "expressions": {}
+      }
+    },
+    "environment": {
+      "rkey": "shrine-courtyard-night",
+      "biome": "Plains",
+      "weather": "clear",
+      "base_prompt": "night shrine courtyard, lantern light, stone pavement",
+      "layout": [
+        {
+          "name": "lantern",
+          "xform": {}
+        }
+      ],
+      "seed": 42
+    },
+    "props": {}
+  }
+}

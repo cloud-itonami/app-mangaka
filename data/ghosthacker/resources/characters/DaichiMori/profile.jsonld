@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:O-Bd4oHSDgK1SAxK-mV5W",
+  "gh:appearance": {
+    "gh:build": "Average height, lean. Wears designer clothes.",
+    "gh:eyes": "Sharp, observant gray-green eyes.",
+    "gh:face": "19-year-old Japanese male, handsome but with a calculating expression.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, dramatic lighting, raw photo, 19-year-old Japanese male, handsome calculating expression, slicked back dark hair, gray-green observant eyes, designer streetwear.",
+    "gh:hair": "Slicked back dark hair.",
+    "gh:style": "Photorealistic, urban fashion, 8k."
+  },
+  "gh:arc": "Arc 0-2",
+  "gh:background": {
+    "gh:current": "フリーター。SNSマーケティング系の怪しい仕事をしている噂。",
+    "gh:family": "裕福な家庭だが、両親は仕事で不在がち。",
+    "gh:school": "都立工科高等学校 3年（退学済み）。かつてはChiseと仲が良かった。"
+  },
+  "gh:personality": {
+    "gh:complexity": "悪人ではないが、善人でもない。状況次第でどちらにも転ぶ。",
+    "gh:hidden": "損得勘定で動く。グレーゾーンを渡り歩くタイプ。",
+    "gh:surface": "人当たりは良い。誰にでも愛想を振りまく。"
+  },
+  "gh:relationships": {
+    "gh:chise": {
+      "gh:current": "互いに避けているが、情報は持っている。",
+      "gh:history": "中学からの友人だったが、高2の時に金銭トラブルで疎遠に。"
+    }
+  },
+  "gh:slug": "DaichiMori",
+  "gh:storyFunction": {
+    "gh:contribution": "裏社会の情報を持っている。Chiseに犯人特定のヒントを与える。",
+    "gh:future": "後のアークで再登場の可能性。",
+    "gh:moral": "『使える情報は使う』がChiseの流儀だが、代償も伴う。",
+    "gh:role": "情報提供者 / グレーな存在"
+  },
+  "schema:age": 19,
+  "schema:name": "森 大地 (Daichi Mori)",
+  "schema:role": "Gray Character / Former Friend"
+}

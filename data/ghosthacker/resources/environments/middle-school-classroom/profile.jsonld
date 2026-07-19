@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "env": "gh:environment/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "env:LzdLJ5Avr7uiPRE7PSzah",
+  "gh:generationPrompt": "photorealistic, 8k, cinematic lighting, Japanese public middle school classroom, spring afternoon, cherry blossom petals floating through open window, warm sunlight, navy blazer school uniforms, clean and orderly desks, ARIA-style: luminous atmosphere, soft diffused natural light, pristine clean air",
+  "gh:season": "Spring (桜の季節)",
+  "gh:shotGuidelines": {
+    "gh:closeUp": "Renの銀灰色の瞳が開く瞬間、Neiの青く光る瞳",
+    "gh:mediumShot": "机越しの会話、Renが机に突っ伏して寝ている姿",
+    "gh:wideShot": "教室全体、生徒たちの配置、Renの孤立した位置が見える"
+  },
+  "gh:slug": "middle-school-classroom",
+  "gh:timeOfDay": "Afternoon (放課後)",
+  "gh:visualElements": {
+    "gh:architecture": "Standard Japanese public school classroom, 35-40 desks arranged in rows",
+    "gh:atmosphere": "春の陽だまり、桜の花びらが窓から入ってくる、放課後の静けさ",
+    "gh:lighting": "Natural daylight from large windows, fluorescent ceiling lights (off during day)",
+    "gh:props": "黒板、教卓、生徒の机と椅子、窓際のカーテン、掃除用具入れ、時計、校内放送スピーカー"
+  },
+  "schema:description": "典型的な日本の公立中学校の教室。窓際の後ろの席でRenが寝ている。春の日差しが差し込む。",
+  "schema:name": "港南第一中学校 2年B組 教室"
+}

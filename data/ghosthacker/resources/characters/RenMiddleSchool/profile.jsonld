@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "character": "gh:character/",
+    "context": "gh:context/",
+    "dct": "http://purl.org/dc/terms/",
+    "gh": "https://ghosthacker.etzhayyim.com/ns/",
+    "history": "gh:history/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "character:YGCd5A0C9euA7gdgjQZOl",
+  "gh:appearance": {
+    "gh:build": "Slender and smaller, wearing navy blazer school uniform (often disheveled).",
+    "gh:eyes": "Clear silver-grey crystalline iris, sharp sparkling catchlights, sleepy but observant expression.",
+    "gh:face": "14-year-old Japanese male, pale translucent skin, sleepy half-lidded eyes with silver-grey crystalline irises. Still has some childish softness.",
+    "gh:generationPrompt": "photorealistic, 8k, highly detailed skin texture, soft afternoon lighting, raw photo, 14-year-old Japanese male student, pale porcelain skin, messy raven black hair, sleepy half-lidded eyes with silver-grey crystalline irises, navy blazer school uniform slightly disheveled, white shirt with top button open.",
+    "gh:hair": "Messy raven black hair, slightly shorter than current style.",
+    "gh:style": "Photorealistic, soft afternoon light, 8k.",
+    "gh:uniform": "紺のブレザー、白シャツ（だいたいボタンが開いてる）、グレーのチェック柄スラックス"
+  },
+  "gh:personality": {
+    "gh:interests": "プログラミング、ネットワーク解析、昼寝",
+    "gh:secretSpot": "屋上（立入禁止）",
+    "gh:traits": "孤独だが天才的。授業中はほぼ寝ている。友人はいないが、気にしていない。"
+  },
+  "gh:relationship": {
+    "gh:withNei": "この時期に初めて出会う。最初は無関心だったが、Neiの「普通じゃなさ」に興味を持つ。"
+  },
+  "gh:school": "港南第一中学校 2年B組",
+  "gh:slug": "RenMiddleSchool",
+  "gh:timeframe": "3年前（2023年）",
+  "schema:age": 14,
+  "schema:name": "沼野 蓮 (Ren Numano) - 中学時代",
+  "schema:role": "中学2年生 / Ghost Hacker見習い"
+}
