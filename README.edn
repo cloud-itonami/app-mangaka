@@ -1,1 +1,6 @@
-{:schema "etzhayyim.repository/readme-v1" :name "com-etzhayyim-app-mangaka" :kind :application :source "etzhayyim/root/60-apps/etzhayyim-project-mangaka"}
+{:schema "etzhayyim.repository/readme-v1"
+ :name "app-mangaka"
+ :kind :application
+ :source "etzhayyim/root/60-apps/etzhayyim-project-mangaka"
+ :boundary {:role :manga-creation-application
+            :business-layer "cloud-itonami/mangaka"}}
