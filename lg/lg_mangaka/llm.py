@@ -2,7 +2,7 @@
 
 Two surfaces:
 
-  • `llm_json(system, user, *, model)` — calls the RunPod-served vLLM OpenAI-
+  • `llm_json(system, user, *, model)` — calls the murakumo fleet's OpenAI-
     compatible endpoint (same URL as `agent_chat.py`) and asks for a JSON
     object back. Returns `dict` on success or `None` when the call fails or
     output is malformed. Caller is responsible for the fallback path.
@@ -29,10 +29,28 @@ import httpx
 
 _log = logging.getLogger(__name__)
 
-_VLLM_URL = os.environ.get(
-    "VLLM_URL", "https://vyp99t9px7h4dl-4000.proxy.runpod.net/v1"
-).rstrip("/")
-_VLLM_MODEL = os.environ.get("VLLM_MODEL", "tier0-general")
+# Inference edge — murakumo fleet (ADR-2607173100).
+#
+# Resolution order, per the ADR:
+#   1. env override — VLLM_URL / VLLM_MODEL still win, unchanged.
+#   2. alias resolution — handled *server-side*. `api.murakumo.cloud` resolves
+#      the `murakumo-main` KV alias entry itself, so we send the alias name as
+#      the model and never learn (or pin) the concrete id behind it. This is
+#      why there is no startup GET of /infer/models/murakumo-main here: an
+#      extra round-trip would add a failure mode without changing the answer.
+#   3. fallback bakes the ENDPOINT ONLY. No concrete model id appears below,
+#      so a fleet-side model switch (update the alias entry + serve it) is
+#      picked up by this process on its next call, with no release here.
+#
+# The previous default was `https://vyp99t9px7h4dl-4000.proxy.runpod.net/v1`,
+# an ephemeral RunPod pod id. RunPod releases those hostnames and can reassign
+# them to another tenant, so the default named a host someone else may come to
+# own. Nothing authenticates to this endpoint (the calls below send only
+# Content-Type; the one API key in this module is scoped to `_OPENAI_URL`), so
+# the exposure was of request payloads — scripts, chat history, work ids —
+# rather than of credentials.
+_VLLM_URL = os.environ.get("VLLM_URL", "https://api.murakumo.cloud/v1").rstrip("/")
+_VLLM_MODEL = os.environ.get("VLLM_MODEL", "murakumo-main")
 _VLLM_TIMEOUT = float(os.environ.get("VLLM_TIMEOUT_SEC", "60"))
 
 _OPENAI_URL = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
