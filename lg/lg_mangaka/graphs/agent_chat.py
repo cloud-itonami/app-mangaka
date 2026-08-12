@@ -3,7 +3,7 @@
 Per mangaka CLAUDE.md, the project has 7 production-stage actors:
   writer / storyboarder / penciler / inker / toner / letterer / colorist
 
-This graph forwards a single user turn to RunPod vLLM with a stage-
+This graph forwards a single user turn to the murakumo fleet with a stage-
 specific system prompt. Replaces LLM-side calls in BPMN
 `pipelineChat` / `projectChatStandalone` / `breakdownPage` /
 `generateScript`.
@@ -45,8 +45,11 @@ class _ChatState(TypedDict, total=False):
     error: str | None
 
 
-_VLLM_URL = os.environ.get("VLLM_URL", "https://vyp99t9px7h4dl-4000.proxy.runpod.net/v1").rstrip("/")
-_VLLM_MODEL = os.environ.get("VLLM_MODEL", "tier0-general")
+# Inference edge — murakumo fleet (ADR-2607173100). Same contract as
+# `lg_mangaka.llm`; see the long note there for why the alias is resolved
+# server-side and why the fallback carries the endpoint but never a model id.
+_VLLM_URL = os.environ.get("VLLM_URL", "https://api.murakumo.cloud/v1").rstrip("/")
+_VLLM_MODEL = os.environ.get("VLLM_MODEL", "murakumo-main")
 _VLLM_TIMEOUT = float(os.environ.get("VLLM_TIMEOUT_SEC", "60"))
 _DEFAULT_APP_DID = os.environ.get("MANGAKA_APP_DID", "did:web:mangaka.etzhayyim.com")
 
