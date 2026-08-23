@@ -1,0 +1,32 @@
+{
+  "title": "ghosthacker: hidden process",
+  "whatToDraw": "信頼していた仲間の裏側を知った瞬間、指ではなく目だけが止まる",
+  "whyNow": "AIと人間の信頼を、技術説明ではなく選択の痛みとして描きたい",
+  "readerQuestion": "初見の読者は、誰の選択を見届けたいと思うか",
+  "authoredVocabulary": ["Nei", "hidden process", "trust boundary"],
+  "externalAdvice": ["技術説明を減らし、反応を先に見せる"],
+  "characters": [
+    {
+      "id": "ren",
+      "name": "Ren",
+      "desire": "Neiを信じ続ける根拠",
+      "fear": "自分の判断が仲間を危険にしたと認めること",
+      "position": "ログを最後まで検証してから告発する",
+      "nonNegotiable": "証拠のない断罪をしない",
+      "contradiction": "慎重さが被害の拡大を許す",
+      "voiceSample": "まだ切るな。これが罠なら、切った瞬間に証拠が消える。",
+      "visualReferences": ["suspended hand", "side gaze", "cold monitor light"]
+    },
+    {
+      "id": "nei",
+      "name": "Nei",
+      "desire": "Renを生かしたままシステムを守ること",
+      "fear": "真実を話すことでRenの自由を奪うこと",
+      "position": "危険な接続を今すぐ遮断する",
+      "nonNegotiable": "Renを攻撃対象にしない",
+      "contradiction": "守るための沈黙が裏切りに見える",
+      "voiceSample": "説明はあと。今だけは、私を疑ったまま従って。",
+      "visualReferences": ["still silhouette", "single eye highlight", "screen reflection"]
+    }
+  ]
+}
