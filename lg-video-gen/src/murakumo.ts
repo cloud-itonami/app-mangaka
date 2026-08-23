@@ -115,6 +115,14 @@ export function snapH3Frames(durationSeconds: number): number {
   return Math.max(22, snapped);
 }
 
+export function estimateWarmH3Seconds(request: VideoRequest): number {
+  const measuredSeconds = 6038;
+  const frameScale = request.params.frames / 175;
+  const stepScale = request.params.steps / 20;
+  const pixelScale = (request.params.width * request.params.height) / (640 * 640);
+  return measuredSeconds * frameScale * stepScale * pixelScale;
+}
+
 export function validateVideoRequest(request: VideoRequest): void {
   if (!request.prompt.trim() || request.input.prompt !== request.prompt) {
     throw new Error("prompt must not be empty and input.prompt must match it");
@@ -164,10 +172,12 @@ export function buildManifestEdn(input: {
 }): string {
   const frames = (input.frames ?? []).map(ednString).join(" ");
   const duration = input.request.params.duration_ms / 1000;
+  const estimate = estimateWarmH3Seconds(input.request);
   return `{:schema "cloud.itonami.mangaka.scene-video.v1"\n` +
     ` :provider "murakumo"\n :engine "murakumo-h3"\n :model ${ednString(input.request.model)}\n` +
     ` :duration ${duration}\n :geometry [${input.request.params.width} ${input.request.params.height}]\n` +
     ` :generation-frames ${input.request.params.frames}\n :generation-steps ${input.request.params.steps}\n` +
+    ` :estimated-warm-compute-seconds ${estimate.toFixed(1)}\n` +
     ` :prompt ${ednString(input.request.prompt)}\n :prompt-source ${ednString(input.promptSource)}\n` +
     (input.taskId ? ` :task-id ${ednString(input.taskId)}\n` : "") +
     (input.video ? ` :video ${ednString(input.video)}\n` : "") +

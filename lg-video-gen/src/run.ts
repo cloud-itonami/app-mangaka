@@ -3,12 +3,13 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { compileScenePrompt, type ScenePromptInput } from "./prompt.js";
 import {
-  MurakumoClient, buildManifestEdn, resolveModel, snapH3Frames, validateVideoRequest, waitForTask,
+  MurakumoClient, buildManifestEdn, estimateWarmH3Seconds, resolveModel, snapH3Frames, validateVideoRequest, waitForTask,
   type H3VideoRequest,
 } from "./murakumo.js";
 import { createStoryboard } from "./storyboard.js";
 
 interface Cli {
+  preset: "one-minute" | "quality";
   prompt?: string;
   scene?: string;
   out: string;
@@ -29,14 +30,20 @@ interface Cli {
 }
 
 function parseArgs(argv: string[]): Cli {
-  const cli: Cli = {
-    out: "out/murakumo-h3-scene", model: "h3", duration: 5, width: 640, height: 640,
-    steps: 20, actor: "mangaka:lg-video-gen", dryRun: false,
-    pollMs: 15_000, timeoutMs: 4 * 60 * 60_000, maxPanels: 8,
-  };
+  const presetAt = argv.indexOf("--preset");
+  const preset = (presetAt >= 0 ? argv[presetAt + 1] : "one-minute") as Cli["preset"];
+  if (!["one-minute", "quality"].includes(preset)) throw new Error("--preset must be one-minute or quality");
+  const cli: Cli = preset === "one-minute"
+    ? { preset, out: "out/murakumo-h3-scene", model: "h3", duration: 1, width: 512, height: 512,
+        frames: 22, steps: 1, actor: "mangaka:lg-video-gen", dryRun: false,
+        pollMs: 5_000, timeoutMs: 10 * 60_000, maxPanels: 3 }
+    : { preset, out: "out/murakumo-h3-scene", model: "h3", duration: 5, width: 640, height: 640,
+        steps: 20, actor: "mangaka:lg-video-gen", dryRun: false,
+        pollMs: 15_000, timeoutMs: 4 * 60 * 60_000, maxPanels: 8 };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
-    if (arg === "--prompt") cli.prompt = argv[++i];
+    if (arg === "--preset") i++;
+    else if (arg === "--prompt") cli.prompt = argv[++i];
     else if (arg === "--scene") cli.scene = argv[++i];
     else if (arg === "--out") cli.out = argv[++i];
     else if (arg === "--model") cli.model = argv[++i];
@@ -58,6 +65,7 @@ function parseArgs(argv: string[]): Cli {
   if (!Number.isInteger(cli.maxPanels) || cli.maxPanels < 3 || cli.maxPanels > 12) {
     throw new Error("--max-panels must be an integer from 3 through 12");
   }
+  if (argv.includes("--duration") && !argv.includes("--frames")) cli.frames = undefined;
   return cli;
 }
 
@@ -102,12 +110,17 @@ async function main(): Promise<void> {
   const { input, source } = loadScene(cli);
   const request = makeRequest(cli, compileScenePrompt(input));
   validateVideoRequest(request);
+  const estimatedWarmSeconds = estimateWarmH3Seconds(request);
+  if (cli.preset === "one-minute" && estimatedWarmSeconds > 60) {
+    throw new Error(`one-minute preset exceeds its warm compute budget (${estimatedWarmSeconds.toFixed(1)}s); reduce frames/steps/size or use --preset quality`);
+  }
   const requestPath = path.join(cli.out, "request.json");
   fs.writeFileSync(requestPath, JSON.stringify(request, null, 2) + "\n");
 
   if (cli.dryRun) {
     fs.writeFileSync(path.join(cli.out, "manifest.edn"), buildManifestEdn({ request, promptSource: source }));
-    console.log(`DRY RUN: Murakumo ${request.model} ${request.params.frames}f ${request.params.width}x${request.params.height}`);
+    console.log(`DRY RUN: Murakumo ${request.model} ${request.params.frames}f ${request.params.width}x${request.params.height} ${request.params.steps} step`);
+    console.log(`estimated warm compute: ${estimatedWarmSeconds.toFixed(1)}s (queue and model loading excluded; not an SLA)`);
     console.log(`request: ${requestPath}`);
     return;
   }

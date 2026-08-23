@@ -3,7 +3,7 @@ import { createServer } from "node:http";
 import { test } from "node:test";
 import { compileScenePrompt, normalizeCamera } from "../src/prompt.js";
 import {
-  MurakumoClient, buildManifestEdn, resolveModel, snapH3Frames, validateVideoRequest, waitForTask,
+  MurakumoClient, buildManifestEdn, estimateWarmH3Seconds, resolveModel, snapH3Frames, validateVideoRequest, waitForTask,
   type MurakumoTransport, type TaskState, type VideoRequest,
 } from "../src/murakumo.js";
 import { planStoryboard } from "../src/storyboard.js";
@@ -22,6 +22,15 @@ test("h3 resolves to Murakumo's verified self-hosted model", () => {
   assert.equal(snapH3Frames(5), 124);
   assert.equal(snapH3Frames(6), 158);
   assert.throws(() => resolveModel("invented"));
+});
+
+test("one-minute budget is conservative against the measured H3 point", () => {
+  const fast: VideoRequest = {
+    ...request,
+    params: { ...request.params, duration_ms: 1000, width: 512, height: 512, frames: 22, steps: 1 },
+  };
+  assert.equal(Math.round(estimateWarmH3Seconds(request)), 4278);
+  assert.ok(estimateWarmH3Seconds(fast) < 25);
 });
 
 test("scene prompt carries eye anatomy, motion, and official camera command", () => {
@@ -135,6 +144,7 @@ test("manifest keeps the engine-independent beat/frame contract", () => {
   assert.match(edn, /:provider "murakumo"/);
   assert.match(edn, /:engine "murakumo-h3"/);
   assert.match(edn, /:model "minimax-h3"/);
+  assert.match(edn, /:estimated-warm-compute-seconds/);
   assert.match(edn, /:frame-selection "motion-peaks-and-scene-transitions"/);
   assert.match(edn, /:beats \[\{:beat\/id "scene"/);
   assert.match(edn, /"t0.35.png"/);
