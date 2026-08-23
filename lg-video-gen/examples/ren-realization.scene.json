@@ -1,12 +1,23 @@
 {
   "prompt": "Ren notices a hidden process in the logs. His hand stops above the keyboard, his eyes widen by a fraction, then he slowly looks toward Nei without speaking.",
+  "shots": [
+    {
+      "at": 0,
+      "description": "Wide establishing view: Ren at the keyboard, Nei beyond the monitors; Ren's fingers stop moving.",
+      "camera": "slow push toward Ren"
+    },
+    {
+      "at": 3.5,
+      "description": "Cut to a tight three-quarter view: Ren's eye movement leads, then his head turns toward Nei.",
+      "camera": "held close-up after the cut"
+    }
+  ],
   "setting": "A dark incident response room just before dawn, rows of monitors and a silver keyboard.",
   "atmosphere": "Cold monitor light, dry still air, fine dust visible in one narrow beam; the room begins to breathe as a vent opens.",
   "camera": ["Push in", "Pan right"],
   "continuity": [
     "keep Ren's raven hair, charcoal hoodie, silver-grey irises and face proportions stable",
-    "keep the silver keyboard and monitor layout fixed",
-    "one continuous shot with no cut"
+    "keep the silver keyboard and monitor layout fixed across the cut"
   ],
   "characters": [
     {
