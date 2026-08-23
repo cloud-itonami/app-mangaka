@@ -23,14 +23,24 @@ npm run run -- --prompt "蓮が異変に気づき、Neiへ視線を移す" --dry
 
 MURAKUMO_GENERATION_TOKEN=... npm run run -- \
   --prompt "蓮が異変に気づき、Neiへ視線を移す" \
-  --duration 5 --width 640 --height 640 --steps 20 \
   --out out/ren-realization
 ```
 
-既定は `https://api.murakumo.cloud` / `minimax-h3` / 5秒 / 640×640 /
-124フレーム / 20 steps / 最大8コマ。H3のフレーム数は24fpsを基準に
-`17k+5`へ切り上げる。現在の安全範囲は22〜175フレーム、寸法は32の倍数で指定する。
-別環境では `MURAKUMO_GENERATION_URL` で接続先を明示できる。
+既定の `one-minute` プリセットは `minimax-h3` / 約1秒 / 512×512 /
+22フレーム / 1 step / 最大3コマ。640×640・175f・20 stepsの実測6038秒から
+線形換算したウォーム計算予算は約24.3秒。キュー待ちとモデル読込は含まないため、
+「1分以内」はSLAではなくシーン生成の計算予算である。
+
+```bash
+# 従来の品質設定
+MURAKUMO_GENERATION_TOKEN=... npm run run -- \
+  --preset quality --scene examples/ren-realization.scene.json \
+  --out out/ren-quality
+```
+
+`quality`は5秒 / 640×640 / 124フレーム / 20 steps / 最大8コマ。
+H3のフレーム数は24fpsを基準に`17k+5`へ切り上げる。安全範囲は22〜175フレーム、
+寸法は32の倍数で指定する。別環境では `MURAKUMO_GENERATION_URL` で接続先を明示できる。
 
 ```bash
 MURAKUMO_GENERATION_TOKEN=... npm run run -- \
@@ -58,6 +68,8 @@ H3の参照画像は先頭フレーム固定ではなく、人物同一性など
 ## 動画から選ぶコマ
 
 等間隔の全フレームは採用しない。8fpsで隣接フレームの差分を測り、次を選ぶ。
+`one-minute`では1動画を1場面に限定し、導入・最大動作点・着地の3コマを作る。
+複数の場面切り替えを一動画に詰める場合は`quality`を使う。
 
 1. 導入：人物、場所、位置関係が読める冒頭
 2. 動作：検出された各場面で差分スコアが最大の瞬間
