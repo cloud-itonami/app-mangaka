@@ -5,7 +5,7 @@
 ## 同定
 
 - 公式リポジトリ: `MiniMaxAI/MiniMax-H3`
-- APIモデル名: `MiniMax-H3`
+- Murakumoモデル名: `minimax-h3`
 - Hailuo 2.3とは別モデル。`h3` を `MiniMax-Hailuo-2.3` に置き換えてはならない
 - 33Bパラメータのdense omni-modal Transformer
 - 映像と32kHzステレオ音声を共同生成し、24fps、4〜15秒に対応
@@ -20,9 +20,14 @@
 
 ## 本ワークフローの選択
 
-`lg-video-gen`は再現しやすい公式MiniMax V2 APIを既定経路にする。
-リクエストは`POST /v2/video_generation`、状態確認は
-`GET /v2/query/video_generation/{task_id}`。テキストのみでも開始画像付きでもH3を使用する。
+`lg-video-gen`はKotoba Labsのセルフホスト実行基盤 `api.murakumo.cloud` を既定経路にする。
+2026-08-23に公開generation catalogで、動画の既定が`minimax-h3`、状態が`verified`、
+text/image/reference-to-videoと音声が有効であることを確認した。リクエストは
+`POST /api/v1/generation`、状態確認は`GET /api/v1/generation/jobs/{jobId}`、
+成果物取得は認証付き`GET /api/v1/generation/jobs/{jobId}/artifact`を使う。
+
+Hugging Faceはモデルの同定・能力・ライセンスの一次資料であり、制作時の実行先ではない。
+MiniMax公式V2 APIにも対応能力はあるが、このワークフローの既定経路にはしない。
 
 公開ウェイトをローカル配備する場合は、モデルカードが推奨するSGLang、vLLM、
 Diffusers、ComfyUIのいずれかを別の実行基盤として用意する。モデルの巨大なウェイトを
@@ -38,5 +43,6 @@ Diffusers、ComfyUIのいずれかを別の実行基盤として用意する。�
 
 - https://huggingface.co/MiniMaxAI/MiniMax-H3
 - https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- https://api.murakumo.cloud/api/v1/generation/catalog
 - https://platform.minimax.io/docs/api-reference/video-generation-v2-create
 - https://platform.minimax.io/docs/api-reference/video-generation-v2-query

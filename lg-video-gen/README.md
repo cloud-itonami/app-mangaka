@@ -1,13 +1,13 @@
 # lg-video-gen
 
 `mangaka` / `ghosthacker` の **prompt → H3 video → manga storyboard** 制作ワークフロー。
-制作名 `h3` は公式APIの `MiniMax-H3` とHugging Faceの
-`MiniMaxAI/MiniMax-H3` を指す。`MiniMax-Hailuo-2.3` とは別モデルとして扱う。
+制作名 `h3` はMurakumoの検証済みセルフホストモデル `minimax-h3` と、
+その出典であるHugging Faceの `MiniMaxAI/MiniMax-H3` を指す。
 
 ```text
 scene prompt
   → Hume-grounded face/eye rig を具体的な描画指示へ展開
-  → MiniMax H3 V2 task submit / resume
+  → api.murakumo.cloudへH3 generation jobをsubmit / resume
   → scene.mp4 download
   → フレーム差分で各場面の最大動作点を検出
   → カット直前・直後を対として採用
@@ -21,19 +21,21 @@ scene prompt
 npm install
 npm run run -- --prompt "蓮が異変に気づき、Neiへ視線を移す" --dry-run
 
-MINIMAX_API_KEY=... npm run run -- \
+MURAKUMO_GENERATION_TOKEN=... npm run run -- \
   --prompt "蓮が異変に気づき、Neiへ視線を移す" \
-  --duration 8 --ratio 16:9 --resolution 768P \
+  --duration 5 --width 640 --height 640 --steps 20 \
   --out out/ren-realization
 ```
 
-既定は `MiniMax-H3` / 6秒 / 768P / 16:9 / 最大8コマ。
-H3は4〜15秒、768Pまたは2Kを指定できる。開始画像を渡す場合、比率は画像から自動決定する。
+既定は `https://api.murakumo.cloud` / `minimax-h3` / 5秒 / 640×640 /
+124フレーム / 20 steps / 最大8コマ。H3のフレーム数は24fpsを基準に
+`17k+5`へ切り上げる。現在の安全範囲は22〜175フレーム、寸法は32の倍数で指定する。
+別環境では `MURAKUMO_GENERATION_URL` で接続先を明示できる。
 
 ```bash
-MINIMAX_API_KEY=... npm run run -- \
+MURAKUMO_GENERATION_TOKEN=... npm run run -- \
   --scene examples/ren-realization.scene.json \
-  --first-frame ren.png \
+  --first-frame https://assets.example/ren.png \
   --max-panels 8 \
   --out out/ren-realization
 ```
@@ -41,13 +43,17 @@ MINIMAX_API_KEY=... npm run run -- \
 中断時は `task.json` のtask IDで再開できる。
 
 ```bash
-MINIMAX_API_KEY=... npm run run -- \
+MURAKUMO_GENERATION_TOKEN=... npm run run -- \
   --scene examples/ren-realization.scene.json \
   --resume TASK_ID \
   --out out/ren-realization
 ```
 
-旧Hailuo 2.3を明示的に使う場合だけ `--model hailuo-2.3` を指定する。
+トークンはgeneration scopeを持つものを環境変数から読むだけで、
+`request.json`、`task.json`、manifestには保存しない。成果物は広告された外部URLへ
+直接アクセスせず、認証付きのMurakumo artifact endpointから取得する。
+H3の参照画像は先頭フレーム固定ではなく、人物同一性などを誘導する参照として扱われる。
+現行API契約に合わせ、`--first-frame`にはMurakumoから取得できるHTTP(S) URLを渡す。
 
 ## 動画から選ぶコマ
 
