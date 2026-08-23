@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Prompt-to-scene video workflow for mangaka and ghosthacker using MiniMax Hailuo 2.3",
+  "description": "Prompt-to-scene video workflow for mangaka and ghosthacker using Murakumo-hosted MiniMax H3",
   "scripts": {
     "run": "tsx src/run.ts",
     "test": "node --import tsx --test test/*.test.ts",

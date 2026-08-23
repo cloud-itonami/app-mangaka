@@ -3,22 +3,24 @@ import { createServer } from "node:http";
 import { test } from "node:test";
 import { compileScenePrompt, normalizeCamera } from "../src/prompt.js";
 import {
-  MiniMaxClient, buildManifestEdn, resolveModel, validateVideoRequest, waitForTask,
-  type MiniMaxTransport, type TaskState, type VideoRequest,
-} from "../src/minimax.js";
+  MurakumoClient, buildManifestEdn, resolveModel, snapH3Frames, validateVideoRequest, waitForTask,
+  type MurakumoTransport, type TaskState, type VideoRequest,
+} from "../src/murakumo.js";
 import { planStoryboard } from "../src/storyboard.js";
 
 const request: VideoRequest = {
-  model: "MiniMax-H3",
-  content: [{ type: "text", text: "A scene" }],
-  duration: 6,
-  resolution: "768P",
-  ratio: "16:9",
+  type: "video",
+  model: "minimax-h3",
+  prompt: "A scene",
+  input: { prompt: "A scene" },
+  params: { duration_ms: 5000, width: 640, height: 640, frames: 124, steps: 20 },
+  actor: "mangaka:test",
 };
 
-test("h3 resolves to the official H3 model rather than Hailuo", () => {
-  assert.equal(resolveModel("h3"), "MiniMax-H3");
-  assert.equal(resolveModel("hailuo-2.3"), "MiniMax-Hailuo-2.3");
+test("h3 resolves to Murakumo's verified self-hosted model", () => {
+  assert.equal(resolveModel("h3"), "minimax-h3");
+  assert.equal(snapH3Frames(5), 124);
+  assert.equal(snapH3Frames(6), 158);
   assert.throws(() => resolveModel("invented"));
 });
 
@@ -57,48 +59,69 @@ test("camera and model constraints fail closed", () => {
   assert.deepEqual(normalizeCamera(["[Static shot]"]), ["Static shot"]);
   assert.throws(() => normalizeCamera(["Orbit wildly"]));
   assert.throws(() => normalizeCamera(["Pan left", "Tilt up", "Zoom in", "Shake"]));
-  assert.throws(() => validateVideoRequest({ ...request, duration: 3 }));
-  assert.throws(() => validateVideoRequest({ ...request, ratio: "adaptive" }));
+  assert.throws(() => validateVideoRequest({ ...request, params: { ...request.params, frames: 123 } }));
+  assert.throws(() => validateVideoRequest({ ...request, params: { ...request.params, width: 650 } }));
 });
 
 test("async workflow can resume and reaches a downloadable file", async () => {
   const states: TaskState[] = [
-    { taskId: "t1", status: "Queueing" },
-    { taskId: "t1", status: "Processing" },
-    { taskId: "t1", status: "Success", fileId: "f1", width: 1366, height: 768 },
+    { taskId: "t1", status: "queued" },
+    { taskId: "t1", status: "running", progress: 50 },
+    { taskId: "t1", status: "done", progress: 100, artifactUrl: "https://example.invalid/video.mp4" },
   ];
-  const transport: MiniMaxTransport = {
+  const transport: MurakumoTransport = {
     create: async () => "t1",
     query: async () => states.shift()!,
-    retrieve: async () => ({ downloadUrl: "https://example.invalid/video.mp4" }),
     download: async () => new Uint8Array([0, 1, 2]),
   };
   const observed: string[] = [];
   const state = await waitForTask(transport, "t1", { intervalMs: 0, timeoutMs: 1000, onState: (s) => observed.push(s.status) });
-  assert.equal(state.fileId, "f1");
-  assert.deepEqual(observed, ["Queueing", "Processing", "Success"]);
+  assert.equal(state.artifactUrl, "https://example.invalid/video.mp4");
+  assert.deepEqual(observed, ["queued", "running", "done"]);
 });
 
-test("H3 client uses the V2 create and path-based query endpoints", async () => {
+test("H3 client uses Murakumo generation endpoints and bearer auth", async () => {
   const paths: string[] = [];
+  const auth: Array<string | undefined> = [];
+  const bodies: any[] = [];
   const server = createServer((incoming, response) => {
     paths.push(`${incoming.method} ${incoming.url}`);
-    response.setHeader("content-type", "application/json");
-    if (incoming.method === "POST") response.end(JSON.stringify({ task_id: "h3-task" }));
-    else response.end(JSON.stringify({
-      task: { id: "h3-task", status: "succeeded", content: { url: "https://example.invalid/h3.mp4" } },
-    }));
+    auth.push(incoming.headers.authorization);
+    const chunks: Buffer[] = [];
+    incoming.on("data", (chunk) => chunks.push(chunk));
+    incoming.on("end", () => {
+      const body = Buffer.concat(chunks).toString();
+      if (body) bodies.push(JSON.parse(body));
+      if (incoming.url?.endsWith("/artifact")) {
+        response.end(Buffer.from([0, 1, 2]));
+      } else {
+        response.setHeader("content-type", "application/json");
+        if (incoming.method === "POST") response.end(JSON.stringify({ jobId: "h3-task", status: "queued" }));
+        else response.end(JSON.stringify({
+          jobId: "h3-task", status: "done", progress: 100,
+          artifacts: [{ url: "https://other.murakumo.cloud/artifact", contentHash: "sha256:abc" }],
+        }));
+      }
+    });
   });
   await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve));
   try {
     const address = server.address();
     assert.ok(address && typeof address !== "string");
-    const client = new MiniMaxClient("test-key", `http://127.0.0.1:${address.port}`);
+    const client = new MurakumoClient("test-key", `http://127.0.0.1:${address.port}`);
     assert.equal(await client.create(request), "h3-task");
-    const state = await client.query("h3-task", "MiniMax-H3");
-    assert.equal(state.status, "Success");
-    assert.equal(state.downloadUrl, "https://example.invalid/h3.mp4");
-    assert.deepEqual(paths, ["POST /v2/video_generation", "GET /v2/query/video_generation/h3-task"]);
+    const state = await client.query("h3-task");
+    assert.equal(state.status, "done");
+    assert.equal(state.contentHash, "sha256:abc");
+    assert.deepEqual(await client.download("h3-task"), new Uint8Array([0, 1, 2]));
+    assert.deepEqual(paths, [
+      "POST /api/v1/generation",
+      "GET /api/v1/generation/jobs/h3-task",
+      "GET /api/v1/generation/jobs/h3-task/artifact",
+    ]);
+    assert.deepEqual(auth, ["Bearer test-key", "Bearer test-key", "Bearer test-key"]);
+    assert.equal(bodies[0].model, "minimax-h3");
+    assert.equal(bodies[0].params.frames, 124);
   } finally {
     await new Promise<void>((resolve, reject) => server.close((error) => error ? reject(error) : resolve()));
   }
@@ -106,11 +129,12 @@ test("H3 client uses the V2 create and path-based query endpoints", async () => 
 
 test("manifest keeps the engine-independent beat/frame contract", () => {
   const edn = buildManifestEdn({
-    request, promptSource: "scene.json", taskId: "t1", fileId: "f1",
+    request, promptSource: "scene.json", taskId: "t1",
     video: "scene.mp4", frames: ["t0.00.png", "t0.35.png"],
   });
-  assert.match(edn, /:engine "minimax-h3"/);
-  assert.match(edn, /:model "MiniMax-H3"/);
+  assert.match(edn, /:provider "murakumo"/);
+  assert.match(edn, /:engine "murakumo-h3"/);
+  assert.match(edn, /:model "minimax-h3"/);
   assert.match(edn, /:frame-selection "motion-peaks-and-scene-transitions"/);
   assert.match(edn, /:beats \[\{:beat\/id "scene"/);
   assert.match(edn, /"t0.35.png"/);

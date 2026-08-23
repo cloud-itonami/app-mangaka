@@ -3,9 +3,9 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { compileScenePrompt, type ScenePromptInput } from "./prompt.js";
 import {
-  MiniMaxClient, buildManifestEdn, resolveModel, validateVideoRequest, waitForTask,
-  type H3Ratio, type H3VideoRequest, type HailuoVideoRequest, type VideoRequest,
-} from "./minimax.js";
+  MurakumoClient, buildManifestEdn, resolveModel, snapH3Frames, validateVideoRequest, waitForTask,
+  type H3VideoRequest,
+} from "./murakumo.js";
 import { createStoryboard } from "./storyboard.js";
 
 interface Cli {
@@ -14,10 +14,13 @@ interface Cli {
   out: string;
   model: string;
   duration: number;
-  resolution: "768P" | "1080P" | "2K";
-  ratio: H3Ratio;
+  width: number;
+  height: number;
+  frames?: number;
+  steps: number;
+  seed?: number;
+  actor: string;
   firstFrame?: string;
-  optimize: boolean;
   dryRun: boolean;
   resume?: string;
   pollMs: number;
@@ -27,8 +30,9 @@ interface Cli {
 
 function parseArgs(argv: string[]): Cli {
   const cli: Cli = {
-    out: "out/minimax-h3-scene", model: "h3", duration: 6, resolution: "768P", ratio: "16:9",
-    optimize: false, dryRun: false, pollMs: 10_000, timeoutMs: 20 * 60_000, maxPanels: 8,
+    out: "out/murakumo-h3-scene", model: "h3", duration: 5, width: 640, height: 640,
+    steps: 20, actor: "mangaka:lg-video-gen", dryRun: false,
+    pollMs: 15_000, timeoutMs: 4 * 60 * 60_000, maxPanels: 8,
   };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
@@ -37,10 +41,13 @@ function parseArgs(argv: string[]): Cli {
     else if (arg === "--out") cli.out = argv[++i];
     else if (arg === "--model") cli.model = argv[++i];
     else if (arg === "--duration") cli.duration = Number(argv[++i]);
-    else if (arg === "--resolution") cli.resolution = argv[++i] as Cli["resolution"];
-    else if (arg === "--ratio") cli.ratio = argv[++i] as H3Ratio;
+    else if (arg === "--width") cli.width = Number(argv[++i]);
+    else if (arg === "--height") cli.height = Number(argv[++i]);
+    else if (arg === "--frames") cli.frames = Number(argv[++i]);
+    else if (arg === "--steps") cli.steps = Number(argv[++i]);
+    else if (arg === "--seed") cli.seed = Number(argv[++i]);
+    else if (arg === "--actor") cli.actor = argv[++i];
     else if (arg === "--first-frame") cli.firstFrame = argv[++i];
-    else if (arg === "--optimize") cli.optimize = true;
     else if (arg === "--dry-run") cli.dryRun = true;
     else if (arg === "--resume") cli.resume = argv[++i];
     else if (arg === "--poll-ms") cli.pollMs = Number(argv[++i]);
@@ -55,15 +62,9 @@ function parseArgs(argv: string[]): Cli {
 }
 
 function imageValue(value: string | undefined): string | undefined {
-  if (!value || /^https?:|^data:image\//.test(value)) return value;
-  const absolute = path.resolve(value);
-  const extension = path.extname(absolute).slice(1).toLowerCase().replace("jpg", "jpeg");
-  if (!["jpeg", "png", "webp", "heic", "heif"].includes(extension)) {
-    throw new Error("frame image must be JPG, PNG, WebP, HEIC, or HEIF");
-  }
-  const bytes = fs.readFileSync(absolute);
-  if (bytes.length > 30 * 1024 * 1024) throw new Error("H3 frame image must be at most 30MB");
-  return `data:image/${extension};base64,${bytes.toString("base64")}`;
+  if (!value) return undefined;
+  if (/^https?:\/\//.test(value)) return value;
+  throw new Error("Murakumo H3 reference images must be reachable http(s) URLs");
 }
 
 function loadScene(cli: Cli): { input: ScenePromptInput; source: string } {
@@ -75,34 +76,24 @@ function loadScene(cli: Cli): { input: ScenePromptInput; source: string } {
   throw new Error("provide --prompt <text> or --scene <scene.json>");
 }
 
-function makeRequest(cli: Cli, prompt: string): VideoRequest {
+function makeRequest(cli: Cli, prompt: string): H3VideoRequest {
   const model = resolveModel(cli.model);
-  if (model === "MiniMax-H3") {
-    if (cli.resolution === "1080P") throw new Error("MiniMax-H3 uses 768P or 2K, not 1080P");
-    const frame = imageValue(cli.firstFrame);
-    const request: H3VideoRequest = {
-      model,
-      content: [
-        { type: "text", text: prompt },
-        ...(frame ? [{ type: "image_url" as const, image_url: { url: frame }, role: "first_frame" as const }] : []),
-      ],
-      duration: cli.duration,
-      resolution: cli.resolution,
-      ratio: frame ? "adaptive" : cli.ratio,
-    };
-    return request;
-  }
-  if (cli.resolution === "2K") throw new Error("Hailuo 2.3 does not support 2K in the V1 API");
-  const request: HailuoVideoRequest = {
+  const frame = imageValue(cli.firstFrame);
+  return {
+    type: "video",
     model,
     prompt,
-    duration: cli.duration as 6 | 10,
-    resolution: cli.resolution,
-    prompt_optimizer: cli.optimize,
-    ...(cli.optimize ? { fast_pretreatment: true } : {}),
-    ...(cli.firstFrame ? { first_frame_image: imageValue(cli.firstFrame) } : {}),
+    input: { prompt, ...(frame ? { image: frame } : {}) },
+    params: {
+      duration_ms: Math.round(cli.duration * 1000),
+      width: cli.width,
+      height: cli.height,
+      frames: cli.frames ?? snapH3Frames(cli.duration),
+      steps: cli.steps,
+      ...(cli.seed === undefined ? {} : { seed: cli.seed }),
+    },
+    actor: cli.actor,
   };
-  return request;
 }
 
 async function main(): Promise<void> {
@@ -116,19 +107,21 @@ async function main(): Promise<void> {
 
   if (cli.dryRun) {
     fs.writeFileSync(path.join(cli.out, "manifest.edn"), buildManifestEdn({ request, promptSource: source }));
-    console.log(`DRY RUN: ${request.model} ${request.duration}s ${request.resolution}`);
+    console.log(`DRY RUN: Murakumo ${request.model} ${request.params.frames}f ${request.params.width}x${request.params.height}`);
     console.log(`request: ${requestPath}`);
     return;
   }
 
-  const client = new MiniMaxClient(process.env.MINIMAX_API_KEY ?? "");
+  const client = new MurakumoClient(
+    process.env.MURAKUMO_GENERATION_TOKEN ?? "",
+    process.env.MURAKUMO_GENERATION_URL ?? "https://api.murakumo.cloud",
+  );
   const taskId = cli.resume ?? await client.create(request);
   const taskPath = path.join(cli.out, "task.json");
   fs.writeFileSync(taskPath, JSON.stringify({ taskId, status: "submitted", request }, null, 2) + "\n");
-  console.log(`${cli.resume ? "Resuming" : "Submitted"} MiniMax task ${taskId}`);
+  console.log(`${cli.resume ? "Resuming" : "Submitted"} Murakumo task ${taskId}`);
 
   const state = await waitForTask(client, taskId, {
-    model: request.model,
     intervalMs: cli.pollMs,
     timeoutMs: cli.timeoutMs,
     onState: (next) => {
@@ -136,13 +129,12 @@ async function main(): Promise<void> {
       console.log(`${taskId}: ${next.status}`);
     },
   });
-  const downloadUrl = state.downloadUrl ?? (await client.retrieve(state.fileId!)).downloadUrl;
   const videoName = "scene.mp4";
-  fs.writeFileSync(path.join(cli.out, videoName), await client.download(downloadUrl));
+  fs.writeFileSync(path.join(cli.out, videoName), await client.download(taskId));
   const storyboard = createStoryboard(path.join(cli.out, videoName), cli.out, cli.maxPanels);
   const frames = storyboard.panels.map((panel) => panel.frame);
   fs.writeFileSync(path.join(cli.out, "manifest.edn"), buildManifestEdn({
-    request, promptSource: source, taskId, fileId: state.fileId, video: videoName, frames,
+    request, promptSource: source, taskId, video: videoName, frames,
   }));
   console.log(`done: ${path.join(cli.out, videoName)} (${frames.length} motion/transition panels)`);
 }
