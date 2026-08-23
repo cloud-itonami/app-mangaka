@@ -1,0 +1,40 @@
+{
+  "prompt": "Ren notices a hidden process in the logs. His hand stops above the keyboard, his eyes widen by a fraction, then he slowly looks toward Nei without speaking.",
+  "setting": "A dark incident response room just before dawn, rows of monitors and a silver keyboard.",
+  "atmosphere": "Cold monitor light, dry still air, fine dust visible in one narrow beam; the room begins to breathe as a vent opens.",
+  "camera": ["Push in", "Pan right"],
+  "continuity": [
+    "keep Ren's raven hair, charcoal hoodie, silver-grey irises and face proportions stable",
+    "keep the silver keyboard and monitor layout fixed",
+    "one continuous shot with no cut"
+  ],
+  "characters": [
+    {
+      "name": "Ren",
+      "identity": "17-year-old Japanese boy, pale skin, messy raven-black hair, charcoal hoodie, silver-grey crystalline irises",
+      "action": "His typing stops; the fingers remain suspended; only his eyes and then his head turn toward Nei.",
+      "face": {
+        "rig": "wide-reveal",
+        "intensity": 0.7,
+        "eyes": {
+          "open": 0.96,
+          "upperLid": "raised-arc",
+          "lowerLid": "soft-arc",
+          "brow": "inner-raised",
+          "pupil": 0.82,
+          "iris": 0.93,
+          "gaze": "side",
+          "highlight": "double",
+          "tear": "none",
+          "asymmetry": 0.0
+        },
+        "mouth": "small-open",
+        "dimensions": [
+          {"label": "Realization", "confidence": 0.72},
+          {"label": "Interest", "confidence": 0.61},
+          {"label": "Surprise (positive)", "confidence": 0.38}
+        ]
+      }
+    }
+  ]
+}
