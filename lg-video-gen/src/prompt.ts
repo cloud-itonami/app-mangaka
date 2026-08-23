@@ -32,6 +32,12 @@ export interface SceneCharacter {
 
 export interface ScenePromptInput {
   prompt: string;
+  shots?: Array<{
+    at?: number;
+    description: string;
+    setting?: string;
+    camera?: string;
+  }>;
   setting?: string;
   atmosphere?: string;
   characters?: SceneCharacter[];
@@ -85,10 +91,19 @@ export function normalizeCamera(commands: string[] = []): string[] {
 export function compileScenePrompt(input: ScenePromptInput): string {
   if (!clean(input.prompt)) throw new Error("scene prompt is required");
   const camera = normalizeCamera(input.camera);
+  const hasCuts = (input.shots?.length ?? 0) > 1;
   const sections: string[] = [
-    "Create one continuous manga-cinematic scene with stable character identity and coherent physical motion.",
+    hasCuts
+      ? "Create a manga-cinematic sequence with deliberate, clearly readable shot changes, stable character identity, and coherent physical motion."
+      : "Create a manga-cinematic scene with stable character identity and coherent physical motion.",
     `SCENE: ${clean(input.prompt)}`,
   ];
+  for (const [index, shot] of (input.shots ?? []).entries()) {
+    const timing = shot.at === undefined ? "" : ` at ${shot.at.toFixed(2)}s`;
+    const details = [clean(shot.description), shot.setting && `setting: ${clean(shot.setting)}`, shot.camera && `camera: ${clean(shot.camera)}`]
+      .filter(Boolean).join("; ");
+    sections.push(`SHOT ${index + 1}${timing}: ${details}`);
+  }
   if (input.setting) sections.push(`SETTING: ${clean(input.setting)}`);
   if (input.atmosphere) sections.push(`ATMOSPHERE: ${clean(input.atmosphere)}`);
   for (const character of input.characters ?? []) {
@@ -104,7 +119,7 @@ export function compileScenePrompt(input: ScenePromptInput): string {
   sections.push(`STYLE: ${clean(input.style ?? "monochrome Japanese manga, clean expressive line art, controlled screentone, cinematic lighting")}`);
   const negatives = input.negative ?? [
     "no subtitles", "no speech bubbles", "no written text", "no identity drift",
-    "no extra fingers", "no duplicate characters", "no abrupt shot discontinuity",
+    "no extra fingers", "no duplicate characters", "no unmotivated jump cuts",
   ];
   sections.push(`AVOID: ${negatives.map(clean).join("; ")}`);
   const prompt = sections.join("\n");
