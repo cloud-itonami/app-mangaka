@@ -6,6 +6,7 @@
   "description": "Prompt-to-scene video workflow for mangaka and ghosthacker using Murakumo-hosted MiniMax H3",
   "scripts": {
     "run": "tsx src/run.ts",
+    "name-workflow": "tsx src/run-name-workflow.ts",
     "test": "node --import tsx --test test/*.test.ts",
     "typecheck": "tsc --noEmit"
   },

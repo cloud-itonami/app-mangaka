@@ -4,6 +4,11 @@
 制作名 `h3` はMurakumoの検証済みセルフホストモデル `minimax-h3` と、
 その出典であるHugging Faceの `MiniMaxAI/MiniMax-H3` を指す。
 
+ネームとキャラクターを作る前段は
+[`docs/name-character-steps.md`](docs/name-character-steps.md)の12 stepsを使う。
+「描きたい瞬間」から始め、キャラごとの立場と最善手を衝突させ、粗いネームを作り、
+読者視点と助言で前のstepへ戻る。特定作家の画風や既存キャラクターは生成指示に入れない。
+
 ```text
 scene prompt
   → Hume-grounded face/eye rig を具体的な描画指示へ展開
