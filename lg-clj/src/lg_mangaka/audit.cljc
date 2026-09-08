@@ -7,7 +7,7 @@
   (audit loss is acceptable — the LangGraph state checkpoint is the source of
   truth for resumability). Honors LG_AUDIT_DISABLED=1 (the test harness sets it)."
   (:require [cheshire.core :as json]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def default-config
   {:app-did "did:web:mangaka.etzhayyim.com"

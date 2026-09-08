@@ -35,7 +35,7 @@
   RisingWave); state is a clj map and thread-state retrieval is omitted."
   (:require [langgraph.graph :as g]
             [cheshire.core :as json]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [lg-mangaka.store :as store]
             [lg-mangaka.llm :as llm]
             [lg-mangaka.audit :as audit]
@@ -77,7 +77,7 @@
   [s]
   (-> (name s)
       (str/replace #"([a-z0-9])([A-Z])" "$1_$2")
-      str/lower-case
+      str/lower
       keyword))
 
 (defn normalize-input

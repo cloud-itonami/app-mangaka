@@ -12,7 +12,7 @@
   DEVIATION (noted): Python persists to RisingWave via kotoba_datomic; here the
   write is the injectable `lg-mangaka.store` seam (kotoba Datom-log target).
   langgraph-clj has no RetryPolicy (Python save had max_attempts=2)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [lg-mangaka.store :as store]
             [lg-mangaka.audit :as audit]))

@@ -14,7 +14,7 @@
   edge defaults to the Murakumo loopback gateway via `lg-mangaka.llm/*chat*`
   (ADR-2605215000) instead of the RunPod vLLM proxy. The chat call is injectable
   (`*chat*`) so tests verify the prompt assembly + state mapping offline."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [lg-mangaka.llm :as llm]
             [lg-mangaka.audit :as audit]))
