@@ -16,7 +16,7 @@
 ;; LangGraph compile is omitted (it requires the langgraph runtime); `build`
 ;; returns the equivalent node/edge spec data so the graph topology is faithful.
 (ns lg.lg-mangaka.graphs.comfy-run
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── default URL (authority-free portable default) ────────────────────────────
 ;; _DEFAULT_URL = (COMFY_POD_URL or COMFYUI_POD_URL or COMFYUI_URL

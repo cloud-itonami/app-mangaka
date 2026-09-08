@@ -15,7 +15,7 @@
   DEVIATION (noted): load_doc reads through `lg-mangaka.store` (kotoba Datom-log
   target) instead of RisingWave. No RetryPolicy in langgraph-clj (Python: 2).
   Steps 2-4 are pure and fully verifiable offline."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [cheshire.core :as json]
             [langgraph.graph :as g]
             [lg-mangaka.store :as store]

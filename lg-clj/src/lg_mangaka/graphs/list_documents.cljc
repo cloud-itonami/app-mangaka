@@ -9,7 +9,7 @@
 
   DEVIATION (noted): Python queries vertex_mangaka via kotoba_datomic; here the
   read goes through the `lg-mangaka.store` seam (kotoba Datom-log target)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [lg-mangaka.store :as store]))
 

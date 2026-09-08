@@ -16,7 +16,7 @@
     insert-row!    ≙ client.insert_row(table, row)
     select-where   ≙ client.select_where(table, col, val, columns, limit)
     q              ≙ client.q(datalog)   (health probe)"
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def ^:dynamic *enabled?* false)
 

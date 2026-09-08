@@ -8,7 +8,7 @@
 
   DEVIATION (noted): Python gates on RW_URL being set; here the store seam's
   `enabled?` is the analogue. No RetryPolicy in langgraph-clj (Python: 2)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [langgraph.graph :as g]
             [lg-mangaka.store :as store]
             [lg-mangaka.audit :as audit]))

@@ -15,7 +15,7 @@
   `llm-json` — chat completion parsed as JSON (tolerates ```json fences and
                leading prose) → map or nil."
   (:require [cheshire.core :as json]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 ;; Murakumo fleet (ADR-2605215000) — the ONLY inference endpoints representable.
 (def murakumo-allowed-hosts
@@ -34,8 +34,8 @@
   when allowed; throws ex-info otherwise."
   [endpoint]
   (when-let [[_ scheme host] (re-find #"^([A-Za-z][A-Za-z0-9+.\-]*)://([^/?#]*)" (str endpoint))]
-    (when-not (and (= "http" (str/lower-case scheme))
-                   (contains? murakumo-allowed-hosts (str/lower-case host)))
+    (when-not (and (= "http" (str/lower scheme))
+                   (contains? murakumo-allowed-hosts (str/lower host)))
       (throw (ex-info (str "inference endpoint " (pr-str endpoint)
                            " is outside the Murakumo fleet (ADR-2605215000)")
                       {:murakumo-only-violation true :endpoint endpoint})))))

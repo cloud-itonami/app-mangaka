@@ -12,7 +12,7 @@
   DEVIATION (noted): Python writes RisingWave via kotoba_datomic; here the two
   INSERTs go through `lg-mangaka.store`. No RetryPolicy in langgraph-clj
   (Python write_row had max_attempts=2)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [cheshire.core :as json]
             [langgraph.graph :as g]
             [lg-mangaka.store :as store]

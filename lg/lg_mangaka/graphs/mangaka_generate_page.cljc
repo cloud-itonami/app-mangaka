@@ -14,7 +14,7 @@
 ;; #?(:clj ...) / injected. The langgraph module-level compile is omitted; `build-graph`
 ;; returns the node/edge topology as data so the graph shape is faithful.
 (ns lg.lg-mangaka.graphs.mangaka-generate-page
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── pure helpers ──────────────────────────────────────────────────────────────
 (defn merge-list
