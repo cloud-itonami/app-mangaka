@@ -1,0 +1,20 @@
+{:format :kotoba.cljk-origin/v1
+ :renamed-on "2026-09-11"
+ :decision "adr-2609111500-cljk-rename-all-clojure-source (com-junkawasaki/root 90-docs/adr; owner instruction 2026-09-11)"
+ :rule "value = the extension the file had before the rename. A path ending in .clj.cljk or .cljs.cljk kept it in the name because both platform files existed (or the plain target was taken)."
+ :origins
+ {"lg-clj/run_tests.cljk" ".clj"
+  "lg-clj/src/lg_mangaka/audit.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/graphs/agent_chat.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/graphs/debug_canvas_state.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/graphs/health.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/graphs/list_documents.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/graphs/load_document.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/graphs/record_op_log.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/graphs/save_document.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/llm.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/server.cljk" ".cljc"
+  "lg-clj/src/lg_mangaka/store.cljk" ".cljc"
+  "lg-clj/test/lg_mangaka/smoke_test.cljk" ".cljc"
+  "lg/lg_mangaka/graphs/comfy_run.cljk" ".cljc"
+  "lg/lg_mangaka/graphs/mangaka_generate_page.cljk" ".cljc"}}
