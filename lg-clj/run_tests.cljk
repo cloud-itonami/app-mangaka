@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; lg-mangaka — bb-native test runner (Clojure / babashka; NOT shell, per the
 ;; repo rule "Operational code = clj/bb", ADR-2606072802 + 2606280030).
 ;;
