@@ -3,7 +3,7 @@
   `tests/test_smoke.py`, plus node-behaviour tests the original could not run
   offline (the store + LLM are injectable here, so persistence + transforms +
   the canvas-rect analysis verify under bb with stubs)."
-  (:require [clojure.test :refer [deftest is testing use-fixtures]]
+  (:require [kotoba.lang.error :as kerror] [clojure.test :refer [deftest is testing use-fixtures]]
             [langgraph.graph :as g]
             [lg-mangaka.server :as server]
             [lg-mangaka.store :as store]
@@ -149,12 +149,12 @@
 
 (deftest murakumo-guard
   (testing "off-fleet endpoint refused"
-    (is (thrown? clojure.lang.ExceptionInfo (llm/assert-murakumo "https://api.openai.com/v1"))))
+    (is (thrown? kerror/ExceptionInfo (llm/assert-murakumo "https://api.openai.com/v1"))))
   (testing "loopback gateway allowed"
     (is (nil? (llm/assert-murakumo "http://127.0.0.1:4000/v1")))))
 
 (deftest llm-http-capability-is-explicit-and-fail-closed
-  (is (thrown-with-msg? clojure.lang.ExceptionInfo #"explicit HTTP POST capability"
+  (is (thrown-with-msg? kerror/ExceptionInfo #"explicit HTTP POST capability"
                         (llm/chat [] {})))
   (let [seen (atom nil)]
     (binding [llm/*http-post*

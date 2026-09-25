@@ -10,7 +10,11 @@
  ;; The Python FastAPI app under `lg/` remains the deployed runtime and COEXISTS;
  ;; this clj twin is additive. See server.cljc for the ported-vs-remaining split.
  :paths ["src" "test"]
- :deps  {com-junkawasaki/langgraph-clj
+ :deps  {
+        ;; kotoba.lang.error replaced clojure.lang.ExceptionInfo here (2026-09-25).
+        ;; An explicit floor: tools.deps takes the NEWEST sha it is shown.
+        io.github.kotoba-lang/error {:git/sha "838dec56c9a5b74f9eec825a2fb28bda157f8cd3"}
+        com-junkawasaki/langgraph-clj
          {:git/url "https://github.com/com-junkawasaki/langgraph-clj"
           :git/sha "c7daa07d4e50f55d7e2a02e4b89dbeb2b200961d"}}
  :tasks
