@@ -1,6 +1,6 @@
 """mangaka `agent_chat` graph — manga production AI persona chat.
 
-Per mangaka CLAUDE.md, the project has 7 production-stage actors:
+Per mangaka AGENTS.md, the project has 7 production-stage actors:
   writer / storyboarder / penciler / inker / toner / letterer / colorist
 
 This graph forwards a single user turn to the murakumo fleet with a stage-

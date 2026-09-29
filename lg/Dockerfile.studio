@@ -5,13 +5,13 @@
 # datasets) that kotodama pulls — Studio's job is graph invocation + per-stage
 # preview, not training. Image stays ~400 MB instead of 8+ GB.
 #
-# Build (remote BuildKit, per 50-infra/CLAUDE.md):
+# Build (remote BuildKit, per 50-infra/AGENTS.md):
 #   cd 60-apps/etzhayyim-project-mangaka/lg
 #   docker buildx build --builder etzhayyim-vke --platform linux/amd64 \
 #     -t ghcr.io/etzhayyimcojp/lg-mangaka-studio:0.1.0-amd64 \
 #     -f Dockerfile.studio --push .
 #
-# Build (local Mac fallback — bootstrap exception only, see CLAUDE.md no-local rule):
+# Build (local Mac fallback — bootstrap exception only, see AGENTS.md no-local rule):
 #   docker buildx build --platform linux/amd64 \
 #     -t ghcr.io/etzhayyimcojp/lg-mangaka-studio:0.1.0-amd64 \
 #     -f Dockerfile.studio --push .

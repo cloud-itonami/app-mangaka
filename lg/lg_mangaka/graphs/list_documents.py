@@ -2,7 +2,7 @@
 
 Returns the catalog of mangaka documents stored in vertex_mangaka.
 Optionally filter by convoId. Always returns offset/limit/total per
-60-apps/CLAUDE.md pagination convention.
+60-apps/AGENTS.md pagination convention.
 
 Input:
     convoId  str (optional)

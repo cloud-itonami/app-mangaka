@@ -13,7 +13,7 @@ Two surfaces:
 
 Both helpers are defensive: failures log + return `None` rather than raising,
 so the Pregel pipeline keeps moving with a deterministic fallback. Per the
-mangaka CLAUDE.md, LLM auth failures (`401`) and rate-limit errors (`429`)
+mangaka AGENTS.md, LLM auth failures (`401`) and rate-limit errors (`429`)
 are still surfaced via `LLM error` log entries.
 """
 
