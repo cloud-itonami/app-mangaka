@@ -93,7 +93,7 @@ B2 storage removed 2026-04-11 → `_archive/60-apps/r2-mangaka-canvas-storage.ts
 
 ```
 60-apps/etzhayyim-project-mangaka/
-├── CLAUDE.md
+├── AGENTS.md
 ├── wit/mangaka/package.wit           # Domain WIT capability
 ├── data/ghosthacker/                 # ghost hacker series source (imported 2026-05-12, see IMPORT.md)
 │   ├── PROJECT.jsonld

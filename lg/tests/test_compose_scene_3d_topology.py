@@ -55,7 +55,7 @@ def test_assistant_id_matches_nsid_convention(spec: dict) -> None:
     assistant_id = spec["assistant_id"]
     assert isinstance(assistant_id, str)
     assert assistant_id.startswith("com.etzhayyim.mangaka."), assistant_id
-    # 4-segment minimum (NSID rule from root CLAUDE.md / ADR-2604231811).
+    # 4-segment minimum (NSID rule from root AGENTS.md / ADR-2604231811).
     assert len(assistant_id.split(".")) >= 4
 
 

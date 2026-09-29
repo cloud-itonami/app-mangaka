@@ -47,7 +47,7 @@ const SOURCE_DIR   = Deno.env.get("SIP_SOURCE_DIR") ?? "/Users/junkawasaki/githu
 const MURAKUMO_URL = Deno.env.get("MURAKUMO_URL")   ?? "https://murakumo.etzhayyim.com/api/openai/v1/chat/completions";
 const MODEL        = Deno.env.get("MURAKUMO_MODEL") ?? "qwen3-30b";
 // Resolve auth via: env MURAKUMO_API_KEY -> macOS Keychain (etzhayyim.murakumo/MURAKUMO_API_KEY)
-// -> ansible fallback (documented in 60-apps/etzhayyim-project-murakumo/CLAUDE.md §Murakumo Fleet)
+// -> ansible fallback (documented in 60-apps/etzhayyim-project-murakumo/AGENTS.md §Murakumo Fleet)
 function resolveMurakumoKey(): string {
   const env = Deno.env.get("MURAKUMO_API_KEY");
   if (env) return env;
